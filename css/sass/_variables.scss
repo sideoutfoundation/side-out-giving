@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// Colors
+$black: #0C2543;
+$dark-gray: #373737;
+$steel-gray: #0C2543;
+$gray: #4e5862;
+$medium-gray: #828D9A;
+$light-gray: #F1F5F7;
+$border-gray: darken($light-gray, 8%);
+
+$pink: #D90084;
+$gold: #F4B940;
+$blue: #009FDB;
+$green: #7ED321;
+$dark-green: #68B514;
+$red: darkred;
+
+$link-color: $pink;
+$link-hover: $gray;
+
+$input-border: 1px solid $border-gray;
+$input-height: 50px;

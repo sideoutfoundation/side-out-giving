@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all fonts.
+// -----------------------------------------------------------------------------
+
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  font-style: normal;
+  font-weight: normal;
+  src:
+      local('Proxima Nova Regular'),
+      local('Proxima-Nova-Regular'),
+      url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+      url('./fonts/proximanova-regular-webfont.woff') format('woff');
+}
+
+@mixin font_body {
+  font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Italic';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('Proxima Nova Regular Italic'),
+    local('Proxima-Nova-Regular-Italic'),
+    url('../fonts/proximanova-regularit-webfont.woff2') format('woff2'),
+    url('../fonts/proximanova-regularit-webfont.woff') format('woff');
+}
+
+@mixin font_italic {
+  font-family: 'Proxima Nova Italic', helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src:
+      local('Proxima Nova Bold'),
+      local('Proxima-Nova-Bold'),
+      url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+      url('../fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font_bold {
+  font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+}
+
+@mixin font_bold_caps {
+  font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}

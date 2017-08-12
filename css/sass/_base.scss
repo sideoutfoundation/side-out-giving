@@ -1,0 +1,126 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:" ";
+  display: table;
+}
+.clearfix:after { clear: both; }
+
+::-moz-selection { background: silver; color: black; }
+::selection { background: silver; color: black; }
+img::selection { background: transparent; }
+img::-moz-selection { background: transparent; }
+
+a {
+  color: $link-color;
+  transition: color .2s ease;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $link-hover;
+  }
+}
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img, video, object, svg, iframe {
+  max-width: 100%;
+  border: none;
+}
+
+img {
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+figure {
+  max-width: 100%;
+  margin: 0;
+}
+
+hr {
+  background-color: $border-gray;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5rem;
+}
+
+a[href^="tel:"] {
+  color: $gray;
+}
+
+
+ul,
+ol {
+  margin: 0 0 3rem 3rem;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  background-color: transparent;
+
+  td, th {
+    padding: 1rem 1.5rem 2rem;
+    vertical-align: top;
+    border-top: 1px solid $border-gray;
+  }
+
+  th {
+    vertical-align: bottom;
+    text-align: left;
+  }
+}
+

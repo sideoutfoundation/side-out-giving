@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+@mixin invisible {
+  visibility: hidden !important;
+}
+
+@mixin font-size($size) {
+  font-size: $size * 10px;
+  font-size: $size * 1rem;
+}
+
+@mixin baseline-grid {
+  background-image: linear-gradient(to top, rgba(242, 201, 76, 0.3) 0, rgba(242, 201, 76, 0.3) 1px, transparent 1px);
+  background-size: 100% 10px;
+}
+
+@mixin baseline-grid_dark {
+  background-image: linear-gradient(to top, rgba(white, 0.2) 0, rgba(white, 0.2) 1px, transparent 1px);
+  background-size: 100% 10px;
+}
