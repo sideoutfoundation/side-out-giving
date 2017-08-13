@@ -11,8 +11,11 @@
 @import
   'vendor/bootstrap/normalize',
   'vendor/bootstrap/bootstrap-grid',
+  'vendor/bootstrap/mixins/border-radius',
+  'vendor/bootstrap/mixins/gradients',
   'vendor/bootstrap/utilities/flex',
   'vendor/bootstrap/utilities/visibility',
+  'vendor/bootstrap/progress',
   'vendor/bootstrap/responsive-embed';
 
 @import
@@ -42,14 +45,13 @@ body {
 
 .header {
   background: white;
-  //box-shadow: 0 1px 3px rgba(0,0,0,.2);
   border-bottom: 1px solid $border-gray;
   padding: 1.6rem 0;
   position: relative;
   z-index: 3;
 
   @include media-breakpoint-up(lg) {
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 2.4rem;
   }
 }
 
@@ -88,7 +90,16 @@ h1,h2,h3,h4,h5 {
 h1 {
   @include font-size(3);
   line-height: 3rem;
+  padding: 0;
 }
+
+h2 {
+  @include font-size(2.6);
+  line-height: 3rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+
 
 b, strong {
   color: $black;
@@ -97,6 +108,22 @@ b, strong {
 
 em, i {
   @include font_italic;
+}
+
+hr, p {
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin-top: .9rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 
@@ -116,9 +143,137 @@ em, i {
 }
 
 main {
-  padding: 4rem 0;
+}
+
+// Campaign
+
+.hero {
+  background: black;
+  color: white;
+  display: flex;
+  min-height: 200px;
   @include media-breakpoint-up(lg) {
-    padding: 8rem 0;
+    height: 480px;
+    max-height: 60vh;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+}
+
+.hero-text {
+  align-items: center;
+  display: flex;
+  padding-bottom: 2rem;
+  @include media-breakpoint-up(sm) {
+    align-items: flex-end;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 4rem;
+  }
+}
+
+.campaign-avatar {
+  padding-right: 3rem;
+  figure {
+    width: 10rem;
+    height: 10rem;
+    @include media-breakpoint-up(lg) {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+
+}
+
+.campaign-title {
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -.9rem;
+  }
+  h1 {
+    color: white;
+    @include media-breakpoint-up(sm) {
+      @include font-size(3.6);
+      line-height: 4rem;
+    }
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.campaign-subtitle {}
+
+
+.campaign-details {
+  background: white;
+  padding: 4rem;
+  @include baseline-grid();
+  @include media-breakpoint-up(lg) {
+    padding: 6rem;
+  }
+}
+
+.campaign-raised {
+  @include make-col-ready();
+  //@include make-col(12);
+  margin-bottom: 3rem;
+  h2 {
+    @include font-size(4.4);
+    line-height: 5rem;
+    margin: 0;
+    span {
+      @include font_body;
+      @include font-size(2.2);
+      letter-spacing: .03rem;
+      line-height: 3rem;
+    }
+  }
+}
+
+.progress {
+  border-radius: 0;
+  margin: 1rem 0;
+  max-width: 72rem;
+  .progress-bar {
+    background-color: $green;
+    height: 3rem;
+  }
+}
+
+.progress-stats {
+  max-width: 72rem;
+}
+
+.campaign-buttons {
+  @include make-col-ready();
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(md) {
+    @include make-col(7);
+  }
+}
+
+.campaign-share {
+  @include make-col-ready();
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(md) {
+    @include make-col(5);
+  }
+}
+
+.campaign-text {
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(8);
+  }
+}
+
+.campaign-aside {
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(4);
   }
 }
 
@@ -134,11 +289,12 @@ main {
   border: 1px solid $border-gray;
   padding: 3rem;
   width: 90vw;
-  margin: 0 auto;
+  margin: 4rem auto;
   @include media-breakpoint-up(md) {
     padding: 4rem;
     @include make-col(6);
     @include make-col-offset(3);
+     margin: 8rem auto;
   }
 
   &.sign-up {}
@@ -176,10 +332,20 @@ input[type="submit"] {
 
   &:focus,
   &:hover {
-    // color: $pink;
+    color: white;
     // border-color: $pink;
     // background-color: transparent;
     // box-shadow: inset 0 0 0 2px $pink;
+  }
+}
+
+.btn-blue-inverse {
+  background: white;
+  border: 1px solid $blue;
+  box-shadow: inset 0 0 0 1px $blue;
+  color: $blue;
+  &:hover {
+    color: $blue;
   }
 }
 

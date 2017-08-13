@@ -35,6 +35,14 @@
 </head>
 
 <body>
+
+    <?php
+
+        // Menu for HTML prototypes.
+        include( './inc/pages-menu.php');
+
+    ?>
+
     <div id="top"></div>
     <header class="header">
         <div class="container">
