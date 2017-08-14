@@ -13,7 +13,10 @@
         <a href="donate.php">Donate</a>
     </li>
     <li>
-        <a href="embed.php">Embed</a>
+        <a href="embed.php">Embed (1)</a>
+    </li>
+    <li>
+        <a href="embed-2.php">Embed (2)</a>
     </li>
 </ul>
 </div>
