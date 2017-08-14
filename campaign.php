@@ -49,7 +49,32 @@
 				<a href="" class="btn btn-blue-inverse">Fundraise for this Campaign</a>
 			</div>
 			<div class="campaign-share">
-				Share
+				<div class="share-buttons">
+                    <strong>
+                        Share
+                    </strong>
+                    <a href="#" class="social social-facebook">
+                        <svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-facebook">
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social social-twitter">
+                        <svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-twitter">
+                            </use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social social-email">
+                        <svg class="icon icon-envelope">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-envelope">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
 			</div>
 		</div>
 
@@ -71,6 +96,51 @@
 					porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio 
 					nec, molestie nisi.
 				</p>
+				
+				<h2>Events</h2>
+				
+				<h2>Campaign Activity</h2>
+
+				<div class="activity-block">
+                    <div class="activity-icon donation">
+						<svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-gift">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="activity-text">
+                        <strong>Gary Soto</strong> donated $50
+                    </div>
+		        </div>
+
+                <div class="activity-block">
+                    <div class="activity-icon in-honor">
+                    	<svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-heart">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="activity-text">
+                        <strong>Gary Soto</strong> donated $50
+                        <span>In honor of Kathy Milton</span>
+                    </div>
+                </div>
+
+                <div class="activity-block">
+                    <div class="activity-icon created">
+                    	<svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="./img/sprites.svg#icon-loop">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="activity-text">
+                        <strong>Gary Soto</strong> created a <a href="#">campaign</a>
+                    </div>
+                </div>
+
 			</div>
 
 			<aside class="campaign-aside">

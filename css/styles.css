@@ -1999,7 +1999,7 @@ h2 {
   font-size: 2.6rem;
   line-height: 3rem;
   padding: 0;
-  margin: 1rem 0; }
+  margin: 1rem 0 2rem; }
 
 b, strong {
   color: #0C2543;
@@ -2008,11 +2008,14 @@ b, strong {
 em, i {
   font-family: 'Proxima Nova Italic', helvetica, sans-serif; }
 
+p {
+  margin: 0 0 2rem; }
+
 hr, p {
   margin-bottom: 2rem; }
 
 hr {
-  margin-top: .9rem; }
+  margin-top: -1px; }
 
 .text-center {
   text-align: center; }
@@ -2122,14 +2125,17 @@ hr {
 
 .progress {
   border-radius: 0;
-  margin: 1rem 0;
-  max-width: 72rem; }
+  margin: 1rem 0; }
+  @media (min-width: 992px) {
+    .progress {
+      max-width: 72rem; } }
   .progress .progress-bar {
     background-color: #7ED321;
     height: 3rem; }
 
-.progress-stats {
-  max-width: 72rem; }
+@media (min-width: 992px) {
+  .progress-stats {
+    max-width: 72rem; } }
 
 .campaign-buttons {
   position: relative;
@@ -2137,7 +2143,7 @@ hr {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   @media (min-width: 576px) {
     .campaign-buttons {
       padding-right: 15px;
@@ -2154,10 +2160,16 @@ hr {
     .campaign-buttons {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
+  .campaign-buttons .btn {
+    display: block;
+    margin-bottom: 1rem; }
+  @media (min-width: 992px) {
     .campaign-buttons {
-      flex: 0 0 58.3333333333%;
-      max-width: 58.3333333333%; } }
+      flex: 0 0 66.6666666667%;
+      max-width: 66.6666666667%; }
+      .campaign-buttons .btn {
+        display: inline-block;
+        margin-right: .4rem; } }
 
 .campaign-share {
   position: relative;
@@ -2182,10 +2194,12 @@ hr {
     .campaign-share {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .campaign-share {
-      flex: 0 0 41.6666666667%;
-      max-width: 41.6666666667%; } }
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; }
+      .campaign-share .share-buttons {
+        float: right; } }
 
 .campaign-text {
   position: relative;
@@ -2240,6 +2254,86 @@ hr {
     .campaign-aside {
       flex: 0 0 33.3333333333%;
       max-width: 33.3333333333%; } }
+
+.activity-block {
+  border: 1px solid #d7e2e8;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2rem;
+  padding: 1.4rem 3rem; }
+  .activity-block .activity-icon {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    background: #4e5862;
+    border-radius: 5rem;
+    margin-right: 2rem;
+    text-align: center; }
+    .activity-block .activity-icon.donation {
+      background: #009FDB; }
+      .activity-block .activity-icon.donation .icon {
+        margin-top: -3px; }
+    .activity-block .activity-icon.in-honor {
+      background: #613d7c; }
+    .activity-block .activity-icon.created {
+      background: #D90084; }
+  .activity-block .icon {
+    margin: 0 auto;
+    height: 24px;
+    width: 24px; }
+
+.activity-text {
+  color: #0C2543;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2rem; }
+  .activity-text span {
+    color: #4e5862;
+    display: block;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  .activity-text a {
+    color: #0C2543;
+    text-decoration: underline; }
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: .5rem; }
+  .share-buttons strong {
+    display: inline-block;
+    margin-right: 1rem; }
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: white;
+  fill: white; }
+
+.social {
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  opacity: 1;
+  margin-right: .3rem;
+  transition: opacity .2s ease; }
+  .social-facebook {
+    background: #445C8C; }
+  .social-twitter {
+    background: #53BBF4; }
+  .social-email {
+    background: #D90084; }
+  .social .icon {
+    margin-top: 8px;
+    fill: white !important; }
+  .social:hover {
+    opacity: .7; }
 
 .form-wrapper {
   background: white;
