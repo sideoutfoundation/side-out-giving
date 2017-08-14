@@ -18,5 +18,11 @@
     <li>
         <a href="embed-2.php">Embed (2)</a>
     </li>
+    <li>
+        <a href="embed-3.php">Embed (3)</a>
+    </li>
+    <li>
+        <a href="Thank You.php">Thanks</a>
+    </li>
 </ul>
 </div>

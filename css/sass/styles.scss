@@ -638,7 +638,7 @@ main {
   }
 }
 
-.campaign-events {  
+.campaign-events {
   background: $light-gray;
   margin-bottom: 3rem;
   padding: 3rem;
@@ -695,7 +695,7 @@ main {
   margin-bottom: 2rem;
   padding: 2rem 2rem 0;
   .img {
-    margin: -2rem -2rem 0 -2rem; 
+    margin: -2rem -2rem 0 -2rem;
   }
 }
 
@@ -829,7 +829,7 @@ main {
 	padding: 0;
 	list-style: none;
 	border-bottom: 1px solid $border-gray;
-	
+
   li {
 		background: transparent;
     border-left: 1px solid $border-gray;
@@ -947,7 +947,7 @@ main {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  .btn, 
+  .btn,
   button {
     margin: 0 .3rem 0 0;
     min-width: 40%;
@@ -959,7 +959,7 @@ main {
 }
 
 .col-sm.city {
-  @include media-breakpoint-up(sm) {  
+  @include media-breakpoint-up(sm) {
     flex: 0 0 45%;
   }
 }
@@ -972,6 +972,21 @@ main {
     @include font-size(1.4);
     line-height: 3rem;
   }
+}
+
+.cc-number {
+  background-image: url(../img/cc-logos.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 19px;
+  background-position: calc(100% - 1rem) center;
+  @include media-breakpoint-up(sm) {
+    background-size: 133px 25px;
+  }
+}
+
+.privacy-note {
+  @include font-size(1.4);
+  line-height: 2rem;
 }
 
 

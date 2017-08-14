@@ -2900,6 +2900,20 @@ input.email {
     font-size: 1.4rem;
     line-height: 3rem; }
 
+.cc-number {
+  background-image: url(../img/cc-logos.svg);
+  background-repeat: no-repeat;
+  background-size: 100px 19px;
+  background-position: calc(100% - 1rem) center; }
+  @media (min-width: 576px) {
+    .cc-number {
+      background-size: 133px 25px; } }
+
+.privacy-note {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 2rem; }
+
 .footer {
   background: white;
   border-top: 1px solid #d7e2e8;
