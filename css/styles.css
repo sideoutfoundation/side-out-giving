@@ -1999,7 +1999,7 @@ h2 {
   font-size: 2.6rem;
   line-height: 3rem;
   padding: 0;
-  margin: 1rem 0 2rem; }
+  margin: 2rem 0; }
 
 b, strong {
   color: #0C2543;
@@ -2023,6 +2023,14 @@ hr {
 .text-right {
   text-align: right; }
 
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: white;
+  fill: white; }
+
 .main {
   background: #F1F5F7; }
   @media (min-width: 992px) {
@@ -2034,6 +2042,9 @@ hr {
 
 .hero {
   background: black;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   min-height: 200px; }
@@ -2226,34 +2237,81 @@ hr {
   @media (min-width: 768px) {
     .campaign-text {
       flex: 0 0 66.6666666667%;
-      max-width: 66.6666666667%; } }
+      max-width: 66.6666666667%; }
+      .campaign-text p {
+        max-width: 72rem; } }
 
-.campaign-aside {
+.campaign-events {
+  background: #F1F5F7;
+  margin-bottom: 3rem;
+  padding: 3rem; }
+
+.event-time strong {
+  display: block;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 3rem; }
+
+.campaign-learn-more {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
   @media (min-width: 576px) {
-    .campaign-aside {
+    .campaign-learn-more {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .campaign-aside {
+    .campaign-learn-more {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 992px) {
-    .campaign-aside {
+    .campaign-learn-more {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 1200px) {
-    .campaign-aside {
+    .campaign-learn-more {
       padding-right: 15px;
       padding-left: 15px; } }
   @media (min-width: 768px) {
-    .campaign-aside {
+    .campaign-learn-more {
       flex: 0 0 33.3333333333%;
       max-width: 33.3333333333%; } }
+
+.aside h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 1rem 0; }
+.aside p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-bottom: 2rem; }
+.aside .img {
+  background: #4e5862;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.icon-play {
+  fill: white;
+  height: 30px;
+  width: 30px; }
+  @media (min-width: 576px) {
+    .icon-play {
+      height: 50px;
+      width: 50px; } }
+
+.aside-mission .img {
+  background: url(../img/demo.jpg) no-repeat center center;
+  background-size: cover; }
+
+.aside-trial .img {
+  background: url(../img/demo.jpg) no-repeat center center;
+  background-size: cover; }
 
 .activity-block {
   border: 1px solid #d7e2e8;
@@ -2303,14 +2361,6 @@ hr {
   .share-buttons strong {
     display: inline-block;
     margin-right: 1rem; }
-
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  stroke-width: 0;
-  stroke: white;
-  fill: white; }
 
 .social {
   border-radius: 50%;

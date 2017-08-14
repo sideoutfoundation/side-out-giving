@@ -97,7 +97,7 @@ h2 {
   @include font-size(2.6);
   line-height: 3rem;
   padding: 0;
-  margin: 1rem 0 2rem;
+  margin: 2rem 0;
 }
 
 
@@ -130,6 +130,17 @@ hr {
   text-align: right;
 }
 
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: white;
+  fill: white;
+}
+
+
+
 
 // -----------------------------------------------------------------------------
 // Main Content
@@ -153,6 +164,9 @@ main {
 
 .hero {
   background: black;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   min-height: 200px;
@@ -286,13 +300,74 @@ main {
   @include make-col-ready();
   @include media-breakpoint-up(md) {
     @include make-col(8);
+    p {
+      max-width: 72rem;
+    }
   }
 }
 
-.campaign-aside {
+.campaign-events {  
+  background: $light-gray;
+  margin-bottom: 3rem;
+  padding: 3rem;
+}
+
+.event-time {
+  strong {
+    display: block;
+    @include font-size(2);
+    line-height: 3rem;
+  }
+}
+
+.campaign-learn-more {
   @include make-col-ready();
   @include media-breakpoint-up(md) {
     @include make-col(4);
+  }
+}
+
+.aside {
+  h3 {
+    @include font-size(2);
+    line-height: 3rem;
+    margin: 1rem 0;
+  }
+  p {
+    @include font-size(1.4);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+  .img {
+    background: $gray;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon-play {
+  fill: white;
+  height: 30px;
+  width: 30px;
+  @include media-breakpoint-up(sm) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.aside-mission {
+  .img {
+    background: url(../img/demo.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.aside-trial {
+  .img {
+    background: url(../img/demo.jpg) no-repeat center center;
+    background-size: cover;
   }
 }
 
@@ -359,15 +434,6 @@ main {
     display: inline-block;
     margin-right: 1rem;
   }
-}
-
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  stroke-width: 0;
-  stroke: white;
-  fill: white;
 }
 
 .social {

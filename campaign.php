@@ -1,6 +1,8 @@
 <?php include( './inc/header.php'); ?>
 </div>
-<section class="hero">
+<section class="hero" 
+	style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+    url(../img/demo.jpg);">
 	<div class="container">
 		<div class="hero-text">
 			<div class="campaign-avatar">
@@ -98,6 +100,19 @@
 				</p>
 				
 				<h2>Events</h2>
+
+				<div class="campaign-events">
+					<div class="event">
+						<div class="event-time">
+							<strong>Sat, August 26, 2017</strong>
+							5:00pm
+						</div>
+						<h2>Gift Card Fundraiser</h2>
+						<div class="event-description">
+							Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
+						</div>
+					</div>
+				</div>
 				
 				<h2>Campaign Activity</h2>
 
@@ -140,11 +155,42 @@
                         <strong>Gary Soto</strong> created a <a href="#">campaign</a>
                     </div>
                 </div>
-
 			</div>
 
-			<aside class="campaign-aside">
+			<aside class="campaign-learn-more">
+				<div class="aside aside-mission">
+					<div class="img">
+						<a href="#" class="aside-play-button">
+		                    <svg class="icon icon-play">
+		                        <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+		                        xlink:href="../img/sprites.svg#icon-play"></use>
+		                    </svg>
+		                </a>
+					</div>
+					<h3>Learn about Side-Out's Mission</h3>
+					<p>
+						In volleyball, “side-out” means regaining control of the 
+						ball. Similarly, The Side-Out Foundation helps people with 
+						breast cancer regain control of their lives.
+					</p>
+				</div>
 
+				<div class="aside aside-trial">
+					<div class="img">
+						<a href="#" class="aside-play-button">
+		                    <svg class="icon icon-play">
+		                        <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+		                        xlink:href="../img/sprites.svg#icon-play"></use>
+		                    </svg>
+		                </a>
+					</div>
+					<h3>Learn about our clinical trial</h3>
+					<p>
+						The Side-Out Foundation is sponsoring a first of its kind 
+						clinical trial to examine the effects of individualized 
+						treatment on patients with metastatic breast cancer. 
+					</p>
+				</div>
 			</aside>
 
 		</div>
