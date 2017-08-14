@@ -7,7 +7,7 @@
 
 		<div class="donation-form">
 			<h1>Thank You!</h1>
-			<h4>Your donation was processed</h4>
+			<strong>Your donation was processed</strong>
 			<p>
 				Your generous donation will go a long way
 				to helping us fight stage IV breast cancer.
@@ -17,7 +17,7 @@
 			</p>
 
 
-			<h4>Share your good deed and inspire others to do the same</h4>
+			<strong>Share your good deed and inspire others to do the same!</strong>
 			<div class="share-buttons">
                 <a href="#" class="social social-facebook">
                     <svg class="icon">
