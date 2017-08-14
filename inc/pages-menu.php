@@ -12,5 +12,8 @@
     <li>
         <a href="donate.php">Donate</a>
     </li>
+    <li>
+        <a href="embed.php">Embed</a>
+    </li>
 </ul>
 </div>
