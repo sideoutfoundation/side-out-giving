@@ -10,9 +10,6 @@
         <a href="campaign.php">Campaign</a>
     </li>
     <li>
-        <a href="donate.php">Donate</a>
-    </li>
-    <li>
         <a href="embed.php">Embed (1)</a>
     </li>
     <li>
@@ -22,7 +19,7 @@
         <a href="embed-3.php">Embed (3)</a>
     </li>
     <li>
-        <a href="Thank You.php">Thanks</a>
+        <a href="thank-you.php">Thanks</a>
     </li>
 </ul>
 </div>
