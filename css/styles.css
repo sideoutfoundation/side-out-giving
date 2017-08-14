@@ -2092,9 +2092,7 @@ hr {
 
 .campaign-details {
   background: white;
-  padding: 4rem;
-  background-image: linear-gradient(to top, rgba(242, 201, 76, 0.3) 0, rgba(242, 201, 76, 0.3) 1px, transparent 1px);
-  background-size: 100% 10px; }
+  padding: 4rem; }
   @media (min-width: 992px) {
     .campaign-details {
       padding: 6rem; } }

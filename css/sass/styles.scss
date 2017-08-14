@@ -228,7 +228,6 @@ main {
 .campaign-details {
   background: white;
   padding: 4rem;
-  @include baseline-grid();
   @include media-breakpoint-up(lg) {
     padding: 6rem;
   }
@@ -236,7 +235,6 @@ main {
 
 .campaign-raised {
   @include make-col-ready();
-  //@include make-col(12);
   margin-bottom: 3rem;
   h2 {
     @include font-size(4.4);
