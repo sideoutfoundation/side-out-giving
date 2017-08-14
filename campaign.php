@@ -47,7 +47,7 @@
 
 		<div class="row">
 			<div class="campaign-buttons">
-				<a href="" class="btn">Donate</a>
+				<a href="donate.php" class="btn">Donate</a>
 				<a href="" class="btn btn-blue-inverse">Fundraise for this Campaign</a>
 			</div>
 			<div class="campaign-share">

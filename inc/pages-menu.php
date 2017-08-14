@@ -9,5 +9,8 @@
     <li>
         <a href="campaign.php">Campaign</a>
     </li>
+    <li>
+        <a href="donate.php">Donate</a>
+    </li>
 </ul>
 </div>

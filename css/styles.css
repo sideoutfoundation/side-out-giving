@@ -1999,7 +1999,7 @@ h2 {
   font-size: 2.6rem;
   line-height: 3rem;
   padding: 0;
-  margin: 2rem 0; }
+  margin: 1rem 0; }
 
 b, strong {
   color: #0C2543;
@@ -2032,7 +2032,9 @@ hr {
   fill: white; }
 
 .main {
-  background: #F1F5F7; }
+  background: #F1F5F7;
+  background-image: linear-gradient(to top, rgba(242, 201, 76, 0.3) 0, rgba(242, 201, 76, 0.3) 1px, transparent 1px);
+  background-size: 100% 10px; }
   @media (min-width: 992px) {
     .main {
       min-height: 40vh; } }
@@ -2133,6 +2135,7 @@ hr {
       line-height: 3rem; }
 
 .progress {
+  background: #F1F5F7;
   border-radius: 0;
   margin: 1rem 0; }
   @media (min-width: 992px) {
@@ -2246,9 +2249,9 @@ hr {
 
 .event-time strong {
   display: block;
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 3rem; }
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2rem; }
 
 .campaign-learn-more {
   position: relative;
@@ -2285,11 +2288,11 @@ hr {
 .aside p {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 3rem;
+  line-height: 2rem;
   margin-bottom: 2rem; }
 .aside .img {
   background: #4e5862;
-  height: 150px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2297,11 +2300,19 @@ hr {
 .icon-play {
   fill: white;
   height: 30px;
-  width: 30px; }
+  width: 30px;
+  opacity: .7; }
   @media (min-width: 576px) {
     .icon-play {
       height: 50px;
       width: 50px; } }
+
+.aside {
+  border: 1px solid #d7e2e8;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 0; }
+  .aside .img {
+    margin: -2rem -2rem 0 -2rem; }
 
 .aside-mission .img {
   background: url(../img/demo.jpg) no-repeat center center;
@@ -2382,6 +2393,36 @@ hr {
     fill: white !important; }
   .social:hover {
     opacity: .7; }
+
+.donate-title {
+  text-align: center; }
+
+.tabs {
+  display: flex;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #d7e2e8; }
+  .tabs li {
+    background: transparent;
+    border-left: 1px solid #d7e2e8;
+    color: #828D9A;
+    display: inline-block;
+    padding: 1rem 0;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    letter-spacing: .03rem;
+    line-height: 3rem;
+    text-transform: uppercase; }
+    .tabs li:first-of-type {
+      border-left: 0; }
+    .tabs li.current {
+      color: #009FDB;
+      box-shadow: inset 0 -3px 0 0 #009FDB; }
 
 .form-wrapper {
   background: white;
