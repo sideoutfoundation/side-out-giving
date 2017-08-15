@@ -40,45 +40,6 @@ body {
 
 
 // -----------------------------------------------------------------------------
-// Header
-// -----------------------------------------------------------------------------
-
-.header {
-  background: white;
-  border-bottom: 1px solid $border-gray;
-  padding: 1.6rem 0;
-  position: relative;
-  z-index: 3;
-
-  @include media-breakpoint-up(lg) {
-    padding: 2.5rem 0 2.4rem;
-  }
-}
-
-.brand {
-  @include make-col-ready();
-  @include make-col(7);
-}
-
-.logo {
-  height: 30px;
-  width: 113px;
-
-  @include media-breakpoint-up(lg) {
-    width: 199px;
-    height: 50px;
-  }
-}
-
-.search {
-  @include make-col-ready();
-  @include make-col(5);
-}
-
-
-
-
-// -----------------------------------------------------------------------------
 // Typography
 // -----------------------------------------------------------------------------
 
@@ -86,10 +47,19 @@ h1,h2,h3,h4,h5 {
   color: $black;
   @include font_bold;
   padding: 0;
+
+  &.regular {
+    @include font_body;
+    font-weight: normal;
+    strong {
+      @include font_bold;
+    }
+  }
 }
 
 h1 {
   @include font-size(3);
+  letter-spacing: .02rem;
   line-height: 4rem;
   margin: 2rem 0 1rem 0;
   padding: 0;
@@ -157,12 +127,10 @@ hr {
   border: 1px solid $border-gray;
   padding: 3rem;
   width: 90vw;
-  margin: 4rem auto;
+  margin: 3rem auto;
   @include media-breakpoint-up(md) {
-    padding: 4rem;
     @include make-col(6);
     @include make-col-offset(3);
-     margin: 8rem auto;
   }
 
   &.sign-up {}
@@ -174,7 +142,7 @@ hr {
 
 .form-actions {
   .btn, input[type=submit] {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
   }
 }
 
@@ -445,6 +413,10 @@ input[type="text"].form__error {
   margin-bottom: 2rem;
 }
 
+.form-check + .form-check {
+  margin-top: -1rem;
+}
+
 textarea {
   border: $input-border;
   padding: 1rem;
@@ -475,6 +447,24 @@ input.email {
   height: 5rem;
 }
 
+.form-check {
+  position: relative;
+  display: block;
+  input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -2rem;
+  }
+  label {
+    color: $gray;
+    @include font-size(1.4);
+    @include font_body;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+}
+
 .form-check-inline {
   display: inline-block;
 }
@@ -483,12 +473,130 @@ input.email {
   margin-left: .6rem;
 }
 
+.switch-field {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  label {
+    border: 1px solid $border-gray;
+    color: $medium-gray;
+    @include font_bold;
+    @include font-size(1.8);
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1.4rem 2rem;
+    transition: background .2s ease;
+    &:hover {
+      background-color: $light-gray;
+      cursor: pointer;
+    }
+  }
+  input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    + label {
+      @include font-size(1.8);
+    }
+    &:checked + label {
+      @include font-size(1.8);
+      background-color: $blue;
+      border: 1px solid $blue;
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+
+.header {
+  background: white;
+  border-bottom: 1px solid $border-gray;
+  padding: 1.6rem 0;
+  position: relative;
+  z-index: 3;
+
+  @include media-breakpoint-up(lg) {
+    padding: 2.5rem 0 2.4rem;
+  }
+}
+
+.brand {
+  @include make-col-ready();
+  @include make-col(7);
+}
+
+.logo {
+  height: 30px;
+  width: 113px;
+
+  @include media-breakpoint-up(lg) {
+    width: 199px;
+    height: 50px;
+  }
+}
+
+.search {
+  @include make-col-ready();
+  @include make-col(5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-form {
+  border: 1px solid $border-gray;
+  border-radius: 2rem;
+  padding: 0 1.4rem;
+  overflow: hidden;
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="search"] {
+    height: 3.8rem;
+    border: 0 !important;
+    width: calc(100% - 24px);
+    &:focus {
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+
+  input[type="image"],
+  #go {
+    padding: .3rem;
+    opacity: 1;
+    transition: opacity .2s ease;
+    &:hover {
+      opacity: .4;
+    }
+  }
+
+}
+
+
 // -----------------------------------------------------------------------------
 // Main Content
 // -----------------------------------------------------------------------------
 
 .main {
   background: $light-gray;
+  padding: 4rem 0;
   @include media-breakpoint-up(lg) {
     min-height: 40vh;
   }
@@ -514,6 +622,7 @@ main {
   @include media-breakpoint-up(lg) {
     height: 480px;
     max-height: 60vh;
+    margin-top: -4rem;
   }
 
   .container {
@@ -704,13 +813,13 @@ main {
 
 .icon-play {
   fill: white;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   opacity: .7;
   transition: opacity .2s ease;
   @include media-breakpoint-up(sm) {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
   }
 }
 
@@ -842,9 +951,6 @@ main {
 
 .donation-form-wrapper {
   background: white;
-  .form-check + .form-check {
-    margin-top: -1rem;
-  }
 }
 
 .tabs {
@@ -909,19 +1015,10 @@ main {
 
 .donation-form {
   padding: 1rem 4rem;
-  .form-check {
-    label {
-      color: $gray;
-      @include font-size(1.4);
-      @include font_body;
-    }
-  }
-
   .share-buttons {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
-
 }
 
 .donation-buttons {
@@ -929,6 +1026,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 1rem 0;
+
+  label {
+    @include make-col(3.8);
+    margin: 1rem 0 0;
+  }
+
   a {
     border: 1px solid $border-gray;
     color: $medium-gray;
@@ -952,11 +1055,13 @@ main {
 
   &.donation-frequency {
     justify-content: left;
-    a {
-      width: 40%;
+    label {
+      flex: auto;
+      width: auto;
+      max-width: 14rem;
+      margin-right: 0 !important;
     }
   }
-
 }
 
 .donation-added {
@@ -975,11 +1080,16 @@ main {
 .form-actions {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
   .btn,
   button {
     margin: 0 .3rem 0 0;
     min-width: 40%;
+  }
+}
+
+.donation-form-wrapper {
+  .form-actions {
+    margin-bottom: 2rem;
   }
 }
 
@@ -1016,6 +1126,161 @@ main {
 .privacy-note {
   @include font-size(1.4);
   line-height: 2rem;
+}
+
+
+h1.join-donate {
+  @include media-breakpoint-up(md) {
+    max-width: 50rem;
+    margin: 4rem auto 0;
+  }
+}
+
+/*Donate to Campaign; Start Campaign Pages*/
+.donate-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+  margin: 2rem auto;
+}
+
+.donate-card {
+  margin-bottom: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include make-col-ready();
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+
+  &-inner {
+    background-color: white;
+    padding: 1rem 2.4rem 10rem;
+    border: 1px solid $border-gray;
+    border-top: 0;
+    height: 100%;
+    position: relative;
+    @include media-breakpoint-up(lg) {
+      padding: 1rem 3rem 10rem;
+    }
+
+    h3 {
+      @include font-size(2);
+      line-height: 3rem;
+      margin: 0 0 1rem;
+    }
+
+    .btn {
+      width: calc(100% - 6rem);
+      margin: 1rem 0 0;
+      display: block;
+      position: absolute;
+      bottom: 3rem;
+    }
+
+    .progress {
+      margin: 0;
+    }
+
+    .progress {
+      background: $border-gray;
+      height: 2rem;
+    }
+
+    .progress-stats {
+      @include font-size(1.4);
+      @include font_bold;
+      font-weight: normal;
+      line-height: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.form-group-special {
+  display:block;
+  justify-content: space-between;
+  div:first-child {
+    margin-bottom: 2rem;
+  }
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    div:first-child {
+      margin-bottom: 0;
+    }
+  }
+  div {
+    @include make-col(12);
+    @include media-breakpoint-up(lg) {
+      @include make-col(5.8);
+    }
+  }
+  select {
+    width: 100% !important;
+    color: $gray !important;
+    &::selection {
+      background-color:white;
+      border-radius:0;
+    }
+  }
+  option {
+    background-color:white;
+    border-radius:0;
+  }
+}
+
+.start-campaign {
+  width: auto;
+  background-color: white;
+  @include make-col(12);
+  @include media-breakpoint-up(md) {
+    @include make-col(6);
+    @include make-col-offset(3);
+  }
+}
+
+.form-steps {
+  margin: 2rem auto;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  .btn {
+    margin: 1rem 0;
+  }
+  h2 {
+    align-items: center;
+    line-height: 3rem;
+    display: flex;
+    margin-bottom: 5rem;
+    position: relative;
+    &:after {
+      height: 1px;
+      background: $border-gray;
+      width: 700px;
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2rem;
+      left: -3rem;
+    }
+    span {
+      background: white;
+      border: 2px solid $pink;
+      border-radius: 50%;
+      color: $pink;
+      @include font_bold;
+      @include font-size(1.8);
+      height: 3rem;
+      width: 3rem;
+      line-height: 2.8rem;
+      display: block;
+      margin-right: 1rem;
+      text-align: center;
+    }
+  }
 }
 
 

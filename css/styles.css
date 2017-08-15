@@ -1916,82 +1916,22 @@ body {
   line-height: 1.875;
   color: #4e5862; }
 
-.header {
-  background: white;
-  border-bottom: 1px solid #d7e2e8;
-  padding: 1.6rem 0;
-  position: relative;
-  z-index: 3; }
-  @media (min-width: 992px) {
-    .header {
-      padding: 2.5rem 0 2.4rem; } }
-
-.brand {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%; }
-  @media (min-width: 576px) {
-    .brand {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 768px) {
-    .brand {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) {
-    .brand {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 1200px) {
-    .brand {
-      padding-right: 15px;
-      padding-left: 15px; } }
-
-.logo {
-  height: 30px;
-  width: 113px; }
-  @media (min-width: 992px) {
-    .logo {
-      width: 199px;
-      height: 50px; } }
-
-.search {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 41.6666666667%;
-  max-width: 41.6666666667%; }
-  @media (min-width: 576px) {
-    .search {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 768px) {
-    .search {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 992px) {
-    .search {
-      padding-right: 15px;
-      padding-left: 15px; } }
-  @media (min-width: 1200px) {
-    .search {
-      padding-right: 15px;
-      padding-left: 15px; } }
-
 h1, h2, h3, h4, h5 {
   color: #0C2543;
-  font-family: 'Proxima Nova Bold', helvetica, sans-serif; }
+  font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+  padding: 0; }
+  h1.regular, h2.regular, h3.regular, h4.regular, h5.regular {
+    font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+    font-weight: normal; }
+    h1.regular strong, h2.regular strong, h3.regular strong, h4.regular strong, h5.regular strong {
+      font-family: 'Proxima Nova Bold', helvetica, sans-serif; }
 
 h1 {
   font-size: 30px;
   font-size: 3rem;
-  line-height: 3rem;
+  letter-spacing: .02rem;
+  line-height: 4rem;
+  margin: 2rem 0 1rem 0;
   padding: 0; }
 
 h2 {
@@ -2000,6 +1940,12 @@ h2 {
   line-height: 3rem;
   padding: 0;
   margin: 1rem 0; }
+
+h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin: 0 0 1rem; }
 
 b, strong {
   color: #0C2543;
@@ -2036,19 +1982,17 @@ hr {
   border: 1px solid #d7e2e8;
   padding: 3rem;
   width: 90vw;
-  margin: 4rem auto; }
+  margin: 3rem auto; }
   @media (min-width: 768px) {
     .form-wrapper {
-      padding: 4rem;
       flex: 0 0 50%;
       max-width: 50%;
-      margin-left: 25%;
-      margin: 8rem auto; } }
+      margin-left: 25%; } }
   .form-wrapper h1, .form-wrapper h2 {
     margin-top: 0; }
 
 .form-actions .btn, .form-actions input[type=submit] {
-  margin: 1rem 0 2rem; }
+  margin: 1rem 0; }
 
 .btn,
 button,
@@ -2380,6 +2324,9 @@ input[type="text"].form__error {
 .form-check {
   margin-bottom: 2rem; }
 
+.form-check + .form-check {
+  margin-top: -1rem; }
+
 textarea {
   border: 1px solid #d7e2e8;
   padding: 1rem; }
@@ -2405,14 +2352,162 @@ select {
 input.email {
   height: 5rem; }
 
+.form-check {
+  position: relative;
+  display: block; }
+  .form-check input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -2rem; }
+  .form-check label {
+    color: #4e5862;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    cursor: pointer; }
+
 .form-check-inline {
   display: inline-block; }
 
 .form-check-inline + .form-check-inline {
   margin-left: .6rem; }
 
+.switch-field {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; }
+  .switch-field label {
+    border: 1px solid #d7e2e8;
+    color: #828D9A;
+    font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1.4rem 2rem;
+    transition: background .2s ease; }
+    .switch-field label:hover {
+      background-color: #F1F5F7;
+      cursor: pointer; }
+  .switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden; }
+    .switch-field input + label {
+      font-size: 18px;
+      font-size: 1.8rem; }
+    .switch-field input:checked + label {
+      font-size: 18px;
+      font-size: 1.8rem;
+      background-color: #009FDB;
+      border: 1px solid #009FDB;
+      color: white; }
+
+.header {
+  background: white;
+  border-bottom: 1px solid #d7e2e8;
+  padding: 1.6rem 0;
+  position: relative;
+  z-index: 3; }
+  @media (min-width: 992px) {
+    .header {
+      padding: 2.5rem 0 2.4rem; } }
+
+.brand {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%; }
+  @media (min-width: 576px) {
+    .brand {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .brand {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .brand {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .brand {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.logo {
+  height: 30px;
+  width: 113px; }
+  @media (min-width: 992px) {
+    .logo {
+      width: 199px;
+      height: 50px; } }
+
+.search {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  @media (min-width: 576px) {
+    .search {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .search {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .search {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .search {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.search-form {
+  border: 1px solid #d7e2e8;
+  border-radius: 2rem;
+  padding: 0 1.4rem;
+  overflow: hidden; }
+  .search-form form {
+    display: flex;
+    align-items: center; }
+  .search-form input[type="search"] {
+    height: 3.8rem;
+    border: 0 !important;
+    width: calc(100% - 24px); }
+    .search-form input[type="search"]:focus {
+      box-shadow: 0 0 0 0 transparent; }
+  .search-form input[type="image"],
+  .search-form #go {
+    padding: .3rem;
+    opacity: 1;
+    transition: opacity .2s ease; }
+    .search-form input[type="image"]:hover,
+    .search-form #go:hover {
+      opacity: .4; }
+
 .main {
-  background: #F1F5F7; }
+  background: #F1F5F7;
+  padding: 4rem 0; }
   @media (min-width: 992px) {
     .main {
       min-height: 40vh; } }
@@ -2431,7 +2526,8 @@ input.email {
   @media (min-width: 992px) {
     .hero {
       height: 480px;
-      max-height: 60vh; } }
+      max-height: 60vh;
+      margin-top: -4rem; } }
   .hero .container {
     display: flex;
     align-items: flex-end; }
@@ -2658,32 +2754,43 @@ input.email {
       flex: 0 0 33.3333333333%;
       max-width: 33.3333333333%; } }
 
-.aside h3 {
-  font-size: 20px;
-  font-size: 2rem;
-  line-height: 3rem;
-  margin: 1rem 0; }
-.aside p {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin-bottom: 2rem; }
-.aside .img {
-  background: #4e5862;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.aside {
+  position: relative; }
+  .aside h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 1rem 0; }
+  .aside p {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 2rem; }
+  .aside .img {
+    background: #4e5862;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .aside .click {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .aside:hover .icon-play {
+    opacity: 1; }
 
 .icon-play {
   fill: white;
-  height: 30px;
-  width: 30px;
-  opacity: .7; }
+  height: 40px;
+  width: 40px;
+  opacity: .7;
+  transition: opacity .2s ease; }
   @media (min-width: 576px) {
     .icon-play {
-      height: 50px;
-      width: 50px; } }
+      height: 80px;
+      width: 80px; } }
 
 .aside {
   border: 1px solid #d7e2e8;
@@ -2758,7 +2865,7 @@ input.email {
   width: 40px;
   text-align: center;
   opacity: 1;
-  margin-right: .3rem;
+  margin-right: .5rem;
   transition: opacity .2s ease; }
   .social-facebook {
     background: #445C8C; }
@@ -2777,8 +2884,6 @@ input.email {
 
 .donation-form-wrapper {
   background: white; }
-  .donation-form-wrapper .form-check + .form-check {
-    margin-top: -1rem; }
 
 .tabs {
   display: flex;
@@ -2828,17 +2933,19 @@ input.email {
 
 .donation-form {
   padding: 1rem 4rem; }
-  .donation-form .form-check label {
-    color: #4e5862;
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-family: 'Proxima Nova Regular', helvetica, sans-serif; }
+  .donation-form .share-buttons {
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
 
 .donation-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 1rem 0; }
+  .donation-buttons label {
+    flex: 0 0 31.6666666667%;
+    max-width: 31.6666666667%;
+    margin: 1rem 0 0; }
   .donation-buttons a {
     border: 1px solid #d7e2e8;
     color: #828D9A;
@@ -2859,8 +2966,11 @@ input.email {
       border-color: #009FDB; }
   .donation-buttons.donation-frequency {
     justify-content: left; }
-    .donation-buttons.donation-frequency a {
-      width: 40%; }
+    .donation-buttons.donation-frequency label {
+      flex: auto;
+      width: auto;
+      max-width: 14rem;
+      margin-right: 0 !important; }
 
 .donation-added {
   color: #828D9A;
@@ -2877,12 +2987,14 @@ input.email {
 
 .form-actions {
   display: flex;
-  align-items: center;
-  margin-bottom: 2rem; }
+  align-items: center; }
   .form-actions .btn,
   .form-actions button {
     margin: 0 .3rem 0 0;
     min-width: 40%; }
+
+.donation-form-wrapper .form-actions {
+  margin-bottom: 2rem; }
 
 #state {
   width: 100%; }
@@ -2913,6 +3025,160 @@ input.email {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 2rem; }
+
+@media (min-width: 768px) {
+  h1.join-donate {
+    max-width: 50rem;
+    margin: 4rem auto 0; } }
+
+/*Donate to Campaign; Start Campaign Pages*/
+.donate-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: initial;
+  margin: 2rem auto; }
+
+.donate-card {
+  margin-bottom: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 576px) {
+    .donate-card {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .donate-card {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .donate-card {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 1200px) {
+    .donate-card {
+      padding-right: 15px;
+      padding-left: 15px; } }
+  @media (min-width: 768px) {
+    .donate-card {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (min-width: 992px) {
+    .donate-card {
+      flex: 0 0 33.3333333333%;
+      max-width: 33.3333333333%; } }
+  .donate-card-inner {
+    background-color: white;
+    padding: 1rem 2.4rem 10rem;
+    border: 1px solid #d7e2e8;
+    border-top: 0;
+    height: 100%;
+    position: relative; }
+    @media (min-width: 992px) {
+      .donate-card-inner {
+        padding: 1rem 3rem 10rem; } }
+    .donate-card-inner h3 {
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin: 0 0 1rem; }
+    .donate-card-inner .btn {
+      width: calc(100% - 6rem);
+      margin: 1rem 0 0;
+      display: block;
+      position: absolute;
+      bottom: 3rem; }
+    .donate-card-inner .progress {
+      margin: 0; }
+    .donate-card-inner .progress {
+      background: #d7e2e8;
+      height: 2rem; }
+    .donate-card-inner .progress-stats {
+      font-size: 14px;
+      font-size: 1.4rem;
+      font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+      font-weight: normal;
+      line-height: 2rem;
+      margin-top: 1rem; }
+
+.form-group-special {
+  display: block;
+  justify-content: space-between; }
+  .form-group-special div:first-child {
+    margin-bottom: 2rem; }
+  @media (min-width: 992px) {
+    .form-group-special {
+      display: flex; }
+      .form-group-special div:first-child {
+        margin-bottom: 0; } }
+  .form-group-special div {
+    flex: 0 0 100%;
+    max-width: 100%; }
+    @media (min-width: 992px) {
+      .form-group-special div {
+        flex: 0 0 48.3333333333%;
+        max-width: 48.3333333333%; } }
+  .form-group-special select {
+    width: 100% !important;
+    color: #4e5862 !important; }
+    .form-group-special select::selection {
+      background-color: white;
+      border-radius: 0; }
+  .form-group-special option {
+    background-color: white;
+    border-radius: 0; }
+
+.start-campaign {
+  width: auto;
+  background-color: white;
+  flex: 0 0 100%;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .start-campaign {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-left: 25%; } }
+
+.form-steps {
+  margin: 2rem auto;
+  overflow: hidden;
+  padding-bottom: 1rem; }
+  .form-steps .btn {
+    margin: 1rem 0; }
+  .form-steps h2 {
+    align-items: center;
+    line-height: 3rem;
+    display: flex;
+    margin-bottom: 5rem;
+    position: relative; }
+    .form-steps h2:after {
+      height: 1px;
+      background: #d7e2e8;
+      width: 700px;
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2rem;
+      left: -3rem; }
+    .form-steps h2 span {
+      background: white;
+      border: 2px solid #D90084;
+      border-radius: 50%;
+      color: #D90084;
+      font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+      font-size: 18px;
+      font-size: 1.8rem;
+      height: 3rem;
+      width: 3rem;
+      line-height: 2.8rem;
+      display: block;
+      margin-right: 1rem;
+      text-align: center; }
 
 .footer {
   background: white;
