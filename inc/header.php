@@ -52,7 +52,13 @@
                 </div>
 
                 <div class="search">
-                    Search
+                	<div class="search-form">
+	                    <form id="" method="get" action="/">
+                            <input type="search" placeholder="Search..." name="s" id="s">
+                            <input type="image" src="../img/search.svg" width="24" height="24"
+                            id="go" alt="Search" title="Search">
+                        </form>
+					</div>
                 </div>
             </div>
         </div><!-- container -->
