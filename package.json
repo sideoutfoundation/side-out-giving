@@ -1,0 +1,19 @@
+{
+  "name": "side-out-giving-design",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://amandamontanapearce@github.com/1worldtech/side-out-giving.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1worldtech/side-out-giving/issues"
+  },
+  "homepage": "https://github.com/1worldtech/side-out-giving#readme"
+}
