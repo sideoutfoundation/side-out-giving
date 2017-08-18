@@ -1,4 +1,4 @@
-<div style="position: fixed; font-weight: bold; font-size: 12px; background: #1a1a1a; color: yellow; top: 33%; padding: 10px; z-index: 11;">
+<div style="position: fixed; font-weight: bold; font-size: 10px; background: #1a1a1a; color: yellow; bottom: 0; padding: 3px; width: 80px; z-index: 11;">
 <ul style="margin: 0; padding: 0;">
     <li>
         <a href="sign-up.php">Sign Up</a>

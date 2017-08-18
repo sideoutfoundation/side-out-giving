@@ -16,6 +16,7 @@
 
 @mixin font_body {
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+  font-weight: normal;
 }
 
 @font-face {
@@ -31,6 +32,7 @@
 
 @mixin font_italic {
   font-family: 'Proxima Nova Italic', helvetica, sans-serif;
+  font-weight: normal;
 }
 
 @font-face {
@@ -46,6 +48,7 @@
 
 @mixin font_bold {
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+  font-weight: normal;
 }
 
 @mixin font_bold_caps {
@@ -53,3 +56,20 @@
   text-transform: uppercase;
   letter-spacing: .3rem;
 }
+
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src:
+      local('Proxima Nova Semibold'),
+      local('Proxima-Nova-Semibold'),
+      url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+      url('../fonts/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin font_semi {
+  font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
+  font-weight: normal;
+}
+
