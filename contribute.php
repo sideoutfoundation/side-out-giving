@@ -123,25 +123,19 @@
         </div>
 
         <div class="row">
-            <div class="col-sm city">
+            <div class="col">
                 <div class="form-group">
-                    <label>City</label>
-                    <input class="form-control" name="city" type="text" id="city">
+                    <label>Expiration</label>
+                    <div class="expiration">
+                        <input class="form-control" name="" type="text" id="" placeholder="MM">
+                        <input class="form-control" name="" type="text" id="" placeholder="YYYY">
+                    </div>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col">
                 <div class="form-group">
-                    <label>State</label>
-                    <select id="state" class="" name="State">
-                        <option value="Alaska">AK</option>
-                        <option value="Alabama">AL</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="form-group">
-                    <label>Zip</label>
-                    <input type="text" class="form-control" name="zip" id="zip">
+                    <label>CVV</label>
+                    <input type="text" class="form-control" name="cvv" id="cvv">
                 </div>
             </div>
         </div>

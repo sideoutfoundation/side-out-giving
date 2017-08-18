@@ -1,13 +1,13 @@
 <?php include( './inc/header.php'); ?>
 </div>
-<section class="hero" 
+<section class="hero"
 	style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
     url(../img/demo.jpg);">
 	<div class="container">
 		<div class="hero-text">
 			<div class="campaign-avatar">
 				<figure>
-					<img src="http://via.placeholder.com/280x280" alt="">
+					<img src="./img/avatar-default.png" alt="">
 				</figure>
 			</div>
 			<div class="campaign-title">
@@ -26,19 +26,19 @@
 		<div class="row">
 			<div class="campaign-raised">
 				<h2>
-					$550 <span>Raised of $3,000 goal</span>
+					$550 <span>Raised</span>
 				</h2>
 				<div class="progress">
-		  			<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		  			<div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 				</div><!-- .progress -->
 
 				<div class="progress-stats">
 					<div class="row">
 						<div class="col">
-							10% Funded
+							(33%)
 						</div>
 						<div class="col text-right">
-							11 Donors
+							$1550 Goal
 						</div>
 					</div>
 				</div><!-- .progress-stats -->
@@ -47,8 +47,9 @@
 
 		<div class="row">
 			<div class="campaign-buttons">
-				<a href="donate.php" class="btn">Donate</a>
-				<a href="" class="btn btn-blue-inverse">Fundraise for this Campaign</a>
+				<a href="donate.php" class="btn btn-donate">Donate</a>
+				<a href="" class="btn btn-blue-inverse"
+				data-tooltip="Become a supporter.">Fundraise for this Campaign</a>
 			</div>
 			<div class="campaign-share">
 				<div class="share-buttons">
@@ -86,19 +87,21 @@
 			<div class="campaign-text">
 				<h2>About Our Campaign</h2>
 				<p>
-					Vivamus maximus, eros congue rhoncus tincidunt, felis 
-					tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, 
-					blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus 
-					sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor 
-					risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl 
+					Vivamus maximus, eros congue rhoncus tincidunt, felis
+					tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+					blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+					sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+					risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
 					malesuada mollis. Integer quis ornare dui.
 				</p>
 				<p>
-					Sed a eros id odio scelerisque viverra. Fusce sit amet sapien et ante 
-					porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio 
+					Sed a eros id odio scelerisque viverra. Fusce sit amet sapien et ante
+					porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio
 					nec, molestie nisi.
 				</p>
-				
+
+				<hr>
+
 				<h2>Events</h2>
 
 				<div class="campaign-events">
@@ -113,7 +116,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<h2>Campaign Activity</h2>
 
 				<div class="activity-block">
@@ -162,36 +165,36 @@
 					<div class="img">
 						<a href="#" class="aside-play-button">
 		                    <svg class="icon icon-play">
-		                        <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+		                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
 		                        xlink:href="../img/sprites.svg#icon-play"></use>
 		                    </svg>
 		                </a>
 					</div>
 					<h3>Learn about Side-Out's Mission</h3>
 					<p>
-						In volleyball, “side-out” means regaining control of the 
-						ball. Similarly, The Side-Out Foundation helps people with 
+						In volleyball, “side-out” means regaining control of the
+						ball. Similarly, The Side-Out Foundation helps people with
 						breast cancer regain control of their lives.
 					</p>
-					<a href="#" class="click"></a>
+					<a href="#" class="click" data-toggle="modal" data-target="#modal"></a>
 				</div>
 
 				<div class="aside aside-trial">
 					<div class="img">
 						<a href="#" class="aside-play-button">
 		                    <svg class="icon icon-play">
-		                        <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+		                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
 		                        xlink:href="../img/sprites.svg#icon-play"></use>
 		                    </svg>
 		                </a>
 					</div>
 					<h3>Learn about our clinical trial</h3>
 					<p>
-						The Side-Out Foundation is sponsoring a first of its kind 
-						clinical trial to examine the effects of individualized 
-						treatment on patients with metastatic breast cancer. 
+						The Side-Out Foundation is sponsoring a first of its kind
+						clinical trial to examine the effects of individualized
+						treatment on patients with metastatic breast cancer.
 					</p>
-					<a href="#" class="click"></a>
+					<a href="#" class="click" data-toggle="modal" data-target="#modal"></a>
 				</div>
 			</aside>
 
@@ -200,4 +203,5 @@
 
 	</div>
 </section>
+<?php include( './inc/modal.php'); ?>
 <?php include( './inc/footer.php'); ?>
