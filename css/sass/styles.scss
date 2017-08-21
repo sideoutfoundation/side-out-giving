@@ -16,7 +16,6 @@
   'vendor/bootstrap/mixins/gradients',
   'vendor/bootstrap/utilities/flex',
   'vendor/bootstrap/utilities/visibility',
-  'vendor/bootstrap/modal',
   'vendor/bootstrap/progress',
   'vendor/bootstrap/input-group',
   'vendor/bootstrap/responsive-embed';
@@ -592,9 +591,8 @@ input.email {
 
 [data-tooltip], .tooltip {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
-
   &:before,
   &:after {
     visibility: hidden;
@@ -667,7 +665,7 @@ input.email {
   border-bottom: 1px solid $border-gray;
   padding: 1.6rem 0;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 
   @include media-breakpoint-up(lg) {
     padding: 2.5rem 0 2.4rem;
@@ -1105,6 +1103,50 @@ main {
   .img {
     background: url(../img/research.jpg) no-repeat center center;
     background-size: cover;
+  }
+}
+
+.modal {
+  max-width: 72rem !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  &#research,
+  &#video {
+    padding: 0 !important;
+  }
+
+  a.close-modal {
+    background: transparent url(../img/close-modal.png) no-repeat 0 0 !important;
+    background-size: 30px !important;
+  }
+  &-cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      padding: 3rem;
+    }
+    .btn {
+      flex-shrink: 0;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    strong {
+      @include font-size(1.6);
+      @include font_semi;
+      line-height: 1.25;
+      text-align: center;
+      padding: 1rem;
+      @include media-breakpoint-up(md) {
+        text-align: left;
+        padding-right: 3rem;
+        @include font-size(1.8);
+      }
+    }
   }
 }
 
@@ -1670,6 +1712,51 @@ h1.join-donate {
   }
 }
 
+
+#leaving {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include media-breakpoint-up(sm) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  h2 {
+    @include font_semi;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    @include font_semi;
+    @include font-size(1.6);
+    color: lighten($gray, 5%);
+    line-height: 1.25;
+    margin: 0 auto 1rem;
+    max-width: 36rem;
+  }
+
+  p {
+    @include font-size(1.4);
+    color: lighten($gray, 8%);
+    max-width: 41rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    margin: 0 auto;
+    height: 80px;
+    width: 80px;
+    @include media-breakpoint-up(sm) {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  .share-buttons {
+    justify-content: center;
+    .social {
+      margin: 0 .5rem;
+    }
+  }
+}
 
 // -----------------------------------------------------------------------------
 // Footer
