@@ -84,7 +84,6 @@ a[href^="tel:"] {
   color: $gray;
 }
 
-
 ul,
 ol {
   margin: 0 0 3rem 3rem;
@@ -124,3 +123,11 @@ table {
   }
 }
 
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+}

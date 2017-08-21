@@ -25,6 +25,12 @@
         <a href="donate-to-campaign.php">Donate to Campaign</a>
     </li>
     <li>
+        <a href="join-a-campaign.php">Join a Campaign</a>
+    </li>
+     <li>
+        <a href="start-a-campaign.php">Start a Campaign</a>
+    </li>
+    <li>
         <a href="start-campaign.php">Start Campaign</a>
     </li>
     <li>

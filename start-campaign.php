@@ -95,7 +95,7 @@
         </div>
         <div class="form-group">
             <label for="state" class="control-label">Fundraising Goal</label>
-            <div class="switch-field">
+            <div class="switch-field margin-bottom-10">
               <input type="radio" id="switch_1" name="switch" value="no" checked/>
               <label for="switch_1">$500</label>
               <input type="radio" id="switch_2" name="switch" value="yes" />
@@ -104,6 +104,10 @@
               <label for="switch_3">$5000</label>
               <input type="radio" id="switch_4" name="switch" value="no" />
               <label for="switch_4">Other</label>
+            </div>
+            <div class="input-group other">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
             </div>
         </div>
         <div class="form-check">

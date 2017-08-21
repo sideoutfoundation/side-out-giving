@@ -52,13 +52,20 @@
                 </div>
 
                 <div class="search">
-                	<div class="search-form">
-	                    <form id="" method="get" action="/">
+
+                    <div id="search-link" class="search-link">
+                        <a href="join-a-campaign.php" class="search-open"
+                        data-tooltip="Find an event. Search and join an event by searching
+                        a keyword of school name.">Search</a>
+                    </div>
+
+                    <div id="search-form" class="search-form" style="display: none;">
+                        <form id="" method="get" action="/">
                             <input type="search" placeholder="Search..." name="s" id="s">
                             <input type="image" src="../img/search.svg" width="24" height="24"
                             id="go" alt="Search" title="Search">
                         </form>
-					</div>
+                    </div>
                 </div>
             </div>
         </div><!-- container -->

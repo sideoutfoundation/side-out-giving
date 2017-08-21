@@ -11,7 +11,7 @@
             <div class="switch-field donation-buttons">
                 <input type="radio" id="switch_1" name="switch" value="no">
                 <label for="switch_1">$25</label>
-                <input type="radio" id="switch_2" name="switch" value="no" checked>
+                <input type="radio" id="switch_2" name="switch" value="no">
                 <label for="switch_2">$50</label>
                 <input type="radio" id="switch_3" name="switch" value="no">
                 <label for="switch_3">$75</label>
@@ -19,8 +19,12 @@
                 <label for="switch_4">$100</label>
                 <input type="radio" id="switch_5" name="switch" value="no">
                 <label for="switch_5">$500</label>
-                <input type="radio" id="switch_6" name="switch" value="no">
+                <input type="radio" id="switch_6" name="switch" value="no" checked>
                 <label for="switch_6">Other</label>
+            </div>
+            <div class="input-group other">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
             </div>
         </div>
 
@@ -50,7 +54,7 @@
         <div id="" class="" style="display: block;">
             <div class="form-check form-check-inline">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> In honor of…
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> In honor of…
                 </label>
             </div>
 
@@ -62,10 +66,19 @@
 
             <div class="form-group">
                 <label for="dedication_honoree_name">Honoree’s Name</label>
-                <div class="dedication_honoree_name">
-                    <input class="form-control" name="dedication_honoree_name" type="text" id="dedication_honoree_name">
-                </div>
+                <input class="form-control" name="dedication_honoree_name" type="text" id="dedication_honoree_name">
             </div>
+
+            <div class="form-group">
+                <label for="dedication_honoree_email">Honoree’s Email</label>
+                <input class="form-control" name="dedication_honoree_email" type="text" id="dedication_honoree_email">
+            </div>
+
+            <div class="form-group">
+                <label for="">Message to honoree</label>
+                <textarea class="form-control" id="" rows="3"></textarea>
+            </div>
+
         </div>
     </div><!-- .form-wrapper -->
 
@@ -127,8 +140,8 @@
                 <div class="form-group">
                     <label>Expiration</label>
                     <div class="expiration">
-                        <input class="form-control" name="" type="text" id="" placeholder="MM">
-                        <input class="form-control" name="" type="text" id="" placeholder="YYYY">
+                        <input class="form-control" name="" type="text" id="" placeholder="MM" maxlength="2">
+                        <input class="form-control" name="" type="text" id="" placeholder="YYYY" maxlength="4">
                     </div>
                 </div>
             </div>

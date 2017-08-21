@@ -18,7 +18,9 @@
             </div>
 
             <div class="footer-right">
-                logos
+                <img src="./img/trustwave.jpg" alt="">
+                <img src="./img/digicert.png" alt="">
+                <img src="./img/stripe.png" alt="">
             </div>
 
         </div>

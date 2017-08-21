@@ -3,22 +3,20 @@
 
 <div style="max-width: 430px; margin: 0 auto; padding: 8rem 0;">
 
-	<div class="donation-form-wrapper">
+    <div class="donation-form-wrapper">
 
-		<div class="donation-form">
-			<h1>Thank You!</h1>
-			<strong>Your donation was processed</strong>
-			<p>
-				Your generous donation will go a long way
-				to helping us fight stage IV breast cancer.
-				In fact, with your donation, we will be able
-				to fund our <a href="">own clinical trial</a> 
-				and give hopes to those who have lost it. 
-			</p>
-
-
-			<strong>Share your good deed and inspire others to do the same!</strong>
-			<div class="share-buttons">
+        <div class="donation-form">
+            <h1>Thank You!</h1>
+            <h5>Your donation was processed</h5>
+            <p>
+                Your generous donation will go a long way
+                to helping us fight stage IV breast cancer.
+                In fact, with your donation, we will be able
+                to fund our <a href="">own clinical trial</a>
+                and give hopes to those who have lost it.
+            </p>
+            <h5>Share your good deed and inspire others to do the same!</h5>
+            <div class="share-buttons">
                 <a href="#" class="social social-facebook">
                     <svg class="icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -42,14 +40,14 @@
                 </a>
             </div>
 
-		</div><!-- .donation-form -->
+        </div><!-- .donation-form -->
 
-	</div>
+    </div>
 
 </div>
 
 
-	</div>
+    </div>
 </div>
 
 
