@@ -3678,26 +3678,30 @@ input.email {
       text-align: center; }
 
 .card {
-  margin-bottom: 3rem;
+  border-bottom: 3rem solid #F1F5F7;
   overflow: hidden;
-  position: relative; }
-  @media (min-width: 576px) {
-    .card {
-      padding-bottom: 25%; } }
+  position: relative;
+  background: #D90084;
+  height: 100%;
+  transition: background-color .2s ease; }
+  .card.blue {
+    background: #009FDB; }
+  .card-img {
+    height: 180px;
+    background-size: cover !important; }
+    @media (min-width: 992px) {
+      .card-img {
+        height: 240px; } }
   .card-text {
-    background: #D90084;
     color: white;
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem 2em; }
     @media (min-width: 992px) {
       .card-text {
-        height: 220px;
         padding: 1rem 4rem; } }
-    .card-text.blue {
-      background: #009FDB; }
     .card-text p {
       font-size: 16px;
       font-size: 1.6rem;
@@ -3715,6 +3719,11 @@ input.email {
       transform: opacity .2s ease; }
       .card-text .card-cta:hover {
         opacity: .6; }
+  .card:hover {
+    background: #4e5862;
+    color: white; }
+    .card:hover a {
+      text-decoration: underline; }
 
 #leaving {
   padding-top: 4rem;

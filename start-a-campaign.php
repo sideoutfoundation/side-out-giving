@@ -4,11 +4,13 @@
 <h1 class="text-center">Start a Campaign</h1>
 
 <div class="container">
+    <br>
     <div class="row">
         <div class="col-md-5 offset-md-1">
             <div class="card">
-                <img src="https://d1dvsr1i84olon.cloudfront.net/wp-content/uploads/2017/07/21051252/get-dig-pink.jpg" alt="" height="480" width="480">
-
+                <div class="card-img"
+                    style="background: url(./img/get-dig-pink.jpg) no-repeat center center;">
+                </div>
                 <div class="card-text">
                     <h3>Host a Dig Pink&reg; Tournament</h3>
                     <p>
@@ -27,9 +29,10 @@
             </div>
         </div>
         <div class="col-md-5">
-            <div class="card">
-                <img src="https://d1dvsr1i84olon.cloudfront.net/wp-content/uploads/2017/07/21051249/get-ambassador.jpg" alt="Ambassador program" height="480" width="480">
-
+            <div class="card blue">
+                <div class="card-img"
+                    style="background: url(./img/set.jpg) no-repeat center center;">
+                </div>
                 <div class="card-text blue">
                     <h3>Host a Dig Pink Event at Your School</h3>
                     <p>
@@ -45,11 +48,12 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div><!-- row -->
+    <br>
     <h2 class="text-center">Want to create your own campaign?</h2>
     <p class="text-center">
         <a href="" class="btn">Start Your Campaign</a>
     </p>
-</div>
+</div><!-- container -->
 
 <?php include( './inc/footer.php'); ?>

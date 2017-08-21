@@ -1663,29 +1663,34 @@ h1.join-donate {
 }
 
 .card {
-  margin-bottom: 3rem;
-  @include media-breakpoint-up(sm) {
-    padding-bottom: 25%;
-  }
+  border-bottom: 3rem solid $light-gray;
   overflow: hidden;
   position: relative;
+  background: $pink;
+  height: 100%;
+  transition: background-color .2s ease;
+  &.blue {
+    background: $blue;
+  }
+
+  &-img {
+    height: 180px;
+    background-size: cover !important;
+    @include media-breakpoint-up(lg) {
+      height: 240px;
+    }
+  }
 
   &-text {
-    background: $pink;
     color: white;
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 1rem 2em;
 
     @include media-breakpoint-up(lg) {
-      height: 220px;
       padding: 1rem 4rem;
-    }
-
-    &.blue {
-      background: $blue;
     }
 
     p {
@@ -1708,7 +1713,14 @@ h1.join-donate {
         opacity: .6;
       }
     }
+  }
 
+  &:hover {
+    background: $gray;
+    color: white;
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
