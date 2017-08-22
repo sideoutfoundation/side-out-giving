@@ -69,7 +69,7 @@
             </div>
 
             <div class="form-actions">
-                <button class="btn next">Next</button>
+                <a href="embed-3.php"><button class="btn next">Next</button></a>
                 <div class="donation-added">
                     Your Donation:
                     <strong>$50</strong>

@@ -2306,7 +2306,8 @@ textarea {
   box-sizing: border-box;
   appearance: none;
   border-radius: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  font-size: 16px; }
   @media (min-width: 992px) {
     input[type="date"],
     input[type="datetime"],
@@ -2521,7 +2522,10 @@ input[type="radio"] {
 
 select {
   max-width: 100%;
+  font-size: 16px;
   border: 1px solid #d7e2e8; }
+  select:focus {
+    font-size: 16px; }
 
 input.email {
   height: 5rem; }
@@ -3379,10 +3383,22 @@ input.email {
         width: 14px; }
 
 .donation-form {
+  overflow: hidden;
   padding: 1rem 4rem; }
   .donation-form .share-buttons {
     margin-top: 1rem;
     margin-bottom: 3rem; }
+
+.donation-form-inner-wrapper {
+  overflow: hidden;
+  position: relative; }
+
+.donation-form-inner {
+  overflow: hidden;
+  transition: all .3s ease; }
+  .donation-form-inner.reveal {
+    overflow: visible;
+    transform: translateY(-80%); }
 
 .donation-buttons {
   display: flex;

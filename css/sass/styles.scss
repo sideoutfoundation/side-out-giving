@@ -337,6 +337,7 @@ textarea {
   appearance: none;
   border-radius: 0;
   -webkit-appearance: none;
+  font-size: 16px;
   @include media-breakpoint-up(lg) {
     max-width: 600px;
   }
@@ -483,7 +484,11 @@ input[type="radio"] {
 
 select {
   max-width: 100%;
+  font-size: 16px;
   border: $input-border;
+  &:focus {
+    font-size: 16px;
+  }
 }
 
 input.email {
@@ -1343,12 +1348,31 @@ main {
 }
 
 .donation-form {
+  overflow: hidden;
   padding: 1rem 4rem;
   .share-buttons {
     margin-top: 1rem;
     margin-bottom: 3rem;
   }
 }
+
+.donation-form-inner-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.donation-form-inner {
+  //height: 395px;
+  overflow: hidden;
+  transition: all .3s ease;
+  &.reveal {
+    overflow: visible;
+    transform: translateY(-80%);
+  }
+}
+
+
+
 
 .donation-buttons {
   display: flex;
