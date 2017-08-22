@@ -1367,7 +1367,7 @@ main {
   transition: all .3s ease;
   &.reveal {
     overflow: visible;
-    transform: translateY(-80%);
+    transform: translateY(calc(-100% + 4rem));
   }
 }
 
