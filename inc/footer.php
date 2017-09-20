@@ -1,13 +1,13 @@
     </div><!-- #content -->
 </main><!-- main -->
 
-<footer class="footer">
+<footer class="footer-donate">
     <div class="container">
         <div class="row">
 
             <div class="footer-left">
 
-                <nav class="footer-nav">
+                <nav class="donate-footer-nav">
                     <a href="#" title="">Donor Pledge</a>
                     <a href="#" title="">Disclaimer</a>
                     <a href="#" title="">Privacy Policy</a>

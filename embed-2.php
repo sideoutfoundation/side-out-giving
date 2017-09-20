@@ -25,10 +25,11 @@
 
         <div class="donation-form">
 
-            <div class="form-group">
+            <div class="form-group has-danger">
                 <label for="name" class="control-label">Name</label>
                 <input class="form-control" id="email" type="text" name="name"
                 placeholder="">
+                <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
             </div>
 
             <div class="form-group">
@@ -45,18 +46,18 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="form-group">
+                    <div class="form-group has-danger">
                         <label>State</label>
-                        <select id="state" class="" name="State">
+                        <select id="state" class="form-control-danger" name="State" required >
                             <option value="Alaska">AK</option>
                             <option value="Alabama">AL</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="form-group">
+                    <div class="form-group has-danger">
                         <label>Zip</label>
-                        <input type="text" class="form-control" name="zip" id="zip">
+                        <input type="text" class="form-control form-control-danger" name="zip" id="zip">
                     </div>
                 </div>
             </div>

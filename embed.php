@@ -27,16 +27,16 @@
                             <label for="switch_1">$25</label>
                             <input type="radio" id="switch_2" name="switch" value="no">
                             <label for="switch_2">$50</label>
-                            <input type="radio" id="switch_3" name="switch" value="no">
+                            <input type="radio" id="switch_3" name="switch" value="no" checked>
                             <label for="switch_3">$75</label>
                             <input type="radio" id="switch_4" name="switch" value="no">
                             <label for="switch_4">$100</label>
                             <input type="radio" id="switch_5" name="switch" value="no">
                             <label for="switch_5">$500</label>
-                            <input type="radio" id="switch_6" name="switch" value="no" checked>
+                            <input type="radio" id="switch_6" name="switch" value="no">
                             <label for="switch_6">Other</label>
                         </div>
-                        <div class="input-group other">
+                        <div class="input-group other" style="display: none;">
                             <span class="input-group-addon">$</span>
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                         </div>

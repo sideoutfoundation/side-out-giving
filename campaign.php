@@ -200,7 +200,7 @@
                         ball. Similarly, The Side-Out Foundation helps people with
                         breast cancer regain control of their lives.
                     </p>
-                    <a class="click" href="#video" rel="modal:open"></a>
+                    <a class="click" data-toggle="modal" data-target="#video"></a>
                 </div>
 
                 <div class="aside aside-trial">
@@ -218,7 +218,7 @@
                         clinical trial to examine the effects of individualized
                         treatment on patients with metastatic breast cancer.
                     </p>
-                    <a class="click" href="#research" rel="modal:open"></a>
+                    <a class="click" data-toggle="modal" data-target="#research"></a>
                 </div>
             </aside>
 

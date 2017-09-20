@@ -16,6 +16,7 @@
   'vendor/bootstrap/mixins/gradients',
   'vendor/bootstrap/utilities/flex',
   'vendor/bootstrap/utilities/visibility',
+  'vendor/bootstrap/forms',
   'vendor/bootstrap/progress',
   'vendor/bootstrap/input-group',
   'vendor/bootstrap/responsive-embed';
@@ -37,7 +38,6 @@ body {
   line-height: 1.66666667;
   color: $gray;
 }
-
 
 // -----------------------------------------------------------------------------
 // Typography
@@ -167,7 +167,7 @@ hr {
 }
 
 .btn,
-button,
+button:not(.close),
 input[type="submit"] {
   text-align: center;
   text-decoration: none;
@@ -1111,45 +1111,86 @@ main {
   }
 }
 
-.modal {
-  max-width: 72rem !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
 
-  &#research,
-  &#video {
-    padding: 0 !important;
+.modal-dialog {
+  @include media-breakpoint-up(sm) {
+    max-width: 72rem !important;
   }
+}
 
-  a.close-modal {
-    background: transparent url(../img/close-modal.png) no-repeat 0 0 !important;
-    background-size: 30px !important;
+
+.modal-cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    padding: 3rem;
   }
-  &-cta {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
+  .btn {
+    flex-shrink: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  strong {
+    @include font-size(1.6);
+    @include font_semi;
+    line-height: 1.25;
+    text-align: center;
+    padding: 1rem;
     @include media-breakpoint-up(md) {
-      flex-direction: row;
-      padding: 3rem;
+      text-align: left;
+      padding-right: 3rem;
+      @include font-size(1.8);
     }
-    .btn {
-      flex-shrink: 0;
-      padding-left: 2rem;
-      padding-right: 2rem;
+  }
+}
+
+#leaving {
+  .modal-body {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+      padding-left: 8rem;
+      padding-right: 8rem;
     }
-    strong {
-      @include font-size(1.6);
+    h2 {
       @include font_semi;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      @include font_semi;
+      @include font-size(1.6);
+      color: lighten($gray, 5%);
       line-height: 1.25;
-      text-align: center;
-      padding: 1rem;
-      @include media-breakpoint-up(md) {
-        text-align: left;
-        padding-right: 3rem;
-        @include font-size(1.8);
+      margin: 0 auto 1rem;
+      max-width: 36rem;
+    }
+
+    p {
+      @include font-size(1.4);
+      color: lighten($gray, 8%);
+      max-width: 41rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      margin: 0 auto;
+      height: 80px;
+      width: 80px;
+      @include media-breakpoint-up(sm) {
+        height: 150px;
+        width: 150px;
+      }
+    }
+    .share-buttons {
+      justify-content: center;
+      .social {
+        margin: 0 .5rem;
       }
     }
   }
@@ -1749,109 +1790,61 @@ h1.join-donate {
 }
 
 
-#leaving {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  @include media-breakpoint-up(sm) {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-  h2 {
-    @include font_semi;
-    margin-bottom: 1rem;
-  }
-  h3 {
-    @include font_semi;
-    @include font-size(1.6);
-    color: lighten($gray, 5%);
-    line-height: 1.25;
-    margin: 0 auto 1rem;
-    max-width: 36rem;
-  }
 
-  p {
-    @include font-size(1.4);
-    color: lighten($gray, 8%);
-    max-width: 41rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    margin: 0 auto;
-    height: 80px;
-    width: 80px;
-    @include media-breakpoint-up(sm) {
-      height: 150px;
-      width: 150px;
-    }
-  }
-  .share-buttons {
-    justify-content: center;
-    .social {
-      margin: 0 .5rem;
-    }
-  }
-}
 
 // -----------------------------------------------------------------------------
-// Footer
+// Footer Donate
 // -----------------------------------------------------------------------------
 
-.footer {
+.footer-donate {
   background: white;
   border-top: 1px solid $border-gray;
   color: $medium-gray;
-  padding: 3rem 0;
-}
+  padding: 4rem 0 5rem;
 
-.footer-left {
-  @include make-col-ready();
-  @include media-breakpoint-up(md) {
-    @include make-col(8);
-  }
-}
-
-.footer-nav {
-  margin: 0 0 1rem;
-  padding: 0;
-
-  a {
-    color: $medium-gray;
-    @include font_bold;
-    display: inline-block;
-    margin-right: 1rem;
-
-    &:hover {
-      color: $gray;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-}
-
-.footer-right {
-  @include make-col-ready();
-  @include media-breakpoint-up(md) {
-    @include make-col(4);
-    justify-content: flex-end;
-  }
-  display: flex;
-  align-items: center;
-
-  img {
-    height: 50px;
-    margin: 0 1rem;
-    //stripe logo
-    &:last-of-type {
-      height: 25px;
+  .footer-left {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
     }
   }
 
-}
+  .donate-footer-nav {
+    margin: 0;
+    padding: 0;
 
-.copyright {
-  margin-bottom: 2rem;
+    a {
+      color: $medium-gray;
+      @include font_bold;
+      display: inline-block;
+      margin-right: 1rem;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  .footer-right {
+    @include make-col-ready();
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+      justify-content: flex-end;
+      transform: translateY(-.85rem);
+    }
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      margin: 0 1rem;
+      &:last-of-type {
+        height: 25px;
+      }
+    }
+  }
+
+  .copyright {
+    margin-bottom: 2rem;
+  }
 }
