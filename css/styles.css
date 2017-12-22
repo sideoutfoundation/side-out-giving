@@ -6744,10 +6744,7 @@ a[href^="tel:"] {
   font-weight: normal;
   font-style: normal; }
 html {
-  font-size: 50%; }
-  @media (min-width: 992px) {
-    html {
-      font-size: 62.5%; } }
+  font-size: 62.5%; }
 
 body {
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;

@@ -9,27 +9,14 @@
   'mixins';
 
 @import
-  'vendor/bootstrap/normalize',
-  'vendor/bootstrap/bootstrap-grid',
-  'vendor/bootstrap/mixins',
-  'vendor/bootstrap/mixins/border-radius',
-  'vendor/bootstrap/mixins/gradients',
-  'vendor/bootstrap/utilities/flex',
-  'vendor/bootstrap/utilities/visibility',
-  'vendor/bootstrap/forms',
-  'vendor/bootstrap/progress',
-  'vendor/bootstrap/input-group',
-  'vendor/bootstrap/responsive-embed';
+  'vendor/bootstrap/bootstrap';
 
 @import
   'base',
   'fonts';
 
 html {
-  font-size: 50%;
-  @include media-breakpoint-up(lg) {
-    font-size: 62.5%; // 1rem = 10px
-  }
+  font-size: 62.5%; // 1rem = 10px
 }
 
 body {
