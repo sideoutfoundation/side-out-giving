@@ -6744,7 +6744,10 @@ a[href^="tel:"] {
   font-weight: normal;
   font-style: normal; }
 html {
-  font-size: 62.5%; }
+  font-size: 50%; }
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;
@@ -6823,7 +6826,7 @@ hr {
   height: 1px;
   position: relative;
   top: -1px; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     hr {
       margin: 4rem 0; } }
 
@@ -6847,7 +6850,7 @@ hr {
   padding: 3rem;
   width: 90vw;
   margin: 3rem auto; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .form-wrapper {
       flex: 0 0 50%;
       max-width: 50%;
@@ -6879,13 +6882,13 @@ input[type="submit"] {
   border-radius: 0;
   box-shadow: 0;
   transition: all .2s ease; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .btn,
     button:not(.close),
     input[type="submit"] {
       font-size: 16px;
       font-size: 1.6rem; } }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .btn,
     button:not(.close),
     input[type="submit"] {
@@ -6931,7 +6934,7 @@ input[type="submit"] {
   position: relative;
   border: 0;
   transition: background .2s ease; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .btn-facebook,
     .btn-twitter,
     .btn-google {
@@ -7026,7 +7029,7 @@ textarea {
   border-radius: 0;
   -webkit-appearance: none;
   font-size: 16px; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     input[type="date"],
     input[type="datetime"],
     input[type="datetime-local"],
@@ -7255,7 +7258,7 @@ input.email {
     position: absolute;
     margin-top: .1rem;
     margin-left: -2.6rem; }
-    @media (min-width: 576px) {
+    @media only screen and (min-width: 576px) {
       .form-check input {
         margin-left: -2rem;
         margin-top: .3rem; } }
@@ -7268,7 +7271,7 @@ input.email {
     padding-left: 2.6rem;
     margin-bottom: 0;
     cursor: pointer; }
-    @media (min-width: 576px) {
+    @media only screen and (min-width: 576px) {
       .form-check label {
         padding-left: 2rem; } }
 
@@ -7394,7 +7397,7 @@ input.email {
   padding: 1.6rem 0;
   position: relative;
   z-index: 1; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .header {
       padding: 2.5rem 0 2.4rem; } }
 
@@ -7426,7 +7429,7 @@ input.email {
 .logo {
   height: 30px;
   width: 113px; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .logo {
       width: 199px;
       height: 50px; } }
@@ -7519,7 +7522,7 @@ input.email {
 .main {
   background: #F1F5F7;
   padding: 4rem 0; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .main {
       min-height: 40vh; } }
 
@@ -7535,11 +7538,11 @@ input.email {
   display: flex;
   min-height: 200px;
   margin-top: -4rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .hero {
       height: 400px;
       max-height: 60vh; } }
-  @media (min-width: 1200px) {
+  @media only screen and (min-width: 1200) {
     .hero {
       height: 480px;
       max-height: 60vh;
@@ -7552,22 +7555,22 @@ input.email {
   align-items: center;
   display: flex;
   padding-bottom: 2rem; }
-  @media (min-width: 576px) {
+  @media only screen and (min-width: 576px) {
     .hero-text {
       align-items: flex-end; } }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .hero-text {
       padding-bottom: 4rem; } }
 
 .campaign-avatar {
   padding-right: 1.5rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .campaign-avatar {
       padding-right: 3rem; } }
   .campaign-avatar figure {
     width: 10rem;
     height: 10rem; }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .campaign-avatar figure {
         width: 14rem;
         height: 14rem; } }
@@ -7577,7 +7580,7 @@ input.email {
   font-weight: normal;
   font-size: 13px;
   font-size: 1.3rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .campaign-title {
       font-size: 18px;
       font-size: 1.8rem;
@@ -7588,7 +7591,7 @@ input.email {
     font-size: 2.6rem;
     line-height: 1.1;
     margin: .5rem 0; }
-    @media (min-width: 576px) {
+    @media only screen and (min-width: 576px) {
       .campaign-title h1 {
         font-family: 'Proxima Nova Bold', helvetica, sans-serif;
         font-weight: normal;
@@ -7604,7 +7607,7 @@ input.email {
   font-size: 13px;
   font-size: 1.3rem;
   line-height: 1.2; }
-  @media (min-width: 576px) {
+  @media only screen and (min-width: 576px) {
     .campaign-subtitle {
       font-size: 18px;
       font-size: 1.8rem; } }
@@ -7613,7 +7616,7 @@ input.email {
   background: white;
   margin-bottom: -4rem;
   padding: 4rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .campaign-details {
       padding: 6rem; } }
 
@@ -7645,7 +7648,7 @@ input.email {
     font-size: 3rem;
     line-height: 1.333333;
     margin: 0; }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .campaign-raised h2 {
         font-size: 44px;
         font-size: 4.4rem;
@@ -7655,7 +7658,7 @@ input.email {
       font-weight: normal;
       font-size: 20px;
       font-size: 2rem; }
-      @media (min-width: 768px) {
+      @media only screen and (min-width: 768px) {
         .campaign-raised h2 span {
           font-size: 30px;
           font-size: 3rem;
@@ -7667,7 +7670,7 @@ input.email {
   border-radius: 0;
   margin: 1rem 0;
   overflow: hidden; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .progress {
       max-width: 72rem; } }
   .progress .progress-bar {
@@ -7675,7 +7678,7 @@ input.email {
     height: 2rem;
     overflow: visible;
     position: relative; }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .progress .progress-bar {
         height: 3rem; } }
     .progress .progress-bar:after {
@@ -7696,7 +7699,7 @@ input.email {
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 1.25; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .progress-stats {
       max-width: 72rem; } }
 
@@ -7726,7 +7729,7 @@ input.email {
   .campaign-buttons .btn {
     display: block;
     margin-bottom: 1rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .campaign-buttons {
       margin-bottom: 0;
       flex: 0 0 66.6666666667%;
@@ -7734,7 +7737,7 @@ input.email {
       .campaign-buttons .btn {
         display: inline-block;
         margin-right: .4rem; } }
-  @media (min-width: 1200px) {
+  @media only screen and (min-width: 1200) {
     .campaign-buttons .btn-donate {
       min-width: 22rem; } }
 
@@ -7763,7 +7766,7 @@ input.email {
     .campaign-share {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .campaign-share {
       margin-bottom: 2rem;
       justify-content: flex-end;
@@ -7794,7 +7797,7 @@ input.email {
     .campaign-text {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .campaign-text {
       flex: 0 0 66.6666666667%;
       max-width: 66.6666666667%; }
@@ -7805,7 +7808,7 @@ input.email {
   background: #F1F5F7;
   margin-bottom: 4rem;
   padding: 3rem; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .campaign-events {
       padding: 4rem; } }
 
@@ -7839,7 +7842,7 @@ input.email {
     .campaign-learn-more {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .campaign-learn-more {
       flex: 0 0 33.3333333333%;
       max-width: 33.3333333333%;
@@ -7850,7 +7853,7 @@ input.email {
   border: 1px solid #d7e2e8;
   margin-bottom: 2rem;
   padding: 2rem 3rem 1rem; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .aside {
       margin-left: 1.5rem; } }
   .aside .img {
@@ -7871,10 +7874,10 @@ input.email {
     display: flex;
     align-items: center;
     justify-content: center; }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .aside .img {
         height: 130px; } }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .aside .img {
         height: 160px; } }
   .aside:hover .aside-play-button {
@@ -7909,7 +7912,7 @@ input.email {
   background: url(../img/research.jpg) no-repeat center center;
   background-size: cover; }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .modal-dialog {
     max-width: 72rem !important; } }
 
@@ -7919,7 +7922,7 @@ input.email {
   flex-direction: column;
   justify-content: center;
   padding: 1.5rem; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .modal-cta {
       flex-direction: row;
       padding: 3rem; } }
@@ -7935,7 +7938,7 @@ input.email {
     line-height: 1.25;
     text-align: center;
     padding: 1rem; }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .modal-cta strong {
         text-align: left;
         padding-right: 3rem;
@@ -7946,7 +7949,7 @@ input.email {
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center; }
-  @media (min-width: 576px) {
+  @media only screen and (min-width: 576px) {
     #leaving .modal-body {
       padding-left: 8rem;
       padding-right: 8rem; } }
@@ -7974,7 +7977,7 @@ input.email {
     margin: 0 auto;
     height: 80px;
     width: 80px; }
-    @media (min-width: 576px) {
+    @media only screen and (min-width: 576px) {
       #leaving .modal-body img {
         height: 150px;
         width: 150px; } }
@@ -7989,7 +7992,7 @@ input.email {
   align-items: center;
   margin: 0 0 2rem;
   padding: 1.4rem 2rem; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .activity-block {
       padding: 1.4rem 3rem; } }
   .activity-block .activity-icon {
@@ -8116,7 +8119,7 @@ input.email {
       padding: 0;
       text-align: center;
       vertical-align: middle; }
-      @media (min-width: 768px) {
+      @media only screen and (min-width: 768px) {
         .tabs li span {
           height: 24px;
           width: 24px;
@@ -8217,7 +8220,7 @@ input.email {
 #state {
   width: 100%; }
 
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .col-sm.city {
     flex: 0 0 45%; } }
 
@@ -8241,7 +8244,7 @@ input.email {
   background-repeat: no-repeat;
   background-size: 100px 19px;
   background-position: calc(100% - 1rem) center; }
-  @media (min-width: 576px) {
+  @media only screen and (min-width: 576px) {
     .cc-number {
       background-size: 133px 25px; } }
 
@@ -8283,7 +8286,7 @@ input.email {
       .carousel-nav .carousel-next .icon.icon-arrow-left {
         transform: rotate(180deg); }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   h1.join-donate {
     font-size: 30px;
     font-size: 3rem;
@@ -8296,7 +8299,7 @@ input.email {
   flex-wrap: wrap;
   justify-content: initial;
   margin: 2rem auto; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .donate-wrapper {
       padding: 1rem 0; } }
 
@@ -8326,11 +8329,11 @@ input.email {
     .donate-card {
       padding-right: 15px;
       padding-left: 15px; } }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .donate-card {
       flex: 0 0 50%;
       max-width: 50%; } }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .donate-card {
       flex: 0 0 33.3333333333%;
       max-width: 33.3333333333%; } }
@@ -8341,7 +8344,7 @@ input.email {
     border-top: 0;
     height: 100%;
     position: relative; }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .donate-card-inner {
         padding: 1rem 3rem 10rem; } }
     .donate-card-inner h3 {
@@ -8377,7 +8380,7 @@ input.email {
   justify-content: space-between; }
   .form-group-special div:first-child {
     margin-bottom: 2rem; }
-  @media (min-width: 992px) {
+  @media only screen and (min-width: 992px) {
     .form-group-special {
       display: flex; }
       .form-group-special div:first-child {
@@ -8385,7 +8388,7 @@ input.email {
   .form-group-special div {
     flex: 0 0 100%;
     max-width: 100%; }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .form-group-special div {
         flex: 0 0 48.3333333333%;
         max-width: 48.3333333333%; } }
@@ -8404,7 +8407,7 @@ input.email {
   background-color: white;
   flex: 0 0 100%;
   max-width: 100%; }
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .start-campaign {
       flex: 0 0 50%;
       max-width: 50%;
@@ -8459,7 +8462,7 @@ input.email {
   .card-img {
     height: 180px;
     background-size: cover !important; }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .card-img {
         height: 240px; } }
   .card-text {
@@ -8469,7 +8472,7 @@ input.email {
     bottom: 0;
     left: 0;
     padding: 1rem 2em; }
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       .card-text {
         padding: 1rem 4rem; } }
     .card-text p {
@@ -8522,7 +8525,7 @@ input.email {
       .footer-donate .footer-left {
         padding-right: 15px;
         padding-left: 15px; } }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .footer-donate .footer-left {
         flex: 0 0 50%;
         max-width: 50%; } }
@@ -8561,7 +8564,7 @@ input.email {
       .footer-donate .footer-right {
         padding-right: 15px;
         padding-left: 15px; } }
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       .footer-donate .footer-right {
         flex: 0 0 50%;
         max-width: 50%;
