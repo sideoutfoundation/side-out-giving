@@ -1310,8 +1310,9 @@ main {
 }
 
 
-.container[data-v-51fa7621] {
+#spark-app .container:first-child {
   padding: 0 !important;
+  outline: 11px dotted green;
 }
 
 .tabs {
