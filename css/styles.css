@@ -8120,7 +8120,7 @@ input.email {
       font-weight: normal;
       display: inline-block;
       letter-spacing: 0;
-      margin-right: .5rem;
+      margin-right: .25rem;
       padding: 0;
       text-align: center;
       vertical-align: middle; }
@@ -8147,7 +8147,7 @@ input.email {
 .donation-form {
   overflow: hidden;
   padding: 1rem 2rem; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (min-width: 350px) {
     .donation-form {
       padding: 1rem 4rem; } }
   .donation-form .share-buttons {
