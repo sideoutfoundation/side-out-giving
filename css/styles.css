@@ -8084,8 +8084,7 @@ input.email {
   background: white; }
 
 #spark-app .container:first-child {
-  padding: 0 !important;
-  outline: 11px dotted green; }
+  padding: 0 !important; }
 
 .tabs {
   display: flex;
