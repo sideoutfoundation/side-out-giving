@@ -27,6 +27,7 @@ body {
   @include font-size(1.8);
   line-height: 1.66666667;
   color: $gray;
+  background: transparent !important;
 }
 
 // -----------------------------------------------------------------------------
@@ -501,7 +502,7 @@ input.email {
     color: $gray;
     @include font-size(1.4);
     @include font_body;
-    padding-left: 2.6rem;
+    padding-left: 2.9rem;
     @media only screen and (min-width: 576px) {
       padding-left: 2rem;
     }

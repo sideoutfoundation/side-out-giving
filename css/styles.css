@@ -6755,7 +6755,8 @@ body {
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.66666667;
-  color: #4e5862; }
+  color: #4e5862;
+  background: transparent !important; }
 
 h1, h2, h3, h4, h5 {
   color: #0C2543;
@@ -7268,7 +7269,7 @@ input.email {
     font-size: 1.4rem;
     font-family: 'Proxima Nova Regular', helvetica, sans-serif;
     font-weight: normal;
-    padding-left: 2.6rem;
+    padding-left: 2.9rem;
     margin-bottom: 0;
     cursor: pointer; }
     @media only screen and (min-width: 576px) {
