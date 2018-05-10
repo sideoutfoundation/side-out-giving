@@ -27,7 +27,12 @@
                         </div>
                     </div><!-- .progress-stats -->
 
-                    <a href="donate.php" class="btn">Donate</a>
+                    <div class="actions">
+                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <small>
+                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                        </small>
+                    </div>
 
                 </div>
             </div>
@@ -37,7 +42,7 @@
         <img src="img/demo.jpg" height="" width="480" />
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Manchester United Junior High School</h3>
+                    <h3>Manchester United Junior High School Pirates Volleyball Team</h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -53,7 +58,12 @@
                         </div>
                     </div><!-- .progress-stats -->
 
-                        <a href="donate.php" class="btn">Donate</a>
+                     <div class="actions">
+                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <small>
+                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                        </small>
+                    </div>
 
                 </div>
             </div>
@@ -78,7 +88,12 @@
                         </div>
                     </div><!-- .progress-stats -->
 
-                        <a href="donate.php" class="btn">Donate</a>
+                    <div class="actions">
+                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <small>
+                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                        </small>
+                    </div>
 
                 </div>
             </div>
@@ -103,7 +118,12 @@
                         </div>
                     </div><!-- .progress-stats -->
 
-                        <a href="donate.php" class="btn">Donate</a>
+                    <div class="actions">
+                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <small>
+                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                        </small>
+                    </div>
 
                 </div>
             </div>
@@ -128,7 +148,12 @@
                         </div>
                     </div><!-- .progress-stats -->
 
-                        <a href="donate.php" class="btn">Donate</a>
+                    <div class="actions">
+                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <small>
+                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                        </small>
+                    </div>
 
                 </div>
             </div>

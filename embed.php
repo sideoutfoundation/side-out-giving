@@ -5,7 +5,7 @@
 
     <div class="donation-form-wrapper">
 
-        <ul class="tabs">
+        <ul class="tabs-nav">
             <li class="tab-link current" data-tab="tab-1">
                 <span>1</span>Donation
             </li>
@@ -53,15 +53,15 @@
                     </div>
 
                     <div class="form-check">
-                        <label>
-                            <input type="checkbox" name="anonymously" value="1" tabindex="">
+                        <input class="form-check-input" type="checkbox" value="1" id="anonymously">
+                        <label class="form-check-label" for="anonymously">
                             I would like to make this donation anonymously
                         </label>
                     </div>
 
                     <div class="form-check">
-                        <label>
-                            <input type="checkbox" name="in-honor" id="in-honor" value="1" tabindex="">
+                        <input type="checkbox" class="form-check-input" name="in-honor" id="in-honor" value="1" tabindex="">
+                        <label class="form-check-label" for="in-honor">
                             Give in honor or in memory of a loved one
                         </label>
                     </div>

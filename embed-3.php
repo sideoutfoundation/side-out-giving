@@ -5,7 +5,7 @@
 
     <div class="donation-form-wrapper">
 
-        <ul class="tabs">
+        <ul class="tabs-nav">
             <li class="tab-link completed" data-tab="tab-1">
                 <span>
                     <svg>
@@ -55,11 +55,11 @@
             </div>
 
             <div class="form-check">
-                <label>
-                    <input type="checkbox" name="anonymously" value="1" tabindex="">
-                    I'd like to cover the processing fee so 100% of my
-                    donation goes to Side-Out Foundation
-                </label>
+              <input class="form-check-input" type="checkbox" value="" id="fee">
+              <label class="form-check-label" for="fee">
+                I'd like to cover the processing fee so 100% of my 
+                donation goes to Side-Out Foundation
+              </label>
             </div>
 
             <div class="form-actions">

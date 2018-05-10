@@ -5,7 +5,7 @@
 
     <div class="donation-form-wrapper">
 
-        <ul class="tabs">
+        <ul class="tabs-nav">
             <li class="tab-link completed" data-tab="tab-1">
                 <span>
                     <svg>
@@ -29,13 +29,18 @@
                 <label for="name" class="control-label">Name</label>
                 <input class="form-control" id="email" type="text" name="name"
                 placeholder="">
-                <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
             </div>
 
             <div class="form-group">
                 <label for="email" class="control-label">Email</label>
                 <input class="form-control" id="email" type="email" name="email"
                 placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" class="form-control" id="phone-number">
             </div>
 
             <div class="row">

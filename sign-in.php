@@ -37,8 +37,9 @@
         </div>
 
         <div class="form-check">
-            <label>
-                <input type="checkbox" name="remember" value="1" tabindex="3" checked="">Remember Me
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" tabindex="3">
+            <label class="form-check-label" for="defaultCheck1">
+                Remember Me
             </label>
         </div>
 
