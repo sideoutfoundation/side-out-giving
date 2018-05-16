@@ -26,7 +26,7 @@
         <div class="form-row">
             <div class="form-group col-md">
                 <label for="sponsored" class="control-label">Sponsored/ represented by</label>
-                <select name="sponsored" class="form-control">
+                <select name="sponsored" class="custom-select">
                     <option value="" class="placeholder" selected="selected">Select</option>
                     <option value="value1">Value 1</option>
                     <option value="value2">Value 2</option>
@@ -45,7 +45,7 @@
             </div>
             <div class="form-group col-md">
                 <label for="state" class="control-label">State</label>
-                <select name="state" id="state" class="form-control">
+                <select name="state" id="state" class="custom-select">
                     <option value="" class="placeholder" selected="selected">Select a State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>

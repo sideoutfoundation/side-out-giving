@@ -53,7 +53,7 @@
                 <div class="col-sm">
                     <div class="form-group has-danger">
                         <label>State</label>
-                        <select id="state" class="form-control-danger" name="State" required >
+                        <select id="state" class="custom-select" name="State" required >
                             <option value="Alaska">AK</option>
                             <option value="Alabama">AL</option>
                         </select>

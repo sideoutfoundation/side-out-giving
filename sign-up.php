@@ -25,12 +25,7 @@
                 Sign in with Google
             </a>
         </div>
-        <div class="form-group has-success">
-            <label class="form-control-label" for="inputSuccess1">Input with success</label>
-            <input type="text" class="form-control is-valid" id="inputSuccess1">
-            <div class="valid-feedback">Looks good!</div>
-            <small class="form-text text-muted">Example help text that remains unchanged.</small>
-        </div>
+
         <div class="form-group">
             <label for="name" class="control-label">Name</label>
             <input class="form-control" id="email" type="text" name="name">
@@ -41,28 +36,23 @@
             <input class="form-control" id="email" type="email" name="email">
         </div>
 
-        <div class="row">
-            <div class="col-sm">
-                <div class="form-group">
-                    <label for="password" class="control-label">Password</label><input class="form-control" id="password"
+        <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" class="form-control" id="phone-number">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label for="password" class="control-label">Password</label>
+                <input class="form-control" id="password"
                     type="password" name="password">
-                </div>
             </div>
-            <div class="col-sm">
-                <div class="form-group">
-                    <label for="password_confirmation" class="control-label">Confirm Password</label>
-                    <input class="form-control" id="password_confirmation" type="password" name="password_confirmation">
-                </div>
+            <div class="form-group col-md">
+                <label for="password_confirmation" class="control-label">Confirm Password</label>
+                <input class="form-control" id="password_confirmation" type="password" name="password_confirmation">
             </div>
         </div>
 
-        <div class="form-group has-danger">
-            <label class="form-control-label" for="inputDanger1">Input with danger</label>
-            <input type="text" class="form-control is-invalid" id="inputDanger1">
-            <div class="valid-feedback">Sorry, that username's taken. Try another?</div>
-            <small class="form-text text-muted">Example help text that remains unchanged.</small>
-        </div>
-        
         <div class="form-actions">
             <input class="btn" id="" name="" type="submit" value="Sign Up">
         </div>
