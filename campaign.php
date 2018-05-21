@@ -13,7 +13,7 @@
                     </figure>
                 </div>
                 <div class="campaign-title">
-                    Dig Pink Rally
+                    2018 Dig Pink School
                     <h1>Averill Park High School</h1>
                     <div class="campaign-subtitle">
                         Raising funds for 2017 Power of Pink Queensbury
@@ -83,8 +83,8 @@
 
                 <div class="campaign-buttons">
                     <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-                    <a href="" class="btn btn-blue-inverse"
-                    data-toggle="tooltip" data-placement="bottom" 
+                    <a href="sign-in-campaign.php" class="btn btn-blue-inverse"
+                    data-toggle="tooltip" data-placement="bottom"
                     title="" data-original-title="Become a supporter. Increase your donation making your own fundraising page which will support this campaign. Then share it with family and friends.">
                         Fundraise for this Campaign
                     </a>

@@ -1,7 +1,7 @@
 <?php include( './inc/header.php'); ?>
 
     <h1 class="text-center regular join-donate">
-        You are joining a cause by supporting <strong>Dig Pink Tournament</strong>
+        You are joining a cause by supporting <strong>2018 Dig Pink School</strong>
     </h1>
 
     <div class="form-wrapper start-campaign">
@@ -134,7 +134,7 @@
         <div class="form-check">
             <input type="checkbox" class="form-check-input" name="" value="1" tabindex="3" checked>
             <label class="form-check-label">
-                By checking this box, you acknowledge that funds raised through your Dig Pink titled event will be submitted to the Side-Out Foundation (Tax I.D. 20-2510044). Dig Pink is a registered trademark of The Side-Out Foundation and, as such, The Side-Out Foundation is responsible for the utilization of donations raised under the Dig Pink name & logo. we respectfully ask that you adhere to this guidelines and submit all proceeds from your Dig Pink events directly to the Side-Out Foundation.
+                By checking this box, you acknowledge that funds raised through your Dig Pink titled event will be submitted to the Side-Out Foundation (Tax I.D. 20-2510044). Dig Pink is a registered trademark of The Side-Out Foundation and, as such, The Side-Out Foundation is responsible for the allocation of funds raised under the Dig Pink name & logo.  All proceeds from Dig Pink title events fund Side-Out programs and stage IV clinical research.
             </label>
         </div>
 

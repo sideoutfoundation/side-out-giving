@@ -7511,9 +7511,14 @@ hr {
       margin-left: 25%; } }
   .form-wrapper h1, .form-wrapper h2 {
     margin-top: 0; }
+  .form-wrapper h1 {
+    text-align: center; }
 
 .form-actions .btn, .form-actions input[type=submit] {
   margin: 10px 0; }
+
+.form-actions .btn-full {
+  width: 100%; }
 
 .btn,
 button:not(.close),
@@ -8188,7 +8193,21 @@ div.alert {
       min-height: 40vh; } }
 
 .social-logins {
-  margin-bottom: 20px; }
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+  .social-logins a {
+    font-weight: 500;
+    width: 49%; }
+    @media only screen and (max-width: 768px) {
+      .social-logins a {
+        width: 100%; } }
 
 .hero {
   background: black;
@@ -8386,7 +8405,8 @@ div.alert {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
   @media only screen and (min-width: 992px) {
     .campaign-share {
       margin-bottom: 20px;
@@ -8681,9 +8701,17 @@ div.alert {
     color: #7e8b98; }
 
 .share-buttons {
-  display: none; }
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #d7e2e8;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  width: 100%; }
   @media only screen and (min-width: 992px) {
     .share-buttons {
+      border-bottom: none;
+      padding-top: 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -9078,6 +9106,8 @@ div.alert {
       font-size: 20px;
       line-height: 1.2;
       margin: 0 0 10px; }
+      .donate-card-inner h3 a {
+        color: #0C2543; }
     .donate-card-inner .actions {
       position: absolute;
       bottom: 10px;
@@ -9271,7 +9301,21 @@ div.alert {
         max-width: 50%; } }
   .footer-donate .donate-footer-nav {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      .footer-donate .donate-footer-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
     .footer-donate .donate-footer-nav a {
       color: #828D9A;
       font-family: 'Proxima Nova Bold', helvetica, sans-serif;
@@ -9291,6 +9335,9 @@ div.alert {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9317,7 +9364,56 @@ div.alert {
   .footer-donate .copyright {
     margin-bottom: 30px;
     font-size: 14px;
-    line-height: 1.4; }
+    line-height: 1.4;
+    text-align: center; }
     @media only screen and (min-width: 768px) {
       .footer-donate .copyright {
-        font-size: 16px; } }
+        font-size: 16px;
+        text-align: left; } }
+
+.center {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  /*    a {
+      color: $black;
+    }*/ }
+  @media only screen and (min-width: 768px) {
+    .center {
+      width: 100%; } }
+
+.center-thankyou {
+  margin: auto;
+  width: 60%; }
+  .center-thankyou a {
+    color: #D90084; }
+
+.or {
+  background-color: white;
+  padding: 7px;
+  padding-top: 15px;
+  color: #D90084;
+  position: relative;
+  margin-left: 47%;
+  z-index: 5; }
+
+.share-thankyou {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: auto;
+  margin-top: 1rem !important;
+  margin-left: 0;
+  border-bottom: none; }
+  .share-thankyou .social {
+    margin: 0 5px 5px 0; }
+
+.or-line {
+  margin-top: -1rem; }

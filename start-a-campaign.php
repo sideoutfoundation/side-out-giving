@@ -6,6 +6,7 @@
 <div class="container">
     <br>
     <div class="row">
+        <div class="center"><h2>Sign In for the 2018 Dig Pink School</h2></div>
         <div class="col-md-5 offset-md-1">
             <div class="card">
                 <div class="card-img"

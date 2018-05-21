@@ -3,9 +3,10 @@
 
 
 <div class="row">
+
     <div class="form-wrapper sign-up">
 
-        <h1>Sign Up</h1>
+        <h1>Create an Accaunt</h1>
 
         <div class="social-logins">
             <a href="#" class="btn-facebook">
@@ -25,6 +26,9 @@
                 Sign in with Google
             </a>
         </div>
+
+        <span class="or">OR</span>
+        <hr class="or-line"/>
 
         <div class="form-group">
             <label for="name" class="control-label">Name</label>
@@ -54,10 +58,10 @@
         </div>
 
         <div class="form-actions">
-            <input class="btn" id="" name="" type="submit" value="Sign Up">
+            <input href="sign-up-thankyou.php" class="btn btn-full" id="" name="" type="submit" value="Sign Up">
         </div>
 
-        <strong>Already have an account? <a href="sign-in.php" title="">Sign In</a></strong>
+        <strong>Already have an account? <a href="sign-in.php" title="">Login</a></strong>
 
     </div><!-- .form-wrapper -->
 </div><!-- .row -->

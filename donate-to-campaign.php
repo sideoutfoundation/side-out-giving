@@ -11,7 +11,7 @@
 
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Averill Park High School</h3>
+                    <h3><a href="campaign.php">Averill Park High School</a></h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -28,9 +28,9 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
                         <small>
-                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
                         </small>
                     </div>
 
@@ -42,7 +42,7 @@
         <img src="img/demo.jpg" height="" width="480" />
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Manchester United Junior High School Pirates Volleyball Team</h3>
+                    <h3><a href="campaign.php">Manchester United Junior High School Pirates Volleyball Team</a></h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -59,9 +59,9 @@
                     </div><!-- .progress-stats -->
 
                      <div class="actions">
-                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
                         <small>
-                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
                         </small>
                     </div>
 
@@ -72,7 +72,7 @@
         <img src="img/demo.jpg" height="" width="480" />
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Title</h3>
+                    <h3><a href="campaign.php">Title</a></h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -89,9 +89,9 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
                         <small>
-                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
                         </small>
                     </div>
 
@@ -102,7 +102,7 @@
         <img src="img/demo.jpg" height="" width="480" />
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Title</h3>
+                    <h3><a href="campaign.php">Title</a></h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -119,9 +119,9 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
                         <small>
-                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
                         </small>
                     </div>
 
@@ -132,7 +132,7 @@
         <img src="img/demo.jpg" height="" width="480" />
             <div class="donate-card-inner">
                 <div class="card-description">
-                    <h3>Title</h3>
+                    <h3><a href="campaign.php">Title</a></h3>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
@@ -149,9 +149,9 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="donate.php" role="button" class="btn">Donate</a>
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
                         <small>
-                            <a href="sign-up.php" role="button">or fundraise for this</a>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
                         </small>
                     </div>
 
@@ -161,4 +161,5 @@
     </div>
 </div>
 
+<?php include( './inc/modal.php'); ?>
 <?php include( './inc/footer.php'); ?>

@@ -16,7 +16,7 @@
                 and give hopes to those who have lost it.
             </p>
             <h5>Share your good deed and inspire others to do the same!</h5>
-            <div class="share-buttons">
+            <div class="share-buttons share-thankyou">
                 <a href="#" class="social social-facebook">
                     <svg class="icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"

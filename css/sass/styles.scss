@@ -156,11 +156,18 @@ hr {
   h1, h2 {
     margin-top: 0;
   }
+  h1 {
+    text-align: center;
+  }
 }
 
 .form-actions {
   .btn, input[type=submit] {
     margin: 10px 0;
+  }
+
+  .btn-full {
+    width: 100%;
   }
 }
 
@@ -788,7 +795,18 @@ div.alert {
 }
 
 .social-logins {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  a {
+    font-weight: 500;
+    width: 49%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
 }
 
 main {
@@ -995,6 +1013,7 @@ main {
 .campaign-share {
   display: flex;
   justify-content: center;
+  width: 100%;
   @media only screen and (min-width: 992px) {
     margin-bottom: 20px;
     flex: 0 0 155px;
@@ -1320,8 +1339,17 @@ main {
 }
 
 .share-buttons {
-  display: none;
+  //display: none;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 1px solid #d7e2e8;
+  padding-bottom: 25px;
+  padding-top: 15px;
+  width: 100%;
   @media only screen and (min-width: 992px) {
+    border-bottom: none;
+    padding-top: 0;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
@@ -1718,6 +1746,9 @@ h1.join-donate {
       @include font-size(2);
       line-height: 1.2;
       margin: 0 0 10px;
+      a {
+        color: $black;
+      }
     }
 
     .actions {
@@ -1929,6 +1960,13 @@ h1.join-donate {
   .donate-footer-nav {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+    }
 
     a {
       color: $medium-gray;
@@ -1950,6 +1988,7 @@ h1.join-donate {
 
   .footer-right {
     @include make-col-ready();
+    justify-content: center;
     @media only screen and (min-width: 768px) {
       @include make-col(6);
       justify-content: flex-end;
@@ -1971,8 +2010,60 @@ h1.join-donate {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.4;
+    text-align: center;
     @media only screen and (min-width: 768px) {
       font-size: 16px;
+      text-align: left;
     }
   }
+}
+
+.center {
+margin: auto;
+width: 70%;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      width: 100%;
+    }
+
+/*    a {
+      color: $black;
+    }*/
+}
+
+.center-thankyou {
+  margin: auto;
+  width: 60%;
+  a {
+    color: $pink;
+  }
+}
+
+.or {
+  background-color: white;
+  padding: 7px;
+  padding-top: 15px;
+  color: $pink;
+  position: relative;
+  margin-left: 47%;
+  z-index: 5;
+}
+
+.share-thankyou {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
+  margin-top: 1rem !important;
+  margin-left: 0;
+  border-bottom: none;
+
+  .social {
+    margin: 0 5px 5px 0 ;
+  }
+}
+
+.or-line {
+  margin-top: -1rem;
 }

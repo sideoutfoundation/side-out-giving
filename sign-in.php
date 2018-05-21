@@ -26,6 +26,9 @@
             </a>
         </div>
 
+        <span class="or">OR</span>
+        <hr class="or-line"/>
+
         <div class="form-group">
             <label for="email" class="control-label">Email</label>
             <input class="form-control" id="email" type="email" name="email">
@@ -44,7 +47,7 @@
         </div>
 
         <div class="form-actions">
-            <input class="btn" id="" name="" type="submit" value="Sign In">
+            <input class="btn btn-full" id="" name="" type="submit" value="Login">
         </div>
 
         <strong>Need an account? <a href="sign-up.php" title="">Sign Up</a></strong>

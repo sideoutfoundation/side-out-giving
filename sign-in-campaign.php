@@ -1,0 +1,64 @@
+
+<?php include( './inc/header.php'); ?>
+
+
+<div class="row">
+    <div class="center"><h2>Sign In for the <a href="campaign.php">2018 Dig Pink School</a></h2></div>
+    <div class="form-wrapper sign-up">
+
+        <h1>Sign In</h1>
+
+        <div class="social-logins">
+            <a href="#" class="btn-facebook">
+                <span>
+                    <svg role="img" class="icon-facebook">
+                        <use xlink:href="./img/sprites.svg#icon-facebook"></use>
+                    </svg>
+                </span>
+                Sign in with Facebook
+            </a>
+            <a href="#" class="btn-google">
+                <span>
+                    <svg role="img" class="icon-google">
+                        <use xlink:href="./img/sprites.svg#icon-google"></use>
+                    </svg>
+                </span>
+                Sign in with Google
+            </a>
+        </div>
+
+        <span class="or">OR</span>
+        <hr class="or-line"/>
+
+        <form action="campaign.php">
+            <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input class="form-control" id="email" type="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="control-label">Password</label><input class="form-control" id="password"
+                type="password" name="password">
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" tabindex="3">
+                <label class="form-check-label" for="defaultCheck1">
+                    Remember Me
+                </label>
+            </div>
+
+
+            <div class="form-actions">
+                <input class="btn btn-full" id="" name="" type="submit" value="Login">
+            </div>
+        </form>
+
+        <strong>Need an account? <a href="sign-up-campaign.php" title="">Sign Up</a></strong>
+        <br>
+        <a href="#" title="">Forgot password?</a>
+
+    </div><!-- .form-wrapper -->
+</div><!-- .row -->
+
+<?php include( './inc/footer.php'); ?>
