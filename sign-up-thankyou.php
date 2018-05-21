@@ -8,7 +8,7 @@
     </h1>
 
     <div class="form-wrapper sign-up">
-        <h2 class="header-thank-you">Taking the first step towards making an impact!</h2>
+        <h2 class="header-thank-you">Take the first step towards making an impact!</h2>
         <strong>Did you know that you get a FREE fundraising webpage?</strong>
 
         <div class="form-group">
