@@ -6,7 +6,7 @@
 
     <div class="form-wrapper sign-up">
 
-        <h1>Create an Accaunt</h1>
+        <h1>Create an Account</h1>
 
         <div class="social-logins">
             <a href="#" class="btn-facebook">

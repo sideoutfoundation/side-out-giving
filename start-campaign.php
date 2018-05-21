@@ -5,7 +5,7 @@
     </h1>
 
     <div class="form-wrapper start-campaign">
-        <form class="">
+        <form class="" action="sign-up-thankyou.php">
         <div class="form-group">
             <label for="name" class="control-label">Name</label>
             <input class="form-control" id="name" type="text" name="name">

@@ -3,7 +3,10 @@
 
 
 <div class="row">
-    <div class="center"><h2>Sign In for the <a href="campaign.php">2018 Dig Pink School</a></h2></div>
+    <h1 class="text-center regular join-donate">
+        Sign In for the <br/><strong><a href="campaign.php">2018 Dig Pink School</a></strong>
+    </h1>
+
     <div class="form-wrapper sign-up">
 
         <h1>Sign In</h1>

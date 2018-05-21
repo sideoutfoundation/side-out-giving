@@ -7469,6 +7469,8 @@ hr {
 
 .text-center {
   text-align: center; }
+  .text-center a {
+    color: #0C2543; }
 
 .text-right {
   text-align: right; }
@@ -7601,13 +7603,18 @@ input[type="submit"] {
 .btn-facebook,
 .btn-twitter,
 .btn-google {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #009FDB;
   color: white;
   font-size: 14px;
   font-weight: 600;
   margin: 0 0 10px;
-  padding: 8px 30px 10px;
+  padding: 10px 20px 10px;
   position: relative;
   border: 0;
   -webkit-transition: background .2s ease;
@@ -7619,7 +7626,7 @@ input[type="submit"] {
     .btn-google {
       display: inline-block;
       margin: 0;
-      padding: 8px 20px 6px; } }
+      padding: 10px 20px 10px; } }
   .btn-facebook:hover, .btn-facebook:focus,
   .btn-twitter:hover,
   .btn-twitter:focus,
@@ -7634,10 +7641,11 @@ input[type="submit"] {
     .btn-facebook span svg,
     .btn-twitter span svg,
     .btn-google span svg {
+      margin: auto;
       width: 16px;
       height: 16px;
       fill: white;
-      vertical-align: -2px; }
+      vertical-align: -3px; }
 
 .btn-facebook {
   background: #3B5998; }
@@ -9412,3 +9420,6 @@ div.alert {
 
 .or-line {
   margin-top: -1rem; }
+
+.header-thank-you {
+  text-align: left; }
