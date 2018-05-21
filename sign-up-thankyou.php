@@ -16,7 +16,7 @@
         <strong>Kickstart Your Fundraising</strong>
         <div class="form-group">
             <p>Did you know that having funds on your fundraising page to start increases donor contributions by 33%? It’s like putting a $1 in the donation jar!  Make the first donation and inspire your visitors contribute and help you reach your fundraising goal.</p>
-                            <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
+            <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
         </div>
 
 
@@ -31,5 +31,5 @@
 
     </div><!-- .form-wrapper -->
 </div><!-- .row -->
-
+<?php include( './inc/modal.php'); ?>
 <?php include( './inc/footer.php'); ?>

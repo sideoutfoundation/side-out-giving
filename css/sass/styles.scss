@@ -156,9 +156,12 @@ hr {
   h1, h2 {
     margin-top: 0;
   }
+
   h1 {
     text-align: center;
   }
+
+
 }
 
 .form-actions {
@@ -2019,24 +2022,17 @@ h1.join-donate {
 }
 
 .center {
-margin: auto;
-width: 70%;
-    text-align: center;
-
-    @media only screen and (min-width: 768px) {
-      width: 100%;
-    }
-
-/*    a {
-      color: $black;
-    }*/
+  margin: auto;
+  width: 70%;
+  text-align: center;
 }
 
 .center-thankyou {
   margin: auto;
   width: 60%;
-  a {
-    color: $pink;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 }
 

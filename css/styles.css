@@ -9374,19 +9374,14 @@ div.alert {
 .center {
   margin: auto;
   width: 70%;
-  text-align: center;
-  /*    a {
-      color: $black;
-    }*/ }
-  @media only screen and (min-width: 768px) {
-    .center {
-      width: 100%; } }
+  text-align: center; }
 
 .center-thankyou {
   margin: auto;
   width: 60%; }
-  .center-thankyou a {
-    color: #D90084; }
+  @media only screen and (max-width: 768px) {
+    .center-thankyou {
+      width: 100%; } }
 
 .or {
   background-color: white;
