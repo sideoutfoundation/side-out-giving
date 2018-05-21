@@ -9,8 +9,8 @@
         <strong>Did you know that you get a FREE fundraising webpage?</strong>
 
         <div class="form-group">
-            <p>It’s TRUE! Customize your free fundraising web page to make it unique and represent your initiative. You can add text, pictures, even create a video letting those within your community know what you are doing.  Inspire your audience and enhance the success of your campaign!</p>
-                    <a href="">Customize My Page</a>
+            <p>It’s TRUE! Customize your free fundraising web page to make it unique and represent your initiative. You can add text, pictures, even create a video letting those within your community know what you are doing.  Inspire your audience and enhance the success of your campaign!
+                    <a href="">Customize My Page</a></p>
         </div>
 
         <strong>Kickstart Your Fundraising</strong>
