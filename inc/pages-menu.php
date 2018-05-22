@@ -13,6 +13,7 @@
         <a class="dropdown-item" href="sign-in-campaign.php">Sign In from Campaign</a>
         <a class="dropdown-item" href="sign-up-thankyou.php">Sign Up Thank You</a>
         <a class="dropdown-item" href="campaign.php">Campaign</a>
+        <a class="dropdown-item" href="parent-campaign.php">Parent Campaign</a>
         <a class="dropdown-item" href="embed.php">Embed (1)</a>
         <a class="dropdown-item" href="embed-2.php">Embed (2)</a>
         <a class="dropdown-item" href="embed-3.php">Embed (3)</a>

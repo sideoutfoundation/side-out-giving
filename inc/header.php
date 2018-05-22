@@ -53,19 +53,12 @@
         });
     </script> -->
 
-
-
 </head>
-
 <body>
-
     <?php
-
         // Menu for HTML prototypes.
         include( './inc/pages-menu.php');
-
     ?>
-
     <div id="top"></div>
     <header class="header">
         <div class="container">
@@ -76,7 +69,7 @@
 
                 <div class="search">
                     <form id="demo-2">
-                        <input type="search" placeholder="Search"><img src="../img/search.svg" width="24" height="24"/>
+                        <input type="search" placeholder="Search for a supporting campaign"><img src="../img/search.svg" width="24" height="24"/>
                     </form>
                 </div>
             </div>

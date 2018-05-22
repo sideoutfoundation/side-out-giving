@@ -7695,7 +7695,6 @@ input[type="email"],
 input[type="month"],
 input[type="number"],
 input[type="password"],
-input[type="search"],
 input[type="tel"],
 input[type="text"],
 input[type="time"],
@@ -7729,7 +7728,6 @@ textarea {
     input[type="month"],
     input[type="number"],
     input[type="password"],
-    input[type="search"],
     input[type="tel"],
     input[type="text"],
     input[type="time"],
@@ -7745,7 +7743,6 @@ textarea {
   input[type="month"]:focus,
   input[type="number"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   input[type="tel"]:focus,
   input[type="text"]:focus,
   input[type="time"]:focus,
@@ -7765,7 +7762,6 @@ textarea {
   input[type="month"]::-webkit-input-placeholder,
   input[type="number"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
-  input[type="search"]::-webkit-input-placeholder,
   input[type="tel"]::-webkit-input-placeholder,
   input[type="text"]::-webkit-input-placeholder,
   input[type="time"]::-webkit-input-placeholder,
@@ -7781,7 +7777,6 @@ textarea {
   input[type="month"]:-moz-placeholder,
   input[type="number"]:-moz-placeholder,
   input[type="password"]:-moz-placeholder,
-  input[type="search"]:-moz-placeholder,
   input[type="tel"]:-moz-placeholder,
   input[type="text"]:-moz-placeholder,
   input[type="time"]:-moz-placeholder,
@@ -7798,7 +7793,6 @@ textarea {
   input[type="month"]::-moz-placeholder,
   input[type="number"]::-moz-placeholder,
   input[type="password"]::-moz-placeholder,
-  input[type="search"]::-moz-placeholder,
   input[type="tel"]::-moz-placeholder,
   input[type="text"]::-moz-placeholder,
   input[type="time"]::-moz-placeholder,
@@ -7815,7 +7809,6 @@ textarea {
   input[type="month"]:-ms-input-placeholder,
   input[type="number"]:-ms-input-placeholder,
   input[type="password"]:-ms-input-placeholder,
-  input[type="search"]:-ms-input-placeholder,
   input[type="tel"]:-ms-input-placeholder,
   input[type="text"]:-ms-input-placeholder,
   input[type="time"]:-ms-input-placeholder,
@@ -7831,7 +7824,6 @@ textarea {
   input[type="month"].input--large,
   input[type="number"].input--large,
   input[type="password"].input--large,
-  input[type="search"].input--large,
   input[type="tel"].input--large,
   input[type="text"].input--large,
   input[type="time"].input--large,
@@ -8322,6 +8314,10 @@ div.alert {
   @media only screen and (min-width: 576px) {
     .campaign-subtitle {
       font-size: 18px; } }
+  .campaign-subtitle a {
+    color: white; }
+    .campaign-subtitle a:hover {
+      color: #009FDB; }
 
 .campaign-details {
   background: white;
@@ -9468,7 +9464,7 @@ div.alert {
   max-width: 100%;
   background: transparent;
   border: solid 1px transparent;
-  padding: 15px 10px 15px 12px;
+  padding: 7px 7px;
   width: 55px;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
@@ -9511,7 +9507,6 @@ div.alert {
   width: 100%;
   max-width: 100%;
   background-color: #fff;
-  border-color: #66CC75;
   border: solid 1px #ccc;
   -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
   box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
@@ -9523,8 +9518,9 @@ div.alert {
 @media only screen and (min-width: 768px) {
   #demo-2 input[type=search] {
     background: transparent;
-    border: solid 1px transparent;
-    width: 55px;
+    border: solid 1px #ccc;
+    width: 100%;
+    max-width: 100%;
     /*      border-radius: 10em;*/
     -webkit-transition: all .5s;
     -o-transition: all .5s;
@@ -9535,23 +9531,22 @@ div.alert {
   #demo-2 img {
     position: relative;
     z-index: 5;
-    margin-top: 12px;
+    margin-top: 10px;
     width: 24px;
     height: 24px; }
   #demo-2 input[type=search]:hover {
     background-color: transparent; }
-  #demo-2 input[type=search]:focus {
+  #demo-2 input[type=search] {
     width: 100%;
     max-width: 100%;
-    padding-left: 32px;
-    padding: 25px 50px 25px 50px;
+    padding-left: 15px;
     color: #000;
     background-color: transparent;
     cursor: auto; }
   #demo-2 input:-moz-placeholder {
-    color: transparent; }
+    color: #999; }
   #demo-2 input::-webkit-input-placeholder {
-    color: transparent; } }
+    color: #999; } }
 
 .owl-nav {
   display: -webkit-box;

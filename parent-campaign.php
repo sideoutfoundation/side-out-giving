@@ -2,7 +2,7 @@
 </div>
 <section class="hero"
     style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .4) 100% ),
-    url(../img/demo.jpg);">
+    url(../img/set.jpg);">
 
     <div class="container">
         <div class="row">
@@ -14,10 +14,7 @@
                 </div>
                 <div class="campaign-title">
                     2018 Dig Pink School
-                    <h1>Averill Park High School</h1>
-                    <div class="campaign-subtitle">
-                        Raising funds for <a href="parent-campaign.php">2017 Power of Pink Queensbury</a>
-                    </div>
+                    <h1>2017 Power of Pink Queensbury</h1>
                 </div>
             </div>
         </div>
@@ -63,7 +60,7 @@
             <div class="campaign-main">
                 <div class="campaign-raised">
                     <h2>
-                        $550 <span>Raised</span>
+                        $3050 <span>Raised</span>
                     </h2>
                     <div class="progress">
                         <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -72,10 +69,10 @@
                     <div class="progress-stats">
                         <div class="row">
                             <div class="col">
-                                58%
+                                97%
                             </div>
                             <div class="col text-right">
-                                $1550 Goal
+                                $3550 Goal
                             </div>
                         </div>
                     </div><!-- .progress-stats -->
@@ -262,7 +259,7 @@
 
     setTimeout(
         function(){
-            progress.style.width = "58%";
+            progress.style.width = "86%";
         }
     ,500);
 
@@ -310,3 +307,4 @@
 </script>
 <?php include( './inc/modal.php'); ?>
 <?php include( './inc/footer.php'); ?>
+

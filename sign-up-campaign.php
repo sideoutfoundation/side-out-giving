@@ -17,7 +17,7 @@
                         <use xlink:href="./img/sprites.svg#icon-facebook"></use>
                     </svg>
                 </span>
-                Sign in with Facebook
+                Sign up with Facebook
             </a>
             <a href="#" class="btn-google">
                 <span>
@@ -25,7 +25,7 @@
                         <use xlink:href="./img/sprites.svg#icon-google"></use>
                     </svg>
                 </span>
-                Sign in with Google
+                Sign up with Google
             </a>
         </div>
 

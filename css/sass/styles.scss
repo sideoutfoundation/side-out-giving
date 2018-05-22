@@ -348,7 +348,6 @@ input[type="email"],
 input[type="month"],
 input[type="number"],
 input[type="password"],
-input[type="search"],
 input[type="tel"],
 input[type="text"],
 input[type="time"],
@@ -924,6 +923,14 @@ main {
   line-height: 1.2;
   @media only screen and (min-width: 576px) {
     @include font-size(1.8);
+  }
+
+  a {
+    color: white;
+    //text-decoration: underline;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 
@@ -2119,7 +2126,7 @@ h1.join-donate {
       max-width: 100%;
       background: transparent;
       border: solid 1px transparent;
-      padding: 15px 10px 15px 12px;
+      padding: 7px 7px;
       width: 55px;
       transition: all .5s;
       position: relative;
@@ -2159,7 +2166,6 @@ h1.join-donate {
       width: 100%;
       max-width: 100%;
       background-color: #fff;
-      border-color: #66CC75;
       border: solid 1px #ccc;
       box-shadow: 0 0 5px rgba(109,207,246,.5);
 
@@ -2175,9 +2181,10 @@ h1.join-donate {
 
     #demo-2 input[type=search]{
       background: transparent;
-      border: solid 1px transparent;
+      border: solid 1px #ccc;
       //padding: 15px 20px 15px 32px;
-      width: 55px;
+      width: 100%;
+      max-width: 100%;
 /*      border-radius: 10em;*/
       transition: all .5s;
             position: relative;
@@ -2188,7 +2195,7 @@ h1.join-donate {
     #demo-2 img {
       position: relative;
       z-index: 5;
-      margin-top: 12px;
+      margin-top: 10px;
       width: 24px;
       height: 24px;
     }
@@ -2196,20 +2203,20 @@ h1.join-donate {
     #demo-2 input[type=search]:hover {
       background-color: transparent;
     }
-    #demo-2 input[type=search]:focus {
+    #demo-2 input[type=search] {
       width: 100%;
       max-width: 100%;
-      padding-left: 32px;
-      padding: 25px 50px 25px 50px;
+      padding-left: 15px;
+      //padding: 25px 50px 25px 50px;
       color: #000;
       background-color: transparent;
       cursor: auto;
     }
     #demo-2 input:-moz-placeholder {
-      color: transparent;
+      color: #999;
     }
     #demo-2 input::-webkit-input-placeholder {
-      color: transparent;
+      color: #999;
     }
   }
 
