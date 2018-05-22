@@ -5,7 +5,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/YWII9pilahQ" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="modal-cta">
-                <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" id="video-donate-btn" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
+                <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" id="video-donate-btn" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/WTSuhHsOefU" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="modal-cta">
-                <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
+                <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" id="video-donate-btn" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
         </div>
     </div>
