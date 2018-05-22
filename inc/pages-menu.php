@@ -19,6 +19,7 @@
         <a class="dropdown-item" href="thank-you.php">Thanks</a>
         <a class="dropdown-item" href="donate-to-campaign.php">Donate to Campaign</a>
         <a class="dropdown-item" href="start-campaign.php">Start Campaign</a>
+        <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
     </div>
 </div>
 

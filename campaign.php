@@ -66,13 +66,13 @@
                         $550 <span>Raised</span>
                     </h2>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
 
                     <div class="progress-stats">
                         <div class="row">
                             <div class="col">
-                                (33%)
+                                58%
                             </div>
                             <div class="col text-right">
                                 $1550 Goal
@@ -110,7 +110,7 @@
 
                     <hr>
 
-                    <div class="carousel-nav">
+<!--                     <div class="carousel-nav">
                         <div class="carousel-prev">
                             <svg class="icon icon-arrow-left">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -123,19 +123,47 @@
                                 xlink:href="./img/sprites.svg#icon-arrow-right"></use>
                             </svg>
                         </div>
-                    </div>
+                    </div> -->
                     <h2>Events</h2>
 
-                    <div class="campaign-events">
-                        <div class="event">
-                            <div class="event-time">
-                                <strong>Sat, August 26, 2017</strong>
-                                5:00pm
+                    <div class="campaign-events ">
+                        <div class="owl-carousel">
+            <!--             <div class="item"> -->
+                            <div class="event">
+                                <div class="event-time">
+                                    <strong>Sat, August 26, 2017</strong>
+                                    5:00pm
+                                </div>
+                                <h2>Gift Card Fundraiser</h2>
+                                <div class="event-description">
+                                    Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
+                                </div>
                             </div>
-                            <h2>Gift Card Fundraiser</h2>
-                            <div class="event-description">
-                                Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
+                 <!--        </div>
+                        <div class="item"> -->
+                            <div class="event">
+                                <div class="event-time">
+                                    <strong>Sun, August 27, 2017</strong>
+                                    7:00pm
+                                </div>
+                                <h2>Some other Fundraiser</h2>
+                                <div class="event-description">
+                                    Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula.
+                                </div>
                             </div>
+               <!--          </div>
+                        <div class="item"> -->
+                            <div class="event">
+                                <div class="event-time">
+                                    <strong>Sat, August 26, 2017</strong>
+                                    5:00pm
+                                </div>
+                                <h2>Gift Card Fundraiser</h2>
+                                <div class="event-description">
+                                    Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
+                                </div>
+                            </div>
+                        <!-- </div> -->
                         </div>
                     </div>
 
@@ -228,6 +256,14 @@
 
             <script>
 
+                  var progress = document.getElementById("progress-bar");
+
+                  setTimeout(
+                    function(){
+                      progress.style.width = "58%";
+                    }
+                  ,500);
+
                   var $cta = $('.mobile-follow');
                   var $top = $('.campaign-text');
 
@@ -241,6 +277,27 @@
                     offset: '50%'
                   });
 
+
+
+            </script>
+
+            <script type="text/javascript">
+                $('.owl-carousel').owlCarousel({
+                   loop:true,
+                   margin:10,
+                   nav:true,
+                   responsive:{
+                     0:{
+                       items:1
+                     },
+                     600:{
+                       items:1
+                     },
+                     1000:{
+                       items:1
+                     }
+                   }
+                 });
             </script>
 
 

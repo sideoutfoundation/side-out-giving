@@ -52,7 +52,7 @@
 
         <strong>Need an account? <a href="sign-up.php" title="">Sign Up</a></strong>
         <br>
-        <a href="#" title="">Forgot password?</a>
+        <a href="forgot-password.php" title="">Forgot password?</a>
 
     </div><!-- .form-wrapper -->
 </div><!-- .row -->

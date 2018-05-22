@@ -20,18 +20,22 @@
     <link rel="icon" type="image/png" href="./img/favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./img/favicon-16.png" sizes="16x16">
 
-
+<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script type="text/javascript" src="./js/script.js"></script>
 
-    <script src="./js/script.js"></script>
+
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,11 +47,13 @@
         ga('send', 'pageview');
     </script>
 
-    <script>
+    <!-- <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         });
-    </script>
+    </script> -->
+
+
 
 </head>
 
@@ -69,20 +75,9 @@
                 </div>
 
                 <div class="search">
-
-                    <div id="search-link" class="search-link">
-                        <a href="donate-to-campaign.php" class="search-open"
-                        data-tooltip="Find an event. Search and join an event by searching
-                        a keyword of school name.">Search</a>
-                    </div>
-
-                    <div id="search-form" class="search-form" style="display: none;">
-                        <form id="" method="get" action="/">
-                            <input type="search" placeholder="Search..." name="s" id="s">
-                            <input type="image" src="../img/search.svg" width="24" height="24"
-                            id="go" alt="Search" title="Search">
-                        </form>
-                    </div>
+                    <form id="demo-2">
+                        <input type="search" placeholder="Search"><img src="../img/search.svg" width="24" height="24"/>
+                    </form>
                 </div>
             </div>
         </div><!-- container -->
