@@ -1373,9 +1373,11 @@ main {
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #d7e2e8;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-top: 15px;
   width: 100%;
+  display: flex;
+  justify-content: center;
   @media only screen and (min-width: 992px) {
     border-bottom: none;
     padding-top: 0;
@@ -1385,9 +1387,10 @@ main {
   }
 
   strong {
+    display: none;
     @include font_bold;
     @include font-size(1.7);
-    display: inline-block;
+     display: none;
     letter-spacing: 1px;
     margin-right: 14px;
     margin-top: 2px;
