@@ -934,7 +934,7 @@ main {
   margin-bottom: -10px;
   padding: 10px;
   @media only screen and (min-width: 576px) {
-    padding: 40px 0;
+    //padding: 40px 0;
     margin-bottom: -40px;
   }
   @media only screen and (min-width: 992px) {
@@ -1400,6 +1400,13 @@ main {
     top: 90px;
     text-align: center;
   }
+
+  strong {
+    display: none;
+    @media only screen and (min-width: 992px) {
+      display: initial;
+    }
+  }
 }
 
 .share-widget .sticky-top {
@@ -1417,7 +1424,7 @@ main {
     display: none;
     @include font_bold;
     @include font-size(1.7);
-     display: none;
+    display: none;
     letter-spacing: 1px;
     margin-right: 14px;
     margin-top: 2px;
