@@ -9,9 +9,7 @@
   'mixins';
 
 @import
-  'vendor/bootstrap/bootstrap',
-  'vendor/owl/owl.carousel',
-  'vendor/owl/owl.theme.default';
+  'vendor/bootstrap/bootstrap';
 
 @import
   'base',
@@ -2210,6 +2208,17 @@ h1.join-donate {
   position: absolute;
   right: -40px;
   top: -76px;
+
+  @media only screen and (max-width: 766px) {
+    right: -30px;
+    top: -66px;
+  }
+
+  @media only screen and (max-width: 542px) {
+    right: -30px;
+    top: -76px;
+  }
+
   .owl-prev,
   .owl-next {
     border: 2px solid $blue !important;
