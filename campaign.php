@@ -247,61 +247,66 @@
                     <a class="click" data-toggle="modal" data-target="#research"></a>
                 </div>
             </aside>
-
-            <div class="mobile-follow">
-                <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-            </div>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
-
-            <script>
-
-                  var progress = document.getElementById("progress-bar");
-
-                  setTimeout(
-                    function(){
-                      progress.style.width = "58%";
-                    }
-                  ,500);
-
-                  var $cta = $('.mobile-follow');
-                  var $top = $('.campaign-text');
-
-                  $top.waypoint(function(direction) {
-                    if (direction === 'down') {
-                      $cta.addClass('fixed')
-                    } else if (direction == 'up') {
-                      $cta.removeClass('fixed')
-                    }
-                  }, {
-                    offset: '50%'
-                  });
-
-
-
-            </script>
-
-            <script type="text/javascript">
-                $('.owl-carousel').owlCarousel({
-                   loop:true,
-                   margin:10,
-                   nav:true,
-                   responsive:{
-                     0:{
-                       items:1
-                     },
-                     600:{
-                       items:1
-                     },
-                     1000:{
-                       items:1
-                     }
-                   }
-                 });
-            </script>
-
-
+        </div>
     </div>
 </section>
+<div class="mobile-follow">
+    <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+    <a href="sign-in-campaign.php" class="btn btn-blue-inverse d-none d-lg-inline-block">Fundraise for this Campaign</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var progress = document.getElementById("progress-bar");
+
+    setTimeout(
+        function(){
+            progress.style.width = "58%";
+        }
+    ,500);
+
+    var $cta = $('.mobile-follow');
+    var $top = $('.campaign-text');
+
+    $top.waypoint(function(direction) {
+        if (direction === 'down') {
+            $cta.addClass('fixed')
+            $('.header').addClass('fixed-header');
+        } else if (direction == 'up') {
+            $cta.removeClass('fixed')
+            $('.header').removeClass('fixed-header');
+        }
+        }, {
+        offset: '50%'
+    });
+
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() >= 800) {
+            $cta.addClass('slide-down');
+        }
+        else {
+            $cta.removeClass('slide-down');
+        }
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+</script>
 <?php include( './inc/modal.php'); ?>
 <?php include( './inc/footer.php'); ?>
