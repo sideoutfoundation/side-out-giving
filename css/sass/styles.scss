@@ -1782,7 +1782,8 @@ h1.join-donate {
     h3 {
       @include font-size(2);
       line-height: 1.2;
-      margin: 0 0 10px;
+      margin: 10px 0 10px;
+      height: 3.5rem;
       a {
         color: $black;
       }
@@ -2104,95 +2105,98 @@ h1.join-donate {
 }
 
 
+#demo-2 {
+
+  input {
+    outline: none;
+  }
+  input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button {
+    display: none;
+  }
 
 
-    #demo-2 input {
-      outline: none;
+  input[type=search]{
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+    border: solid 1px transparent;
+    padding: 7px 7px;
+    width: 55px;
+    transition: all .5s;
+    position: relative;
+    z-index: 7;
+    //right: -24px;
+  }
+
+  img {
+    position: absolute;
+    z-index: 5;
+    margin-top: 11px;
+    width: 24px;
+    height: 24px;
+  }
+
+
+  @include make-col(12);
+  display: flex;
+  justify-content: flex-end;
+
+
+  input[type=search] {
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+  }
+
+  input:-moz-placeholder {
+    color: transparent;
+  }
+  input::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  input[type=search]:focus {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    border: solid 1px #d7e2e8;
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+    &:-moz-placeholder {
+      color: #d7e2e8;
     }
-    #demo-2 input[type=search] {
-      -webkit-appearance: textfield;
-      -webkit-box-sizing: content-box;
-      font-family: inherit;
-      font-size: 100%;
+    &::-webkit-input-placeholder {
+      color: #d7e2e8;
     }
-    #demo-2 input::-webkit-search-decoration,
-    #demo-2 input::-webkit-search-cancel-button {
-      display: none;
-    }
+  }
 
-
-    #demo-2 input[type=search]{
+  @media only screen and (min-width: 768px) {
+    input[type=search]{
+      background: transparent;
+      border: solid 1px #fff;
+      border-bottom: solid 1px #d7e2e8;
+      padding: 5px 5px 5px 5px;
+      padding-left: 2px;
       width: 100%;
       max-width: 100%;
-      background: transparent;
-      border: solid 1px transparent;
-      padding: 7px 7px;
-      width: 55px;
       transition: all .5s;
       position: relative;
       z-index: 7;
-      //right: -24px;
-    }
-
-    #demo-2 img {
-      position: absolute;
-      z-index: 5;
-      margin-top: 11px;
-      width: 24px;
-      height: 24px;
-    }
-
-    #demo-2 {
-      @include make-col(12);
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    #demo-2 input[type=search] {
-      width: 15px;
-      padding-left: 10px;
-      color: transparent;
-      cursor: pointer;
-    }
-
-    #demo-2 input:-moz-placeholder {
-      color: transparent;
-    }
-    #demo-2 input::-webkit-input-placeholder {
-      color: transparent;
-    }
-
-    #demo-2 input[type=search]:focus {
-      width: 100%;
-      max-width: 100%;
-      background-color: #fff;
-      border: solid 1px #ccc;
-      box-shadow: 0 0 5px rgba(109,207,246,.5);
-
-      &:-moz-placeholder {
-        color: #999;
-      }
-      &::-webkit-input-placeholder {
-        color: #999;
-      }
-    }
-
-  @media only screen and (min-width: 768px) {
-
-    #demo-2 input[type=search]{
-      background: transparent;
-      border: solid 1px #ccc;
-      //padding: 15px 20px 15px 32px;
-      width: 100%;
-      max-width: 100%;
-/*      border-radius: 10em;*/
-      transition: all .5s;
-            position: relative;
-      z-index: 7;
       right: -34px;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
     }
 
-    #demo-2 img {
+    img {
       position: relative;
       z-index: 5;
       margin-top: 10px;
@@ -2200,28 +2204,78 @@ h1.join-donate {
       height: 24px;
     }
 
-    #demo-2 input[type=search]:hover {
+    input[type=search]:hover {
       background-color: transparent;
     }
-    #demo-2 input[type=search] {
+
+    input[type=search]:focus {
       width: 100%;
       max-width: 100%;
-      padding-left: 15px;
-      //padding: 25px 50px 25px 50px;
-      color: #000;
+      border: solid 1px #fff;
+      border-bottom: solid 1px $pink;
+      color: $black;
       background-color: transparent;
       cursor: auto;
     }
-    #demo-2 input:-moz-placeholder {
-      color: #999;
+
+    input:-moz-placeholder {
+      color: #d7e2e8;
+      @include font-body;
+            font-size: 2.2rem;
+            line-height: 2.2rem;
+            font-weight: lighter;
     }
-    #demo-2 input::-webkit-input-placeholder {
-      color: #999;
+
+    input::-webkit-input-placeholder {
+      color: #d7e2e8;
+      @include font-body;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      font-weight: lighter;
     }
   }
+}
 
+.supporters-flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
 
+  .donate-card-inner {
+    padding-top: 2rem;
+    width: 100%;
+    border-top: 1px solid #d7e2e8;
 
+    &:nth-child(2n) {
+      border-left: 1px solid #d7e2e8;
+    }
+
+    &:nth-child(n+2) {
+      border-top: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 50%;
+
+      &:nth-child(2n) {
+        border-left: none;
+      }
+
+      &:nth-child(2) {
+        border-top: 1px solid #d7e2e8;
+      }
+
+      &:nth-child(n+3) {
+        border-top: none;
+      }
+    }
+
+    h3 {
+      height: 4rem;
+    }
+  }
+}
 
 .owl-nav {
   display: flex;
@@ -2283,4 +2337,71 @@ h1.join-donate {
     left: 1px;
   }
 }
+
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid #d7e2e8;
+  border-top: 1px solid #d7e2e8;
+
+  &__heading {
+    position: relative;
+    display: block;
+    //background: #d7e2e8;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    h2 {
+      margin: 10px 0 10px 0;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 3px;
+      background: $pink;
+      top: 50%;
+      right: 20px;
+      transition: all 0.4s;
+    }
+    &:before {
+      .accordion__checkbox:checked ~ & {
+        transition: all 0.4s;
+        transform: rotate(90deg);
+        opacity: 0;
+      }
+    }
+    &:after {
+      transform: rotate(90deg);
+      transition: all 0.3s;
+      .accordion__checkbox:checked ~ & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__checkbox {
+    display: none;
+    position: absolute;
+    left: -9999em;
+
+    &:checked ~ .accordion__content {
+      max-height: 1000px;
+      transition: all 1s;
+    }
+  }
+
+  &__content {
+    padding: 1opx 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+  }
+}
+
 

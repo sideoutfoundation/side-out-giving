@@ -87,45 +87,149 @@
                     </a>
                 </div><!-- .campaign-buttons -->
 
-                <hr>
-
+<!--                 <hr/> -->
                 <div class="campaign-text">
-                    <h2>About Our Campaign</h2>
-                    <p>
-                        Vivamus maximus, eros congue rhoncus tincidunt, felis
-                        tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
-                        blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
-                        sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
-                        risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
-                        malesuada mollis. Integer quis ornare dui.
-                    </p>
-                    <p>
-                        Sed a eros id odio scelerisque viverra. Fusce sit amet sapien et ante
-                        porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio
-                        nec, molestie nisi.
-                    </p>
 
-                    <hr>
+                    <div class="accordion">
+                        <section>
+                            <input type="checkbox" class="accordion__checkbox" id="accordion-heading-1">
+                            <label class="accordion__heading" for="accordion-heading-1"><h2>About Our Campaign</h2></label>
 
-<!--                     <div class="carousel-nav">
-                        <div class="carousel-prev">
-                            <svg class="icon icon-arrow-left">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xlink:href="./img/sprites.svg#icon-arrow-right"></use>
-                            </svg>
+                            <div class="accordion__content">
+                                <p>
+                                    Vivamus maximus, eros congue rhoncus tincidunt, felis
+                                    tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+                                    blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+                                    sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+                                    risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
+                                    malesuada mollis. Integer quis ornare dui.
+                                </p>
+                                <p>
+                                    Sed a eros id odio scelerisque viverra. Fusce sit amet sapien et ante
+                                    porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio
+                                    nec, molestie nisi.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+<!--                 <hr/> -->
+                <h2>Supporters</h2>
+                <div class="supporters-flex">
+
+                    <div class="donate-card-inner">
+                        <div class="card-description">
+                            <h3><a href="campaign.php">Averill Park High School</a></h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><!-- .progress -->
+
+                            <div class="progress-stats">
+                                <div class="row">
+                                    <div class="col">
+                                        $500 Raised (10%)
+                                    </div>
+                                    <div class="col text-right">
+                                        $5000 Goal
+                                    </div>
+                                </div>
+                            </div><!-- .progress-stats -->
+
+                            <div class="actions">
+                                <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                                <small>
+                                    <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
+                                </small>
+                            </div>
                         </div>
-                        <div class="carousel-next">
-                            <svg class="icon icon-arrow-right">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xlink:href="./img/sprites.svg#icon-arrow-right"></use>
-                            </svg>
+                    </div>
+                    <div class="donate-card-inner">
+                        <div class="card-description">
+                            <h3><a href="campaign.php">Manchester United Junior Volleyball</a></h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><!-- .progress -->
+
+                            <div class="progress-stats">
+                                <div class="row">
+                                    <div class="col">
+                                        $500 Raised (10%)
+                                    </div>
+                                    <div class="col text-right">
+                                        $5000 Goal
+                                    </div>
+                                </div>
+                            </div><!-- .progress-stats -->
+
+                            <div class="actions">
+                                <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                                <small>
+                                    <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
+                                </small>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="donate-card-inner">
+                        <div class="card-description">
+                            <h3><a href="campaign.php">Manchester United Junior Volleyball Team</a></h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><!-- .progress -->
+
+                            <div class="progress-stats">
+                                <div class="row">
+                                    <div class="col">
+                                        $500 Raised (10%)
+                                    </div>
+                                    <div class="col text-right">
+                                        $5000 Goal
+                                    </div>
+                                </div>
+                            </div><!-- .progress-stats -->
+
+                            <div class="actions">
+                                <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                                <small>
+                                    <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donate-card-inner">
+                        <div class="card-description">
+                            <h3><a href="campaign.php">Averill Park High School</a></h3>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div><!-- .progress -->
+
+                            <div class="progress-stats">
+                                <div class="row">
+                                    <div class="col">
+                                        $500 Raised (10%)
+                                    </div>
+                                    <div class="col text-right">
+                                        $5000 Goal
+                                    </div>
+                                </div>
+                            </div><!-- .progress-stats -->
+
+                            <div class="actions">
+                                <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                                <small>
+                                    <a href="sign-up-campaign.php" role="button">or fundraise for this</a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
                     <h2>Events</h2>
 
                     <div class="campaign-events ">
                         <div class="owl-carousel">
-            <!--             <div class="item"> -->
+
                             <div class="event">
                                 <div class="event-time">
                                     <strong>Sat, August 26, 2017</strong>
@@ -136,8 +240,6 @@
                                     Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
                                 </div>
                             </div>
-                 <!--        </div>
-                        <div class="item"> -->
                             <div class="event">
                                 <div class="event-time">
                                     <strong>Sun, August 27, 2017</strong>
@@ -148,8 +250,7 @@
                                     Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula.
                                 </div>
                             </div>
-               <!--          </div>
-                        <div class="item"> -->
+
                             <div class="event">
                                 <div class="event-time">
                                     <strong>Sat, August 26, 2017</strong>
@@ -160,7 +261,6 @@
                                     Amus maximus, eros congue rhoncus tincidunt, felis tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo, blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectet
                                 </div>
                             </div>
-                        <!-- </div> -->
                         </div>
                     </div>
 
