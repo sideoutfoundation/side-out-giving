@@ -8399,9 +8399,9 @@ div.alert {
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  -webkit-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s; }
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
 
 .progress-stats {
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
@@ -9503,9 +9503,9 @@ div.alert {
     -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
     box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
     #demo-2 input[type=search]:focus:-moz-placeholder {
-      color: #999; }
+      color: #d7e2e8; }
     #demo-2 input[type=search]:focus::-webkit-input-placeholder {
-      color: #999; }
+      color: #d7e2e8; }
   @media only screen and (min-width: 768px) {
     #demo-2 input[type=search] {
       background: transparent;
