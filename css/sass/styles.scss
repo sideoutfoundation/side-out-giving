@@ -1186,6 +1186,7 @@ main {
   }
 }
 
+modal-open{overflow:auto;padding-right:0 !important;}
 
 .modal-backdrop.show {
   background: #000;
@@ -1301,14 +1302,18 @@ main {
   padding: 8px 25px;
   opacity: 0;
   box-shadow: 0 1px 6px rgba(0,0,0,.4);
+  text-align: center;
+  a, a:focus {
+    box-shadow: 0 !important;
+    outline: none !important;
+  }
 }
 
 .fixed {
   position: fixed;
   left: 0;
-  right: 0;
   opacity: 1;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   @media only screen and (min-width: 992px) {
     top: -66px;

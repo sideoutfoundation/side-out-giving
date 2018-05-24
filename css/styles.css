@@ -8551,6 +8551,10 @@ div.alert {
   background: url(../img/research.jpg) no-repeat center center;
   background-size: cover; }
 
+modal-open {
+  overflow: auto;
+  padding-right: 0 !important; }
+
 .modal-backdrop.show {
   background: #000;
   opacity: .63; }
@@ -8662,14 +8666,18 @@ div.alert {
   padding: 8px 25px;
   opacity: 0;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+  text-align: center; }
+  .mobile-follow a, .mobile-follow a:focus {
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    outline: none !important; }
 
 .fixed {
   position: fixed;
   left: 0;
-  right: 0;
   opacity: 1;
-  width: 100%;
+  width: 100vw;
   z-index: 1; }
   @media only screen and (min-width: 992px) {
     .fixed {
