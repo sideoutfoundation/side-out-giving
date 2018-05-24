@@ -9,7 +9,7 @@
 
     <div class="form-wrapper sign-up">
 
-        <h1>Account Login<</h1>
+        <h1>Account Login</h1>
 
         <div class="social-logins">
             <a href="#" class="btn-facebook">
