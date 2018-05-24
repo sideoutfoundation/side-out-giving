@@ -8551,10 +8551,6 @@ div.alert {
   background: url(../img/research.jpg) no-repeat center center;
   background-size: cover; }
 
-modal-open {
-  overflow: auto;
-  padding-right: 0 !important; }
-
 .modal-backdrop.show {
   background: #000;
   opacity: .63; }
