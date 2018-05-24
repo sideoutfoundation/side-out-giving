@@ -1,7 +1,7 @@
 <?php include( './inc/header.php'); ?>
 
 
-<div style="max-width: 430px; margin: 0 auto; padding: 8rem 0;">
+<div style="max-width: 430px; margin: 0 auto; padding: 4rem 0 6rem 0;">
 
     <div class="donation-form-wrapper">
 
@@ -10,8 +10,8 @@
             <h5>Your donation was processed</h5>
             <p>
                 Your generous donation will go a long way to fund game-changing clinical
-                research that is providing individuals living with stage IV, the most 
-                underfunded stage of breast cancer, more quality time with friends and family.  
+                research that is providing individuals living with stage IV, the most
+                underfunded stage of breast cancer, more quality time with friends and family.
             </p>
             <h5>Share with your friends and family and inspire others to do the same!</h5>
             <div class="share-buttons share-thankyou">

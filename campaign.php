@@ -13,10 +13,9 @@
                     </figure>
                 </div>
                 <div class="campaign-title">
-                    2018 Dig Pink School
                     <h1>Averill Park High School</h1>
                     <div class="campaign-subtitle">
-                        Raising funds for <a href="parent-campaign.php">2017 Power of Pink Queensbury</a>
+                        <a href="#"><div class="text">Raising funds for 2017 Power of Pink Queensbury</div><div class="arrow"><span>›</span></div></a>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@
                     <div class="progress-stats">
                         <div class="row">
                             <div class="col">
-                                58%
+                                Funded 58%
                             </div>
                             <div class="col text-right">
                                 $1550 Goal

@@ -25,7 +25,7 @@
 
         <div class="form-row">
             <div class="form-group col-md">
-                <label for="sponsored" class="control-label">Sponsored/ represented by</label>
+                <label for="sponsored" class="control-label">Sponsored/Represented by Role</label>
                 <select name="sponsored" class="custom-select">
                     <option value="" class="placeholder" selected="selected">Select</option>
                     <option value="value1">Value 1</option>
@@ -34,7 +34,7 @@
                 </select>
             </div>
             <div class="form-group col-md">
-                <label for="school" class="control-label">School name </label>
+                <label for="school" class="control-label">Organization Name </label>
                 <input class="form-control" id="school" type="text" name="school">
             </div>
         </div>
@@ -104,14 +104,21 @@
         <div class="form-group">
             <label for="state" class="control-label">Fundraising Goal</label>
             <div class="switch-field margin-bottom-10">
+
               <input type="radio" id="switch_1" name="switch" value="no" checked/>
               <label for="switch_1">$500</label>
+
               <input type="radio" id="switch_2" name="switch" value="yes" />
               <label for="switch_2">$1000</label>
+
               <input type="radio" id="switch_3" name="switch" value="no" />
-              <label for="switch_3">$5000</label>
+              <label for="switch_3">$2500</label>
+
               <input type="radio" id="switch_4" name="switch" value="no" />
-              <label for="switch_4">Other</label>
+              <label for="switch_4">$5000</label>
+
+              <input type="radio" id="switch_5" name="switch" value="no" />
+              <label for="switch_5">Other</label>
             </div>
 
             <script>

@@ -730,6 +730,7 @@ div.alert {
     position: initial;
     @include make-col(10);
     margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -921,15 +922,62 @@ main {
   @include font_semi;
   @include font-size(1.3);
   line-height: 1.2;
+
   @media only screen and (min-width: 576px) {
     @include font-size(1.8);
   }
 
-  a {
+a {
+  display: flex;
+  align-items: center;
+  transition: none;
+
+  .text {
+    border-bottom: 2px solid $white;
+    margin-top: 2px;
     color: white;
-    //text-decoration: underline;
-    &:hover {
-      color: $blue;
+    transition: .2s ease;
+  }
+
+  &:hover {
+
+    text-decoration: none;
+    .text {
+      border-bottom: 2px solid $pink;
+      color: $pink;
+      transition: .2s ease;
+    }
+    .arrow {
+      background: $pink;
+      border: 1px solid $pink;
+      margin-left: 0.5rem;
+      transition: margin-left .2s ease;
+      height: 1.4rem;
+      width: 1.4rem;
+      span {
+        color: white;
+      }
+    }
+  }
+}
+
+  .arrow {
+    transition: margin-left .2s ease;
+    border: 1px solid white;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-left: 0.7rem;
+    span {
+      font-weight: bold;
+      margin-top: -2px;
+      color: $pink;
+      //margin-left: 1px;
     }
   }
 }
@@ -1203,6 +1251,8 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 15px;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     padding: 30px;
@@ -1236,12 +1286,16 @@ main {
     }
   }
   .modal-content {
-    border-radius: 0;
+    border-radius: 0 !important;
     @media only screen and (max-width: 767px) {
       border: 1px solid white;
     }
   }
 }
+
+  .modal-content {
+    border-radius: 0 !important;
+    }
 
 
 #leaving {
@@ -1740,6 +1794,7 @@ main {
 
 
 h1.join-donate {
+  @include font-size(2.6);
   @media only screen and (min-width: 768px) {
     @include font-size(3);
     max-width: 500px;
@@ -2113,15 +2168,15 @@ h1.join-donate {
   input {
     outline: none;
   }
+
   input[type=search] {
-    -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
+    appearance: textfield;
+    box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
   }
 
-  input::-webkit-search-decoration,
-  input::-webkit-search-cancel-button {
+  input::search-cancel-button {
     display: none;
   }
 
@@ -2147,11 +2202,9 @@ h1.join-donate {
     height: 24px;
   }
 
-
   @include make-col(12);
   display: flex;
   justify-content: flex-end;
-
 
   input[type=search] {
     width: 15px;
@@ -2160,12 +2213,10 @@ h1.join-donate {
     cursor: pointer;
   }
 
-  input:-moz-placeholder {
+  input::placeholder {
     color: transparent;
   }
-  input::-webkit-input-placeholder {
-    color: transparent;
-  }
+
 
   input[type=search]:focus {
     width: 100%;
@@ -2174,20 +2225,17 @@ h1.join-donate {
     border: solid 1px #d7e2e8;
     box-shadow: 0 0 5px rgba(109,207,246,.5);
 
-    &:-moz-placeholder {
-      color: #d7e2e8;
-    }
-    &::-webkit-input-placeholder {
+    &::placeholder {
       color: #d7e2e8;
     }
   }
 
   @media only screen and (min-width: 768px) {
-    input[type=search]{
+    input[type=search] {
       background: transparent;
       border: solid 1px #fff;
       border-bottom: solid 1px #d7e2e8;
-      padding: 5px 5px 5px 5px;
+      padding: 5px 10px 5px 10px;
       padding-left: 2px;
       width: 100%;
       max-width: 100%;
@@ -2195,16 +2243,16 @@ h1.join-donate {
       position: relative;
       z-index: 7;
       right: -34px;
-      font-size: 2.2rem;
-      line-height: 2.2rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
     }
 
     img {
       position: relative;
       z-index: 5;
-      margin-top: 10px;
-      width: 24px;
-      height: 24px;
+      margin-top: 5px;
+      width: 20px;
+      height: 20px;
     }
 
     input[type=search]:hover {
@@ -2221,61 +2269,12 @@ h1.join-donate {
       cursor: auto;
     }
 
-    input:-moz-placeholder {
+    input::placeholder {
       color: #d7e2e8;
       @include font-body;
-            font-size: 2.2rem;
-            line-height: 2.2rem;
-            font-weight: lighter;
-    }
-
-    input::-webkit-input-placeholder {
-      color: #d7e2e8;
-      @include font-body;
-      font-size: 2.2rem;
-      line-height: 2.2rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
       font-weight: lighter;
-    }
-  }
-}
-
-.supporters-flex {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
-
-  .donate-card-inner {
-    padding-top: 2rem;
-    width: 100%;
-    border-top: 1px solid #d7e2e8;
-
-    &:nth-child(2n) {
-      border-left: 1px solid #d7e2e8;
-    }
-
-    &:nth-child(n+2) {
-      border-top: none;
-    }
-
-    @media only screen and (min-width: 768px) {
-      width: 50%;
-
-      &:nth-child(2n) {
-        border-left: none;
-      }
-
-      &:nth-child(2) {
-        border-top: 1px solid #d7e2e8;
-      }
-
-      &:nth-child(n+3) {
-        border-top: none;
-      }
-    }
-
-    h3 {
-      height: 4rem;
     }
   }
 }
@@ -2341,70 +2340,34 @@ h1.join-donate {
   }
 }
 
-.accordion {
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  border-bottom: 1px solid #d7e2e8;
-  border-top: 1px solid #d7e2e8;
+.sign-up-thankyou {
+  height: 70vh;
+  max-height: 70vh;
+  align-items: center;
+  display: flex;
 
-  &__heading {
-    position: relative;
-    display: block;
-    //background: #d7e2e8;
-    padding: 10px 0 10px 0;
-    margin: 0;
-    color: #fff;
-    cursor: pointer;
-    h2 {
-      margin: 10px 0 10px 0;
-    }
-
-    &:after,
-    &:before {
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 3px;
-      background: $pink;
-      top: 50%;
-      right: 20px;
-      transition: all 0.4s;
-    }
-    &:before {
-      .accordion__checkbox:checked ~ & {
-        transition: all 0.4s;
-        transform: rotate(90deg);
-        opacity: 0;
-      }
-    }
-    &:after {
-      transform: rotate(90deg);
-      transition: all 0.3s;
-      .accordion__checkbox:checked ~ & {
-        transform: rotate(180deg);
-      }
-    }
+  .sign-up {
+    @include make-col(10);
+    @include make-col-offset(1);
   }
 
-  &__checkbox {
-    display: none;
-    position: absolute;
-    left: -9999em;
-
-    &:checked ~ .accordion__content {
-      max-height: 1000px;
-      transition: all 1s;
-    }
+  p {
+    color: $gray;
   }
 
-  &__content {
-    padding: 1opx 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 1s;
+  .text-center a {
+    color: $pink;
   }
 }
 
+.main {
+  padding-bottom: 0;
+}
 
+.start-campaign {
+  .form-group {
+    label {
+      font-size: 1rem;
+    }
+  }
+}

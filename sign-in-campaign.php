@@ -4,12 +4,12 @@
 
 <div class="row">
     <h1 class="text-center regular join-donate">
-        Sign In for the <br/><strong><a href="campaign.php">2018 Dig Pink School</a></strong>
+        Sign In from <br/><strong><a href="campaign.php">2018 Dig Pink School</a></strong>
     </h1>
 
     <div class="form-wrapper sign-up">
 
-        <h1>Sign In</h1>
+        <h1>Account Login<</h1>
 
         <div class="social-logins">
             <a href="#" class="btn-facebook">
@@ -17,16 +17,14 @@
                     <svg role="img" class="icon-facebook">
                         <use xlink:href="./img/sprites.svg#icon-facebook"></use>
                     </svg>
-                </span>
-                Sign in with Facebook
+                </span>Login with Facebook
             </a>
             <a href="#" class="btn-google">
                 <span>
                     <svg role="img" class="icon-google">
                         <use xlink:href="./img/sprites.svg#icon-google"></use>
                     </svg>
-                </span>
-                Sign in with Google
+                </span>Login with Google
             </a>
         </div>
 
