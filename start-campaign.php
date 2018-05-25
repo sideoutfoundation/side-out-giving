@@ -25,7 +25,7 @@
 
         <div class="form-row">
             <div class="form-group col-md">
-                <label for="sponsored" class="control-label">Sponsored/Represented by Role</label>
+                <label for="sponsored" class="control-label">Role</label>
                 <select name="sponsored" class="custom-select">
                     <option value="" class="placeholder" selected="selected">Select</option>
                     <option value="value1">Value 1</option>
@@ -122,10 +122,10 @@
             </div>
 
             <script>
-                $( 'label[for=switch_1],label[for=switch_2],label[for=switch_3]' ).click(function() {
+                $( 'label[for=switch_1],label[for=switch_2],label[for=switch_3],label[for=switch_4]' ).click(function() {
                     $( '.other' ).hide();
                 });
-                $( 'label[for=switch_4]' ).click(function() {
+                $( 'label[for=switch_5]' ).click(function() {
                     $( '.other' ).toggle();
                     $( '#other' ).focus();
                 });
