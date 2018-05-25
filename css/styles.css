@@ -8324,57 +8324,35 @@ div.alert {
     align-items: center;
     -webkit-transition: none;
     -o-transition: none;
-    transition: none; }
-    .campaign-subtitle a .text {
-      border-bottom: 2px solid #fff;
-      margin-top: 2px;
+    transition: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 2px;
+    color: white;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease; }
+    @media only screen and (max-width: 768px) {
+      .campaign-subtitle a {
+        max-width: 80%;
+        text-decoration: underline;
+        border-bottom: none; }
+        .campaign-subtitle a:hover {
+          text-decoration: underline;
+          border-bottom: none; } }
+    .campaign-subtitle a span {
+      font-weight: bold;
+      margin-top: -2px;
       color: white;
+      margin-left: 0.7rem; }
+    .campaign-subtitle a:hover {
+      border-bottom: 2px solid #cddce3;
+      color: #cddce3;
+      text-decoration: none;
       -webkit-transition: .2s ease;
       -o-transition: .2s ease;
       transition: .2s ease; }
-    .campaign-subtitle a:hover {
-      text-decoration: none; }
-      .campaign-subtitle a:hover .text {
-        border-bottom: 2px solid #D90084;
-        color: #D90084;
-        -webkit-transition: .2s ease;
-        -o-transition: .2s ease;
-        transition: .2s ease; }
-      .campaign-subtitle a:hover .arrow {
-        background: #D90084;
-        border: 1px solid #D90084;
-        margin-left: 0.5rem;
-        -webkit-transition: margin-left .2s ease;
-        -o-transition: margin-left .2s ease;
-        transition: margin-left .2s ease;
-        height: 1.4rem;
-        width: 1.4rem; }
-        .campaign-subtitle a:hover .arrow span {
-          color: white; }
-  .campaign-subtitle .arrow {
-    -webkit-transition: margin-left .2s ease;
-    -o-transition: margin-left .2s ease;
-    transition: margin-left .2s ease;
-    border: 1px solid white;
-    background: white;
-    border-radius: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 5px;
-    height: 1.4rem;
-    width: 1.4rem;
-    margin-left: 0.7rem; }
-    .campaign-subtitle .arrow span {
-      font-weight: bold;
-      margin-top: -2px;
-      color: #D90084; }
+      .campaign-subtitle a:hover span {
+        color: #cddce3; }
 
 .campaign-details {
   background: white;
@@ -9517,9 +9495,9 @@ h1.join-donate {
 
 #demo-2 {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9703,8 +9681,8 @@ h1.join-donate {
     left: 1px; }
 
 .sign-up-thankyou {
-  height: 70vh;
-  max-height: 70vh;
+  height: 110vh;
+  max-height: 110vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -9713,10 +9691,10 @@ h1.join-donate {
   display: flex; }
   .sign-up-thankyou .sign-up {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 83.33333%;
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-    margin-left: 8.33333%; }
+    -ms-flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    margin-left: 16.66667%; }
   .sign-up-thankyou p {
     color: #4e5862; }
   .sign-up-thankyou .text-center a {

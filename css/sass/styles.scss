@@ -927,57 +927,48 @@ main {
     @include font-size(1.8);
   }
 
-a {
-  display: flex;
-  align-items: center;
-  transition: none;
-
-  .text {
-    border-bottom: 2px solid $white;
-    margin-top: 2px;
-    color: white;
-    transition: .2s ease;
-  }
-
-  &:hover {
-
-    text-decoration: none;
-    .text {
-      border-bottom: 2px solid $pink;
-      color: $pink;
-      transition: .2s ease;
-    }
-    .arrow {
-      background: $pink;
-      border: 1px solid $pink;
-      margin-left: 0.5rem;
-      transition: margin-left .2s ease;
-      height: 1.4rem;
-      width: 1.4rem;
-      span {
-        color: white;
-      }
-    }
-  }
-}
-
-  .arrow {
-    transition: margin-left .2s ease;
-    border: 1px solid white;
-    background: white;
-    border-radius: 100%;
+  a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 5px;
-    height: 1.4rem;
-    width: 1.4rem;
-    margin-left: 0.7rem;
+    transition: none;
+
+
+      border-bottom: 2px solid $white;
+      margin-top: 2px;
+      color: white;
+      transition: .2s ease;
+
+
+  @media only screen and (max-width: 768px) {
+    max-width: 80%;
+    text-decoration: underline;
+    border-bottom: none;
+
+    &:hover {
+      text-decoration: underline;
+      border-bottom: none;
+    }
+  }
+
     span {
       font-weight: bold;
       margin-top: -2px;
-      color: $pink;
-      //margin-left: 1px;
+      color: white;
+      margin-left: 0.7rem;
+    }
+
+    &:hover {
+      //text-decoration: underline;
+
+        border-bottom: 2px solid #cddce3;
+        color: #cddce3;
+        text-decoration: none;
+        transition: .2s ease;
+
+
+      span{
+        color: #cddce3;
+      }
     }
   }
 }
@@ -2202,7 +2193,7 @@ h1.join-donate {
     height: 24px;
   }
 
-  @include make-col(12);
+  @include make-col(8);
   display: flex;
   justify-content: flex-end;
 
@@ -2341,14 +2332,14 @@ h1.join-donate {
 }
 
 .sign-up-thankyou {
-  height: 70vh;
-  max-height: 70vh;
+  height: 110vh;
+  max-height: 110vh;
   align-items: center;
   display: flex;
 
   .sign-up {
-    @include make-col(10);
-    @include make-col-offset(1);
+    @include make-col(8);
+    @include make-col-offset(2);
   }
 
   p {

@@ -18,10 +18,10 @@
 
                     <div class="progress-stats">
                         <div class="row">
-                            <div class="col">
+                            <div class="col col-7">
                                 $500 Raised (10%)
                             </div>
-                            <div class="col text-right">
+                            <div class="col col-5 text-right">
                                 $5000 Goal
                             </div>
                         </div>
@@ -49,11 +49,11 @@
 
                     <div class="progress-stats">
                         <div class="row">
-                            <div class="col">
-                                Raised (25%)
+                            <div class="col col-7">
+                                $1200 Raised (25%)
                             </div>
-                            <div class="col text-right">
-                                Goal
+                            <div class="col col-5 text-right">
+                                $5000 Goal
                             </div>
                         </div>
                     </div><!-- .progress-stats -->
@@ -79,41 +79,11 @@
 
                     <div class="progress-stats">
                         <div class="row">
-                            <div class="col">
-                                Raised
+                            <div class="col col-7">
+                                $500 Raised (10%)
                             </div>
-                            <div class="col text-right">
-                                Goal
-                            </div>
-                        </div>
-                    </div><!-- .progress-stats -->
-
-                    <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-                        <small>
-                            <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
-                        </small>
-                    </div>
-
-                </div>
-            </div>
-        </div><!-- .donate-card -->
-        <div class="donate-card">
-        <img src="img/demo.jpg" height="" width="480" />
-            <div class="donate-card-inner">
-                <div class="card-description">
-                    <h3><a href="campaign.php">Junior High School Volleyball Team</a></h3>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div><!-- .progress -->
-
-                    <div class="progress-stats">
-                        <div class="row">
-                            <div class="col">
-                                Raised
-                            </div>
-                            <div class="col text-right">
-                                Goal
+                            <div class="col col-5 text-right">
+                                $5000 Goal
                             </div>
                         </div>
                     </div><!-- .progress-stats -->
@@ -139,11 +109,41 @@
 
                     <div class="progress-stats">
                         <div class="row">
-                            <div class="col">
-                                Raised
+                            <div class="col col-7">
+                                $500 Raised (10%)
                             </div>
-                            <div class="col text-right">
-                                Goal
+                            <div class="col col-5 text-right">
+                                $5000 Goal
+                            </div>
+                        </div>
+                    </div><!-- .progress-stats -->
+
+                    <div class="actions">
+                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <small>
+                            <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- .donate-card -->
+        <div class="donate-card">
+        <img src="img/demo.jpg" height="" width="480" />
+            <div class="donate-card-inner">
+                <div class="card-description">
+                    <h3><a href="campaign.php">Junior High School Volleyball Team</a></h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><!-- .progress -->
+
+                    <div class="progress-stats">
+                        <div class="row">
+                            <div class="col col-7">
+                                $500 Raised (10%)
+                            </div>
+                            <div class="col col-5 text-right">
+                                $5000 Goal
                             </div>
                         </div>
                     </div><!-- .progress-stats -->
