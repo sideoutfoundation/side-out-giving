@@ -2222,6 +2222,7 @@ h1.join-donate {
   }
 
   @media only screen and (min-width: 768px) {
+    @include make-col(12);
     input[type=search] {
       background: transparent;
       border: solid 1px #fff;
@@ -2355,4 +2356,135 @@ h1.join-donate {
   padding-bottom: 0;
 }
 
+#donate {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media only screen and (max-width: 766px) {
+    padding-top: 3rem;
+  }
+}
 
+#donate h1 {
+  margin-bottom: 3rem;
+}
+
+#thankyou-general h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-donate {
+  display: block;
+  flex-wrap: wrap;
+  @include make-col(12);
+  @include make-col-offset(0);
+
+  .form-donate {
+     @include make-col-ready();
+    @include make-col(12);
+
+  }
+
+  .donate-desctiption {
+    @include make-col-ready();
+    @include make-col(12);
+    padding-top: 1rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    @include make-col(8);
+    @include make-col-offset(2);
+
+    .form-donate {
+      @include make-col(12);
+      height: auto;
+    }
+
+    .donate-desctiption {
+      @include make-col(12);
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    display: flex;
+    @include make-col(10);
+    @include make-col-offset(1);
+
+    .form-donate {
+      @include make-col(6);
+    }
+
+    .donate-desctiption {
+      @include make-col(6);
+      padding-top: 0;
+    }
+  }
+}
+
+.first-step {
+  margin-top: 3rem;
+  @include make-col(8);
+  @include make-col-offset(2);
+  justify-content: space-evenly;
+
+  .btn {
+    @include make-col(12);
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .btn {
+      @include make-col(5.5);
+    }
+  }
+}
+
+.thankyou-image {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  @media only screen and (min-width: 992px) {
+    padding-top: 8rem;
+  }
+}
+
+.thankbox {
+  background: white;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.thank-you-hero {
+  background: black;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  min-height: 200px;
+  // alternatively you could change .main padding.
+  margin-top: -40px;
+
+    @media only screen and (min-width: 768px) {
+    height: 260px;
+    max-height: 70vh;
+  }
+
+  @media only screen and (min-width: 992px) {
+    height: 500px;
+    max-height: 70vh;
+  }
+
+  @media only screen and (min-width: 1200) {
+    height: 580px;
+    max-height: 70vh;
+    margin-top: -40px;
+  }
+
+  a {
+    color: white;
+  }
+}
