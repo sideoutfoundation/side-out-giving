@@ -1,7 +1,7 @@
 <?php include( './inc/header.php'); ?>
 
     <h1 class="text-center regular join-donate">
-        You are supporting the <strong>2018 Dig Pink School</strong>
+        You are supporting the<br/><strong>2018 Dig Pink School</strong>
     </h1>
 
     <div class="form-wrapper start-campaign">
