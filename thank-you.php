@@ -1,7 +1,7 @@
 <?php include( './inc/header.php'); ?>
 
 
-<div style="max-width: 430px; margin: 0 auto; padding: 3rem 0 6rem 0;">
+<div style="max-width: 430px; margin: 0 auto; padding: 3.5rem 0 6rem 0;">
 
     <div class="donation-form-wrapper">
 

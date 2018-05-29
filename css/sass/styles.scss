@@ -268,7 +268,7 @@ input[type="submit"] {
   @media only screen and (min-width: 768px) {
     display: inline-block;
     margin: 0;
-    padding: 10px 20px 10px;
+    padding: 10px 20px 8px;
   }
   position: relative;
   border: 0;
@@ -590,6 +590,10 @@ input.email {
     border: 1px solid $border-gray;
     color: $medium-gray;
     @include font_bold;
+    @include make-col(3.6);
+    @media only screen and (min-width: 768px) {
+      @include make-col(2.6);
+    }
     @include font-size(1.8);
     line-height: 20px;
     text-align: center;
@@ -827,7 +831,7 @@ div.alert {
   a {
     font-weight: 500;
     width: 49%;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 766px) {
       width: 100%;
     }
   }

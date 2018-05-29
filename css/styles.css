@@ -7626,7 +7626,7 @@ input[type="submit"] {
     .btn-google {
       display: inline-block;
       margin: 0;
-      padding: 10px 20px 10px; } }
+      padding: 10px 20px 8px; } }
   .btn-facebook:hover, .btn-facebook:focus,
   .btn-twitter:hover,
   .btn-twitter:focus,
@@ -8000,6 +8000,10 @@ input.email {
     color: #828D9A;
     font-family: 'Proxima Nova Bold', helvetica, sans-serif;
     font-weight: normal;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
@@ -8009,6 +8013,12 @@ input.email {
     -webkit-transition: background .2s ease;
     -o-transition: background .2s ease;
     transition: background .2s ease; }
+    @media only screen and (min-width: 768px) {
+      .switch-field label {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 21.66667%;
+        flex: 0 0 21.66667%;
+        max-width: 21.66667%; } }
     .switch-field label:hover {
       background-color: #F1F5F7;
       cursor: pointer; }
@@ -8222,7 +8232,7 @@ div.alert {
   .social-logins a {
     font-weight: 500;
     width: 49%; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 766px) {
       .social-logins a {
         width: 100%; } }
 
