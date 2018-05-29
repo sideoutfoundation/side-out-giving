@@ -2193,7 +2193,8 @@ h1.join-donate {
     height: 24px;
   }
 
-  @include make-col(8);
+
+  @include make-col(12);
   display: flex;
   justify-content: flex-end;
 
@@ -2222,7 +2223,7 @@ h1.join-donate {
   }
 
   @media only screen and (min-width: 768px) {
-    @include make-col(12);
+    @include make-col(8);
     input[type=search] {
       background: transparent;
       border: solid 1px #fff;
