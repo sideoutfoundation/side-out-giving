@@ -8220,7 +8220,7 @@ div.alert {
       min-height: 40vh; } }
 
 .social-logins {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8798,11 +8798,10 @@ div.alert {
     color: #7e8b98; }
 
 .share-buttons {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #d7e2e8;
-  padding-bottom: 20px;
   padding-top: 15px;
   width: 100%;
   display: -webkit-box;
@@ -8990,7 +8989,7 @@ div.alert {
       padding: 10px 40px; } }
   .donation-form .share-buttons {
     margin-top: 10px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .donation-form .col-md, .donation-form .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -9541,7 +9540,7 @@ h1.join-donate {
   #demo-2 img {
     position: absolute;
     z-index: 5;
-    margin-top: 11px;
+    margin-top: 13px;
     width: 24px;
     height: 24px; }
   #demo-2 input[type=search] {
@@ -9572,12 +9571,18 @@ h1.join-donate {
       color: #d7e2e8; }
     #demo-2 input[type=search]:focus::placeholder {
       color: #d7e2e8; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     #demo-2 {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 66.66667%;
       flex: 0 0 66.66667%;
-      max-width: 66.66667%; }
+      max-width: 66.66667%; } }
+  @media only screen and (min-width: 768px) {
+    #demo-2 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.33333%;
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%; }
       #demo-2 input[type=search] {
         background: transparent;
         border: solid 1px #fff;
@@ -9615,28 +9620,28 @@ h1.join-donate {
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
         font-size: 1.6rem;
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         font-weight: lighter; }
       #demo-2 input:-ms-input-placeholder {
         color: #d7e2e8;
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
         font-size: 1.6rem;
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         font-weight: lighter; }
       #demo-2 input::-ms-input-placeholder {
         color: #d7e2e8;
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
         font-size: 1.6rem;
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         font-weight: lighter; }
       #demo-2 input::placeholder {
         color: #d7e2e8;
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
         font-size: 1.6rem;
-        line-height: 1.6rem;
+        line-height: 1.8rem;
         font-weight: lighter; } }
 
 .owl-nav {

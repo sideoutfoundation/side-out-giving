@@ -823,7 +823,7 @@ div.alert {
 }
 
 .social-logins {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -1436,11 +1436,11 @@ main {
 
 .share-buttons {
   //display: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 15px;
   margin-right: 15px;
   border-bottom: 1px solid #d7e2e8;
-  padding-bottom: 20px;
+  //padding-bottom: 20px;
   padding-top: 15px;
   width: 100%;
   display: flex;
@@ -1638,7 +1638,7 @@ main {
 
   .share-buttons {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .col-md, .col-sm {
@@ -2187,7 +2187,7 @@ h1.join-donate {
   img {
     position: absolute;
     z-index: 5;
-    margin-top: 11px;
+    margin-top: 13px;
     width: 24px;
     height: 24px;
   }
@@ -2221,8 +2221,12 @@ h1.join-donate {
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     @include make-col(8);
+  }
+
+  @media only screen and (min-width: 768px) {
+    @include make-col(10);
     input[type=search] {
       background: transparent;
       border: solid 1px #fff;
@@ -2265,7 +2269,7 @@ h1.join-donate {
       color: #d7e2e8;
       @include font-body;
       font-size: 1.6rem;
-      line-height: 1.6rem;
+      line-height: 1.8rem;
       font-weight: lighter;
     }
   }
