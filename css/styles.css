@@ -9094,11 +9094,6 @@ div.alert {
 #state {
   width: 100%; }
 
-/*.col-sm.city {
-  @media only screen and (min-width: 576px) {
-    flex: 0 0 45%;
-  }
-}*/
 .expiration {
   display: -webkit-box;
   display: -ms-flexbox;
