@@ -7614,7 +7614,7 @@ input[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   margin: 0 0 10px;
-  padding: 10px 20px 10px;
+  padding: 10px 20px 8px;
   position: relative;
   border: 0;
   -webkit-transition: background .2s ease;
@@ -8335,7 +8335,7 @@ div.alert {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
     margin-top: 2px;
     color: white;
     -webkit-transition: .2s ease;

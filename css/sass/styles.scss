@@ -264,7 +264,7 @@ input[type="submit"] {
   @include font-size(1.4);
   font-weight: 600;
   margin: 0 0 10px;
-  padding: 10px 20px 10px;
+  padding: 10px 20px 8px;
   @media only screen and (min-width: 768px) {
     display: inline-block;
     margin: 0;
@@ -935,24 +935,21 @@ main {
     display: flex;
     align-items: center;
     transition: none;
+    border-bottom: 1px solid $white;
+    margin-top: 2px;
+    color: white;
+    transition: .2s ease;
 
-
-      border-bottom: 2px solid $white;
-      margin-top: 2px;
-      color: white;
-      transition: .2s ease;
-
-
-  @media only screen and (max-width: 768px) {
-    max-width: 80%;
-    text-decoration: underline;
-    border-bottom: none;
-
-    &:hover {
+    @media only screen and (max-width: 768px) {
+      max-width: 80%;
       text-decoration: underline;
       border-bottom: none;
+
+      &:hover {
+        text-decoration: underline;
+        border-bottom: none;
+      }
     }
-  }
 
     span {
       font-weight: bold;
@@ -963,14 +960,12 @@ main {
 
     &:hover {
       //text-decoration: underline;
+      border-bottom: 2px solid #cddce3;
+      color: #cddce3;
+      text-decoration: none;
+      transition: .2s ease;
 
-        border-bottom: 2px solid #cddce3;
-        color: #cddce3;
-        text-decoration: none;
-        transition: .2s ease;
-
-
-      span{
+      span {
         color: #cddce3;
       }
     }
