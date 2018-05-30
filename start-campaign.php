@@ -28,9 +28,13 @@
                 <label for="sponsored" class="control-label">Role</label>
                 <select name="sponsored" class="custom-select">
                     <option value="" class="placeholder" selected="selected">Select</option>
-                    <option value="value1">Value 1</option>
-                    <option value="value2">Value 2</option>
-                    <option value="value3">Value 3</option>
+                    <option value="value1">Parent</option>
+                    <option value="value2">Athlete/Player</option>
+                    <option value="value3">Coach</option>
+                    <option value="value1">Administrator</option>
+                    <option value="value2">Student</option>
+                    <option value="value3">Director</option>
+                    <option value="value3">Other</option>
                 </select>
             </div>
             <div class="form-group col-md">
