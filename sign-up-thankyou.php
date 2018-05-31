@@ -8,16 +8,22 @@
         <section id="thankyou-general">
             <img class="thankyou-image" src="img/woulien-font-white.svg"/>
             <p class="text-center">for signing up for <strong><a href="campaign.php">2018 Dig Pink School</a></strong></p>
+            <h2 class="text-center" style="margin-top: 4rem; margin-bottom: 0; color: white;">Take the first step towards making an impact!</h2>
+            <div class="row first-step">
+                <a class="btn" href="#donate">Donate Now</a>
+            </div>
         </section>
     </div>
 </section>
 
-<section style="background: white; padding-top: 1rem; padding-bottom: 3rem;">
+<section class="thank-you-cta" style="">
+
     <div class="container">
-        <h2 class="text-center" style="margin-top: 2rem;">Take the first step towards making an impact!</h2>
+        <h2 class="text-center" style="margin-top: 2rem; margin-bottom: 0;">Did you know that you get a FREE fundraising webpage?</h2>
         <div class="row first-step">
-            <a class="btn btn-blue" href="">Customize My Page</a></p>
-            <a class="btn" href="#donate">Donate Now</a>
+            <p style="text-align: center; margin-bottom: 2rem;">It’s TRUE! Customize your free fundraising web page to make it unique and represent your initiative. You can add text, pictures, even create a video letting those within your community know what you are doing.  Inspire your audience and enhance the success of your campaign!</p>
+
+            <a class="btn btn-blue blue-hover" href="">Customize My Page</a>
         </div>
     </div>
 </section>

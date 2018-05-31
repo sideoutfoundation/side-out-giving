@@ -2467,12 +2467,13 @@ h1.join-donate {
   background-repeat: no-repeat;
   color: white;
   display: flex;
-  min-height: 200px;
+  min-height: 370px;
+  height: 440px;
   // alternatively you could change .main padding.
   margin-top: -40px;
 
-    @media only screen and (min-width: 768px) {
-    height: 260px;
+  @media only screen and (min-width: 768px) {
+    height: 480px;
     max-height: 70vh;
   }
 
