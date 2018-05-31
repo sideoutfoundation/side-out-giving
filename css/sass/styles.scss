@@ -1105,8 +1105,9 @@ main {
     min-height: 1px;
 
     .share-buttons {
-            position: sticky;
+      position: sticky;
       top: 80px;
+      border-bottom: none;
     }
   }
 }
@@ -2424,7 +2425,7 @@ h1.join-donate {
 }
 
 .first-step {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   @include make-col(8);
   @include make-col-offset(2);
   justify-content: space-evenly;
@@ -2476,12 +2477,12 @@ h1.join-donate {
   }
 
   @media only screen and (min-width: 992px) {
-    height: 500px;
+    height: 600px;
     max-height: 70vh;
   }
 
   @media only screen and (min-width: 1200) {
-    height: 580px;
+    height: 680px;
     max-height: 70vh;
     margin-top: -40px;
   }
@@ -2489,4 +2490,15 @@ h1.join-donate {
   a {
     color: white;
   }
+}
+
+.thank-you-cta {
+  background: white;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+
+.blue-hover:hover {
+  background: #0085b7;
 }
