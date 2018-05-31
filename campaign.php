@@ -1,7 +1,13 @@
 <?php include( './inc/header.php'); ?>
 </div>
 <section class="hero"
-    style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .4) 100% ),
+    style="background-color: black; background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, .7) 0%,
+        rgba(0, 0, 0, 0) 20%,
+        rgba(0, 0, 0, .35) 45%,
+        rgba(0, 0, 0, .7) 100%
+    ),
     url(../img/demo.jpg);">
 
     <div class="container">
@@ -9,7 +15,7 @@
             <div class="hero-text">
                 <div class="campaign-avatar">
                     <figure>
-                        <img src="./img/avatar-default.png" alt="">
+                        <img src="./img/side-out-iconcircle.png" alt="">
                     </figure>
                 </div>
                 <div class="campaign-title">

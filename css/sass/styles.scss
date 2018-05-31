@@ -1091,14 +1091,21 @@ main {
   display: flex;
   justify-content: center;
   width: 100%;
+
+  .share-buttons {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d7e2e8;
+  }
+
   @media only screen and (min-width: 992px) {
     margin-bottom: 20px;
     flex: 0 0 155px;
     position: relative;
     width: 100%;
     min-height: 1px;
+
     .share-buttons {
-      position: sticky;
+            position: sticky;
       top: 80px;
     }
   }
@@ -1439,8 +1446,6 @@ main {
   margin-bottom: 10px;
   margin-left: 15px;
   margin-right: 15px;
-  border-bottom: 1px solid #d7e2e8;
-  //padding-bottom: 20px;
   padding-top: 15px;
   width: 100%;
   display: flex;
@@ -1775,7 +1780,6 @@ main {
   @include font-size(1.4);
   line-height: 20px;
 }
-
 
 h1.join-donate {
   @include font-size(2.6);
@@ -2181,7 +2185,7 @@ h1.join-donate {
   img {
     position: absolute;
     z-index: 5;
-    margin-top: 13px;
+    margin-top: 11px;
     width: 24px;
     height: 24px;
   }
@@ -2240,7 +2244,7 @@ h1.join-donate {
     img {
       position: relative;
       z-index: 5;
-      margin-top: 5px;
+      margin-top: 7px;
       width: 20px;
       height: 20px;
     }
