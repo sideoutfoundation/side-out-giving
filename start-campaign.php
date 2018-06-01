@@ -1,4 +1,6 @@
 <?php include( './inc/header.php'); ?>
+</div>
+<div class="container start-container">
 
     <h1 class="text-center regular join-donate">
         You are supporting<br><strong>2018 Dig Pink School</strong>
