@@ -773,7 +773,7 @@ div.alert {
   display: flex;
   align-items: center;
   a {
-    background: url(../img/search.svg) no-repeat center center;
+    background: url(/img/search.svg) no-repeat center center;
     background-size: 24px 24px;
     display: inline-block;
     font: 0/0 a;
@@ -1220,14 +1220,14 @@ main {
 
 .aside-mission {
   .img {
-    background: url(../img/demo.jpg) no-repeat center center;
+    background: url(/img/demo.jpg) no-repeat center center;
     background-size: cover;
   }
 }
 
 .aside-trial {
   .img {
-    background: url(../img/research.jpg) no-repeat center center;
+    background: url(/img/research.jpg) no-repeat center center;
     background-size: cover;
   }
 }
@@ -1768,7 +1768,7 @@ main {
 }
 
 .cc-number {
-  background-image: url(../img/cc-logos.svg);
+  background-image: url(/img/cc-logos.svg);
   background-repeat: no-repeat;
   background-size: 100px 19px;
   background-position: calc(100% - 10px) center;
