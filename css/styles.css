@@ -7383,17 +7383,11 @@ a[href^="tel:"] {
   font-style: normal; }
 
 html {
-  font-size: 14px;
   position: relative; }
-  @media only screen and (min-width: 375px) {
-    html {
-      font-size: 16px; } }
 
 body {
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 1.66666667;
   color: #4e5862;
   background: transparent !important;
   position: relative; }
@@ -7442,6 +7436,17 @@ h5 {
   margin: 0 0 10px;
   padding: 0; }
 
+.list-group-item.active h1, .list-group-item.active h2, .list-group-item.active h3, .list-group-item.active h4, .list-group-item.active h5,
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5 {
+  color: white !important; }
+
+.card-header {
+  margin-top: 0 !important; }
+
 b, strong {
   color: #0C2543;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
@@ -7483,6 +7488,9 @@ hr {
   stroke: white;
   fill: white; }
 
+.border-primary {
+  border-color: #D90084 !important; }
+
 .form-wrapper {
   background: white;
   border: 1px solid #d7e2e8;
@@ -7517,53 +7525,79 @@ hr {
     text-align: center; }
 
 .form-actions .btn, .form-actions input[type=submit] {
-  margin: 10px 0; }
+  margin: 10px 0;
+  padding: 0.75rem; }
 
 .form-actions .btn-full {
   width: 100%; }
 
-.btn,
-button:not(.close),
-input[type="submit"] {
+.btn {
+  border-radius: 0;
+  font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.actions .btn,
+.form-actions .btn,
+.btn-primary {
   text-align: center;
   text-decoration: none;
   color: white;
   cursor: pointer;
-  line-height: 30px;
   display: block;
-  padding: 10px 24px 8px;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
   font-weight: normal;
-  font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #D90084;
-  border: 1px solid transparent;
-  border-radius: 0;
+  border: 1px solid #D90084;
   -webkit-box-shadow: 0;
   box-shadow: 0;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease; }
   @media only screen and (min-width: 768px) {
-    .btn,
-    button:not(.close),
-    input[type="submit"] {
-      font-size: 16px;
-      padding: 10px 30px 8px; } }
-  @media only screen and (min-width: 768px) {
-    .btn,
-    button:not(.close),
-    input[type="submit"] {
+    .actions .btn,
+    .form-actions .btn,
+    .btn-primary {
       display: inline-block;
-      padding: 10px 50px 8px; } }
-  .btn:focus, .btn:hover,
-  button:not(.close):focus,
-  button:not(.close):hover,
-  input[type="submit"]:focus,
-  input[type="submit"]:hover {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  .actions .btn:focus, .actions .btn:hover, .actions .btn.active,
+  .form-actions .btn:focus,
+  .form-actions .btn:hover,
+  .form-actions .btn.active,
+  .btn-primary:focus,
+  .btn-primary:hover,
+  .btn-primary.active {
     color: white;
-    background: #b7006f; }
+    background: #b7006f !important;
+    border-color: #b7006f !important; }
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #ff27aa;
+  border-color: #ff27aa; }
+
+.btn-outline-primary {
+  color: #D90084;
+  background-color: transparent;
+  background-image: none;
+  border-color: #D90084; }
+  .btn-outline-primary:focus, .btn-outline-primary:hover, .btn-outline-primary.active {
+    color: white;
+    background: #b7006f;
+    border-color: #b7006f; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #D90084; }
+
+.page-item.active .page-link {
+  background: #D90084;
+  border-color: #D90084; }
 
 .btn.dropdown-toggle {
   color: #0C2543;
@@ -7907,19 +7941,13 @@ input[type="text"].form__error {
 .form-control {
   width: 100%; }
 
-.btn-group,
-.form-group,
-.toggle-radio,
-.form-check {
-  margin-bottom: 20px; }
-
 .form-check label,
 .form-check .form-check-label {
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;
   font-weight: normal; }
 
-.form-check + .form-check {
-  margin-top: -10px; }
+.form-check {
+  margin-bottom: 10px; }
 
 .form-check-input {
   margin-top: 2px; }
@@ -8037,47 +8065,6 @@ input.email {
       border: 1px solid #009FDB;
       color: white; }
 
-.input-group.other .form-control {
-  height: 50px; }
-  .input-group.other .form-control:focus {
-    outline: none;
-    -webkit-box-shadow: 0 0 3px 2px transparent;
-    box-shadow: 0 0 3px 2px transparent;
-    border-color: #b7cbd6; }
-
-.margin-bottom-10 {
-  margin-bottom: 10px; }
-
-.input-group-addon {
-  font-size: 18px;
-  font-family: 'Proxima Nova Bold', helvetica, sans-serif;
-  font-weight: normal;
-  border-radius: 0;
-  background: white;
-  color: #828D9A;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.bs-tooltip-bottom .arrow:before, .bs-tooltip-auto[x-placement^="bottom"] .arrow:before,
-.bs-tooltip-auto[x-placement^="bottom"] .arrow:before {
-  border-bottom-color: #009FDB; }
-
-.bs-tooltip-bottom .tooltip-inner, .bs-tooltip-auto[x-placement^="bottom"] .tooltip-inner,
-.bs-tooltip-auto[x-placement^="bottom"] .tooltip-inner {
-  background-color: #009FDB;
-  max-width: 280px;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0; }
-
-.search-link [data-tooltip]:before {
-  margin-left: -90px;
-  width: 180px; }
-
-div.alert {
-  border-radius: 0; }
-  div.alert strong {
-    color: inherit !important; }
-
 .header {
   background: white;
   border-bottom: 1px solid #d7e2e8;
@@ -8182,7 +8169,7 @@ div.alert {
   -ms-flex-align: center;
   align-items: center; }
   .search-link a {
-    background: url(../img/search.svg) no-repeat center center;
+    background: url(/img/search.svg) no-repeat center center;
     background-size: 24px 24px;
     display: inline-block;
     font: 0/0 a;
@@ -8438,6 +8425,8 @@ div.alert {
       width: 0;
       top: 0;
       right: -20px; }
+    .progress .progress-bar.bg-info:after, .progress .progress-bar.bg-warning:after, .progress .progress-bar.bg-danger:after, .progress .progress-bar.progress-bar-striped:after {
+      border-color: transparent; }
 
 .progress-bar {
   width: 0%;
@@ -8593,11 +8582,11 @@ div.alert {
   width: 36px; }
 
 .aside-mission .img {
-  background: url(../img/demo.jpg) no-repeat center center;
+  background: url(/img/demo.jpg) no-repeat center center;
   background-size: cover; }
 
 .aside-trial .img {
-  background: url(../img/research.jpg) no-repeat center center;
+  background: url(/img/research.jpg) no-repeat center center;
   background-size: cover; }
 
 .modal-backdrop.show {
@@ -9113,7 +9102,7 @@ div.alert {
     font-size: 14px; }
 
 .cc-number {
-  background-image: url(../img/cc-logos.svg);
+  background-image: url(/img/cc-logos.svg);
   background-repeat: no-repeat;
   background-size: 100px 19px;
   background-position: calc(100% - 10px) center; }
@@ -9315,56 +9304,6 @@ h1.join-donate {
       display: block;
       margin-right: 10px;
       text-align: center; }
-
-.card {
-  border-bottom: 30px solid #F1F5F7;
-  overflow: hidden;
-  position: relative;
-  background: #D90084;
-  height: 100%;
-  -webkit-transition: background-color .2s ease;
-  -o-transition: background-color .2s ease;
-  transition: background-color .2s ease; }
-  .card.blue {
-    background: #009FDB; }
-  .card-img {
-    height: 180px;
-    background-size: cover !important; }
-    @media only screen and (min-width: 992px) {
-      .card-img {
-        height: 240px; } }
-  .card-text {
-    color: white;
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px 2em; }
-    @media only screen and (min-width: 992px) {
-      .card-text {
-        padding: 10px 40px; } }
-    .card-text p {
-      font-size: 16px;
-      line-height: 1.5; }
-    .card-text h3 {
-      color: white; }
-    .card-text .card-cta {
-      color: white;
-      font-family: 'Proxima Nova Bold', helvetica, sans-serif;
-      font-weight: normal;
-      font-size: 16px;
-      text-transform: uppercase;
-      opacity: 1;
-      -webkit-transform: opacity .2s ease;
-      -ms-transform: opacity .2s ease;
-      transform: opacity .2s ease; }
-      .card-text .card-cta:hover {
-        opacity: .6; }
-  .card:hover {
-    background: #4e5862;
-    color: white; }
-    .card:hover a {
-      text-decoration: underline; }
 
 .footer-donate {
   background: white;
@@ -9891,6 +9830,3 @@ h1.join-donate {
 
 .blue-hover:hover {
   background: #0085b7; }
-
-.start-container {
-  padding-bottom: 3rem; }

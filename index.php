@@ -6,6 +6,7 @@
 
 
 
+<?php include( './inc/theme.php'); ?>
 
 
 
