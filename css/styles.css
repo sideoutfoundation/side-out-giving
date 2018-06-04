@@ -7600,16 +7600,13 @@ hr {
   border-color: #D90084; }
 
 .btn.dropdown-toggle {
-  color: #0C2543;
-  background: white;
   padding: 7px 10px;
   line-height: 1.5;
   font-size: 16px;
   text-transform: capitalize;
   font-family: 'Proxima Nova Regular', helvetica, sans-serif;
   font-weight: normal;
-  letter-spacing: 0;
-  border: 1px solid #d7e2e8; }
+  letter-spacing: 0; }
   .btn.dropdown-toggle:focus {
     -webkit-box-shadow: 0 0 0 0 transparent !important;
     box-shadow: 0 0 0 0 transparent !important; }

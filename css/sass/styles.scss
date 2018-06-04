@@ -269,15 +269,12 @@ input[type="submit"] */{
 }
 
 .btn.dropdown-toggle {
-  color: $black;
-  background: white;
   padding: 7px 10px;
   line-height: 1.5;
   @include font-size(1.6);
   text-transform: capitalize;
   @include font_body;
   letter-spacing: 0;
-  border: 1px solid $border-gray;
   &:focus {
     box-shadow: 0 0 0 0 transparent !important;
   }
