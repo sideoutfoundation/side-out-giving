@@ -87,8 +87,8 @@
                 </div><!-- .campaign-raised -->
 
                 <div class="campaign-buttons">
-                    <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-                    <a href="sign-in-campaign.php" class="btn btn-blue-inverse"
+                    <a href="" data-toggle="modal" class="btn btn-primary btn-lg" data-target="#donate">Donate</a>
+                    <a href="sign-in-campaign.php" class="btn btn-lg btn-blue-inverse"
                     data-toggle="tooltip" data-placement="bottom"
                     title="" data-original-title="Become a supporter. Increase your donation making your own fundraising page which will support this campaign. Then share it with family and friends.">
                         Fundraise for this Campaign
@@ -256,7 +256,7 @@
     </div>
 </section>
 <div class="mobile-follow">
-    <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+    <a href="" data-toggle="modal" class="btn btn-primary" data-target="#donate">Donate</a>
     <a href="sign-in-campaign.php" class="btn btn-blue-inverse d-none d-lg-inline-block">Fundraise for this Campaign</a>
 </div>
 

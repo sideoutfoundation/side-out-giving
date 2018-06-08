@@ -28,7 +28,7 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <a href="" data-toggle="modal" class="btn btn-lg" data-target="#donate">Donate</a>
                         <small>
                             <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
                         </small>
@@ -59,7 +59,7 @@
                     </div><!-- .progress-stats -->
 
                      <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <a href="" data-toggle="modal" class="btn btn-lg" data-target="#donate">Donate</a>
                         <small>
                             <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
                         </small>
@@ -89,7 +89,7 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <a href="" data-toggle="modal" class="btn btn-lg" data-target="#donate">Donate</a>
                         <small>
                             <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
                         </small>
@@ -119,7 +119,7 @@
                     </div><!-- .progress-stats -->
 
                     <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <a href="" data-toggle="modal" class="btn btn-lg" data-target="#donate">Donate</a>
                         <small>
                             <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
                         </small>
@@ -148,7 +148,7 @@
                         </div>
                     </div><!-- .progress-stats -->
                     <div class="actions">
-                        <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                        <a href="" data-toggle="modal" class="btn btn-lg" data-target="#donate">Donate</a>
                         <small>
                             <a href="sign-up-campaign.php" role="button">or fundraise for this campaign</a>
                         </small>
