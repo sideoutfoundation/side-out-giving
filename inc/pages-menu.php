@@ -20,6 +20,8 @@
         <a class="dropdown-item" href="donate-to-campaign.php">Donate to Campaign</a>
         <a class="dropdown-item" href="start-campaign.php">Start Campaign</a>
         <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
+        <a class="dropdown-item" href="campaign-alt.php">Campaign Alt</a>
+        <a class="dropdown-item" href="campaign-alt2.php">Campaign Alt2</a>
     </div>
 </div>
 
