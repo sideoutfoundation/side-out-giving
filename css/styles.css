@@ -8182,7 +8182,7 @@ div.alert {
   -ms-flex-align: center;
   align-items: center; }
   .search-link a {
-    background: url(../img/search.svg) no-repeat center center;
+    background: url(/img/search.svg) no-repeat center center;
     background-size: 24px 24px;
     display: inline-block;
     font: 0/0 a;
@@ -8593,11 +8593,11 @@ div.alert {
   width: 36px; }
 
 .aside-mission .img {
-  background: url(../img/demo.jpg) no-repeat center center;
+  background: url(/img/demo.jpg) no-repeat center center;
   background-size: cover; }
 
 .aside-trial .img {
-  background: url(../img/research.jpg) no-repeat center center;
+  background: url(/img/research.jpg) no-repeat center center;
   background-size: cover; }
 
 .modal-backdrop.show {
@@ -9113,7 +9113,7 @@ div.alert {
     font-size: 14px; }
 
 .cc-number {
-  background-image: url(../img/cc-logos.svg);
+  background-image: url(/img/cc-logos.svg);
   background-repeat: no-repeat;
   background-size: 100px 19px;
   background-position: calc(100% - 10px) center; }
@@ -9862,11 +9862,11 @@ h1.join-donate {
   @media only screen and (min-width: 992px) {
     .thank-you-hero {
       height: 600px;
-      max-height: 70vh; } }
+      max-height: 90vh; } }
   @media only screen and (min-width: 1200) {
     .thank-you-hero {
       height: 680px;
-      max-height: 70vh;
+      max-height: 90vh;
       margin-top: -40px; } }
   .thank-you-hero a {
     color: white; }
