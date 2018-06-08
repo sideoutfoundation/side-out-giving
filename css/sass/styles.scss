@@ -244,7 +244,8 @@ hr {
 }
 
 
-.btn {
+.btn,
+.btn-primary {
   border-radius: 0;
   @include font_bold;
   letter-spacing: 1px;
@@ -255,6 +256,12 @@ hr {
   }
 }
 
+.btn.btn-link {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.modal-cta .btn,
 .actions .btn,
 .form-actions .btn,
 .btn-primary {
@@ -265,6 +272,7 @@ hr {
   display: block;
   @include font_bold;
   letter-spacing: 1px;
+  //padding: 0.75rem;
   text-transform: uppercase;
   background-color: $pink;
   border: 1px solid $pink;
@@ -300,11 +308,11 @@ hr {
 
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 0.5rem 50px;
+  font-size: 1rem !important;
+  padding: .8rem 50px .7rem;
   @include media-breakpoint-down(md){
-    font-size: 1rem !important;
     letter-spacing: 0;
-    padding: 0.5rem 1rem;
+    padding: .6rem 1rem .4rem;
   }
 }
 
@@ -357,7 +365,7 @@ hr {
   }
 }
 
-.btn-blue-inverse {
+.btn.btn-blue-inverse {
   background: white;
   border: 1px solid $blue;
   box-shadow: inset 0 0 0 1px $blue;
@@ -449,7 +457,7 @@ label {
   display: block;
   @include font_bold;
   color: $black;
-  line-height: 20px;
+  line-height: 24px;
   margin-bottom: 4px;
   &.inline {
     display: inline-block;
@@ -603,14 +611,6 @@ input[type="text"].form__error {
   width: 100%;
 }
 
-.btn-group,
-.form-group,
-.toggle-radio,
-.form-check {
-  //margin-bottom: 20px;
-}
-
-
 .form-check {
   label,
   .form-check-label {
@@ -643,13 +643,13 @@ textarea {
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  border: $input-border;
-  & + label {
-    @include font-size(1.4);
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: $input-border;
+    & + label {
+      @include font-size(1.4);
+    }
   }
-}
 
 .form-select select {
   -webkit-appearance: none;
@@ -693,9 +693,9 @@ input.email {
   }
 }*/
 
-.form-check-inline {
-  display: inline-block;
-}
+// .form-check-inline {
+//   display: inline-block;
+// }
 
 .form-check-inline + .form-check-inline {
   margin-left: 6px;
@@ -1038,6 +1038,7 @@ main {
       line-height: 1.11111;
       margin: 0;
       padding: 0;
+      max-width: 500px;
     }
   }
 }
@@ -1200,6 +1201,9 @@ main {
   .btn {
     display: block;
     margin-bottom: 10px;
+    &:first-of-type {
+      @extend .btn-primary;
+    }
   }
   @media only screen and (min-width: 992px) {
     margin-bottom: 0;
@@ -1798,7 +1802,10 @@ main {
   transition: all .3s ease;
   &.reveal {
     overflow: visible;
-    transform: translateY(calc(-100% + 40px));
+    transform: translateY(calc(-100% + 25px));
+  }
+  .custom-control {
+    padding-left: 1.7rem;
   }
 }
 
@@ -1864,13 +1871,13 @@ main {
   .btn,
   button {
     margin: 0 3px 0 0;
-    min-width: 40%;
+    min-width: 100px;
   }
 }
 
 .donation-form-wrapper {
   .form-actions {
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 }
 
@@ -2387,7 +2394,7 @@ h1.join-donate {
       height: 20px;
       width: 20px;
       position: relative;
-      top: -6px;
+      top: -5px;
       font-size: 1.4rem;
       font-weight: 600;
       color: $blue;

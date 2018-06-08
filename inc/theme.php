@@ -1294,7 +1294,7 @@
               <div class="jumbotron">
                 <h1 class="display-3">Hello, world!</h1>
                 <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
+                <hr class="my-4 p-3">
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                 <p class="lead">
                   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
@@ -1376,7 +1376,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="bs-component">
-              <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+              <div class="card text-white border bg-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header">Header</div>
                 <div class="card-body">
                   <h4 class="card-title">Primary card title</h4>
@@ -1436,7 +1436,7 @@
           </div>
           <div class="col-lg-4">
             <div class="bs-component">
-              <div class="card border-primary mb-3" style="max-width: 20rem;">
+              <div class="card border border-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header">Header</div>
                 <div class="card-body">
                   <h4 class="card-title">Primary card title</h4>
@@ -1632,6 +1632,42 @@
         </div>
 
       </footer>
+    </div>
 
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col border border-primary text-secondary my-4 p-3">
+                1 of 3
+            </div>
+            <div class="col-6 border border-primary text-secondary my-4 p-3">
+                2 of 3 (wider)
+            </div>
+            <div class="col border border-primary text-secondary my-4 p-3">
+                3 of 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-primary text-secondary my-4 p-3">
+                1 of 3
+            </div>
+            <div class="col-5 border border-primary text-secondary my-4 p-3">
+                2 of 3 (wider)
+            </div>
+            <div class="col border border-primary text-secondary my-4 p-3">
+                3 of 3
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col-4 border border-primary text-secondary p-3">
+                FYI <code>col-4</code> replaces <code>col-xs-4</code> in Bootstrap 4
+            </div>
+            <div class="col-8 col-md-5 border border-primary text-secondary p-3">
+                2 of 3 (wider)
+            </div>
+            <div class="col col-lg-3 border border-primary text-secondary p-3">
+                3 of 3
+            </div>
+        </div>
     </div>

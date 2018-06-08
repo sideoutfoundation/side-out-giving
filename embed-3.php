@@ -54,11 +54,11 @@
                 </div>
             </div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="fee">
-              <label class="form-check-label" for="fee">
-                I'd like to cover the processing fee so 100% of my 
-                donation goes to Side-Out Foundation
+            <div class="custom-control custom-checkbox mb-4">
+              <input class="custom-control-input" type="checkbox" value="" id="fee" checked>
+              <label class="custom-control-label" for="fee">
+                    I'd like to cover the processing fee so 100% of my
+                    donation goes to Side-Out Foundation
               </label>
             </div>
 

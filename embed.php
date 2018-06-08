@@ -52,21 +52,27 @@
                         </div>
                     </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="1" id="anonymously">
-                        <label class="form-check-label" for="anonymously">
-                            I would like to make this donation anonymously
-                        </label>
+                    <div class="custom-control custom-checkbox mb-2">
+                        <input type="checkbox" class="custom-control-input" value="1" name="anonymously" id="anonymously">
+                        <label class="custom-control-label" for="anonymously">I would like to make this donation anonymously</label>
                     </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="in-honor" id="in-honor" value="1" tabindex="">
-                        <label class="form-check-label" for="in-honor">
-                            Give in honor or in memory of a loved one
-                        </label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="in-honor" id="in-honor" value="1" tabindex="">
+                        <label class="custom-control-label" for="in-honor">Give in honor or in memory of a loved one</label>
                     </div>
 
                     <div id="honoree-fields">
+                        <div class="form-group">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">In honor of</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">In memory of</label>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="dedication_honoree_name">Honoree’s Name</label>
                             <input class="form-control" name="dedication_honoree_name" type="text" id="dedication_honoree_name">
