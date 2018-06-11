@@ -72,6 +72,33 @@
                         <input type="search" placeholder="Search for a supporting campaign"><img src="../img/search.svg" width="24" height="24"/>
                     </form>
                 </div>
+
+                <div class="login-menu">
+                    <div class="dropdown open">
+                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="true" class="dropdown-toggle">
+                            <img src="https://www.gravatar.com/avatar/f900ce725ee19829cd21cdbebbe11cd8.jpg?s=200&amp;d=mm" class="spark-nav-profile-photo m-r-xs">
+                        </a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li class="dropdown-header">Settings</li>
+                            <li class="sublink">
+                                <a href="#" style="cursor: pointer;">Your Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Support</li>
+                            <li class="sublink">
+                                <a href="#" style="cursor: pointer;">Support Center</a>
+                            </li>
+                            <li class="sublink">
+                                <a href="#" style="cursor: pointer;">Contact Us</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="sublink">
+                                <a href="#" style="cursor: pointer;">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div><!-- container -->
     </header><!-- header -->

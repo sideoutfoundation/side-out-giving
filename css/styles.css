@@ -8193,9 +8193,9 @@ input.email {
     .search {
       position: initial;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 83.33333%;
-      flex: 0 0 83.33333%;
-      max-width: 83.33333%;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
       margin-top: auto;
       margin-bottom: auto; } }
 
@@ -8243,6 +8243,26 @@ input.email {
     font: 0/0 a;
     height: 24px;
     width: 24px; }
+
+.login-menu {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 8.33333%;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+  .login-menu .dropdown .dropdown-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .login-menu img {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem; }
 
 /* Demo 2 */
 /*#demo-2 input[type=search] {
@@ -9740,7 +9760,7 @@ h1.join-donate {
       padding-top: 3rem; } }
 
 #donate h1 {
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
 
 #thankyou-general h2 {
   margin-top: 3rem;
@@ -9755,27 +9775,6 @@ h1.join-donate {
   flex: 0 0 100%;
   max-width: 100%;
   margin-left: 0; }
-  .section-donate .form-donate {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%; }
-  .section-donate .donate-desctiption {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding-top: 1rem; }
   @media only screen and (min-width: 768px) {
     .section-donate {
       -webkit-box-flex: 0;
@@ -9815,6 +9814,84 @@ h1.join-donate {
         flex: 0 0 50%;
         max-width: 50%;
         padding-top: 0; } }
+
+.donate-desctiption {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem; }
+  @media only screen and (min-width: 768px) {
+    .donate-desctiption {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-left: 25%; } }
+
+.form-donate {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .form-donate {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66667%;
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+      margin-left: 29.16667%; } }
+
+.donate-last {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0;
+  text-align: center;
+  margin-top: 1.5rem;
+  /*    margin-bottom: 3.5rem;*/
+  color: #D90084; }
+  @media only screen and (min-width: 768px) {
+    .donate-last {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+      margin-left: 16.66667%; } }
+
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none; }
+
+#donate .container {
+  position: relative;
+  z-index: 5; }
+
+.footer-donate {
+  position: relative;
+  z-index: 5; }
 
 .first-step {
   margin-top: 1.5rem;
@@ -9901,4 +9978,22 @@ h1.join-donate {
   margin-top: 2rem; }
 
 .blue-hover:hover {
-  background: #0085b7; }
+  background: white;
+  color: #009FDB;
+  border: 1px solid #009FDB; }
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #d7e2e8; }
+
+.dropdown-header {
+  color: #4e5862;
+  font-size: 1.2rem;
+  font-weight: 500; }
+
+.sublink {
+  padding: 0.7rem 1.5rem; }
+
+.dropdown {
+  border-radius: none;
+  padding: 0; }
