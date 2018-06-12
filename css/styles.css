@@ -9999,3 +9999,8 @@ canvas {
 .dropdown-menu {
   border-radius: 0;
   padding: 0; }
+  .dropdown-menu[area-expanded="true"] {
+    background-color: #F1F5F7; }
+
+.dropdown-menu.show {
+  left: -50%; }

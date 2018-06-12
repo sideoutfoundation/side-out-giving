@@ -2673,11 +2673,19 @@ canvas {
     font-weight: 600;
 }
 
-  .sublink {
-    padding: 0.7rem 1.5rem;
-  }
+.sublink {
+  padding: 0.7rem 1.5rem;
+}
 
-  .dropdown-menu {
-    border-radius: 0;
-    padding: 0;
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+
+  &[area-expanded="true"] {
+    background-color: $light-gray;
   }
+}
+
+.dropdown-menu.show {
+  left: -50%;
+}

@@ -263,7 +263,7 @@ $('a[href*="#"]')
 
         $(window).resize(function () {
             W = window.innerWidth;
-            H = window.innerHeight;
+            H = "985";
             canvas.width = W;
             canvas.height = H;
         });
@@ -279,7 +279,7 @@ $('a[href*="#"]')
         canvas = document.getElementById("canvas");
         ctx = canvas.getContext("2d");
         W = window.innerWidth;
-        H = window.innerHeight;
+        H = "985";
         canvas.width = W;
         canvas.height = H;
     }
@@ -371,7 +371,7 @@ $('a[href*="#"]')
 
     function StartConfetti() {
         W = window.innerWidth;
-        H = window.innerHeight;
+        H = "985";
         canvas.width = W;
         canvas.height = H;
         (function animloop() {
