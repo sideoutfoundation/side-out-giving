@@ -9760,7 +9760,8 @@ h1.join-donate {
       padding-top: 3rem; } }
 
 #donate h1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 2.8rem; }
 
 #thankyou-general h2 {
   margin-top: 3rem;
@@ -9988,12 +9989,13 @@ canvas {
 
 .dropdown-header {
   color: #4e5862;
-  font-size: 1.2rem;
-  font-weight: 500; }
+  font-size: 1rem;
+  background-color: #F1F5F7;
+  font-weight: 600; }
 
 .sublink {
   padding: 0.7rem 1.5rem; }
 
-.dropdown {
-  border-radius: none;
+.dropdown-menu {
+  border-radius: 0;
   padding: 0; }

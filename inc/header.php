@@ -83,7 +83,7 @@
                             <li class="sublink">
                                 <a href="#" style="cursor: pointer;">Your Settings</a>
                             </li>
-                            <li class="divider"></li>
+
                             <li class="dropdown-header">Support</li>
                             <li class="sublink">
                                 <a href="#" style="cursor: pointer;">Support Center</a>

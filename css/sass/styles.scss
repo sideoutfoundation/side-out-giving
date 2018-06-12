@@ -2456,6 +2456,7 @@ h1.join-donate {
 
 #donate h1 {
   margin-bottom: 1rem;
+  font-size: 2.8rem;
 }
 
 #thankyou-general h2 {
@@ -2667,15 +2668,16 @@ canvas {
 
 .dropdown-header {
     color: #4e5862;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    background-color: $light-gray;
+    font-weight: 600;
 }
 
   .sublink {
     padding: 0.7rem 1.5rem;
   }
 
-  .dropdown {
-    border-radius: none;
+  .dropdown-menu {
+    border-radius: 0;
     padding: 0;
   }
