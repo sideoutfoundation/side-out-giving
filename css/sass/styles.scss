@@ -847,7 +847,7 @@ input.email {
 
 .search {
   @include make-col-ready();
-  @include make-col(12);
+  @include make-col(10);
   position: absolute;
   display: flex;
   align-items: center;
@@ -856,7 +856,7 @@ input.email {
 
   @media only screen and (min-width: 768px) {
     position: initial;
-    @include make-col(10);
+    @include make-col(9);
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -906,32 +906,32 @@ input.email {
   }
 }
 
+.login-menu {
+  @include make-col(2);
+  position: absolute;
+  right: 15px;
+  top: 5px;
 
+  .dropdown .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
+  img {
+    border-radius: 50%;
+    border: 1px solid $border-gray;
+    height: 3rem;
+    width: 3rem;
+  }
 
-/* Demo 2 */
-/*#demo-2 input[type=search] {
-  width: 15px;
-  padding-left: 10px;
-  color: transparent;
-  cursor: pointer;
+  @media only screen and (min-width: 768px) {
+    @include make-col(1);
+    position: initial;
+    right: 10px;
+    top: 5px;
+  }
 }
-#demo-2 input[type=search]:hover {
-  background-color: #fff;
-}
-#demo-2 input[type=search]:focus {
-  width: 130px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-  color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-  color: transparent;
-}*/
 
 
 // -----------------------------------------------------------------------------
@@ -2462,18 +2462,6 @@ h1.join-donate {
   @include make-col(12);
   @include make-col-offset(0);
 
-  .form-donate {
-     @include make-col-ready();
-    @include make-col(12);
-
-  }
-
-  .donate-desctiption {
-    @include make-col-ready();
-    @include make-col(12);
-    padding-top: 1rem;
-  }
-
   @media only screen and (min-width: 768px) {
     @include make-col(8);
     @include make-col-offset(2);
@@ -2502,6 +2490,53 @@ h1.join-donate {
       padding-top: 0;
     }
   }
+}
+
+.donate-desctiption {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  @media only screen and (min-width: 768px) {
+    @include make-col(6);
+    @include make-col-offset(3);
+  }
+}
+
+.form-donate {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
+
+  @media only screen and (min-width: 768px) {
+    @include make-col(5);
+    @include make-col-offset(3.5);
+  }
+}
+
+.donate-last {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
+  text-align: center;
+  margin-top: 1.5rem;
+/*    margin-bottom: 3.5rem;*/
+  color: $pink;
+  @media only screen and (min-width: 768px) {
+    @include make-col(8);
+    @include make-col-offset(2);
+  }
+}
+
+
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+
 }
 
 .first-step {
@@ -2596,6 +2631,67 @@ h1.join-donate {
 }
 
 .blue-hover:hover {
-  background: #0085b7;
+  background: white;
+  color: $blue;
+  border: 1px solid $blue;
 
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid $border-gray;
+}
+
+.dropdown-header {
+  color: #4e5862;
+  font-size: 1rem;
+  background-color: $light-gray;
+  font-weight: 600;
+}
+
+.sublink {
+  padding: 0.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    fill: $medium-gray;
+    margin-right: 0.5rem;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0;
+}
+
+.header {
+  .dropdown-toggle {
+    &::after  {
+      border-top-color: $medium-gray;
+
+      &:focus {
+        border-top-color: $medium-gray;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      &::after  {
+        border-top-color: $pink;
+      }
+    }
+  }
+  .dropdown-menu.show {
+    left: -15rem;
+    width: 15rem;
+    &[area-expanded="true"] {
+      background-color: $light-gray;
+    }
+  }
 }
