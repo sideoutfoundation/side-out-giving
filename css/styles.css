@@ -8150,6 +8150,10 @@ input.email {
   padding: 16px 0;
   position: relative;
   z-index: 1; }
+  .header .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   @media only screen and (min-width: 992px) {
     .header {
       padding: 25px 0 24px; } }
@@ -8161,9 +8165,9 @@ input.email {
   padding-right: 15px;
   padding-left: 15px;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.33333%;
-  flex: 0 0 33.33333%;
-  max-width: 33.33333%; }
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
   @media only screen and (min-width: 768px) {
     .brand {
       -webkit-box-flex: 0;
@@ -8198,8 +8202,7 @@ input.email {
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  margin-top: -7px; }
+  justify-content: flex-end; }
   @media only screen and (min-width: 768px) {
     .search {
       position: initial;
@@ -8262,7 +8265,10 @@ input.email {
   max-width: 16.66667%;
   position: absolute;
   right: 15px;
-  top: 5px; }
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
   .login-menu .dropdown .dropdown-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8276,8 +8282,12 @@ input.email {
   .login-menu img {
     border-radius: 50%;
     border: 1px solid #d7e2e8;
-    height: 3rem;
-    width: 3rem; }
+    height: 40px;
+    width: 40px; }
+    @media only screen and (min-width: 768px) {
+      .login-menu img {
+        height: 3rem;
+        width: 3rem; } }
   @media only screen and (min-width: 768px) {
     .login-menu {
       -webkit-box-flex: 0;
@@ -8286,7 +8296,10 @@ input.email {
       max-width: 8.33333%;
       position: initial;
       right: 10px;
-      top: 5px; } }
+      top: auto;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
 
 .main {
   background: #F1F5F7;
@@ -9570,7 +9583,7 @@ h1.join-donate {
   #demo-2 img {
     position: absolute;
     z-index: 5;
-    margin-top: 11px;
+    margin-top: 9px;
     width: 24px;
     height: 24px; }
   #demo-2 input[type=search] {
@@ -10019,3 +10032,11 @@ canvas {
   width: 15rem; }
   .header .dropdown-menu.show[area-expanded="true"] {
     background-color: #F1F5F7; }
+
+@media (max-width: 767.98px) {
+  .pagination {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+.pagination a {
+  border-radius: 0 !important; }

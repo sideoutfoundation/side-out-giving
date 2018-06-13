@@ -818,14 +818,19 @@ input.email {
   position: relative;
   z-index: 1;
 
+  .row {
+    align-items: center;
+  }
+
   @media only screen and (min-width: 992px) {
     padding: 25px 0 24px;
   }
+
 }
 
 .brand {
   @include make-col-ready();
-  @include make-col(4);
+  @include make-col(6);
 
   @media only screen and (min-width: 768px) {
     @include make-col(2);
@@ -852,7 +857,6 @@ input.email {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: -7px;
 
   @media only screen and (min-width: 768px) {
     position: initial;
@@ -910,7 +914,8 @@ input.email {
   @include make-col(2);
   position: absolute;
   right: 15px;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 
   .dropdown .dropdown-toggle {
     display: flex;
@@ -921,15 +926,20 @@ input.email {
   img {
     border-radius: 50%;
     border: 1px solid $border-gray;
-    height: 3rem;
-    width: 3rem;
+    height: 40px;
+    width: 40px;
+    @media only screen and (min-width: 768px) {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   @media only screen and (min-width: 768px) {
     @include make-col(1);
     position: initial;
     right: 10px;
-    top: 5px;
+    top: auto;
+    transform: none;
   }
 }
 
@@ -2266,7 +2276,7 @@ h1.join-donate {
   img {
     position: absolute;
     z-index: 5;
-    margin-top: 11px;
+    margin-top: 9px;
     width: 24px;
     height: 24px;
   }
@@ -2693,5 +2703,14 @@ canvas {
     &[area-expanded="true"] {
       background-color: $light-gray;
     }
+  }
+}
+
+.pagination {
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
+  a {
+    border-radius: 0 !important;
   }
 }

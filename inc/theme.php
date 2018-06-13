@@ -606,7 +606,7 @@
             </div>
 
             <div class="bs-component">
-              <table class="table table-hover">
+              <table class="table table-hover table-responsive">
                 <thead>
                   <tr>
                     <th scope="col">Type</th>
