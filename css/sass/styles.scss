@@ -5,7 +5,6 @@
 */
 
 
-
 @import
   'variables',
   'mixins';
@@ -16,8 +15,6 @@
 @import
   'base',
   'fonts';
-
-
 
 
 html {
@@ -36,6 +33,10 @@ body {
   color: $gray;
   background: transparent !important;
   position: relative;
+}
+
+.bs-component {
+  margin-bottom: 1rem;
 }
 
 // -----------------------------------------------------------------------------
@@ -244,21 +245,23 @@ hr {
 }
 
 
-.btn,
-.btn-primary {
+.btn {
   border-radius: 0;
   @include font_bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 1px;
+  padding: .5625rem .75rem .5rem; // 9px 15px 8px = 40px height
   @media only screen and (min-width: 992px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    //padding-left: 50px;
+    //padding-right: 50px;
   }
 }
 
 .btn.btn-link {
-  padding-left: .75rem;
-  padding-right: .75rem;
+  //padding-left: .75rem;
+  //padding-right: .75rem;
 }
 
 .modal-cta .btn,
@@ -271,8 +274,7 @@ hr {
   cursor: pointer;
   display: block;
   @include font_bold;
-  letter-spacing: 1px;
-  //padding: 0.75rem;
+
   text-transform: uppercase;
   background-color: $pink;
   border: 1px solid $pink;

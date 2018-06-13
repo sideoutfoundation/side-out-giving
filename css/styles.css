@@ -7394,6 +7394,9 @@ body {
   background: transparent !important;
   position: relative; }
 
+.bs-component {
+  margin-bottom: 1rem; }
+
 h1, h2, h3, h4, h5 {
   color: #0C2543;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
@@ -7560,24 +7563,15 @@ hr {
 .form-actions .btn-full {
   width: 100%; }
 
-.btn,
-.btn-primary,
-.campaign-buttons .btn:first-of-type {
+.btn {
   border-radius: 0;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
   font-weight: normal;
   letter-spacing: 1px;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 992px) {
-    .btn,
-    .btn-primary,
-    .campaign-buttons .btn:first-of-type {
-      padding-left: 50px;
-      padding-right: 50px; } }
-
-.btn.btn-link {
-  padding-left: .75rem;
-  padding-right: .75rem; }
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 1px;
+  padding: .5625rem .75rem .5rem; }
 
 .modal-cta .btn,
 .actions .btn,
@@ -7591,7 +7585,6 @@ hr {
   display: block;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
   font-weight: normal;
-  letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #D90084;
   border: 1px solid #D90084;
