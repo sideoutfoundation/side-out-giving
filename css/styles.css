@@ -8175,9 +8175,9 @@ input.email {
   padding-right: 15px;
   padding-left: 15px;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+  -ms-flex: 0 0 83.33333%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8246,9 +8246,12 @@ input.email {
 
 .login-menu {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 8.33333%;
-  flex: 0 0 8.33333%;
-  max-width: 8.33333%; }
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+  position: absolute;
+  right: 15px;
+  top: 5px; }
   .login-menu .dropdown .dropdown-toggle {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8261,8 +8264,18 @@ input.email {
     justify-content: flex-end; }
   .login-menu img {
     border-radius: 50%;
+    border: 1px solid #d7e2e8;
     height: 3rem;
     width: 3rem; }
+  @media only screen and (min-width: 768px) {
+    .login-menu {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.33333%;
+      flex: 0 0 8.33333%;
+      max-width: 8.33333%;
+      position: initial;
+      right: 10px;
+      top: 5px; } }
 
 /* Demo 2 */
 /*#demo-2 input[type=search] {
@@ -9994,7 +10007,18 @@ canvas {
   font-weight: 600; }
 
 .sublink {
-  padding: 0.7rem 1.5rem; }
+  padding: 0.7rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .sublink svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #828D9A;
+    margin-right: 0.5rem; }
 
 .dropdown-menu {
   border-radius: 0;
@@ -10002,5 +10026,17 @@ canvas {
   .dropdown-menu[area-expanded="true"] {
     background-color: #F1F5F7; }
 
+.dropdown-toggle::after {
+  border-top-color: #828D9A; }
+  .dropdown-toggle::after:focus {
+    border-top-color: #828D9A; }
+  @media only screen and (max-width: 768px) {
+    .dropdown-toggle::after {
+      display: none; } }
+
+.dropdown-toggle:hover::after {
+  border-top-color: #D90084; }
+
 .dropdown-menu.show {
-  left: -50%; }
+  left: -15rem;
+  width: 15rem; }

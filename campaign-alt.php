@@ -8,7 +8,7 @@
 
         rgba(0, 0, 0, .5) 100%
     ),
-    url(../img/campaign-hero-background-1.jpg);">
+    url(../img/side-out-gradient-hands-bg-final@2x.jpg);">
 
     <div class="container">
         <div class="row">

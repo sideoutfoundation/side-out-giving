@@ -843,7 +843,7 @@ input.email {
 
 .search {
   @include make-col-ready();
-  @include make-col(12);
+  @include make-col(10);
   position: absolute;
   display: flex;
   align-items: center;
@@ -904,7 +904,7 @@ input.email {
 
 .login-menu {
   //padding-left: 2.5rem;
-  @include make-col(1);
+  @include make-col(2);
 
   .dropdown .dropdown-toggle {
     display: flex;
@@ -914,8 +914,20 @@ input.email {
 
   img {
     border-radius: 50%;
+    border: 1px solid $border-gray;
     height: 3rem;
     width: 3rem;
+  }
+
+  position: absolute;
+  right: 15px;
+  top: 5px;
+
+  @media only screen and (min-width: 768px) {
+    @include make-col(1);
+    position: initial;
+    right: 10px;
+    top: 5px;
   }
 }
 
@@ -2667,14 +2679,23 @@ canvas {
 }
 
 .dropdown-header {
-    color: #4e5862;
-    font-size: 1rem;
-    background-color: $light-gray;
-    font-weight: 600;
+  color: #4e5862;
+  font-size: 1rem;
+  background-color: $light-gray;
+  font-weight: 600;
 }
 
 .sublink {
   padding: 0.7rem 1.5rem;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    fill: $medium-gray;
+    margin-right: 0.5rem;
+  }
 }
 
 .dropdown-menu {
@@ -2686,6 +2707,31 @@ canvas {
   }
 }
 
-.dropdown-menu.show {
-  left: -50%;
+.dropdown-toggle {
+
+  &::after  {
+    border-top-color: $medium-gray;
+
+    &:focus {
+      border-top-color: $medium-gray;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    &::after  {
+      border-top-color: $pink;
+    }
+  }
+
+
 }
+
+.dropdown-menu.show {
+  left: -15rem;
+  width: 15rem;
+}
+
