@@ -246,22 +246,17 @@ hr {
 
 
 .btn {
-  border-radius: 0;
+  border-radius: 0 !important;
   @include font_bold;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: .875rem;
   letter-spacing: 1px;
-  padding: .5625rem .75rem .5rem; // 9px 15px 8px = 40px height
+  padding: .5625rem 1.25rem .5rem; // 9px 15px 8px = 40px height
   @media only screen and (min-width: 992px) {
-    //padding-left: 50px;
-    //padding-right: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-}
-
-.btn.btn-link {
-  //padding-left: .75rem;
-  //padding-right: .75rem;
 }
 
 .modal-cta .btn,
@@ -333,6 +328,13 @@ hr {
   &:focus,
   &.focus {
     box-shadow: 0 0 0 .2rem rgba($blue, .2);
+  }
+}
+
+.btn-toolbar {
+  .btn {
+    padding-right: .75rem;
+    padding-left: .75rem;
   }
 }
 
@@ -845,7 +847,7 @@ input.email {
 
 .search {
   @include make-col-ready();
-  @include make-col(10);
+  @include make-col(12);
   position: absolute;
   display: flex;
   align-items: center;
@@ -854,7 +856,7 @@ input.email {
 
   @media only screen and (min-width: 768px) {
     position: initial;
-    @include make-col(9);
+    @include make-col(10);
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -904,34 +906,7 @@ input.email {
   }
 }
 
-.login-menu {
-  //padding-left: 2.5rem;
-  @include make-col(2);
 
-  .dropdown .dropdown-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  img {
-    border-radius: 50%;
-    border: 1px solid $border-gray;
-    height: 3rem;
-    width: 3rem;
-  }
-
-  position: absolute;
-  right: 15px;
-  top: 5px;
-
-  @media only screen and (min-width: 768px) {
-    @include make-col(1);
-    position: initial;
-    right: 10px;
-    top: 5px;
-  }
-}
 
 
 /* Demo 2 */
@@ -1230,6 +1205,7 @@ main {
   .btn {
     display: block;
     margin-bottom: 10px;
+    @extend .btn-lg;
     &:first-of-type {
       @extend .btn-primary;
     }
@@ -1517,6 +1493,9 @@ main {
   a, a:focus {
     box-shadow: 0 !important;
     outline: none !important;
+  }
+  .btn:not(.btn-blue-inverse) {
+    @extend .btn-primary;
   }
 }
 
@@ -2469,8 +2448,7 @@ h1.join-donate {
 }
 
 #donate h1 {
-  margin-bottom: 1rem;
-  font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 
 #thankyou-general h2 {
@@ -2484,9 +2462,17 @@ h1.join-donate {
   @include make-col(12);
   @include make-col-offset(0);
 
+  .form-donate {
+     @include make-col-ready();
+    @include make-col(12);
 
+  }
 
-
+  .donate-desctiption {
+    @include make-col-ready();
+    @include make-col(12);
+    padding-top: 1rem;
+  }
 
   @media only screen and (min-width: 768px) {
     @include make-col(8);
@@ -2517,65 +2503,6 @@ h1.join-donate {
     }
   }
 }
-
-  .donate-desctiption {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 3.5rem;
-    @media only screen and (min-width: 768px) {
-      @include make-col(6);
-      @include make-col-offset(3);
-    }
-  }
-
-  .form-donate {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-
-    @media only screen and (min-width: 768px) {
-      @include make-col(5);
-      @include make-col-offset(3.5);
-    }
-  }
-
-  .donate-last {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-    text-align: center;
-    margin-top: 1.5rem;
-/*    margin-bottom: 3.5rem;*/
-    color: $pink;
-    @media only screen and (min-width: 768px) {
-      @include make-col(8);
-      @include make-col-offset(2);
-    }
-  }
-
-
-
-canvas {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-
-}
-
-#donate .container {
-  position: relative;
-  z-index: 5;
-}
-
-.footer-donate {
-  position: relative;
-  z-index: 5;
-}
-
 
 .first-step {
   margin-top: 1.5rem;
@@ -2669,71 +2596,6 @@ canvas {
 }
 
 .blue-hover:hover {
-  background: white;
-  color: $blue;
-  border: 1px solid $blue;
+  background: #0085b7;
 
 }
-
-.divider {
-  width: 100%;
-  border-bottom: 1px solid $border-gray;
-}
-
-.dropdown-header {
-  color: #4e5862;
-  font-size: 1rem;
-  background-color: $light-gray;
-  font-weight: 600;
-}
-
-.sublink {
-  padding: 0.7rem 1.5rem;
-  display: flex;
-  align-items: center;
-
-  svg {
-    width: 1rem;
-    height: 1rem;
-    fill: $medium-gray;
-    margin-right: 0.5rem;
-  }
-}
-
-.dropdown-menu {
-  border-radius: 0;
-  padding: 0;
-
-  &[area-expanded="true"] {
-    background-color: $light-gray;
-  }
-}
-
-.dropdown-toggle {
-
-  &::after  {
-    border-top-color: $medium-gray;
-
-    &:focus {
-      border-top-color: $medium-gray;
-    }
-
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  &:hover {
-    &::after  {
-      border-top-color: $pink;
-    }
-  }
-
-
-}
-
-.dropdown-menu.show {
-  left: -15rem;
-  width: 15rem;
-}
-
