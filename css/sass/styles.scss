@@ -816,7 +816,7 @@ input.email {
   border-bottom: 1px solid $border-gray;
   padding: 16px 0;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   @media only screen and (min-width: 992px) {
     padding: 25px 0 24px;
@@ -2758,7 +2758,7 @@ h1.join-donate {
 
 .thankyou-image {
   width: 100%;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
   padding-left: 15%;
   padding-right: 15%;
@@ -2870,44 +2870,77 @@ h1.join-donate {
   }
 }
 
-.dropdown-toggle {
+.personal {
 
-  &::after  {
-    border-top-color: $medium-gray;
+  .dropdown-toggle {
 
-    &:focus {
-      border-top-color: $medium-gray;
-    }
-
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  &:hover {
     &::after  {
-      border-top-color: $pink;
+      border-top-color: $medium-gray;
+
+      &:focus {
+        border-top-color: $medium-gray;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      &::after  {
+        border-top-color: $pink;
+      }
     }
   }
-}
 
-.dropdown-menu.show {
-  left: -15rem;
-  width: 15rem;
+  .dropdown-menu.show {
+    left: -5.3rem !important;
+    width: 15rem;
+    top: 8px !important;
+  }
 }
-
 
 .logged-menu {
   @include make-col-ready();
-  padding-right: 0;
-  @include make-col(4);
   display: flex;
-  justify-content: space-evenly;
-    align-items: center;
+  position: absolute;
+  z-index: 55;
+  @include make-col(12);
+  top: 3.9rem;
+  height: auto;
+  background: $light-gray;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   a {
     color: $black;
     @include font_semi;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dropdown-menu.show {
+    top: 8px !important;
+    left: 6px !important;
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    height: auto;
+    position: inherit;
+    padding-right: 0;
+    @include make-col(4);
+    top: auto;
+    justify-content: space-evenly;
+    background: transparent;
+
+   a {
+      color: $black;
+      @include font_semi;
+    }
   }
 }
 

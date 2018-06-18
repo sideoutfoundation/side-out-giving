@@ -73,7 +73,7 @@
                     </form>
                 </div>
 
-                <div class="login-menu">
+                <div class="login-menu personal">
                     <div class="dropdown open">
                         <a href="#" data-toggle="dropdown" role="button" aria-expanded="true" class="dropdown-toggle">
                             <img src="https://www.gravatar.com/avatar/f900ce725ee19829cd21cdbebbe11cd8.jpg?s=200&amp;d=mm" >
