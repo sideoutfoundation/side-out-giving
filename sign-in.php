@@ -1,5 +1,5 @@
 
-<?php include( './inc/header.php'); ?>
+<?php include( './inc/header-logged-out.php'); ?>
 
 
 <div class="row">

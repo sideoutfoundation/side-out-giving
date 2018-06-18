@@ -1,5 +1,5 @@
 
-<?php include( './inc/header.php'); ?>
+<?php include( './inc/header-logged-in.php'); ?>
 </div>
 <section class="thank-you-hero"
     style="background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .4) 100% ),
@@ -29,7 +29,7 @@
 </section>
 
 <div id="outer-donate">
-<canvas id="canvas"></canvas>
+
 <section id="donate">
 
     <div class="container">
@@ -41,7 +41,17 @@
             <div class="donate-desctiption">
                 <p>Did you know that having funds on your fundraising page to start increases donor contributions by 33%? It’s like putting a $1 in the donation jar!  Make the first donation and inspire your visitors contribute and help you reach your fundraising goal.</p>
             </div>
+<div id="party-popper">
+    <div class="party-popper" >
+        <div class="party-popper__emoji">🎉</div>
+    </div>
+</div>
 
+<div id="party-popper-2">
+    <div class="party-popper-2" >
+        <div class="party-popper-2__emoji">🎉</div>
+    </div>
+</div>
 
        <!--  <div class="section-donate"> -->
             <div class="form-donate">
@@ -147,8 +157,8 @@
 </section>
 </div>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/latest/mojs-player.min.js"></script>
 
 <script>
 $('#honoree-fields').hide()
@@ -200,225 +210,186 @@ $('a[href*="#"]')
     }
   });
 
-  (function () {
-    // globals
-    var canvas;
-    var ctx;
-    var W;
-    var H;
-    var mp = 150; //max particles
-    var particles = [];
-    var angle = 0;
-    var tiltAngle = 0;
-    var confettiActive = true;
-    var animationComplete = true;
-    var deactivationTimerHandler;
-    var reactivationTimerHandler;
-    var animationHandler;
 
-    // objects
+function partyPopper(selector, debug) {
+    const colors = [
+        '#D90084',
+        '#009FDB',
+        '#7ED321',
+        '#F4B940',
+    ]
 
-    var particleColors = {
-        colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Salmon", "Crimson"],
-        colorIndex: 0,
-        colorIncrementer: 0,
-        colorThreshold: 10,
-        getColor: function () {
-            if (this.colorIncrementer >= 10) {
-                this.colorIncrementer = 0;
-                this.colorIndex++;
-                if (this.colorIndex >= this.colorOptions.length) {
-                    this.colorIndex = 0;
-                }
-            }
-            this.colorIncrementer++;
-            return this.colorOptions[this.colorIndex];
-        }
+    const flight = {
+        isSwirl: true,
+        swirlSize: 'rand(0, 20)',
+        swirlFrequency: 'rand(1, 3)',
+        direction: [-1, 1],
+        degreeShift: 'rand(15, 55)',
+        duration: 3000,
+        easing: 'cubic.out',
+        pathScale: 'stagger(.5)',
     }
 
-    function confettiParticle(color) {
-        this.x = Math.random() * W; // x-coordinate
-        this.y = (Math.random() * H) - H; //y-coordinate
-        this.r = RandomFromTo(10, 30); //radius;
-        this.d = (Math.random() * mp) + 10; //density;
-        this.color = color;
-        this.tilt = Math.floor(Math.random() * 10) - 10;
-        this.tiltAngleIncremental = (Math.random() * 0.07) + .05;
-        this.tiltAngle = 0;
-
-        this.draw = function () {
-            ctx.beginPath();
-            ctx.lineWidth = this.r / 2;
-            ctx.strokeStyle = this.color;
-            ctx.moveTo(this.x + this.tilt + (this.r / 4), this.y);
-            ctx.lineTo(this.x + this.tilt, this.y + this.tilt + (this.r / 4));
-            return ctx.stroke();
-        }
+    const bent = {
+        shape: 'rect',
+        radius: 'rand(0, 20)',
+        radiusY: 7,
+        //strokeLinecap: 'round',
+        strokeWidth: 8,
+        fill: colors,
+        stroke: 'none',
+        angle: {0: 'rand(-720, 720)'},
+        ...flight,
     }
 
-    $(document).ready(function () {
-        SetGlobals();
-        InitializeButton();
-        InitializeConfetti();
+    const flake = {
+        shape:'circle',
+        radius: 'rand(5, 10)',
+        fill: colors,
+        ...flight,
+    }
 
-        $(window).resize(function () {
-            W = window.innerWidth;
-            H = "985";
-            canvas.width = W;
-            canvas.height = H;
-        });
+    // Bursts
+    const burst = {
+        parent: selector,
+        radius: {0 : 'rand(50, 100)'},
+        count: 'rand(18, 22)',
+        degree: 30,
+    }
 
+    const bentBurst = new mojs.Burst({
+        ...burst,
+        children: {
+            ...bent,
+        }
     });
 
-    function InitializeButton() {
-        $('#stopButton').click(DeactivateConfetti);
-        $('#startButton').click(RestartConfetti);
-    }
-
-    function SetGlobals() {
-        canvas = document.getElementById("canvas");
-        ctx = canvas.getContext("2d");
-        W = window.innerWidth;
-        H = "985";
-        canvas.width = W;
-        canvas.height = H;
-    }
-
-    function InitializeConfetti() {
-        particles = [];
-        animationComplete = false;
-        for (var i = 0; i < mp; i++) {
-            var particleColor = particleColors.getColor();
-            particles.push(new confettiParticle(particleColor));
+    const flakeBurst = new mojs.Burst({
+        ...burst,
+        children: {
+            ...flake,
         }
-        StartConfetti();
+    });
+
+
+    bentBurst.play()
+    flakeBurst.play()
+
+};
+
+
+
+function partyPopper2(selector, debug) {
+    const colors = [
+        '#D90084',
+        '#009FDB',
+        '#7ED321',
+        '#F4B940',
+    ]
+
+    const flight = {
+        isSwirl: true,
+        swirlSize: 'rand(0, 20)',
+        swirlFrequency: 'rand(1, 3)',
+        direction: [-1, 1],
+        degreeShift: 'rand(-50, -5)',
+        duration: 3000,
+        easing: 'cubic.out',
+        pathScale: 'stagger(.5)',
     }
 
-    function Draw() {
-        ctx.clearRect(0, 0, W, H);
-        var results = [];
-        for (var i = 0; i < mp; i++) {
-            (function (j) {
-                results.push(particles[j].draw());
-            })(i);
+    const bent = {
+        shape: 'rect',
+        radius: 'rand(0, 20)',
+        radiusY: 7,
+        //strokeLinecap: 'round',
+        strokeWidth: 8,
+        fill: colors,
+        stroke: 'none',
+        angle: {0: 'rand(-710, 720)'},
+        ...flight,
+    }
+
+    const flake = {
+        shape:'circle',
+        radius: 'rand(5, 10)',
+        fill: colors,
+        ...flight,
+    }
+
+    // Bursts
+    const burst = {
+        parent: selector,
+        radius: {0 : 'rand(50, 100)'},
+        count: 'rand(18, 22)',
+        degree: -30,
+    }
+
+    const bentBurst = new mojs.Burst({
+        ...burst,
+        children: {
+            ...bent,
         }
-        Update();
+    });
 
-        return results;
-    }
-
-    function RandomFromTo(from, to) {
-        return Math.floor(Math.random() * (to - from + 1) + from);
-    }
-
-
-    function Update() {
-        var remainingFlakes = 0;
-        var particle;
-        angle += 0.01;
-        tiltAngle += 0.1;
-
-        for (var i = 0; i < mp; i++) {
-            particle = particles[i];
-            if (animationComplete) return;
-
-            if (!confettiActive && particle.y < -15) {
-                particle.y = H + 100;
-                continue;
-            }
-
-            stepParticle(particle, i);
-
-            if (particle.y <= H) {
-                remainingFlakes++;
-            }
-            CheckForReposition(particle, i);
+    const flakeBurst = new mojs.Burst({
+        ...burst,
+        children: {
+            ...flake,
         }
+    });
 
-        if (remainingFlakes === 0) {
-            StopConfetti();
-        }
-    }
 
-    function CheckForReposition(particle, index) {
-        if ((particle.x > W + 20 || particle.x < -20 || particle.y > H) && confettiActive) {
-            if (index % 5 > 0 || index % 2 == 0) //66.67% of the flakes
-            {
-                repositionParticle(particle, Math.random() * W, -10, Math.floor(Math.random() * 10) - 20);
-            } else {
-                if (Math.sin(angle) > 0) {
-                    //Enter from the left
-                    repositionParticle(particle, -20, Math.random() * H, Math.floor(Math.random() * 10) - 20);
-                } else {
-                    //Enter from the right
-                    repositionParticle(particle, W + 20, Math.random() * H, Math.floor(Math.random() * 10) - 20);
-                }
-            }
-        }
-    }
-    function stepParticle(particle, particleIndex) {
-        particle.tiltAngle += particle.tiltAngleIncremental;
-        particle.y += (Math.cos(angle + particle.d) + 3 + particle.r / 2) / 2;
-        particle.x += Math.sin(angle);
-        particle.tilt = (Math.sin(particle.tiltAngle - (particleIndex / 3))) * 15;
-    }
+    bentBurst.play()
+    flakeBurst.play()
+};
 
-    function repositionParticle(particle, xCoordinate, yCoordinate, tilt) {
-        particle.x = xCoordinate;
-        particle.y = yCoordinate;
-        particle.tilt = tilt;
-    }
+$(document).ready(function(){
 
-    function StartConfetti() {
-        W = window.innerWidth;
-        H = "985";
-        canvas.width = W;
-        canvas.height = H;
-        (function animloop() {
-            if (animationComplete) return null;
-            animationHandler = requestAnimFrame(animloop);
-            return Draw();
-        })();
-    }
+    $.fn.isOnScreen = function(){
 
-    function ClearTimers() {
-        clearTimeout(reactivationTimerHandler);
-        clearTimeout(animationHandler);
-    }
+        var win = $(window);
 
-    function DeactivateConfetti() {
-        confettiActive = false;
-        ClearTimers();
-    }
-
-    function StopConfetti() {
-        animationComplete = true;
-        if (ctx == undefined) return;
-        ctx.clearRect(0, 0, W, H);
-    }
-
-    function RestartConfetti() {
-        ClearTimers();
-        StopConfetti();
-        reactivationTimerHandler = setTimeout(function () {
-            confettiActive = true;
-            animationComplete = false;
-            InitializeConfetti();
-        }, 100);
-
-    }
-
-    window.requestAnimFrame = (function () {
-        return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function (callback) {
-            return window.setTimeout(callback, 1000 / 60);
+        var viewport = {
+            top : win.scrollTop(),
+            left : win.scrollLeft()
         };
-    })();
-})();
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+    };
+
+
+    $(window).scroll(function(){
+        if ($('#party-popper').isOnScreen()) {
+           console.log('YES!');
+            partyPopper('.party-popper', true);
+            partyPopper2('.party-popper-2', true);
+        }
+
+        else {
+            console.log('NO');
+        }
+    });
+
+    $('.party-popper__emoji').click(function() {
+        console.log('YES!');
+        partyPopper('.party-popper', true);
+    });
+
+    $('.party-popper-2__emoji').click(function() {
+        console.log('YES!');
+        partyPopper2('.party-popper-2', true);
+    });
+});
+
+
 
 </script>
 
