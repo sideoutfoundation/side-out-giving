@@ -5,7 +5,6 @@
 */
 
 
-
 @import
   'variables',
   'mixins';
@@ -16,7 +15,6 @@
 @import
   'base',
   'fonts';
-
 
 
 
@@ -36,6 +34,10 @@ body {
   color: $gray;
   background: transparent !important;
   position: relative;
+}
+
+.bs-component {
+  margin-bottom: 1rem;
 }
 
 // -----------------------------------------------------------------------------
@@ -166,6 +168,45 @@ a:focus {
   border-radius: 0;
 }
 
+//Primary Secondary Success Danger Warning Info Light Dark
+
+// .bg-primary {
+//   background: $pink !important;
+// }
+// .bg-secondary {
+//   background: $blue !important;
+// }
+// .bg-success {
+//   background: $green !important;
+// }
+// .bg-danger {
+//   background: $red !important;
+// }
+// .bg-warning {
+//   background: $orange !important;
+// }
+// .bg-info {
+//   background: $purple !important;
+// }
+// .bg-light {
+//   background: white !important;
+// }
+// .bg-dark {
+//   background: black !important;
+// }
+// .border-primary {
+//   border-color: $pink !important;
+// }
+// .border-secondary {
+//   border-color: $blue !important;
+// }
+// .border-info {
+//   border-color: $purple !important;
+// }
+// .border-warning {
+//   border-color: $orange !important;
+// }
+
 .card {
   border-radius: 0;
   &.bg-primary {
@@ -174,21 +215,72 @@ a:focus {
   &.bg-secondary {
     background: $blue !important;
   }
+  &.bg-info {
+    background: $purple !important;
+  }
+  &.bg-warning {
+    background: $orange !important;
+  }
+  &.bg-light {
+    background: white !important;
+  }
+  &.bg-dark {
+    background: black !important;
+  }
   &.border-primary {
     border-color: $pink !important;
   }
   &.border-secondary {
     border-color: $blue !important;
   }
+  &.border-info {
+    border-color: $purple !important;
+  }
+  &.border-warning {
+    border-color: $orange !important;
+  }
+}
+
+.badge {
+  padding: .27em .4em .23em;
+  font-size: 14px;
+  &.badge-primary {
+    color: #fff;
+    background: $pink !important;
+  }
+  &.badge-secondary {
+    color: #fff;
+    background: $blue !important;
+  }
+  &.badge-success {
+    color: #fff;
+    background: $green !important;
+  }
+  &.badge-info {
+    color: #fff;
+    background: $purple !important;
+  }
+  &.badge-warning {
+    color: #fff;
+    background: $orange !important;
+  }
+  &.badge-light {
+    color: black;
+    background: white !important;
+  }
+  &.badge-dark {
+    color: white;
+    background: black !important;
+  }
 }
 
 .badge:not(.badge-pill) {
   border-radius: 0;
-  &.badge-primary {
-    background: $pink !important;
-  }
-  &.badge-secondary {
-    background: $blue !important;
+}
+
+.list-group-item {
+  .badge {
+    border-radius: 0;
   }
 }
 
@@ -248,21 +340,24 @@ a:focus {
 }
 
 
-.btn,
-.btn-primary {
-  border-radius: 0;
+.btn {
+  border-radius: 0 !important;
   @include font_bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 1px;
+  padding: .625rem 1.25rem .5625rem; // 9px 15px 8px = 40px height
   @media only screen and (min-width: 992px) {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-.btn.btn-link {
-  padding-left: .75rem;
-  padding-right: .75rem;
+.btn.btn-sm,
+.btn-group-sm > .btn {
+  font-size: .75rem;
+  padding: .3rem 1rem;
 }
 
 .modal-cta .btn,
@@ -275,8 +370,7 @@ a:focus {
   cursor: pointer;
   display: block;
   @include font_bold;
-  letter-spacing: 1px;
-  //padding: 0.75rem;
+
   text-transform: uppercase;
   background-color: $pink;
   border: 1px solid $pink;
@@ -302,12 +396,80 @@ a:focus {
   }
 }
 
-
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: lighten($pink, 15%);
-  border-color: lighten($pink, 15%);
+  cursor: default;
+  background-color: lighten($pink, 11%) !important;
+  border-color: lighten($pink, 11%) !important;
+}
+
+.btn-secondary {
+  background-color: $blue;
+  border-color: $blue;
+  &:focus,
+  &:hover,
+  &.active {
+    background: darken($blue, 15%) !important;
+    border-color: darken($blue, 15%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($blue, .2);
+  }
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #fff;
+  background-color: lighten($blue, 15%) !important;
+  border-color: lighten($blue, 15%) !important;
+}
+
+.btn-info {
+  background-color: $purple;
+  border-color: $purple;
+  &:focus,
+  &:hover,
+  &.active {
+    background: darken($purple, 10%) !important;
+    border-color: darken($purple, 10%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($purple, .2);
+  }
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+  color: #fff;
+  background-color: lighten($purple, 15%) !important;
+  border-color: lighten($purple, 15%) !important;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: $orange;
+  border-color: $orange;
+  &:focus,
+  &:hover,
+  &.active {
+    color: #fff;
+    background: darken($orange, 10%) !important;
+    border-color: darken($orange, 10%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($orange, .2);
+  }
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+  color: #fff;
+  background-color: lighten($orange, 15%) !important;
+  border-color: lighten($orange, 15%) !important;
 }
 
 .btn-lg,
@@ -318,6 +480,17 @@ a:focus {
     letter-spacing: 0;
     padding: .6rem 1rem .4rem;
   }
+}
+
+.btn-success {
+  color: #fff;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #fff;
+  background-color: lighten($green, 15%) !important;
+  border-color: lighten($green, 15%) !important;
 }
 
 .btn-outline-primary {
@@ -335,6 +508,89 @@ a:focus {
   &:focus,
   &.focus {
     box-shadow: 0 0 0 .2rem rgba($blue, .2);
+  }
+}
+
+.btn-outline-secondary {
+  color: $pink;
+  background-color: transparent;
+  background-image: none;
+  border-color: $pink;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $pink;
+    border-color: $pink;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($pink, .2);
+  }
+}
+
+.btn-outline-success {
+  color: $green;
+  background-color: transparent;
+  background-image: none;
+  border-color: $green;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $green;
+    border-color: $green;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($green, .2);
+  }
+}
+
+.btn-outline-info {
+  color: $purple;
+  background-color: transparent;
+  background-image: none;
+  border-color: $purple;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $purple;
+    border-color: $purple;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($purple, .2);
+  }
+}
+
+.btn-outline-warning {
+  color: $orange;
+  background-color: transparent;
+  background-image: none;
+  border-color: $orange;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $orange;
+    border-color: $orange;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($orange, .2);
+  }
+}
+
+.bg-warning {
+  background: $orange !important;
+}
+
+.btn-toolbar {
+  .btn {
+    padding-right: .75rem;
+    padding-left: .75rem;
   }
 }
 
@@ -381,7 +637,6 @@ a:focus {
     background: white;
   }
 }
-
 .btn-facebook,
 .btn-twitter,
 .btn-google {
@@ -847,7 +1102,7 @@ input.email {
 
 .search {
   @include make-col-ready();
-  @include make-col(10);
+  @include make-col(9);
   position: absolute;
   display: flex;
   align-items: center;
@@ -865,7 +1120,7 @@ input.email {
     }
 
     &.search-thank-you {
-      @include make-col(5);
+      @include make-col(4.5);
       padding-left: 0;
     }
   }
@@ -916,8 +1171,8 @@ input.email {
 }
 
 .login-menu {
-  //padding-left: 2.5rem;
-  @include make-col(2);
+
+  @include make-col(1.5);
 
   .dropdown .dropdown-toggle {
     display: flex;
@@ -939,7 +1194,7 @@ input.email {
   @media only screen and (min-width: 768px) {
     @include make-col(1);
     position: initial;
-    right: 10px;
+    right: 0;
     top: 5px;
   }
 }
@@ -1216,6 +1471,15 @@ main {
       &:after {
         border-color: transparent;
       }
+    }
+    &.bg-info {
+      background: $pink !important;
+    }
+    &.bg-warning {
+      background: $blue !important;
+    }
+    &.bg-danger {
+      background: $purple !important;
     }
   }
 }
@@ -1529,6 +1793,9 @@ main {
     box-shadow: 0 !important;
     outline: none !important;
   }
+  .btn:not(.btn-blue-inverse) {
+    @extend .btn-primary;
+  }
 }
 
 .fixed {
@@ -1720,7 +1987,6 @@ main {
 .donation-form-wrapper {
   background: white;
 }
-
 
 #spark-app .container:first-child {
   padding: 0 !important;
@@ -2298,7 +2564,7 @@ h1.join-donate {
   img {
     position: absolute;
     z-index: 5;
-    margin-top: 11px;
+    margin-top: 9px;
     width: 24px;
     height: 24px;
   }
@@ -2654,75 +2920,40 @@ h1.join-donate {
   }
 }
 
-  .donate-desctiption {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 3.5rem;
-    @media only screen and (min-width: 768px) {
-      @include make-col(6);
-      @include make-col-offset(3);
-    }
-  }
-
-  .form-donate {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-
-    @media only screen and (min-width: 768px) {
-      @include make-col(5);
-      @include make-col-offset(3.5);
-    }
-  }
-
-  .donate-last {
-    @include make-col-ready();
-    @include make-col(12);
-    @include make-col-offset(0);
-    text-align: center;
-    margin-top: 1.5rem;
-/*    margin-bottom: 3.5rem;*/
-    color: $pink;
-    @media only screen and (min-width: 768px) {
-      @include make-col(8);
-      @include make-col-offset(2);
-    }
-  }
-
-.party-popper {
-  position: absolute;
-  top: 37%;
-  left: 72%;
-  z-index: 50;
-
-  &__emoji {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 2em;
-    transform: translate(-50%) rotate(-10deg);
-    z-index: 1;
-    cursor: pointer;
+.donate-desctiption {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  @media only screen and (min-width: 768px) {
+    @include make-col(6);
+    @include make-col-offset(3);
   }
 }
 
-.party-popper-2 {
-  position: absolute;
-  top: 37%;
-  left: 25%;
-  z-index: 50;
+.form-donate {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
 
-  &__emoji {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 2em;
-    transform: translate(50%) rotate(10deg) scaleX(-1);
-    z-index: 1;
-    cursor: pointer;
+  @media only screen and (min-width: 768px) {
+    @include make-col(5);
+    @include make-col-offset(3.5);
+  }
+}
+
+.donate-last {
+  @include make-col-ready();
+  @include make-col(12);
+  @include make-col-offset(0);
+  text-align: center;
+  margin-top: 1.5rem;
+  color: $pink;
+  @media only screen and (min-width: 768px) {
+    @include make-col(8);
+    @include make-col-offset(2);
   }
 }
 
@@ -2873,9 +3104,9 @@ h1.join-donate {
 .personal {
 
   .dropdown-toggle {
-
     &::after  {
       border-top-color: $medium-gray;
+
 
       &:focus {
         border-top-color: $medium-gray;
@@ -2915,7 +3146,7 @@ h1.join-donate {
   align-items: center;
 
   a {
-    color: $black;
+    color: $blue;
     @include font_semi;
     display: flex;
     align-items: center;
@@ -2938,9 +3169,30 @@ h1.join-donate {
     background: transparent;
 
    a {
-      color: $black;
+      color: $blue;
       @include font_semi;
     }
   }
 }
 
+.notifications {
+  @include make-col(0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+
+  svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+
+}
+
+.header .row {
+  justify-content: space-between;
+}
