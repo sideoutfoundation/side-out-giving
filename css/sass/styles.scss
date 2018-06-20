@@ -168,6 +168,45 @@ a:focus {
   border-radius: 0;
 }
 
+//Primary Secondary Success Danger Warning Info Light Dark
+
+// .bg-primary {
+//   background: $pink !important;
+// }
+// .bg-secondary {
+//   background: $blue !important;
+// }
+// .bg-success {
+//   background: $green !important;
+// }
+// .bg-danger {
+//   background: $red !important;
+// }
+// .bg-warning {
+//   background: $orange !important;
+// }
+// .bg-info {
+//   background: $purple !important;
+// }
+// .bg-light {
+//   background: white !important;
+// }
+// .bg-dark {
+//   background: black !important;
+// }
+// .border-primary {
+//   border-color: $pink !important;
+// }
+// .border-secondary {
+//   border-color: $blue !important;
+// }
+// .border-info {
+//   border-color: $purple !important;
+// }
+// .border-warning {
+//   border-color: $orange !important;
+// }
+
 .card {
   border-radius: 0;
   &.bg-primary {
@@ -176,21 +215,72 @@ a:focus {
   &.bg-secondary {
     background: $blue !important;
   }
+  &.bg-info {
+    background: $purple !important;
+  }
+  &.bg-warning {
+    background: $orange !important;
+  }
+  &.bg-light {
+    background: white !important;
+  }
+  &.bg-dark {
+    background: black !important;
+  }
   &.border-primary {
     border-color: $pink !important;
   }
   &.border-secondary {
     border-color: $blue !important;
   }
+  &.border-info {
+    border-color: $purple !important;
+  }
+  &.border-warning {
+    border-color: $orange !important;
+  }
+}
+
+.badge {
+  padding: .27em .4em .23em;
+  font-size: 14px;
+  &.badge-primary {
+    color: #fff;
+    background: $pink !important;
+  }
+  &.badge-secondary {
+    color: #fff;
+    background: $blue !important;
+  }
+  &.badge-success {
+    color: #fff;
+    background: $green !important;
+  }
+  &.badge-info {
+    color: #fff;
+    background: $purple !important;
+  }
+  &.badge-warning {
+    color: #fff;
+    background: $orange !important;
+  }
+  &.badge-light {
+    color: black;
+    background: white !important;
+  }
+  &.badge-dark {
+    color: white;
+    background: black !important;
+  }
 }
 
 .badge:not(.badge-pill) {
   border-radius: 0;
-  &.badge-primary {
-    background: $pink !important;
-  }
-  &.badge-secondary {
-    background: $blue !important;
+}
+
+.list-group-item {
+  .badge {
+    border-radius: 0;
   }
 }
 
@@ -306,12 +396,80 @@ a:focus {
   }
 }
 
-
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: lighten($pink, 15%);
-  border-color: lighten($pink, 15%);
+  cursor: default;
+  background-color: lighten($pink, 11%) !important;
+  border-color: lighten($pink, 11%) !important;
+}
+
+.btn-secondary {
+  background-color: $blue;
+  border-color: $blue;
+  &:focus,
+  &:hover,
+  &.active {
+    background: darken($blue, 15%) !important;
+    border-color: darken($blue, 15%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($blue, .2);
+  }
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #fff;
+  background-color: lighten($blue, 15%) !important;
+  border-color: lighten($blue, 15%) !important;
+}
+
+.btn-info {
+  background-color: $purple;
+  border-color: $purple;
+  &:focus,
+  &:hover,
+  &.active {
+    background: darken($purple, 10%) !important;
+    border-color: darken($purple, 10%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($purple, .2);
+  }
+}
+
+.btn-info.disabled,
+.btn-info:disabled {
+  color: #fff;
+  background-color: lighten($purple, 15%) !important;
+  border-color: lighten($purple, 15%) !important;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: $orange;
+  border-color: $orange;
+  &:focus,
+  &:hover,
+  &.active {
+    color: #fff;
+    background: darken($orange, 10%) !important;
+    border-color: darken($orange, 10%) !important;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($orange, .2);
+  }
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+  color: #fff;
+  background-color: lighten($orange, 15%) !important;
+  border-color: lighten($orange, 15%) !important;
 }
 
 .btn-lg,
@@ -325,7 +483,14 @@ a:focus {
 }
 
 .btn-success {
-  color: white;
+  color: #fff;
+}
+
+.btn-success.disabled,
+.btn-success:disabled {
+  color: #fff;
+  background-color: lighten($green, 15%) !important;
+  border-color: lighten($green, 15%) !important;
 }
 
 .btn-outline-primary {
@@ -344,6 +509,82 @@ a:focus {
   &.focus {
     box-shadow: 0 0 0 .2rem rgba($blue, .2);
   }
+}
+
+.btn-outline-secondary {
+  color: $pink;
+  background-color: transparent;
+  background-image: none;
+  border-color: $pink;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $pink;
+    border-color: $pink;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($pink, .2);
+  }
+}
+
+.btn-outline-success {
+  color: $green;
+  background-color: transparent;
+  background-image: none;
+  border-color: $green;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $green;
+    border-color: $green;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($green, .2);
+  }
+}
+
+.btn-outline-info {
+  color: $purple;
+  background-color: transparent;
+  background-image: none;
+  border-color: $purple;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $purple;
+    border-color: $purple;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($purple, .2);
+  }
+}
+
+.btn-outline-warning {
+  color: $orange;
+  background-color: transparent;
+  background-image: none;
+  border-color: $orange;
+  &:focus,
+  &:hover,
+  &.active {
+    color: white;
+    background: $orange;
+    border-color: $orange;
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($orange, .2);
+  }
+}
+
+.bg-warning {
+  background: $orange !important;
 }
 
 .btn-toolbar {
@@ -1230,6 +1471,15 @@ main {
       &:after {
         border-color: transparent;
       }
+    }
+    &.bg-info {
+      background: $pink !important;
+    }
+    &.bg-warning {
+      background: $blue !important;
+    }
+    &.bg-danger {
+      background: $purple !important;
     }
   }
 }
