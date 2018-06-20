@@ -41,7 +41,7 @@
             <div class="donate-desctiption">
                 <p>Did you know that having funds on your fundraising page to start increases donor contributions by 33%? It’s like putting a $1 in the donation jar!  Make the first donation and inspire your visitors contribute and help you reach your fundraising goal.</p>
             </div>
-<div id="party-popper">
+<!-- <div id="party-popper">
     <div class="party-popper" >
         <div class="party-popper__emoji">🎉</div>
     </div>
@@ -51,7 +51,7 @@
     <div class="party-popper-2" >
         <div class="party-popper-2__emoji">🎉</div>
     </div>
-</div>
+</div> -->
 
        <!--  <div class="section-donate"> -->
             <div class="form-donate">
@@ -209,186 +209,6 @@ $('a[href*="#"]')
       }
     }
   });
-
-
-function partyPopper(selector, debug) {
-    const colors = [
-        '#D90084',
-        '#009FDB',
-        '#7ED321',
-        '#F4B940',
-    ]
-
-    const flight = {
-        isSwirl: true,
-        swirlSize: 'rand(0, 20)',
-        swirlFrequency: 'rand(1, 3)',
-        direction: [-1, 1],
-        degreeShift: 'rand(15, 55)',
-        duration: 3000,
-        easing: 'cubic.out',
-        pathScale: 'stagger(.5)',
-    }
-
-    const bent = {
-        shape: 'rect',
-        radius: 'rand(0, 20)',
-        radiusY: 7,
-        //strokeLinecap: 'round',
-        strokeWidth: 8,
-        fill: colors,
-        stroke: 'none',
-        angle: {0: 'rand(-720, 720)'},
-        ...flight,
-    }
-
-    const flake = {
-        shape:'circle',
-        radius: 'rand(5, 10)',
-        fill: colors,
-        ...flight,
-    }
-
-    // Bursts
-    const burst = {
-        parent: selector,
-        radius: {0 : 'rand(50, 100)'},
-        count: 'rand(18, 22)',
-        degree: 30,
-    }
-
-    const bentBurst = new mojs.Burst({
-        ...burst,
-        children: {
-            ...bent,
-        }
-    });
-
-    const flakeBurst = new mojs.Burst({
-        ...burst,
-        children: {
-            ...flake,
-        }
-    });
-
-
-    bentBurst.play()
-    flakeBurst.play()
-
-};
-
-
-
-function partyPopper2(selector, debug) {
-    const colors = [
-        '#D90084',
-        '#009FDB',
-        '#7ED321',
-        '#F4B940',
-    ]
-
-    const flight = {
-        isSwirl: true,
-        swirlSize: 'rand(0, 20)',
-        swirlFrequency: 'rand(1, 3)',
-        direction: [-1, 1],
-        degreeShift: 'rand(-50, -5)',
-        duration: 3000,
-        easing: 'cubic.out',
-        pathScale: 'stagger(.5)',
-    }
-
-    const bent = {
-        shape: 'rect',
-        radius: 'rand(0, 20)',
-        radiusY: 7,
-        //strokeLinecap: 'round',
-        strokeWidth: 8,
-        fill: colors,
-        stroke: 'none',
-        angle: {0: 'rand(-710, 720)'},
-        ...flight,
-    }
-
-    const flake = {
-        shape:'circle',
-        radius: 'rand(5, 10)',
-        fill: colors,
-        ...flight,
-    }
-
-    // Bursts
-    const burst = {
-        parent: selector,
-        radius: {0 : 'rand(50, 100)'},
-        count: 'rand(18, 22)',
-        degree: -30,
-    }
-
-    const bentBurst = new mojs.Burst({
-        ...burst,
-        children: {
-            ...bent,
-        }
-    });
-
-    const flakeBurst = new mojs.Burst({
-        ...burst,
-        children: {
-            ...flake,
-        }
-    });
-
-
-    bentBurst.play()
-    flakeBurst.play()
-};
-
-$(document).ready(function(){
-
-    $.fn.isOnScreen = function(){
-
-        var win = $(window);
-
-        var viewport = {
-            top : win.scrollTop(),
-            left : win.scrollLeft()
-        };
-        viewport.right = viewport.left + win.width();
-        viewport.bottom = viewport.top + win.height();
-
-        var bounds = this.offset();
-        bounds.right = bounds.left + this.outerWidth();
-        bounds.bottom = bounds.top + this.outerHeight();
-
-        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
-    };
-
-
-    $(window).scroll(function(){
-        if ($('#party-popper').isOnScreen()) {
-           console.log('YES!');
-            partyPopper('.party-popper', true);
-            partyPopper2('.party-popper-2', true);
-        }
-
-        else {
-            console.log('NO');
-        }
-    });
-
-    $('.party-popper__emoji').click(function() {
-        console.log('YES!');
-        partyPopper('.party-popper', true);
-    });
-
-    $('.party-popper-2__emoji').click(function() {
-        console.log('YES!');
-        partyPopper2('.party-popper-2', true);
-    });
-});
-
 
 
 </script>
