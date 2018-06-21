@@ -872,7 +872,7 @@ input[type="text"].form__error {
 // }
 
 .form-check {
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   @extend .custom-control;
   padding-left: 1.7rem;
 
@@ -929,6 +929,12 @@ input[type="text"].form__error {
   }
 }
 
+.custom-control-label {
+  @include font_body;
+  padding-top: 2px;
+  margin: 0;
+  line-height: 20px;
+}
 
 
 

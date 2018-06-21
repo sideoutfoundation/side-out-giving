@@ -8182,7 +8182,7 @@ input[type="text"].form__error {
   width: 100%; }
 
 .form-check {
-  margin-bottom: .75rem;
+  margin-bottom: .5rem;
   padding-left: 1.7rem; }
   .form-check label {
     font-family: 'Proxima Nova Regular', helvetica, sans-serif;
@@ -8204,6 +8204,13 @@ input[type="text"].form__error {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E"); }
   .form-check.form-check-inline {
     padding-left: .48rem; }
+
+.custom-control-label, .form-check label {
+  font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+  font-weight: normal;
+  padding-top: 2px;
+  margin: 0;
+  line-height: 20px; }
 
 .input-group-text {
   border-radius: 0;
