@@ -3032,8 +3032,10 @@ h1.join-donate {
 }
 
 .footer-donate {
-  position: relative;
-  z-index: 5;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100vw;
 }
 
 
@@ -3170,7 +3172,6 @@ h1.join-donate {
 }
 
 .personal {
-
   .dropdown-toggle {
     &::after  {
       border-top-color: $medium-gray;
@@ -3196,6 +3197,8 @@ h1.join-donate {
     left: -5.3rem !important;
     width: 15rem;
     top: 8px !important;
+    position: absolute !important;
+    z-index: 70 !important;
   }
 }
 
