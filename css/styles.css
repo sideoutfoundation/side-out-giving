@@ -10229,7 +10229,7 @@ h1.join-donate {
   z-index: 5; }
 
 .footer-donate {
-  position: absolute;
+  position: relative;
   z-index: 1;
   bottom: 0;
   width: 100vw; }
