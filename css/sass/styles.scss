@@ -138,9 +138,6 @@ a:focus {
 .text-center {
   text-align: center;
   margin: auto;
-  a {
-    color: $black;
-  }
 }
 
 .text-right {
@@ -3243,7 +3240,7 @@ h1.join-donate {
   }
 }
 
-.app-notifications-icon {
+.notifications {
   @include make-col(0.5);
   display: flex;
   justify-content: center;

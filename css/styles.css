@@ -7488,8 +7488,6 @@ a:focus {
 .text-center {
   text-align: center;
   margin: auto; }
-  .text-center a {
-    color: #0C2543; }
 
 .text-right {
   text-align: right; }
@@ -10428,7 +10426,7 @@ h1.join-donate {
         font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
         font-weight: normal; } }
 
-.app-notifications-icon {
+.notifications {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 4.16667%;
   flex: 0 0 4.16667%;
@@ -10443,11 +10441,11 @@ h1.join-donate {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 5rem; }
-  .app-notifications-icon svg {
+  .notifications svg {
     height: 1.5rem;
     width: 1.5rem; }
   @media only screen and (min-width: 768px) {
-    .app-notifications-icon {
+    .notifications {
       margin-right: 0; } }
 
 .header .row {
