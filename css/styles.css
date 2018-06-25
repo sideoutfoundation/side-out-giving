@@ -10428,7 +10428,7 @@ h1.join-donate {
         font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
         font-weight: normal; } }
 
-.notifications {
+.app-notifications-icon {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 4.16667%;
   flex: 0 0 4.16667%;
@@ -10443,11 +10443,11 @@ h1.join-donate {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 5rem; }
-  .notifications svg {
+  .app-notifications-icon svg {
     height: 1.5rem;
     width: 1.5rem; }
   @media only screen and (min-width: 768px) {
-    .notifications {
+    .app-notifications-icon {
       margin-right: 0; } }
 
 .header .row {
