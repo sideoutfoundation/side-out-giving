@@ -7406,8 +7406,7 @@ body {
 h1, h2, h3, h4, h5 {
   color: #0C2543;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
-  font-weight: normal;
-  padding: 0; }
+  font-weight: normal; }
   h1.regular, h2.regular, h3.regular, h4.regular, h5.regular {
     font-family: 'Proxima Nova Regular', helvetica, sans-serif;
     font-weight: normal;
@@ -7419,32 +7418,27 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 35px;
   line-height: 1.142;
-  margin: 20px 0 20px 0;
   padding: 0; }
 
 h2 {
   font-size: 26px;
   line-height: 1.15;
-  padding: 0;
-  margin: 20px 0 10px; }
+  padding: 0; }
 
 h3 {
   font-size: 22px;
   line-height: 1.363636;
-  padding: 0;
-  margin: 20px 0 10px; }
+  padding: 0; }
 
 h4 {
   font-size: 20px;
-  line-height: 1.15;
-  margin: 0 0 10px; }
+  line-height: 1.15; }
 
 h5 {
   font-size: 18px;
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  margin: 0 0 10px;
   padding: 0; }
 
 .list-group-item.active h1, .list-group-item.active h2, .list-group-item.active h3, .list-group-item.active h4, .list-group-item.active h5,
@@ -7980,10 +7974,7 @@ textarea {
   transition: box-shadow .2s ease, border .2s ease, -webkit-box-shadow .2s ease;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-appearance: none;
-  appearance: none;
   border-radius: 0;
-  -webkit-appearance: none;
   font-size: 16px; }
   @media only screen and (min-width: 992px) {
     input[type="date"],
@@ -8127,8 +8118,7 @@ select {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  height: 40px;
-  -webkit-appearance: initial; }
+  height: 40px; }
 
 textarea {
   width: 100%;
@@ -8136,7 +8126,7 @@ textarea {
   max-width: 100%;
   resize: vertical;
   min-height: 80px;
-  border-radius: 0; }
+  border-radius: 0 !important; }
 
 input[type="date"][disabled],
 input[type="datetime"][disabled],
@@ -10240,9 +10230,7 @@ h1.join-donate {
 
 .footer-donate {
   position: relative;
-  z-index: 1;
-  bottom: 0;
-  width: 100vw; }
+  z-index: 5; }
 
 .first-step {
   margin-top: 1.5rem;
@@ -10377,9 +10365,7 @@ h1.join-donate {
 .personal .dropdown-menu.show {
   left: -5.3rem !important;
   width: 15rem;
-  top: 8px !important;
-  position: absolute !important;
-  z-index: 70 !important; }
+  top: 8px !important; }
 
 .logged-menu {
   position: relative;
