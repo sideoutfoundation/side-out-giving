@@ -1,3 +1,51 @@
+
+ <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Tasks</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown dropdown-notifications">
+            <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
+              <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
+            </a>
+
+            <div class="dropdown-container">
+
+              <div class="dropdown-toolbar">
+                <div class="dropdown-toolbar-actions">
+                  <a href="#">Mark all as read</a>
+                </div>
+                <h3 class="dropdown-toolbar-title">Notifications (2)</h3>
+              </div><!-- /dropdown-toolbar -->
+
+              <ul class="dropdown-menu">
+                  ...
+              </ul>
+
+              <div class="dropdown-footer text-center">
+                <a href="#">View All</a>
+              </div><!-- /dropdown-footer -->
+
+            </div><!-- /dropdown-container -->
+          </li><!-- /dropdown -->
+
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">People</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
  <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Never expand</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -747,36 +795,36 @@
                   <fieldset class="form-group">
                     <legend>Radio buttons</legend>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                        Option one is this and that&mdash;be sure to include why it's great
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Default radio
                       </label>
                     </div>
                     <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                        Option two can be something else and selecting it will deselect option one
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
                       </label>
                     </div>
                     <div class="form-check disabled">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                        Option three is disabled
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                      <label class="form-check-label" for="exampleRadios3">
+                        Disabled radio
                       </label>
                     </div>
                   </fieldset>
                   <fieldset class="form-group">
                     <legend>Checkboxes</legend>
                     <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" value="" checked>
-                        Option one is this and that&mdash;be sure to include why it's great
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
                       </label>
                     </div>
-                    <div class="form-check disabled">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" value="" disabled>
-                        Option two is disabled
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                      <label class="form-check-label" for="defaultCheck2">
+                        Disabled checkbox
                       </label>
                     </div>
                   </fieldset>
