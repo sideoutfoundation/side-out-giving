@@ -33,8 +33,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <script type="text/javascript" src="./js/script.js"></script>
-
 
 
     <script>
@@ -47,11 +45,12 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- <script>
+    <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="popover"]').popover()
         });
-    </script> -->
+    </script>
 
 </head>
 <body>

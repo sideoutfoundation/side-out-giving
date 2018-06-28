@@ -1,14 +1,7 @@
 <?php include( './inc/header.php'); ?>
 </div>
 <section class="hero"
-    style="background-color: black; background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, .7) 0%,
-        rgba(0, 0, 0, 0) 20%,
-        rgba(0, 0, 0, .35) 45%,
-        rgba(0, 0, 0, .7) 100%
-    ),
-    url(../img/demo.jpg);">
+    style="background-color: black; background-image: url(../img/side-out-gradient-bg-pink@2x.jpg);">
 
     <div class="container">
         <div class="row">

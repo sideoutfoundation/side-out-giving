@@ -47,7 +47,7 @@ body {
 h1,h2,h3,h4,h5 {
   color: $black;
   @include font_bold;
-  padding: 0;
+  //padding: 0;
 
   &.regular {
     @include font_body;
@@ -61,7 +61,6 @@ h1,h2,h3,h4,h5 {
 h1 {
   @include font-size(3.5);
   line-height: 1.142;
-  margin: 20px 0 20px 0;
   padding: 0;
 }
 
@@ -69,27 +68,23 @@ h2 {
   @include font-size(2.6);
   line-height: 1.15;
   padding: 0;
-  margin: 20px 0 10px;
 }
 
 h3 {
   @include font-size(2.2);
   line-height: 1.363636;
   padding: 0;
-  margin: 20px 0 10px;
 }
 
 h4 {
   @include font-size(2);
   line-height: 1.15;
-  margin: 0 0 10px;
 }
 
 h5 {
   @include font-size(1.8);
   @include font_semi;
   line-height: 1.2;
-  margin: 0 0 10px;
   padding: 0;
 }
 
@@ -133,15 +128,6 @@ hr {
 
 a:focus {
   outline: none;
-}
-
-.text-center {
-  text-align: center;
-  margin: auto;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .icon {
@@ -737,9 +723,9 @@ textarea {
   background-color: white;
   transition: box-shadow .2s ease, border .2s ease;
   box-sizing: border-box;
-  appearance: none;
+  //appearance: none;
   border-radius: 0;
-  -webkit-appearance: none;
+  //-webkit-appearance: none;
   font-size: 16px;
   @media only screen and (min-width: 992px) {
     max-width: 600px;
@@ -807,7 +793,6 @@ select {
   border-radius: 0;
   box-shadow: none;
   height: $input-height;
-  -webkit-appearance: initial;
 }
 
 textarea {
@@ -816,7 +801,7 @@ textarea {
   max-width: 100%;
   resize: vertical;
   min-height: 80px;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 input[type="date"][disabled],
@@ -1319,11 +1304,33 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+
   color: white;
   display: flex;
   min-height: 200px;
   // alternatively you could change .main padding.
   margin-top: -40px;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, .2) 50%,
+        rgba(0, 0, 0, .5) 100%
+      );
+    z-index: 0;
+  }
 
   @media only screen and (min-width: 992px) {
     height: 400px;
@@ -1347,6 +1354,7 @@ main {
   align-items: center;
   display: flex;
   padding-bottom: 20px;
+  z-index: 1;
   @media only screen and (min-width: 576px) {
     align-items: flex-end;
   }
@@ -1733,7 +1741,13 @@ main {
 
 .modal-dialog {
   @media only screen and (min-width: 576px) {
-    max-width: 720px !important;
+    max-width: 720px;
+    &.modal-lg {
+      max-width: 800px;
+    }
+    &.modal-sm {
+      max-width: 300px;
+    }
   }
 }
 
@@ -3030,9 +3044,7 @@ h1.join-donate {
 
 .footer-donate {
   position: relative;
-  z-index: 1;
-  bottom: 0;
-  width: 100vw;
+  z-index: 5;
 }
 
 
@@ -3169,6 +3181,7 @@ h1.join-donate {
 }
 
 .personal {
+
   .dropdown-toggle {
     &::after  {
       border-top-color: $medium-gray;
@@ -3194,8 +3207,6 @@ h1.join-donate {
     left: -5.3rem !important;
     width: 15rem;
     top: 8px !important;
-    position: absolute !important;
-    z-index: 70 !important;
   }
 }
 
