@@ -38,7 +38,7 @@
                 Now you can spread the word and empower those around your program to make their impact!
             </h2>
 
-            <div class="donate-desctiption">
+            <div class="donate-description">
                 <p>Did you know that having funds on your fundraising page to start increases donor contributions by 33%? It’s like putting a $1 in the donation jar!  Make the first donation and inspire your visitors contribute and help you reach your fundraising goal.</p>
             </div>
 <!-- <div id="party-popper">

@@ -10138,7 +10138,7 @@ h1.join-donate {
         flex: 0 0 100%;
         max-width: 100%;
         height: auto; }
-      .section-donate .donate-desctiption {
+      .section-donate .donate-description {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -10158,14 +10158,14 @@ h1.join-donate {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%; }
-      .section-donate .donate-desctiption {
+      .section-donate .donate-description {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
         padding-top: 0; } }
 
-.donate-desctiption {
+.donate-description {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -10180,7 +10180,7 @@ h1.join-donate {
   margin-top: 1.5rem;
   margin-bottom: 3.5rem; }
   @media only screen and (min-width: 768px) {
-    .donate-desctiption {
+    .donate-description {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
@@ -10430,7 +10430,7 @@ h1.join-donate {
         font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
         font-weight: normal; } }
 
-.notifications {
+.app-notifications-icon {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 4.16667%;
   flex: 0 0 4.16667%;
@@ -10445,11 +10445,11 @@ h1.join-donate {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 5rem; }
-  .notifications svg {
+  .app-notifications-icon svg {
     height: 1.5rem;
     width: 1.5rem; }
   @media only screen and (min-width: 768px) {
-    .notifications {
+    .app-notifications-icon {
       margin-right: 0; } }
 
 .header .row {

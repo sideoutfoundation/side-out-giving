@@ -2978,7 +2978,7 @@ h1.join-donate {
       height: auto;
     }
 
-    .donate-desctiption {
+    .donate-description {
       @include make-col(12);
     }
   }
@@ -2992,14 +2992,14 @@ h1.join-donate {
       @include make-col(6);
     }
 
-    .donate-desctiption {
+    .donate-description {
       @include make-col(6);
       padding-top: 0;
     }
   }
 }
 
-.donate-desctiption {
+.donate-description {
   @include make-col-ready();
   @include make-col(12);
   @include make-col-offset(0);
