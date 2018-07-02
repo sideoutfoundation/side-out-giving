@@ -1,6 +1,12 @@
 /*!
   Side Out Foundation Giving
 */
+@media print {
+  .head, .search, .search img, .login-menu, hr, .faqs, #pages-menu, .footer-donate {
+    display: none; }
+  .receipt {
+    border: none !important; } }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10456,3 +10462,118 @@ h1.join-donate {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.navbar {
+  padding: 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.nav-link {
+  color: #009CDE !important;
+  font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+.dropdown-menu {
+  position: absolute;
+  left: 12rem; }
+
+.bolder {
+  font-weight: 600;
+  color: #0C2543; }
+
+.receipt-wrapper {
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem 0; }
+  @media only screen and (min-width: 768px) {
+    .receipt-wrapper {
+      padding: 3.5rem 0 6rem 0; } }
+
+.receipt {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  border: 1px solid #d7e2e8;
+  padding: 2rem 2rem; }
+  @media only screen and (min-width: 992px) {
+    .receipt {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.33333%;
+      flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      padding: 4rem 5rem; } }
+  .receipt hr {
+    margin: 60px 0; }
+  .receipt .head .circle-logo {
+    margin-bottom: 1.5rem; }
+  .receipt .head h1 {
+    margin-bottom: 2rem; }
+    @media only screen and (min-width: 992px) {
+      .receipt .head h1 {
+        font-size: 2.6rem; } }
+  .receipt .name, .receipt .help {
+    color: #0C2543;
+    font-weight: 600; }
+  .receipt .name {
+    font-size: 24px; }
+  .receipt .help {
+    font-size: 20px;
+    margin-top: 2rem;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    @media only screen and (min-width: 992px) {
+      .receipt .help {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; } }
+  .receipt .faqs, .receipt .head {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    @media only screen and (min-width: 992px) {
+      .receipt .faqs, .receipt .head {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; } }
+  .receipt .faqs {
+    margin-top: 3rem; }
+  .receipt .faqs div p:first-child {
+    font-weight: 600;
+    color: #0C2543;
+    margin: 20px 0 10px; }
+  .receipt .donation-info-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; }
+  .receipt .receipt-table {
+    margin-bottom: 4rem; }
+    .receipt .receipt-table div {
+      border: 1px solid #d7e2e8;
+      padding: 1rem 1.5rem; }
+      .receipt .receipt-table div:nth-child(1n+1) {
+        border-top: none; }
+      .receipt .receipt-table div:nth-child(1) {
+        border-top: 1px solid #d7e2e8; }
+      .receipt .receipt-table div:nth-child(2n) {
+        background: #F1F5F7; }
+      .receipt .receipt-table div p {
+        font-size: 0.8rem;
+        margin-bottom: 0; }
+      .receipt .receipt-table div span {
+        color: #0C2543;
+        font-weight: 700; }

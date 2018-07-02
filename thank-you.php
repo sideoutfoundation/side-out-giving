@@ -13,6 +13,10 @@
                 research that is providing individuals living with stage IV, the most
                 underfunded stage of breast cancer, more quality time with friends and family.
             </p>
+            <p>
+                <span class="bolder">Your receipt has been sent via email, to view it now </span><a href="receipt-page.php">click here</a>
+            </p>
+            <hr>
             <h5>Share with your friends and family and inspire others to do the same!</h5>
             <div class="share-buttons share-thankyou">
                 <a href="#" class="social social-facebook">
@@ -40,9 +44,6 @@
 
         </div><!-- .donation-form -->
 
-    </div>
-
-</div>
 
 
     </div>

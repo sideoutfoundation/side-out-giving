@@ -1,4 +1,4 @@
-<div style="padding: 3px; z-index: 11; background: white; background: #000;">
+<div id="pages-menu" style="padding: 3px; z-index: 11; background: white; background: #000;">
 
 
 <div class="dropdown">
@@ -17,6 +17,7 @@
         <a class="dropdown-item" href="embed-2.php">Embed (2)</a>
         <a class="dropdown-item" href="embed-3.php">Embed (3)</a>
         <a class="dropdown-item" href="thank-you.php">Thanks</a>
+        <a class="dropdown-item" href="receipt-page.php">Receipt</a>
         <a class="dropdown-item" href="donate-to-campaign.php">Donate to Campaign</a>
         <a class="dropdown-item" href="start-campaign.php">Start Campaign</a>
         <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>

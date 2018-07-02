@@ -7,7 +7,8 @@
 
 @import
   'variables',
-  'mixins';
+  'mixins',
+  'print';
 
 @import
   'vendor/bootstrap/bootstrap';
@@ -3274,4 +3275,135 @@ h1.join-donate {
 
 .header .row {
   justify-content: space-between;
+}
+
+.navbar {
+  padding: 0;
+  @include make-col(8);
+}
+
+.nav-link {
+  color: $blue !important;
+  @include font_semi;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 12rem;
+}
+
+.bolder {
+  font-weight: 600;
+  color: $black;
+}
+
+.receipt-wrapper {
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem 0;
+  @media only screen and (min-width: 768px) {
+    padding: 3.5rem 0 6rem 0;
+  }
+}
+
+.receipt {
+  @include make-col(12);
+  margin: auto;
+  background: white;
+  border: 1px solid $border-gray;
+  padding: 2rem 2rem;
+
+  @media only screen and (min-width: 992px) {
+    @include make-col(10);
+    padding: 4rem 5rem;
+  }
+
+  hr {
+    margin: 60px 0;
+  }
+
+  .head .circle-logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .head h1 {
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 992px) {
+      font-size: 2.6rem;
+    }
+  }
+
+  .name, .help {
+    color: $black;
+    font-weight: 600;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .help {
+    font-size: 20px;
+    margin-top: 2rem;
+    @include make-col(12);
+    @media only screen and (min-width: 992px) {
+      @include make-col(6);
+    }
+  }
+
+  .faqs, .head {
+    @include make-col(12);
+    @media only screen and (min-width: 992px) {
+      @include make-col(10);
+    }
+  }
+
+  .faqs {
+    margin-top: 3rem;
+  }
+
+  .faqs div p:first-child {
+    font-weight: 600;
+    color: $black;
+    margin: 20px 0 10px;
+  }
+
+  .donation-info-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .receipt-table {
+    margin-bottom: 4rem;
+
+    div {
+      border: 1px solid $border-gray;
+      padding: 1rem 1.5rem;
+
+      &:nth-child(1n+1) {
+        border-top: none;
+      }
+
+      &:nth-child(1) {
+        border-top: 1px solid $border-gray;
+      }
+
+      &:nth-child(2n) {
+        background: $light-gray;
+      }
+
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+
+      span {
+        color: $black;
+        font-weight: 700;
+        //font-size: 1.2rem;
+      }
+    }
+  }
 }
