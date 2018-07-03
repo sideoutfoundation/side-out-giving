@@ -3396,6 +3396,8 @@ h1.join-donate {
         background: $light-gray;
       }
 
+
+
       p {
         font-size: 0.8rem;
         margin-bottom: 0;
@@ -3407,5 +3409,14 @@ h1.join-donate {
         //font-size: 1.2rem;
       }
     }
+
+    div:last-of-type {
+       margin-bottom: 0.7rem;
+    }
   }
+}
+
+#print-this {
+  font-size: 0.89rem;
+  font-weight: 600;
 }

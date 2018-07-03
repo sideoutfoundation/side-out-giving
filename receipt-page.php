@@ -18,7 +18,7 @@
                     Your donation has been submitted successfully. Thank you so much for your commitment to supporting game changing breast cancer research.
                 </p>
                 <p>
-                    Questions? <a href="#">Read Our FAQs</a>
+                    Questions? <a href="#faqs-link">Read Our FAQs</a>
                 </p>
                 <p class="help">Help spread the word about donating to the campaign!
                 </p>
@@ -83,13 +83,14 @@
                     <p>Confirmation #:</p>
                     <span>ch_1CfWrY2oWIBvFKRVVhN8fjOK</span>
                 </div>
-                <div>
+                <div >
                     <p>Side-Out Foundation Tax ID #:</p>
                     <span>20-2510044</span>
                 </div>
+                <a href="#" id="print-this">Print this for your records</a>
             </section>
 
-            <section class="faqs">
+            <section class="faqs" id="faqs-link">
                 <h2>Frequently Asked Questions:</h2>
                 <div>
                     <p>What percentage of funds raised goes toward research?</p>
@@ -115,16 +116,15 @@
                         <a href="#">Here's now!</a>
                     </p>
                 </div>
-                <div>
+                <div >
                     <p>If you have further questions please go to:</p>
                     <p>
-                        <a href="#">http://support.side-out.org</a>
+                        <a href="http://support.side-out.org" target="_blank">http://support.side-out.org</a>
                     </p>
                 </div>
             </section>
         </div>
     </div>
 </div>
-
 
 <?php include( './inc/footer.php'); ?>

@@ -2,7 +2,7 @@
   Side Out Foundation Giving
 */
 @media print {
-  .head, .search, .search img, .login-menu, hr, .faqs, #pages-menu, .footer-donate {
+  .head, .search, .search img, .login-menu, hr, .faqs, #pages-menu, .footer-donate, #print-this {
     display: none; }
   .receipt {
     border: none !important; } }
@@ -10577,3 +10577,9 @@ h1.join-donate {
       .receipt .receipt-table div span {
         color: #0C2543;
         font-weight: 700; }
+    .receipt .receipt-table div:last-of-type {
+      margin-bottom: 0.7rem; }
+
+#print-this {
+  font-size: 0.89rem;
+  font-weight: 600; }
