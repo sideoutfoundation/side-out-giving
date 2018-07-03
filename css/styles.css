@@ -1,6 +1,12 @@
 /*!
   Side Out Foundation Giving
 */
+@media print {
+  .head, .search, .search img, .login-menu, hr, .faqs, #pages-menu, .footer-donate {
+    display: none; }
+  .receipt {
+    border: none !important; } }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7742,15 +7748,21 @@ a:focus {
   background-color: #beff25 !important;
   border-color: #beff25 !important; }
 
+a[class*="btn-outline-"],
+button[class*="btn-outline-"] {
+  border-width: 2px;
+  padding: .5625rem 1.25rem .5rem; }
+
 .btn-outline-primary {
   color: #009CDE;
   background-color: transparent;
   background-image: none;
-  border-color: #009CDE; }
+  border-color: #009CDE;
+  border-width: 2px; }
   .btn-outline-primary:focus, .btn-outline-primary:hover, .btn-outline-primary.active {
-    color: white;
-    background: #009CDE;
-    border-color: #009CDE; }
+    color: #D90084;
+    background: transparent;
+    border-color: #D90084; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.2); }
@@ -7761,9 +7773,9 @@ a:focus {
   background-image: none;
   border-color: #D90084; }
   .btn-outline-secondary:focus, .btn-outline-secondary:hover, .btn-outline-secondary.active {
-    color: white;
-    background: #D90084;
-    border-color: #D90084; }
+    color: #009CDE;
+    background: transparent;
+    border-color: #009CDE; }
   .btn-outline-secondary:focus, .btn-outline-secondary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(217, 0, 132, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(217, 0, 132, 0.2); }
@@ -7774,9 +7786,9 @@ a:focus {
   background-image: none;
   border-color: #97D700; }
   .btn-outline-success:focus, .btn-outline-success:hover, .btn-outline-success.active {
-    color: white;
-    background: #97D700;
-    border-color: #97D700; }
+    color: #6c9a00;
+    background: transparent;
+    border-color: #6c9a00; }
   .btn-outline-success:focus, .btn-outline-success.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(151, 215, 0, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(151, 215, 0, 0.2); }
@@ -7787,9 +7799,9 @@ a:focus {
   background-image: none;
   border-color: #642F6C; }
   .btn-outline-info:focus, .btn-outline-info:hover, .btn-outline-info.active {
-    color: white;
-    background: #642F6C;
-    border-color: #642F6C; }
+    color: #a54fb2;
+    background: transparent;
+    border-color: #a54fb2; }
   .btn-outline-info:focus, .btn-outline-info.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(100, 47, 108, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(100, 47, 108, 0.2); }
@@ -7800,12 +7812,25 @@ a:focus {
   background-image: none;
   border-color: #FFA500; }
   .btn-outline-warning:focus, .btn-outline-warning:hover, .btn-outline-warning.active {
-    color: white;
-    background: #FFA500;
-    border-color: #FFA500; }
+    color: #b37400;
+    background: transparent;
+    border-color: #b37400; }
   .btn-outline-warning:focus, .btn-outline-warning.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.2); }
+
+.btn-outline-danger {
+  color: #ff0000;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ff0000; }
+  .btn-outline-danger:focus, .btn-outline-danger:hover, .btn-outline-danger.active {
+    color: #b30000;
+    background: transparent;
+    border-color: #b30000; }
+  .btn-outline-danger:focus, .btn-outline-danger.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.2); }
 
 .bg-warning {
   background: #FFA500 !important; }
