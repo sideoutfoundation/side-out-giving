@@ -1,6 +1,12 @@
 /*!
   Side Out Foundation Giving
 */
+@media print {
+  .head, .search, .search img, .login-menu, hr, .faqs, #pages-menu, .footer-donate {
+    display: none; }
+  .receipt {
+    border: none !important; } }
+
 /*!
  * Bootstrap v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1798,10 +1804,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .was-validated .custom-control-input:valid ~ .valid-feedback, .was-validated .form-check input:valid ~ .valid-feedback, .form-check .was-validated input:valid ~ .valid-feedback,
 .was-validated .custom-control-input:valid ~ .valid-tooltip,
-.was-validated .form-check input:valid ~ .valid-tooltip,
-.form-check .was-validated input:valid ~ .valid-tooltip, .custom-control-input.is-valid ~ .valid-feedback, .form-check input.is-valid ~ .valid-feedback,
-.custom-control-input.is-valid ~ .valid-tooltip,
-.form-check input.is-valid ~ .valid-tooltip {
+.was-validated .form-check input:valid ~ .valid-tooltip, .form-check
+.was-validated input:valid ~ .valid-tooltip, .custom-control-input.is-valid ~ .valid-feedback, .form-check input.is-valid ~ .valid-feedback,
+.custom-control-input.is-valid ~ .valid-tooltip, .form-check input.is-valid ~ .valid-tooltip {
   display: block; }
 
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .was-validated .form-check input:valid:checked ~ .custom-control-label::before, .form-check .was-validated input:valid:checked ~ .custom-control-label::before, .was-validated .form-check .custom-control-input:valid:checked ~ label::before, .form-check .was-validated .custom-control-input:valid:checked ~ label::before, .was-validated .form-check input:valid:checked ~ label::before, .form-check .was-validated input:valid:checked ~ label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before, .form-check input.is-valid:checked ~ .custom-control-label::before, .form-check .custom-control-input.is-valid:checked ~ label::before, .form-check input.is-valid:checked ~ label::before {
@@ -1886,10 +1891,9 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .was-validated .custom-control-input:invalid ~ .invalid-feedback, .was-validated .form-check input:invalid ~ .invalid-feedback, .form-check .was-validated input:invalid ~ .invalid-feedback,
 .was-validated .custom-control-input:invalid ~ .invalid-tooltip,
-.was-validated .form-check input:invalid ~ .invalid-tooltip,
-.form-check .was-validated input:invalid ~ .invalid-tooltip, .custom-control-input.is-invalid ~ .invalid-feedback, .form-check input.is-invalid ~ .invalid-feedback,
-.custom-control-input.is-invalid ~ .invalid-tooltip,
-.form-check input.is-invalid ~ .invalid-tooltip {
+.was-validated .form-check input:invalid ~ .invalid-tooltip, .form-check
+.was-validated input:invalid ~ .invalid-tooltip, .custom-control-input.is-invalid ~ .invalid-feedback, .form-check input.is-invalid ~ .invalid-feedback,
+.custom-control-input.is-invalid ~ .invalid-tooltip, .form-check input.is-invalid ~ .invalid-tooltip {
   display: block; }
 
 .was-validated .custom-control-input:invalid:checked ~ .custom-control-label::before, .was-validated .form-check input:invalid:checked ~ .custom-control-label::before, .form-check .was-validated input:invalid:checked ~ .custom-control-label::before, .was-validated .form-check .custom-control-input:invalid:checked ~ label::before, .form-check .was-validated .custom-control-input:invalid:checked ~ label::before, .was-validated .form-check input:invalid:checked ~ label::before, .form-check .was-validated input:invalid:checked ~ label::before, .custom-control-input.is-invalid:checked ~ .custom-control-label::before, .form-check input.is-invalid:checked ~ .custom-control-label::before, .form-check .custom-control-input.is-invalid:checked ~ label::before, .form-check input.is-invalid:checked ~ label::before {
@@ -2047,16 +2051,16 @@ fieldset:disabled a.btn {
     background-color: #009CDE;
     border-color: #009CDE; }
   .btn-primary:not(:disabled):not(.disabled):active, .campaign-buttons .btn:not(:disabled):not(.disabled):active:not(.btn-blue-inverse), .mobile-follow .btn:not(:disabled):not(.disabled):active:not(.btn-blue-inverse), .btn-primary:not(:disabled):not(.disabled).active, .campaign-buttons .btn:not(:disabled):not(.disabled).active:not(.btn-blue-inverse), .mobile-follow .btn:not(:disabled):not(.disabled).active:not(.btn-blue-inverse),
-  .show > .btn-primary.dropdown-toggle,
-  .campaign-buttons .show > .dropdown-toggle.btn:not(.btn-blue-inverse),
-  .mobile-follow .show > .dropdown-toggle.btn:not(.btn-blue-inverse) {
+  .show > .btn-primary.dropdown-toggle, .campaign-buttons
+  .show > .dropdown-toggle.btn:not(.btn-blue-inverse), .mobile-follow
+  .show > .dropdown-toggle.btn:not(.btn-blue-inverse) {
     color: #fff;
     background-color: #0078ab;
     border-color: #006f9e; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .campaign-buttons .btn:not(:disabled):not(.disabled):active:focus:not(.btn-blue-inverse), .mobile-follow .btn:not(:disabled):not(.disabled):active:focus:not(.btn-blue-inverse), .btn-primary:not(:disabled):not(.disabled).active:focus, .campaign-buttons .btn:not(:disabled):not(.disabled).active:focus:not(.btn-blue-inverse), .mobile-follow .btn:not(:disabled):not(.disabled).active:focus:not(.btn-blue-inverse),
-    .show > .btn-primary.dropdown-toggle:focus,
-    .campaign-buttons .show > .dropdown-toggle.btn:focus:not(.btn-blue-inverse),
-    .mobile-follow .show > .dropdown-toggle.btn:focus:not(.btn-blue-inverse) {
+    .show > .btn-primary.dropdown-toggle:focus, .campaign-buttons
+    .show > .dropdown-toggle.btn:focus:not(.btn-blue-inverse), .mobile-follow
+    .show > .dropdown-toggle.btn:focus:not(.btn-blue-inverse) {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.5); }
 
@@ -4634,15 +4638,12 @@ button.close {
   .bs-popover-top .arrow, .bs-popover-auto[x-placement^="top"] .arrow {
     bottom: calc((0.5rem + 1px) * -1); }
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before,
-  .bs-popover-top .arrow::after,
-  .bs-popover-auto[x-placement^="top"] .arrow::after {
+  .bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
     border-width: 0.5rem 0.5rem 0; }
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(12, 37, 67, 0.25); }
-  
-  .bs-popover-top .arrow::after,
-  .bs-popover-auto[x-placement^="top"] .arrow::after {
+  .bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
     border-top-color: #fff; }
 
@@ -4654,15 +4655,12 @@ button.close {
     height: 1rem;
     margin: 0.3rem 0; }
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before,
-  .bs-popover-right .arrow::after,
-  .bs-popover-auto[x-placement^="right"] .arrow::after {
+  .bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
     border-width: 0.5rem 0.5rem 0.5rem 0; }
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(12, 37, 67, 0.25); }
-  
-  .bs-popover-right .arrow::after,
-  .bs-popover-auto[x-placement^="right"] .arrow::after {
+  .bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
     border-right-color: #fff; }
 
@@ -4671,15 +4669,12 @@ button.close {
   .bs-popover-bottom .arrow, .bs-popover-auto[x-placement^="bottom"] .arrow {
     top: calc((0.5rem + 1px) * -1); }
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before,
-  .bs-popover-bottom .arrow::after,
-  .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     border-width: 0 0.5rem 0.5rem 0.5rem; }
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(12, 37, 67, 0.25); }
-  
-  .bs-popover-bottom .arrow::after,
-  .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
     border-bottom-color: #fff; }
   .bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
@@ -4700,15 +4695,12 @@ button.close {
     height: 1rem;
     margin: 0.3rem 0; }
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before,
-  .bs-popover-left .arrow::after,
-  .bs-popover-auto[x-placement^="left"] .arrow::after {
+  .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
     border-width: 0.5rem 0 0.5rem 0.5rem; }
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(12, 37, 67, 0.25); }
-  
-  .bs-popover-left .arrow::after,
-  .bs-popover-auto[x-placement^="left"] .arrow::after {
+  .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
     border-left-color: #fff; }
 
@@ -7466,8 +7458,7 @@ h5 {
 .card-header {
   margin-top: 0 !important; }
 
-b,
-strong {
+b, strong {
   color: #0C2543;
   font-family: 'Proxima Nova Bold', helvetica, sans-serif;
   font-weight: normal; }
@@ -7629,7 +7620,10 @@ a:focus {
 
 .modal-cta .btn,
 .actions .btn,
-.form-actions .btn, .btn-primary, .campaign-buttons .btn:not(.btn-blue-inverse), .mobile-follow .btn:not(.btn-blue-inverse) {
+.form-actions .btn,
+.btn-primary,
+.campaign-buttons .btn:not(.btn-blue-inverse),
+.mobile-follow .btn:not(.btn-blue-inverse) {
   text-align: center;
   text-decoration: none;
   color: white;
@@ -7648,7 +7642,10 @@ a:focus {
   @media only screen and (min-width: 768px) {
     .modal-cta .btn,
     .actions .btn,
-    .form-actions .btn, .btn-primary, .campaign-buttons .btn:not(.btn-blue-inverse), .mobile-follow .btn:not(.btn-blue-inverse) {
+    .form-actions .btn,
+    .btn-primary,
+    .campaign-buttons .btn:not(.btn-blue-inverse),
+    .mobile-follow .btn:not(.btn-blue-inverse) {
       display: inline-block; } }
   .modal-cta .btn:focus, .modal-cta .btn:hover, .modal-cta .btn.active,
   .actions .btn:focus,
@@ -7656,7 +7653,13 @@ a:focus {
   .actions .btn.active,
   .form-actions .btn:focus,
   .form-actions .btn:hover,
-  .form-actions .btn.active, .btn-primary:focus, .campaign-buttons .btn:focus:not(.btn-blue-inverse), .mobile-follow .btn:focus:not(.btn-blue-inverse), .btn-primary:hover, .campaign-buttons .btn:hover:not(.btn-blue-inverse), .mobile-follow .btn:hover:not(.btn-blue-inverse),
+  .form-actions .btn.active,
+  .btn-primary:focus,
+  .campaign-buttons .btn:focus:not(.btn-blue-inverse),
+  .mobile-follow .btn:focus:not(.btn-blue-inverse),
+  .btn-primary:hover,
+  .campaign-buttons .btn:hover:not(.btn-blue-inverse),
+  .mobile-follow .btn:hover:not(.btn-blue-inverse),
   .btn-primary.active,
   .campaign-buttons .active.btn:not(.btn-blue-inverse),
   .mobile-follow .active.btn:not(.btn-blue-inverse) {
@@ -7667,11 +7670,20 @@ a:focus {
   .actions .btn:focus,
   .actions .btn.focus,
   .form-actions .btn:focus,
-  .form-actions .btn.focus, .btn-primary:focus, .campaign-buttons .btn:focus:not(.btn-blue-inverse), .mobile-follow .btn:focus:not(.btn-blue-inverse), .btn-primary.focus, .campaign-buttons .focus.btn:not(.btn-blue-inverse), .mobile-follow .focus.btn:not(.btn-blue-inverse) {
+  .form-actions .btn.focus,
+  .btn-primary:focus,
+  .campaign-buttons .btn:focus:not(.btn-blue-inverse),
+  .mobile-follow .btn:focus:not(.btn-blue-inverse),
+  .btn-primary.focus,
+  .campaign-buttons .focus.btn:not(.btn-blue-inverse),
+  .mobile-follow .focus.btn:not(.btn-blue-inverse) {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(217, 0, 132, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(217, 0, 132, 0.2); }
 
-.btn-primary.disabled, .campaign-buttons .disabled.btn:not(.btn-blue-inverse), .mobile-follow .disabled.btn:not(.btn-blue-inverse), .btn-primary:disabled, .campaign-buttons .btn:disabled:not(.btn-blue-inverse), .mobile-follow .btn:disabled:not(.btn-blue-inverse) {
+.btn-primary.disabled, .campaign-buttons .disabled.btn:not(.btn-blue-inverse), .mobile-follow .disabled.btn:not(.btn-blue-inverse),
+.btn-primary:disabled,
+.campaign-buttons .btn:disabled:not(.btn-blue-inverse),
+.mobile-follow .btn:disabled:not(.btn-blue-inverse) {
   color: #fff;
   cursor: default;
   background-color: #ff12a2 !important;
@@ -7687,7 +7699,8 @@ a:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(0, 156, 222, 0.2); }
 
-.btn-secondary.disabled, .btn-secondary:disabled {
+.btn-secondary.disabled,
+.btn-secondary:disabled {
   color: #fff;
   background-color: #2cc0ff !important;
   border-color: #2cc0ff !important; }
@@ -7702,7 +7715,8 @@ a:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(100, 47, 108, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(100, 47, 108, 0.2); }
 
-.btn-info.disabled, .btn-info:disabled {
+.btn-info.disabled,
+.btn-info:disabled {
   color: #fff;
   background-color: #9546a1 !important;
   border-color: #9546a1 !important; }
@@ -7719,7 +7733,8 @@ a:focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.2);
     box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.2); }
 
-.btn-warning.disabled, .btn-warning:disabled {
+.btn-warning.disabled,
+.btn-warning:disabled {
   color: #fff;
   background-color: #ffc04d !important;
   border-color: #ffc04d !important; }
@@ -7737,7 +7752,8 @@ a:focus {
 .btn-success {
   color: #fff; }
 
-.btn-success.disabled, .btn-success:disabled {
+.btn-success.disabled,
+.btn-success:disabled {
   color: #fff;
   background-color: #beff25 !important;
   border-color: #beff25 !important; }
@@ -8510,10 +8526,10 @@ input.email {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
     z-index: 0; }
   @media only screen and (min-width: 992px) {
     .hero {
