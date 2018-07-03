@@ -1572,9 +1572,9 @@ main {
     display: block;
     margin-bottom: 10px;
     @extend .btn-lg;
-    &:first-of-type {
-      @extend .btn-primary;
-    }
+  }
+  .btn:not(.btn-blue-inverse) {
+    @extend .btn-primary;
   }
   @media only screen and (min-width: 992px) {
     margin-bottom: 0;
