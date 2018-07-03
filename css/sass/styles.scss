@@ -477,17 +477,24 @@ a:focus {
   border-color: lighten($green, 15%) !important;
 }
 
+a[class*="btn-outline-"],
+button[class*="btn-outline-"] {
+  border-width: 2px;
+  padding: .5625rem 1.25rem .5rem
+}
+
 .btn-outline-primary {
   color: $blue;
   background-color: transparent;
   background-image: none;
   border-color: $blue;
+  border-width: 2px;
   &:focus,
   &:hover,
   &.active {
-    color: white;
-    background: $blue;
-    border-color: $blue;
+    color: $pink;
+    background: transparent;
+    border-color: $pink;
   }
   &:focus,
   &.focus {
@@ -503,9 +510,9 @@ a:focus {
   &:focus,
   &:hover,
   &.active {
-    color: white;
-    background: $pink;
-    border-color: $pink;
+    color: $blue;
+    background: transparent;
+    border-color: $blue;
   }
   &:focus,
   &.focus {
@@ -521,9 +528,9 @@ a:focus {
   &:focus,
   &:hover,
   &.active {
-    color: white;
-    background: $green;
-    border-color: $green;
+    color: darken($green, 12%);
+    background: transparent;
+    border-color: darken($green, 12%);
   }
   &:focus,
   &.focus {
@@ -539,9 +546,9 @@ a:focus {
   &:focus,
   &:hover,
   &.active {
-    color: white;
-    background: $purple;
-    border-color: $purple;
+    color: lighten($purple, 20%);
+    background: transparent;
+    border-color: lighten($purple, 20%);
   }
   &:focus,
   &.focus {
@@ -557,13 +564,31 @@ a:focus {
   &:focus,
   &:hover,
   &.active {
-    color: white;
-    background: $orange;
-    border-color: $orange;
+    color: darken($orange, 15%);
+    background: transparent;
+    border-color: darken($orange, 15%);
   }
   &:focus,
   &.focus {
     box-shadow: 0 0 0 .2rem rgba($orange, .2);
+  }
+}
+
+.btn-outline-danger {
+  color: $red;
+  background-color: transparent;
+  background-image: none;
+  border-color: $red;
+  &:focus,
+  &:hover,
+  &.active {
+    color: darken($red, 15%);
+    background: transparent;
+    border-color: darken($red, 15%);
+  }
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 .2rem rgba($red, .2);
   }
 }
 
