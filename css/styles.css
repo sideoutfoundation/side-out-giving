@@ -10463,14 +10463,14 @@ h1.join-donate {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.navbar {
+.header-bootstrap .navbar {
   padding: 0;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 66.66667%;
   flex: 0 0 66.66667%;
   max-width: 66.66667%; }
 
-.nav-link {
+.header-bootstrap .nav-link {
   color: #009CDE !important;
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
   font-weight: normal;
@@ -10482,7 +10482,7 @@ h1.join-donate {
   align-items: center;
   text-align: center; }
 
-.dropdown-menu {
+.header-bootstrap .dropdown-menu {
   position: absolute;
   left: 12rem; }
 
