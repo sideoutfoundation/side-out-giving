@@ -8393,10 +8393,11 @@ input.email {
         max-width: 83.33333%; }
       .search.search-thank-you {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 37.5%;
-        flex: 0 0 37.5%;
-        max-width: 37.5%;
-        padding-left: 0; } }
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+        padding-left: 0;
+        padding-right: 0; } }
 
 .search-form {
   border: 1px solid #d7e2e8;
@@ -8413,7 +8414,7 @@ input.email {
   .search-form input[type="search"] {
     height: 38px;
     border: 0 !important;
-    width: calc(100% - 24px); }
+    width: 100%; }
     .search-form input[type="search"]:focus {
       -webkit-box-shadow: 0 0 0 0 transparent;
       box-shadow: 0 0 0 0 transparent; }
@@ -8469,9 +8470,9 @@ input.email {
   @media only screen and (min-width: 768px) {
     .login-menu {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 8.33333%;
-      flex: 0 0 8.33333%;
-      max-width: 8.33333%;
+      -ms-flex: 0 0 5.83333%;
+      flex: 0 0 5.83333%;
+      max-width: 5.83333%;
       position: initial;
       right: 0;
       top: 5px; } }
@@ -9876,6 +9877,7 @@ h1.join-donate {
         border: solid 1px #fff;
         border-bottom: solid 1px #D90084;
         color: #0C2543;
+        right: -34px;
         background-color: transparent;
         cursor: auto; }
       #demo-2 input::-webkit-input-placeholder {
@@ -9941,7 +9943,8 @@ h1.join-donate {
     -o-transition: all .5s;
     transition: all .5s;
     position: relative;
-    z-index: 7; }
+    z-index: 7;
+    right: 0; }
   .search-thank-you #demo-2 img {
     position: absolute;
     z-index: 5;
@@ -9962,10 +9965,11 @@ h1.join-donate {
   .search-thank-you #demo-2 input::placeholder {
     color: transparent; }
   .search-thank-you #demo-2 input[type=search]:focus {
-    width: 100%;
-    max-width: 100%;
+    width: calc(100% + 26px);
+    max-width: calc(100% + 26px);
     background-color: #fff;
     border: solid 1px #d7e2e8;
+    right: 0;
     -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
     box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
     .search-thank-you #demo-2 input[type=search]:focus::-webkit-input-placeholder {
@@ -9976,6 +9980,23 @@ h1.join-donate {
       color: #d7e2e8; }
     .search-thank-you #demo-2 input[type=search]:focus::placeholder {
       color: #d7e2e8; }
+  @media only screen and (max-width: 992px) {
+    .search-thank-you #demo-2 input::-webkit-input-placeholder {
+      font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1rem; }
+    .search-thank-you #demo-2 input:-ms-input-placeholder {
+      font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1rem; }
+    .search-thank-you #demo-2 input::-ms-input-placeholder {
+      font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1rem; }
+    .search-thank-you #demo-2 input::placeholder {
+      font-family: 'Proxima Nova Regular', helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 1rem; } }
   @media only screen and (min-width: 768px) {
     .search-thank-you #demo-2 {
       -webkit-box-flex: 0;
@@ -10007,35 +10028,36 @@ h1.join-donate {
       .search-thank-you #demo-2 input[type=search]:hover {
         background-color: transparent; }
       .search-thank-you #demo-2 input[type=search]:focus {
-        width: 100%;
-        max-width: 100%;
+        width: calc(100% + 26px);
+        max-width: calc(100% + 26px);
         border: solid 1px #fff;
         border-bottom: solid 1px #D90084;
         color: #0C2543;
         background-color: transparent;
-        cursor: auto; }
+        cursor: auto;
+        right: -22px; }
       .search-thank-you #demo-2 input::-webkit-input-placeholder {
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
         font-weight: lighter; }
       .search-thank-you #demo-2 input:-ms-input-placeholder {
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
         font-weight: lighter; }
       .search-thank-you #demo-2 input::-ms-input-placeholder {
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
         font-weight: lighter; }
       .search-thank-you #demo-2 input::placeholder {
         font-family: 'Proxima Nova Regular', helvetica, sans-serif;
         font-weight: normal;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
         font-weight: lighter; }
       .search-thank-you #demo-2 input[type=search]:focus::-webkit-input-placeholder {
@@ -10394,6 +10416,7 @@ h1.join-donate {
 .personal .dropdown-menu.show {
   left: -5.3rem !important;
   width: 15rem;
+  min-width: 7rem;
   top: 8px !important; }
 
 .logged-menu {
@@ -10435,16 +10458,17 @@ h1.join-donate {
     text-align: center; }
   .logged-menu .dropdown-menu.show {
     top: 8px !important;
-    left: 6px !important; }
+    left: 43px !important; }
   @media only screen and (min-width: 768px) {
     .logged-menu {
       height: auto;
       position: inherit;
       padding-right: 0;
+      padding-left: 0;
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-      max-width: 33.33333%;
+      -ms-flex: 0 0 30.83333%;
+      flex: 0 0 30.83333%;
+      max-width: 30.83333%;
       top: auto;
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;

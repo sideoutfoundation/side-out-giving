@@ -1188,8 +1188,9 @@ input.email {
     }
 
     &.search-thank-you {
-      @include make-col(4.5);
+      @include make-col(4.8);
       padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -1208,7 +1209,8 @@ input.email {
   input[type="search"] {
     height: 38px;
     border: 0 !important;
-    width: calc(100% - 24px);
+    //width: calc(100% - 24px);
+    width: 100%;
     &:focus {
       box-shadow: 0 0 0 0 transparent;
     }
@@ -1260,7 +1262,7 @@ input.email {
   top: 5px;
 
   @media only screen and (min-width: 768px) {
-    @include make-col(1);
+    @include make-col(0.7);
     position: initial;
     right: 0;
     top: 5px;
@@ -2720,6 +2722,7 @@ h1.join-donate {
       transition: all .5s;
       position: relative;
       z-index: 7;
+
       right: -34px;
       font-size: 1.6rem;
       line-height: 1.6rem;
@@ -2743,6 +2746,7 @@ h1.join-donate {
       border: solid 1px #fff;
       border-bottom: solid 1px $pink;
       color: $black;
+      right: -34px;
       background-color: transparent;
       cursor: auto;
     }
@@ -2787,7 +2791,7 @@ h1.join-donate {
     transition: all .5s;
     position: relative;
     z-index: 7;
-    //right: -24px;
+    right: 0;
   }
 
   img {
@@ -2816,10 +2820,11 @@ h1.join-donate {
 
 
   input[type=search]:focus {
-    width: 100%;
-    max-width: 100%;
+    width: calc(100% + 26px);
+    max-width: calc(100% + 26px);
     background-color: #fff;
     border: solid 1px #d7e2e8;
+    right: 0;
     box-shadow: 0 0 5px rgba(109,207,246,.5);
 
     &::placeholder {
@@ -2827,8 +2832,14 @@ h1.join-donate {
     }
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (max-width: 992px) {
     //@include make-col(8);
+    input::placeholder {
+
+      @include font-body;
+      font-size: 1rem;
+
+    }
   }
 
   @media only screen and (min-width: 768px) {
@@ -2862,19 +2873,20 @@ h1.join-donate {
     }
 
     input[type=search]:focus {
-      width: 100%;
-      max-width: 100%;
+      width: calc(100% + 26px);
+      max-width: calc(100% + 26px);
       border: solid 1px #fff;
       border-bottom: solid 1px $pink;
       color: $black;
       background-color: transparent;
       cursor: auto;
+      right: -22px;
     }
 
     input::placeholder {
       //color: #d7e2e8;
       @include font-body;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 1.8rem;
       font-weight: lighter;
     }
@@ -3232,6 +3244,7 @@ h1.join-donate {
   .dropdown-menu.show {
     left: -5.3rem !important;
     width: 15rem;
+    min-width: 7rem;
     top: 8px !important;
   }
 }
@@ -3260,7 +3273,7 @@ h1.join-donate {
 
   .dropdown-menu.show {
     top: 8px !important;
-    left: 6px !important;
+    left: 43px !important;
   }
 
 
@@ -3268,7 +3281,8 @@ h1.join-donate {
     height: auto;
     position: inherit;
     padding-right: 0;
-    @include make-col(4);
+    padding-left: 0;
+    @include make-col(3.7);
     top: auto;
     justify-content: space-evenly;
     background: transparent;
