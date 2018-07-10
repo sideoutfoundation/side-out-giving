@@ -7968,6 +7968,10 @@ label {
   font-weight: normal;
   color: #0C2543; }
 
+.form-group.required label:after {
+  content: ' *';
+  color: #ff0000; }
+
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],

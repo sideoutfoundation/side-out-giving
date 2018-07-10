@@ -737,6 +737,15 @@ label {
   color: $black;
 }
 
+.form-group.required {
+  label {
+    &:after {
+      content: ' *';
+      color: $red;
+    }
+  }
+}
+
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
