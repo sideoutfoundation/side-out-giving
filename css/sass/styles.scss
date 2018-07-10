@@ -708,6 +708,16 @@ input[type="radio"] {
   vertical-align: middle;
 }
 
+.custom-file {
+  .custom-file-label {
+    border-radius: 0 !important;
+    &:after {
+      height: 2.38rem !important;
+      padding: 0.41rem 0.75rem;
+    }
+  }
+}
+
 fieldset {
   margin: 0;
   padding: 0;
