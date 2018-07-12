@@ -1170,6 +1170,7 @@ input.email {
   @include make-col(4);
 
   @media only screen and (min-width: 768px) {
+    padding-left: 0;
     @include make-col(2);
   }
 }
@@ -1187,32 +1188,7 @@ input.email {
   }
 }
 
-.search {
-  @include make-col-ready();
-  @include make-col(9);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: -7px;
 
-  @media only screen and (min-width: 768px) {
-    position: initial;
-    @include make-col(9);
-    margin-top: auto;
-    margin-bottom: auto;
-
-    &.demo-out {
-      @include make-col(10);
-    }
-
-    &.search-thank-you {
-      @include make-col(4.8);
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
 
 .search-form {
   border: 1px solid $border-gray;
@@ -1288,30 +1264,57 @@ input.email {
   }
 }
 
+.app-notifications-icon {
+  @include make-col(0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 4.8rem;
 
-/* Demo 2 */
-/*#demo-2 input[type=search] {
-  width: 15px;
-  padding-left: 10px;
-  color: transparent;
-  cursor: pointer;
+  svg {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    @include make-col(0.7);
+    margin-right: 0;
+  }
+
 }
-#demo-2 input[type=search]:hover {
-  background-color: #fff;
+
+.search {
+  @include make-col-ready();
+  @include make-col(9);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -5px;
+      &.demo-out {
+      @include make-col(12);
+    }
+
+  @media only screen and (min-width: 768px) {
+    position: initial;
+    @include make-col(9);
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &.demo-out {
+      @include make-col(10);
+    }
+
+    &.search-thank-you {
+      @include make-col(8.5);
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
-#demo-2 input[type=search]:focus {
-  width: 130px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
-}
-#demo-2 input:-moz-placeholder {
-  color: transparent;
-}
-#demo-2 input::-webkit-input-placeholder {
-  color: transparent;
-}*/
+
+
 
 
 // -----------------------------------------------------------------------------
@@ -2352,6 +2355,7 @@ main {
 
 h1.join-donate {
   @include font-size(2.6);
+  margin: auto;
   @media only screen and (min-width: 768px) {
     @include font-size(3);
     max-width: 500px;
@@ -2660,6 +2664,8 @@ h1.join-donate {
 
   input {
     outline: none;
+    appearance: none;
+    //color: $medium-gray;
   }
 
   input[type=search] {
@@ -2667,6 +2673,7 @@ h1.join-donate {
     box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
+    color: transparent;
   }
 
   input::search-cancel-button {
@@ -2685,14 +2692,16 @@ h1.join-donate {
     position: relative;
     z-index: 7;
     //right: -24px;
+    color: transparent;
+    appearance: none;
   }
 
   img {
     position: absolute;
     z-index: 5;
     margin-top: 9px;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
 
@@ -2703,8 +2712,9 @@ h1.join-donate {
   input[type=search] {
     width: 15px;
     padding-left: 10px;
-    color: transparent;
+    //color: transparent;
     cursor: pointer;
+    color: transparent;
   }
 
   input::placeholder {
@@ -2717,7 +2727,9 @@ h1.join-donate {
     max-width: 100%;
     background-color: #fff;
     border: solid 1px #d7e2e8;
+    border-radius: 0;
     box-shadow: 0 0 5px rgba(109,207,246,.5);
+    color: $black;
 
     &::placeholder {
       color: #d7e2e8;
@@ -2763,6 +2775,7 @@ h1.join-donate {
       width: 100%;
       max-width: 100%;
       border: solid 1px #fff;
+      border-radius: 0;
       border-bottom: solid 1px $pink;
       color: $black;
       right: -34px;
@@ -2779,142 +2792,150 @@ h1.join-donate {
     }
   }
 }
-
 
 .search-thank-you {
   #demo-2 {
 
-  input {
-    outline: none;
-  }
-
-  input[type=search] {
-    appearance: textfield;
-    box-sizing: content-box;
-    font-family: inherit;
-    font-size: 100%;
-  }
-
-  input::search-cancel-button {
-    display: none;
-  }
-
-
-  input[type=search]{
-    width: 100%;
-    max-width: 100%;
-    background: transparent;
-    border: solid 1px transparent;
-    padding: 7px 7px;
-    width: 55px;
-    transition: all .5s;
-    position: relative;
-    z-index: 7;
-    right: 0;
-  }
-
-  img {
-    position: absolute;
-    z-index: 5;
-    margin-top: 11px;
-    width: 24px;
-    height: 24px;
-  }
-
-
-  @include make-col(12);
-  display: flex;
-  justify-content: flex-end;
-
-  input[type=search] {
-    width: 15px;
-    padding-left: 10px;
-    color: transparent;
-    cursor: pointer;
-  }
-
-  input::placeholder {
-    color: transparent;
-  }
-
-
-  input[type=search]:focus {
-    width: calc(100% + 26px);
-    max-width: calc(100% + 26px);
-    background-color: #fff;
-    border: solid 1px #d7e2e8;
-    right: 0;
-    box-shadow: 0 0 5px rgba(109,207,246,.5);
-
-    &::placeholder {
-      color: #d7e2e8;
+    input {
+      outline: none;
+      color: transparent;
+      appearance: none;
     }
-  }
 
-  @media only screen and (max-width: 992px) {
-    //@include make-col(8);
-    input::placeholder {
-
-      @include font-body;
-      font-size: 1rem;
-
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    @include make-col(12);
     input[type=search] {
-      background: transparent;
-      border: solid 1px #fff;
-      border-bottom: solid 1px transparent;
-      padding: 5px 10px 5px 10px;
-      padding-left: 2px;
-      width: 20px;
+      appearance: textfield;
+      box-sizing: content-box;
+      font-family: inherit;
+      font-size: 100%;
+      color: transparent;
+    }
+
+    input::search-cancel-button {
+      display: none;
+    }
+
+
+    input[type=search]{
+      width: 100%;
       max-width: 100%;
+      background: transparent;
+      border: solid 1px transparent;
+      padding: 7px 3px;
+      width: 55px;
       transition: all .5s;
       position: relative;
       z-index: 7;
-      right: -34px;
-      font-size: 1.6rem;
-      line-height: 1.6rem;
+      right: 0;
+      color: transparent;
+      appearance: none;
     }
 
     img {
-      position: relative;
+      position: absolute;
       z-index: 5;
-      margin-top: 7px;
+      margin-top: 10px;
       width: 20px;
       height: 20px;
     }
 
-    input[type=search]:hover {
-      background-color: transparent;
+
+    @include make-col(12);
+    display: flex;
+    justify-content: flex-end;
+
+    input[type=search] {
+      width: 15px;
+      padding-left: 7px;
+      color: transparent;
+      cursor: pointer;
     }
+
+    input::placeholder {
+      color: transparent;
+      font-size: 1rem;
+    }
+
 
     input[type=search]:focus {
       width: calc(100% + 26px);
       max-width: calc(100% + 26px);
-      border: solid 1px #fff;
-      border-bottom: solid 1px $pink;
-      color: $black;
-      background-color: transparent;
-      cursor: auto;
-      right: -22px;
+      background-color: #fff;
+      border: solid 1px #d7e2e8;
+      border-radius: 0;
+      right: 0;
+      color: $medium-gray;
+      box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+      &::placeholder {
+        color: #d7e2e8;
+        font-size: 1rem;
+      }
     }
 
-    input::placeholder {
-      //color: #d7e2e8;
-      @include font-body;
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-      font-weight: lighter;
+    @media only screen and (max-width: 992px) {
+      //@include make-col(8);
+      input::placeholder {
+
+        @include font-body;
+        font-size: 0.9rem;
+
+      }
     }
 
-    input[type=search]:focus::placeholder {
-      color: #d7e2e8;
+    @media only screen and (min-width: 768px) {
+      @include make-col(12);
+      input[type=search] {
+        background: transparent;
+        border: solid 1px #fff;
+        border-bottom: solid 1px transparent;
+        padding: 5px 10px 5px 10px;
+        padding-left: 2px;
+        width: 20px;
+        max-width: 100%;
+        transition: all .5s;
+        position: relative;
+        z-index: 7;
+        right: -34px;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
+
+      img {
+        position: relative;
+        z-index: 5;
+        margin-top: 7px;
+        width: 20px;
+        height: 20px;
+      }
+
+      input[type=search]:hover {
+        //background-color: transparent;
+      }
+
+      input[type=search]:focus {
+        width: calc(100% + 26px);
+        max-width: calc(100% + 26px);
+        border: solid 1px #fff;
+        border-bottom: solid 1px $pink;
+        color: $black;
+        background-color: transparent;
+        cursor: auto;
+        right: -22px;
+      }
+
+      input::placeholder {
+        //color: #d7e2e8;
+        @include font-body;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: lighter;
+      }
+
+      input[type=search]:focus::placeholder {
+        color: #d7e2e8;
+      }
     }
   }
-}
 }
 
 .owl-nav {
@@ -3295,6 +3316,12 @@ h1.join-donate {
     left: 43px !important;
   }
 
+    @media only screen and (min-width: 768px) {
+      left: 0;
+/*          padding-right: 35px;
+    padding-left: 35px;*/
+    }
+
 
   @media only screen and (min-width: 768px) {
     height: auto;
@@ -3313,23 +3340,7 @@ h1.join-donate {
   }
 }
 
-.app-notifications-icon {
-  @include make-col(0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5rem;
 
-  svg {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-
-  @media only screen and (min-width: 768px) {
-    margin-right: 0;
-  }
-
-}
 
 .header .row {
   justify-content: space-between;
@@ -3477,4 +3488,290 @@ h1.join-donate {
 #print-this {
   font-size: 0.89rem;
   font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+#flexmenu{
+  display: flex;
+  flex-flow: row wrap;
+
+
+#main-menu{
+  align-items: center;
+    padding: 0;
+    margin: 0;
+}
+/* keep the drop-downs from being hidden by content wrappers etc */
+.sub-menu {
+  z-index: 1234;
+}
+
+/* General Menu Styling */
+li,
+li a {
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+    //text-transform: uppercase;
+    transition: all ease-in-out .3s;
+}
+
+ul li a {
+/*    padding: 17px;*/
+    //font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $blue;
+    font-weight: 700;
+}
+
+ul li.has-sub > a {
+    padding-right: 30px;
+}
+/* Drop icon */
+/*ul li.has-sub > a:after {
+    position: absolute;
+    top: 22px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #F14F80;
+    content: '';
+}
+ul ul li.has-sub > a:after {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #FFF;
+    content: '';
+}
+& > ul > li.has-sub > a:before {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #ddd;
+    transition: all .25s ease;
+}
+& > ul > li.has-sub:hover > a:before {
+    top: 23px;
+    height: 0;
+}
+ ul ul li.has-sub > a:before {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #FFF;
+    content: '';
+    transition: all .3s ease;
+}
+ ul ul > li.has-sub:hover > a:before {
+    top: 17px;
+    height: 0;
+}
+ ul ul li.has-sub:hover,
+ ul li.has-sub ul li.has-sub ul li:hover {
+    background: #751CEC;
+}*/
+/* Submenu default states, removed by hover gives the animation */
+ ul ul {
+    position: absolute;
+    left: -9999px;
+}
+ li:hover > ul {
+    left: auto;
+}
+ ul ul li {
+    height: 0;
+    background: white;
+    transition: all .25s ease
+}
+ li:hover > ul > li {
+    height: 35px;
+}
+/* tertiary menu */
+ ul ul ul {
+    margin-left: 100%;
+    top: 0;
+}
+ ul ul li a {
+    padding: 11px 15px;
+    width: 170px;
+    font-size: 12px;
+    text-decoration: none;
+    color: $blue;
+    font-weight: 400;
+}
+
+
+/* Content */
+
+
+@media screen and (max-width: 768px) {
+  /* Center the logo and remove the bar */
+
+  /* Hamburger */
+    .button {
+    background: $pink;
+    width: 60px;
+    height: 48px;
+    position: fixed;
+    left: 0;
+    top: 7rem;
+    cursor: pointer;
+    z-index: 10000;
+    }
+    .button:after {
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        display: block;
+        height: 4px;
+        width: 20px;
+        border-top: 2px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+        content: '';
+    }
+    .button:before {
+        transition: all .3s ease;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #ddd;
+        content: '';
+    }
+  /* Turn it into an X when open */
+    .button.menu-opened{
+      background: #2e1f62;
+    }
+    .button.menu-opened:after {
+        transition: all .3s ease;
+        top: 23px;
+        border: 0;
+        height: 2px;
+        width: 19px;
+        background: #fff;
+        transform: rotate(45deg);
+    }
+    .button.menu-opened:before {
+        top: 23px;
+        background: #fff;
+        width: 19px;
+        transform: rotate(-45deg);
+    }
+  /* reset horizontal styles */
+    ul {
+        display: none;
+    }
+    ul li,
+    ul li a,
+    ul ul li a{
+        width: 100%;
+    }
+
+    ul ul li,
+    li:hover > ul > li {
+        height: auto;
+    }
+    ul ul li a {
+        padding-left: 25px;
+    }
+    ul ul ul li a {
+        padding-left: 35px;
+    }
+
+    ul ul,
+    ul ul ul {
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+    ul ul ul li.active a {
+        border-left: none;
+    }
+
+  /* remove cross when menu item is toggled */
+
+    ul ul > li.has-sub > a:after,
+    ul ul > li.has-sub > a:before {
+        display: none;
+    }
+
+  /* submenu toggles */
+    .submenu-button {
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 0;
+        display: block;
+        border-left: 1px solid #444;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+    }
+    ul ul .submenu-button {
+        height: 34px;
+        width: 34px;
+    }
+    .submenu-button:after {
+        position: absolute;
+        top: 22px;
+        right: 19px;
+        width: 8px;
+        height: 2px;
+        display: block;
+        background: #ddd;
+        content: '';
+    }
+    ul ul .submenu-button:after {
+        top: 15px;
+        right: 13px;
+    }
+    .submenu-button.submenu-opened:after {
+        background: #fff;
+    }
+    .submenu-button:before {
+        position: absolute;
+        top: 19px;
+        right: 22px;
+        display: block;
+        width: 2px;
+        height: 8px;
+        background: #ddd;
+        content: ''
+    }
+    ul ul .submenu-button:before {
+        top: 12px;
+        right: 16px;
+    }
+    .submenu-button.submenu-opened:before {
+        display: none;
+    }
+
+}
+
 }
