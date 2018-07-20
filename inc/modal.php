@@ -7,6 +7,7 @@
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
+            <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
         </div>
     </div>
 </div>
@@ -21,12 +22,14 @@
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
+            <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
         </div>
     </div>
 </div>
 
 <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="donateModal" aria-hidden="false">
     <div class="modal-dialog" role="document">
+
         <div class="modal-content">
                 <div class="donation-form-wrapper">
 
@@ -121,9 +124,10 @@
                 or <a href="#" data-dismiss="modal" aria-label="Close">Cancel</a>
             </div>
         </div><!-- .donation-form -->
-
+            <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -194,6 +198,7 @@ $('#in-honor').click(function(){
                         </svg>
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
