@@ -40,4 +40,32 @@
         window.print();
     })
 
+    /*
+        Assign empty url value to the iframe src attribute when
+        modal hide, which stop the video playing
+    */
+    $(document).on('hide.bs.modal', function(event, extra) {
+        $(this).find('.embed-responsive iframe').each(function() {
+            tempSrc = $(this).attr('src');
+            $(this).attr('src', "");
+            $(this).attr('src', tempSrc);
+        });
+    });
+
+    $(document).on('hidden.bs.modal', function(event, extra) {
+        $(this).find('.embed-responsive iframe').each(function() {
+            tempSrc = $(this).attr('src');
+            $(this).attr('src', "");
+            $(this).attr('src', tempSrc);
+        });
+    });
+
+    /*
+        Trigger donate modal on load
+    */
+    if (window.location.hash == '#donate') {
+        if ($('#donate').length) {
+            $('#donate').modal('show');
+        }
+    }
 })(jQuery);

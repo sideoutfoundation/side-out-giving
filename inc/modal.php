@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YWII9pilahQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YWII9pilahQ?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
@@ -12,12 +12,11 @@
     </div>
 </div>
 
-
 <div class="modal fade" id="research" tabindex="-1" role="dialog" aria-labelledby="researchModal" aria-hidden="false">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WTSuhHsOefU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WTSuhHsOefU?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
@@ -131,9 +130,6 @@
     </div>
 </div>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
 <script>
 $('#honoree-fields').hide()
 $('#in-honor').click(function(){
@@ -147,8 +143,6 @@ $('#in-honor').click(function(){
         $('#honoree-fields').hide()
     }
 });
-
-
 </script>
 
 <div class="modal fade" id="leaving" tabindex="-1" role="dialog" aria-labelledby="leavingModal" aria-hidden="false">
