@@ -38,7 +38,7 @@
     $("#print-this").on('click', function(e){
         e.preventDefault();
         window.print();
-    })
+    });
 
     /*
         Assign empty url value to the iframe src attribute when
@@ -68,4 +68,12 @@
             $('#donate').modal('show');
         }
     }
+
+    /*Remove when SELECT@ implemented*/
+    $('#search-input').keyup(function(){
+    if($(this).val().length)
+    $('#search-results').show();
+        else
+        $('#search-results').hide();
+    });
 })(jQuery);

@@ -63,9 +63,58 @@
 
                 <div class="search">
                     <form id="demo-2">
-                        <input type="search" placeholder="Search for a supporting campaign"><img src="../img/search.svg" width="24" height="24"/>
+                        <input type="search" id="search-input" placeholder="Search for a supporting campaign"><img src="../img/search.svg" width="24" height="24"/>
                     </form>
                 </div>
+                <div class="search-results logged" id="search-results">
+                    <span class="caret"></span>
+                    <div class="results"><img src="../img/search-white.svg" width="22" height="22"/>Results for <span>"bow"</span></div>
+                    <div class="result-option">
+                        <a class="campaign-link" href= "/campaign.php">
+                            <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
+                            <div class="content">
+                                <h3>Bowdoin College Voleyball Dig Pink</h3>
+                                <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
+                                <div class="pills bs-component">
+                                    <div>
+                                        <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
+                                    </div>
+                                    <div>
+                                        <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="button-area">
+                        <a href= "/campaign.php#donate">
+                                <button type="button" class="btn btn-primary">Donate</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="result-option">
+                        <a class="campaign-link" href= "/campaign.php">
+                            <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
+                            <div class="content">
+                                <h3>Bowdoin College Voleyball Dig Pink</h3>
+                                <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
+                                <div class="pills bs-component">
+                                    <div>
+                                        <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
+                                    </div>
+                                    <div>
+                                        <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="button-area">
+                        <a href= "/campaign.php#donate">
+                                <button type="button" class="btn btn-primary">Donate</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="login-menu personal">
                     <a data-toggle="modal" href="#modal-notifications" class="app-notifications-icon">
