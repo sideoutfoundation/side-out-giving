@@ -75,48 +75,50 @@
                 <div class="search-results" id="search-results">
                     <span class="caret"></span>
                     <div class="results"><img src="../img/search-white.svg" width="22" height="22"/>Results for <span>"bow"</span></div>
-                    <div class="result-option">
-                        <a class="campaign-link" href= "/campaign.php">
-                            <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
-                            <div class="content">
-                                <h3>Bowdoin College Voleyball Dig Pink</h3>
-                                <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
-                                <div class="pills bs-component">
-                                    <div>
-                                        <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
-                                    </div>
-                                    <div>
-                                        <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                    <div class="result-options">
+                        <div class="result-option">
+                            <a class="campaign-link" href= "/campaign.php">
+                                <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
+                                <div class="content">
+                                    <h3>Bowdoin College Voleyball Dig Pink</h3>
+                                    <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
+                                    <div class="pills bs-component">
+                                        <div>
+                                            <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
+                                        </div>
+                                        <div>
+                                            <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="button-area">
+                            </a>
+                            <div class="button-area">
                             <a href= "/campaign.php#donate">
-                                <button type="button" class="btn btn-primary">Donate</button>
-                            </a>
+                                    <button type="button" class="btn btn-primary">Donate</button>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="result-option">
-                        <a class="campaign-link" href= "/campaign.php">
-                            <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
-                            <div class="content">
-                                <h3>Bowdoin College Voleyball Dig Pink</h3>
-                                <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
-                                <div class="pills bs-component">
-                                    <div>
-                                        <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
-                                    </div>
-                                    <div>
-                                        <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                        <div class="result-option">
+                            <a class="campaign-link" href= "/campaign.php">
+                                <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
+                                <div class="content">
+                                    <h3>Bowdoin College Voleyball Dig Pink</h3>
+                                    <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
+                                    <div class="pills bs-component">
+                                        <div>
+                                            <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
+                                        </div>
+                                        <div>
+                                            <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="button-area">
-                             <a href= "/campaign.php#donate">
-                                <button type="button" class="btn btn-primary">Donate</button>
                             </a>
+                            <div class="button-area">
+                            <a href= "/campaign.php#donate">
+                                    <button type="button" class="btn btn-primary">Donate</button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

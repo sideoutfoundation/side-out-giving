@@ -3363,15 +3363,22 @@ a.close-modal {
   right: 0;
   background-color: $light-gray;
   width: 100%;
-  border-bottom: 1px solid $border-gray;
   @include make-col(12);
+  .result-options {
+    border-top: 1px solid white;
+    border-bottom: 1px solid $border-gray;
+  }
+
 
   @media only screen and (min-width: 768px) {
     top: 1.2rem;
     right: 0;
     @include make-col(7.3);
     @include make-col-offset(4.7);
-    border: 1px solid $border-gray;
+
+    .result-options {
+      border: 1px solid $border-gray;
+    }
   }
 
   @media only screen and (min-width: 992px) {
@@ -3379,22 +3386,23 @@ a.close-modal {
     right: 0;
     @include make-col(6.3);
     @include make-col-offset(5.75);
-    border: 1px solid $border-gray;
   }
 
   &.logged {
-    position: absolute;
-    top: 4rem;
+    position: relative;
+    top: 0.7rem;
 
     @media only screen and (min-width: 768px) {
-      top: 5.95rem;
-      left: -14%;
-      @include make-col(6.8);
+      right: 7.4rem;
+      top: 1.3rem;
     }
 
     @media only screen and (min-width: 992px) {
-      left: -15%;
-      @include make-col(5.8);
+      right: 10rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      right: 12rem;
     }
   }
 
