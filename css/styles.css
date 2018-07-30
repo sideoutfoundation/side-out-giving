@@ -10539,6 +10539,11 @@ a.close-modal {
       font-size: 0.9rem;
       width: 100%;
       height: 1.1rem; }
+    .search-results .result-option .campaign-link {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 70.83333%;
+      flex: 0 0 70.83333%;
+      max-width: 70.83333%; }
     @media only screen and (min-width: 768px) {
       .search-results .result-option {
         display: -webkit-box;
@@ -10594,6 +10599,12 @@ a.close-modal {
           max-width: 91.66667%;
           white-space: nowrap;
           text-decoration: none; } }
+    @media only screen and (min-width: 1200px) {
+      .search-results .result-option .campaign-link {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 79.16667%;
+        flex: 0 0 79.16667%;
+        max-width: 79.16667%; } }
     .search-results .result-option .pills {
       display: -webkit-box;
       display: -ms-flexbox;

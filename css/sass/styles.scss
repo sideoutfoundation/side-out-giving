@@ -3435,10 +3435,14 @@ a.close-modal {
       height: 1.1rem;
     }
 
+    .campaign-link {
+      @include make-col(8.5);
+    }
+
     @media only screen and (min-width: 768px) {
       display: flex;
 
-      .campaign-link{
+      .campaign-link {
         @include make-col(9);
         display: flex;
 
@@ -3460,13 +3464,9 @@ a.close-modal {
         }
       }
 
-
-
       .button-area {
         @include make-col(2);
       }
-
-
 
       h3 {
         text-overflow: ellipsis;
@@ -3482,6 +3482,12 @@ a.close-modal {
         @include make-col(11);
         white-space: nowrap;
         text-decoration: none;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .campaign-link {
+        @include make-col(9.5);
       }
     }
 
