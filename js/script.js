@@ -66,14 +66,23 @@
     if (window.location.hash == '#donate') {
         if ($('#donate').length) {
             $('#donate').modal('show');
+            $('#search-results').hide();
         }
     }
 
+    $('.result-option .button-area').on('click', function() {
+        if ($('#donate').length) {
+            $('#donate').modal('show');
+            $('#search-results').hide();
+        }
+    });
+
     /*Remove when SELECT@ implemented*/
-    $('#search-input').keyup(function(){
-    if($(this).val().length)
-    $('#search-results').show();
-        else
-        $('#search-results').hide();
+    $('#search-input').on('keyup', function() {
+        if($(this).val().length) {
+          $('#search-results').show();
+        } else {
+          $('#search-results').hide();
+        }
     });
 })(jQuery);
