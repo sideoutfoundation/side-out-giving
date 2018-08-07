@@ -8737,19 +8737,16 @@ input.email {
     background-color: #fff;
     border: 4px solid #fff;
     overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    position: relative; }
     @media only screen and (min-width: 992px) {
       .campaign-avatar figure {
         width: 140px;
         height: 140px; } }
     .campaign-avatar figure img {
+      -o-object-fit: cover;
+      object-fit: cover;
       height: 100%;
-      max-width: 10000px; }
+      width: 100%; }
 
 .campaign-title {
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
