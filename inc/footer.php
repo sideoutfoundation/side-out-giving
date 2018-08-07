@@ -1,4 +1,5 @@
     </div><!-- #content -->
+    <div class="clearfix"></div><!-- clear all margins -->
 </main><!-- main -->
 
 <footer class="footer-donate">
