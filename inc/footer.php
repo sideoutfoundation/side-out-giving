@@ -26,6 +26,8 @@
     </div>
 </footer><!-- .footer -->
 
+<script type="text/javascript" src="https://gmrchk.github.io/swup/assets/swup/js/app.min.js"></script>
+
 <script type="text/javascript" src="./js/script.js"></script>
 
 </body>

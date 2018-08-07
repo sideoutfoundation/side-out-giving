@@ -7,7 +7,7 @@
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
-            <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
+            <a href="#close-modal" class="close-modal" data-dismiss="modal" aria-label="Close">Close</a>
         </div>
     </div>
 </div>
@@ -21,7 +21,7 @@
             <div class="modal-cta">
                 <strong>Inspiring hope in the fight against stage IV breast cancer</strong> <a href="" data-dismiss="modal" data-toggle="modal" class="btn" data-target="#donate">Donate Now</a>
             </div>
-            <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
+            <a href="#close-modal" class="close-modal" data-dismiss="modal" aria-label="Close">Close</a>
         </div>
     </div>
 </div>

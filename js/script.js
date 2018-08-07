@@ -1,4 +1,13 @@
 (function($){
+    /*
+        Assign empty url value to the iframe src attribute when
+        modal hide, which stop the video playing
+    */
+    $('#video, #research').on('hidden.bs.modal', function(event) {    
+        $('.embed-responsive iframe').attr('src', '');
+        console.log('closed');
+    });
+
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
     .not('[href="#"]')

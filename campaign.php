@@ -8,7 +8,7 @@
             <div class="hero-text">
                 <div class="campaign-avatar">
                     <figure>
-                        <img src="./img/side-out-iconcircle.png" alt="">
+                        <img src="https://sideoutgiving.s3.amazonaws.com/digpink/campaigns_test/img/1533576196_tn-my_pictures0002.jpg" alt="">
                     </figure>
                 </div>
                 <div class="campaign-title">
