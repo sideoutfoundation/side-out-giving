@@ -1,9 +1,14 @@
 (function($){
+
+    $('.progress .progress-bar').css("width",function() {
+      return $(this).attr("aria-valuenow") + "%";
+    })
+
     /*
         Assign empty url value to the iframe src attribute when
         modal hide, which stop the video playing
     */
-    $('#video, #research').on('hidden.bs.modal', function(event) {    
+    $('#video, #research').on('hidden.bs.modal', function(event) {
         $('.embed-responsive iframe').attr('src', '');
         console.log('closed');
     });

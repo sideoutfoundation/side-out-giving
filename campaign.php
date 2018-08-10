@@ -64,7 +64,7 @@
                         $550 <span>Raised</span>
                     </h2>
                     <div class="progress">
-                        <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
                     </div><!-- .progress -->
 
                     <div class="progress-stats">
@@ -258,11 +258,11 @@
 <script type="text/javascript">
     var progress = document.getElementById("progress-bar");
 
-    setTimeout(
-        function(){
-            progress.style.width = "58%";
-        }
-    ,500);
+    // setTimeout(
+    //     function(){
+    //         progress.style.width = "58%";
+    //     }
+    // ,500);
 
     var $cta = $('.mobile-follow');
     var $top = $('.campaign-text');
