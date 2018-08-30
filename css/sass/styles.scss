@@ -2579,6 +2579,68 @@ h1.join-donate {
   }
 }
 
+
+.donate-card--wide {
+  .campaign-avatar {
+    display: none;
+  }
+  @media only screen and (min-width: 992px) {
+    @include make-col(12);
+
+
+    h3 {
+      height: 1em !important;
+      margin: 15px 0;
+    }
+
+    .card-image-top {
+      display: none;
+    }
+    .campaign-avatar {
+      display: block;
+      float: left;
+      figure {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .donate-card-inner {
+      border-top: 1px solid $border-gray;
+      padding: 15px 20px;
+    }
+
+    .progress,
+    .progress-stats {
+      max-width: calc(100% - 466px);
+      margin: 0 0 8px 130px;
+    }
+
+    .progress-stats {
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .col {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .actions {
+      border-left: 1px solid $border-gray;
+      background: $light-gray;
+      height: 100%;
+      width: 326px;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      padding-top: 34px;
+    }
+
+  }
+}
+
+
 .form-group-special {
   display:block;
   justify-content: space-between;
@@ -3568,4 +3630,8 @@ a.close-modal {
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
   content: "";
+}
+
+.container.background-white {
+  background-color: white;
 }

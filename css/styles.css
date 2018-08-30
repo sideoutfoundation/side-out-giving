@@ -9687,6 +9687,49 @@ h1.join-donate {
       line-height: 20px;
       margin-top: 10px; }
 
+.donate-card--wide .campaign-avatar {
+  display: none; }
+
+@media only screen and (min-width: 992px) {
+  .donate-card--wide {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+    .donate-card--wide h3 {
+      height: 1em !important;
+      margin: 15px 0; }
+    .donate-card--wide .card-image-top {
+      display: none; }
+    .donate-card--wide .campaign-avatar {
+      display: block;
+      float: left; }
+      .donate-card--wide .campaign-avatar figure {
+        width: 100px;
+        height: 100px; }
+    .donate-card--wide .donate-card-inner {
+      border-top: 1px solid #d7e2e8;
+      padding: 15px 20px; }
+    .donate-card--wide .progress,
+    .donate-card--wide .progress-stats {
+      max-width: calc(100% - 466px);
+      margin: 0 0 8px 130px; }
+    .donate-card--wide .progress-stats .row {
+      margin-left: 0;
+      margin-right: 0; }
+    .donate-card--wide .progress-stats .col {
+      padding-left: 0;
+      padding-right: 0; }
+    .donate-card--wide .actions {
+      border-left: 1px solid #d7e2e8;
+      background: #F1F5F7;
+      height: 100%;
+      width: 326px;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      padding-top: 34px; } }
+
 .form-group-special {
   display: block;
   -webkit-box-pack: justify;
@@ -10675,3 +10718,6 @@ a.close-modal {
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
   content: ""; }
+
+.container.background-white {
+  background-color: white; }
