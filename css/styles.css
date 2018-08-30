@@ -9656,6 +9656,11 @@ h1.join-donate {
       height: 3.5rem; }
       .donate-card-inner h3 a {
         color: #0C2543; }
+    .donate-card-inner .share-buttons {
+      margin: 0 0 10px;
+      padding-top: 5px; }
+    .donate-card-inner .share-thankyou .social {
+      margin: 0 2px 5px; }
     .donate-card-inner .actions {
       position: absolute;
       bottom: 10px;
