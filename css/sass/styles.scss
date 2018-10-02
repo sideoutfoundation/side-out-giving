@@ -191,6 +191,13 @@ a:focus {
 //   border-color: $orange !important;
 // }
 
+.text-pink {
+  color: $pink;
+  strong {
+    color: $pink;
+  }
+}
+
 .card {
   border-radius: 0;
   &.bg-primary {
@@ -1744,6 +1751,10 @@ main {
   }
 }
 
+.progress-stats--top {
+  margin-top: 16px;
+}
+
 .campaign-buttons {
   margin-bottom: 10px;
   .btn {
@@ -1764,6 +1775,29 @@ main {
   @media only screen and (min-width: 1200) {
     .btn-donate {
       min-width: 220px;
+    }
+  }
+}
+
+.pledge-stats {
+  margin-top: 24px;
+  font-size: 10px;
+  line-height: 18px;
+  @media only screen and (min-width: 992px) {
+    margin-bottom: -24px;
+    margin-top: 32px;
+    font-size: 13px;
+  }
+
+  .col {
+    color: $medium-gray;
+    strong {
+      color: $medium-gray;
+      font-size: 16px;
+      display: block;
+      @media only screen and (min-width: 992px) {
+        display: inline-block;
+      }
     }
   }
 }

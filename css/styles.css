@@ -7514,6 +7514,11 @@ a:focus {
 .alert {
   border-radius: 0; }
 
+.text-pink {
+  color: #D90084; }
+  .text-pink strong {
+    color: #D90084; }
+
 .card {
   border-radius: 0; }
   .card.bg-primary {
@@ -8916,6 +8921,9 @@ input.email {
       max-width: 720px;
       font-size: 24px; } }
 
+.progress-stats--top {
+  margin-top: 16px; }
+
 .campaign-buttons {
   margin-bottom: 10px; }
   .campaign-buttons .btn {
@@ -8930,6 +8938,25 @@ input.email {
   @media only screen and (min-width: 1200) {
     .campaign-buttons .btn-donate {
       min-width: 220px; } }
+
+.pledge-stats {
+  margin-top: 24px;
+  font-size: 10px;
+  line-height: 18px; }
+  @media only screen and (min-width: 992px) {
+    .pledge-stats {
+      margin-bottom: -24px;
+      margin-top: 32px;
+      font-size: 13px; } }
+  .pledge-stats .col {
+    color: #828D9A; }
+    .pledge-stats .col strong {
+      color: #828D9A;
+      font-size: 16px;
+      display: block; }
+      @media only screen and (min-width: 992px) {
+        .pledge-stats .col strong {
+          display: inline-block; } }
 
 .campaign-share {
   display: -webkit-box;

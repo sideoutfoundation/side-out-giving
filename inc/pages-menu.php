@@ -24,6 +24,7 @@
         <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
         <a class="dropdown-item" href="campaign-alt.php">Campaign Alt</a>
         <a class="dropdown-item" href="campaign-alt2.php">Campaign Alt2</a>
+        <a class="dropdown-item" href="pledge.php">Pledge</a>
     </div>
 </div>
 
