@@ -28,9 +28,8 @@
 
 <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="donateModal" aria-hidden="false">
     <div class="modal-dialog" role="document">
-
         <div class="modal-content">
-                <div class="donation-form-wrapper">
+            <div class="donation-form-wrapper">
 
         <ul class="tabs-nav">
             <li class="tab-link current" data-tab="tab-1">
@@ -130,6 +129,89 @@
     </div>
 </div>
 
+<div class="modal fade" id="pledge" tabindex="-1" role="dialog" aria-labelledby="donateModal" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="donation-form-wrapper">
+                <div class="donation-form">
+                    <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label for="first_name" class="control-label">First Name</label>
+                            <input id="first_name" type="text" name="first_name" placeholder="" class="form-control" aria-required="true" aria-invalid="false">
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="last_name" class="control-label">Last Name</label>
+                            <input id="last_name" type="text" name="last_name" placeholder="" class="form-control" aria-required="true" aria-invalid="false">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label for="email" class="control-label">Email</label>
+                            <input id="email" type="text" name="email" placeholder="" class="form-control" aria-required="true" aria-invalid="false">
+                        </div>
+                        <div class="form-group col-md">
+                            <label for="phone" class="control-label">Phone</label>
+                            <input id="phone" type="text" name="phone" placeholder="" class="form-control" aria-required="true" aria-invalid="false">
+                        </div>
+                    </div>
+
+                    <div class="donation-amount form-group">
+                        <label for="">How much would you like to pledge per dig?</label>
+                        <div class="switch-field donation-buttons">
+                            <input type="radio" id="pledge_1" name="switch" value="no" checked>
+                            <label for="pledge_1">$.25</label>
+                            <input type="radio" id="pledge_2" name="switch" value="no">
+                            <label for="pledge_2">$.50</label>
+                            <input type="radio" id="pledge_3" name="switch" value="no">
+                            <label for="pledge_3">$.75</label>
+                            <input type="radio" id="pledge_4" name="switch" value="no">
+                            <label for="pledge_4">$1</label>
+                            <input type="radio" id="pledge_5" name="switch" value="no">
+                            <label for="pledge_5">$2</label>
+                            <input type="radio" id="pledge_6" name="switch" value="no">
+                            <label for="pledge_6">Other</label>
+                        </div>
+                        <div class="input-group other" style="display: none;">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <label for="amount_limit" class="control-label">Not To Exceed Amout (Total)</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="invalid-feedback">
+                                  Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button>
+                        <a href="#"><button class="btn btn-primary">Save</button></a>
+                    </div>
+                </div><!-- donation-form -->
+                <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
 <script>
 $('#honoree-fields').hide()
 $('#in-honor').click(function(){
@@ -192,7 +274,6 @@ $('#in-honor').click(function(){
                         </svg>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>

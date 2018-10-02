@@ -91,7 +91,7 @@
 
                 <div class="campaign-buttons">
                     <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-                    <a href="sign-in-campaign.php" class="btn btn-blue-inverse"
+                    <a href="" data-toggle="modal" data-target="#pledge" class="btn btn-blue-inverse"
                     data-toggle="tooltip" data-placement="bottom"
                     title="" data-original-title="Become a supporter. Increase your donation making your own fundraising page which will support this campaign. Then share it with family and friends.">
                        Join our Pledge Drive
@@ -277,7 +277,7 @@
 </section>
 <div class="mobile-follow">
     <a href="" data-toggle="modal" class="btn btn-primary" data-target="#donate">Donate</a>
-    <a href="sign-in-campaign.php" class="btn btn-blue-inverse d-none d-lg-inline-block">Fundraise for this Campaign</a>
+    <a href="" data-toggle="modal" class="btn btn-blue-inverse d-none d-lg-inline-block" data-target="#pledge">Join our Pledge Drive</a>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" crossorigin="anonymous"></script>

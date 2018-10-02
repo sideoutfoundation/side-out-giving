@@ -1996,7 +1996,8 @@ main {
 }
 
 
-#donate {
+#donate,
+#pledge {
   .modal-dialog {
     margin: 0;
     @media only screen and (min-width: 768px) {
@@ -2978,11 +2979,19 @@ h1.join-donate {
   padding-bottom: 0;
 }
 
-#donate {
+#donate,
+#pledge {
   padding-top: 5rem;
   padding-bottom: 5rem;
   @media only screen and (max-width: 766px) {
     padding-top: 3rem;
+  }
+}
+
+#pledge {
+  .modal-footer {
+    padding-top: 0;
+    border: 0;
   }
 }
 
