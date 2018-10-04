@@ -60,16 +60,15 @@
 
             <div class="campaign-main">
                 <div class="campaign-raised">
-                    <h2>
-                        <span>Time Left: 14 days, 6 hours</span>
-                    </h2>
                     <div class="progress-stats progress-stats--top">
                         <div class="row">
-                            <div class="col">
+                            <div class="col d-flex align-items-center">
                                 178 Digs
                             </div>
                             <div class="col text-right">
-                                <span class="text-pink"><strong>$1,780</strong> Raised</span>
+                                <h2>
+                                    $550 <span>Raised</span>
+                                </h2>
                             </div>
                         </div>
                     </div><!-- .progress-stats -->
@@ -100,22 +99,31 @@
 
                 <div class="pledge-stats">
                     <div class="row">
-                        <div class="col">
-                            <strong>100</strong> Drives
+                        <div class="pledge-stats__left">
+                            <div class="stat">
+                                Time Left <strong>28 days, 23 hours</strong>
+                            </div>
                         </div>
-                        <div class="col">
-                            <strong>1,000</strong> Pledges
-                        </div>
-                        <div class="col">
-                            <strong>$0.25</strong> Avg. Pledge
-                        </div>
-                        <div class="col text-lg-right">
-                            <strong>$75,000</strong> Est. Raised
+                        <div class="pledge-stats__right">
+                            <div class="stat">
+                                Drives <strong>100</strong>
+                            </div>
+                            <div class="stat">
+                                Pledges <strong>1,000</strong>
+                            </div>
+                            <div class="stat">
+                                Avg. Pledge <strong>$0.25</strong>
+                            </div>
+                            <div class="stat">
+                                Est. Raised <strong>$75,000</strong>
+                            </div>
                         </div>
                     </div>
                 </div><!-- .pledge-stats -->
 
+
                 <hr>
+
 
                 <div class="campaign-text">
                     <h2>About Our Campaign</h2>

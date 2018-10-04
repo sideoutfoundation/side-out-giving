@@ -8921,9 +8921,6 @@ input.email {
       max-width: 720px;
       font-size: 24px; } }
 
-.progress-stats--top {
-  margin-top: 16px; }
-
 .campaign-buttons {
   margin-bottom: 10px; }
   .campaign-buttons .btn {
@@ -8940,23 +8937,79 @@ input.email {
       min-width: 220px; } }
 
 .pledge-stats {
-  margin-top: 24px;
-  font-size: 10px;
-  line-height: 18px; }
+  padding: 0 8px;
+  border: 1px solid #D90084;
+  margin-top: 32px;
+  overflow: hidden; }
   @media only screen and (min-width: 992px) {
     .pledge-stats {
-      margin-bottom: -24px;
+      margin-bottom: 32px;
       margin-top: 32px;
-      font-size: 13px; } }
-  .pledge-stats .col {
-    color: #828D9A; }
-    .pledge-stats .col strong {
-      color: #828D9A;
-      font-size: 16px;
-      display: block; }
-      @media only screen and (min-width: 992px) {
-        .pledge-stats .col strong {
-          display: inline-block; } }
+      padding: 0 15px; } }
+
+.pledge-stats__left {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #F1F5F7; }
+  @media only screen and (min-width: 992px) {
+    .pledge-stats__left {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; } }
+
+.pledge-stats__right {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (min-width: 992px) {
+    .pledge-stats__right {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%; } }
+
+.stat {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 10px;
+  position: relative;
+  padding: 8px 0; }
+  @media only screen and (min-width: 992px) {
+    .stat {
+      font-size: 12px;
+      padding: 15px 0; } }
+  .stat strong {
+    color: #0C2543;
+    font-size: 16px;
+    line-height: 1;
+    display: block; }
+    @media only screen and (min-width: 992px) {
+      .stat strong {
+        margin-top: 4px;
+        font-size: 20px;
+        font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
+        font-weight: normal; } }
+  .stat:before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: #d7e2e8;
+    top: 50%;
+    top: 0;
+    left: -15px; }
+  .stat:first-of-type:before {
+    display: none; }
 
 .campaign-share {
   display: -webkit-box;
