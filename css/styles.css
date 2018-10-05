@@ -8938,7 +8938,7 @@ input.email {
 
 .pledge-stats {
   padding: 0 8px;
-  border: 1px solid #D90084;
+  border: 1px solid #d7e2e8;
   margin-top: 32px;
   overflow: hidden; }
   @media only screen and (min-width: 992px) {
@@ -8959,7 +8959,8 @@ input.email {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33333%;
       flex: 0 0 33.33333%;
-      max-width: 33.33333%; } }
+      max-width: 33.33333%;
+      border-right: 1px solid #d7e2e8; } }
 
 .pledge-stats__right {
   position: relative;

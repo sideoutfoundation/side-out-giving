@@ -1781,7 +1781,7 @@ main {
 
 .pledge-stats {
   padding: 0 8px;
-  border: 1px solid $pink;
+  border: 1px solid $border-gray;
   margin-top: 32px;
   overflow: hidden;
   @media only screen and (min-width: 992px) {
@@ -1801,6 +1801,7 @@ main {
   background: $light-gray;
   @media only screen and (min-width: 992px) {
     @include make-col(4);
+    border-right: 1px solid $border-gray;
   }
 }
 

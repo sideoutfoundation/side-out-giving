@@ -160,11 +160,11 @@
                         <label for="">How much would you like to pledge per dig?</label>
                         <div class="switch-field donation-buttons">
                             <input type="radio" id="pledge_1" name="switch" value="no" checked>
-                            <label for="pledge_1">$.25</label>
+                            <label for="pledge_1">$0.25</label>
                             <input type="radio" id="pledge_2" name="switch" value="no">
-                            <label for="pledge_2">$.50</label>
+                            <label for="pledge_2">$0.50</label>
                             <input type="radio" id="pledge_3" name="switch" value="no">
-                            <label for="pledge_3">$.75</label>
+                            <label for="pledge_3">$0.75</label>
                             <input type="radio" id="pledge_4" name="switch" value="no">
                             <label for="pledge_4">$1</label>
                             <input type="radio" id="pledge_5" name="switch" value="no">
