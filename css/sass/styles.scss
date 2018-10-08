@@ -1751,6 +1751,10 @@ main {
   }
 }
 
+.progress-stats .btn.btn-link__no-padding {
+  color: $gray;
+}
+
 .progress-stats--top {
   //margin-top: 16px;
 }
@@ -1777,6 +1781,11 @@ main {
       min-width: 220px;
     }
   }
+}
+
+.btn-link__no-padding {
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
 .pledge-stats {

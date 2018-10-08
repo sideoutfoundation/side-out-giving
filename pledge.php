@@ -80,6 +80,10 @@
                         <div class="row">
                             <div class="col">
                                 58% Achieved
+                                <button class="btn btn-link btn-link__no-padding btn-sm" type="button" data-toggle="collapse"
+                                    data-target="#stats" aria-expanded="false" aria-controls="collapseExample">
+                                    View Stats
+                                 </button>
                             </div>
                             <div class="col text-right">
                                 Goal: 5,000 Digs
@@ -97,7 +101,11 @@
                     </a>
                 </div><!-- .campaign-buttons -->
 
-                <div class="pledge-stats">
+                <p>
+
+                </p>
+
+                <div class="pledge-stats collapse" id="stats">
                     <div class="row">
                         <div class="pledge-stats__left">
                             <div class="stat">
