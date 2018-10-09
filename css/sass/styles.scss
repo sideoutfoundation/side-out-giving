@@ -1743,10 +1743,17 @@ main {
 
 .progress-stats {
   @include font_semi;
-  @include font-size(1.6);
+  @include font-size(1.4);
   line-height: 1.25;
+  padding-bottom: 16px;
+
+  @media only screen and (min-width: 321px) {
+    @include font-size(1.6);
+  }
+
   @media only screen and (min-width: 992px) {
     max-width: 720px;
+    padding-bottom: 0;
     @include font-size(2.4);
   }
 }
@@ -1783,9 +1790,35 @@ main {
   }
 }
 
-.btn-link__no-padding {
-  padding-left: 1px;
-  padding-right: 1px;
+.btn-stats {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  appearance: none;
+  text-transform: capitalize;
+  user-select: none;
+  color: $medium-gray;
+  @include font_semi;
+  @include font-size(1.6);
+  line-height: 1.25;
+  @media only screen and (min-width: 992px) {
+    @include font-size(2.4);
+  }
+  &:hover,
+  &:focus {
+    color: $pink;
+    box-shadow: 0 !important;
+    outline: 0;
+  }
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    @include font-size(1.4);
+    width: 86px;
+    right: 0;
+    transform: translateX(calc(100% - 43px));
+    top: 24px;
+  }
 }
 
 .pledge-stats {
@@ -2698,6 +2731,9 @@ h1.join-donate {
     h3 {
       height: 1em !important;
       margin: 15px 0;
+      span {
+        transform: translateY(-1px);
+      }
     }
 
     .card-image-top {
@@ -2744,6 +2780,15 @@ h1.join-donate {
       padding-top: 34px;
     }
 
+  }
+}
+
+.pledge-pill-mobile {
+  position: absolute;
+  top: 16px;
+  left: 38px;
+  span {
+    box-shadow: 0 1px 3px rgba(0,0,0,.6);
   }
 }
 

@@ -8914,12 +8914,20 @@ input.email {
 .progress-stats {
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25; }
+  font-size: 14px;
+  line-height: 1.25;
+  padding-bottom: 16px; }
+  @media only screen and (min-width: 321px) {
+    .progress-stats {
+      font-size: 16px; } }
   @media only screen and (min-width: 992px) {
     .progress-stats {
       max-width: 720px;
+      padding-bottom: 0;
       font-size: 24px; } }
+
+.progress-stats .btn.btn-link__no-padding {
+  color: #4e5862; }
 
 .campaign-buttons {
   margin-bottom: 10px; }
@@ -8935,6 +8943,43 @@ input.email {
   @media only screen and (min-width: 1200) {
     .campaign-buttons .btn-donate {
       min-width: 220px; } }
+
+.btn-stats {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: capitalize;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #828D9A;
+  font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25; }
+  @media only screen and (min-width: 992px) {
+    .btn-stats {
+      font-size: 24px; } }
+  .btn-stats:hover, .btn-stats:focus {
+    color: #D90084;
+    -webkit-box-shadow: 0 !important;
+    box-shadow: 0 !important;
+    outline: 0; }
+  @media only screen and (max-width: 500px) {
+    .btn-stats {
+      position: absolute;
+      font-size: 14px;
+      width: 86px;
+      right: 0;
+      -webkit-transform: translateX(calc(100% - 43px));
+      -ms-transform: translateX(calc(100% - 43px));
+      transform: translateX(calc(100% - 43px));
+      top: 24px; } }
 
 .pledge-stats {
   padding: 0 8px;
@@ -9789,6 +9834,10 @@ h1.join-donate {
     .donate-card--wide h3 {
       height: 1em !important;
       margin: 15px 0; }
+      .donate-card--wide h3 span {
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px); }
     .donate-card--wide .card-image-top {
       display: none; }
     .donate-card--wide .campaign-avatar {
@@ -9819,6 +9868,14 @@ h1.join-donate {
       right: 0;
       bottom: auto;
       padding-top: 34px; } }
+
+.pledge-pill-mobile {
+  position: absolute;
+  top: 16px;
+  left: 38px; }
+  .pledge-pill-mobile span {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
 
 .form-group-special {
   display: block;

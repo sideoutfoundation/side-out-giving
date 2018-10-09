@@ -80,9 +80,9 @@
                         <div class="row">
                             <div class="col">
                                 58% Achieved
-                                <button class="btn btn-link btn-link__no-padding btn-sm" type="button" data-toggle="collapse"
+                                <button class="btn-stats" type="button" data-toggle="collapse"
                                     data-target="#stats" aria-expanded="false" aria-controls="collapseExample">
-                                    View Stats
+                                    (View Stats)
                                  </button>
                             </div>
                             <div class="col text-right">

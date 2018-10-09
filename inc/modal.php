@@ -187,15 +187,11 @@
 
                     <div class="row">
                         <div class="form-group col-md">
-                            <label for="amount_limit" class="control-label">Not To Exceed Amout (Total)</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="inputGroupPrepend">$</span>
-                                </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <div class="invalid-feedback">
-                                  Please choose a username.
-                                </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="exceed">
+                                <label class="form-check-label" for="exceed">
+                                    Limit my donation to estimated goal ($36)
+                                </label>
                             </div>
                         </div>
                     </div>

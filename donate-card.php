@@ -7,7 +7,7 @@
 <div class="row mt-5">
     <div class="donate-card donate-card--wide">
         <img src="/img/side-out-gradient-bg-pink@2x.jpg" class="card-image-top" style="height: 185px;">
-
+        <div class="pledge-pill-mobile d-lg-none"><span class="badge badge-pill badge-secondary">Pledge Drive</span></div>
         <div class="donate-card-inner">
             <div class="card-description">
                 <div class="campaign-avatar">
@@ -72,7 +72,78 @@
         </div><!-- .donate-card-inner -->
     </div><!-- .donate-card .donate-card--wide -->
 
+    <div class="donate-card donate-card--wide">
+        <img src="/img/side-out-gradient-bg@2x.jpg" class="card-image-top" style="height: 185px;">
+        <div class="pledge-pill-mobile d-lg-none"><span class="badge badge-pill badge-secondary">Pledge Drive</span></div>
+        <div class="donate-card-inner">
+            <div class="card-description">
+                <div class="campaign-avatar">
+                    <figure>
+                        <img src="https://sideoutgiving.s3.amazonaws.com/digpink/campaigns_test/img/1533576196_tn-my_pictures0002.jpg" alt="">
+                    </figure>
+                </div>
+                <h3 style="height: 2em;">Another Test Pledge Drive <span class="badge badge-pill badge-secondary d-none d-lg-inline-block">Pledge Drive</span></h3>
 
+                <div class="progress">
+                    <div role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" class="progress-bar" style="width: 7%;">
+                        <span class="sr-only">7% Complete</span>
+                    </div>
+                </div>
+
+                <div class="progress-stats">
+                    <div class="row">
+                        <div class="col col-7"><span class="font-weight-bold">$8433.49 Raised (7%)</span></div>
+                        <div class="col col-5 text-right"><span class="font-weight-bold">$120000 Goal</span></div>
+                    </div>
+
+                    <div class="row small" style="margin-top: 5px;">
+                        <div class="col col-7">
+                            Sub-campaigns: <a href="https://dev.sideoutgiving.org/sub-campaigns/13949">44</a>
+                        </div>
+                        <div class="col col-5 text-right">
+                            49 Donors | <span class="text-pink">45 Pledges</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <div class="text-center text-muted" style="font-size: 14px;">
+                         <a href="https://dev.sideoutgiving.org/edit-campaign/13950" class="text-muted">Admit Function 1</a> |
+                          <a href="https://dev.sideoutgiving.org/edit-campaign/13950" class="text-muted">Admit Function 2</a> |
+                           <a href="https://dev.sideoutgiving.org/edit-campaign/13950" class="text-muted">Edit</a> |
+                            <a href="https://dev.sideoutgiving.org/edit-campaign/13950" class="text-muted">Edit</a> |
+                        <a href="https://dev.sideoutgiving.org/edit-campaign/13950" class="text-muted">Edit</a> |
+                        <a href="https://dev.sideoutgiving.org/campaigns/13950" target="_blank" class="text-muted">View</a> |
+                        <a href="https://dev.sideoutgiving.org/campaigns/13950" target="_blank" class="text-muted">Donate</a> |
+                        Events (<a href="https://dev.sideoutgiving.org/campaign/13950/event">0</a>) |
+                        <a href="https://dev.sideoutgiving.org/admin/campaign/archive-campaign/13950" class="text-muted">Archive</a>
+                    </div>
+
+                    <p style="padding-top: 10px; margin-bottom: 0px;"><b>SHARE YOUR CAMPAIGN</b></p>
+
+                    <div data-v-0c6a89c9="" class="share-buttons share-thankyou" style="justify-content: center; margin-top: 0px !important;">
+                        <strong data-v-0c6a89c9="" style="display: none;">Share</strong>
+                        <div data-v-0c6a89c9="" style="display: none;">
+                            <span data-link="#share-facebook" class="social social-facebook"><svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprites.svg#icon-facebook"></use></svg></span>
+                            <span data-link="#share-twitter" class="social social-twitter">
+                                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprites.svg#icon-twitter"></use></svg></span>
+                            </div> <div data-v-0c6a89c9="">
+                            <span data-link="#share-facebook" class="social social-facebook">
+                                <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprites.svg#icon-facebook"></use></svg></span>
+                            </div> <div data-v-0c6a89c9=""><span data-link="#share-twitter" class="social social-twitter"><svg class="icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprites.svg#icon-twitter"></use></svg></span>
+                        </div>
+                        <a data-v-0c6a89c9=""
+                            href="mailto:?subject=Help support our Dig Pink campaign!&amp;body=Support  and our efforts to raise funds for game changing stage IV breast cancer research. https://dev.sideoutgiving.org/campaigns/13950" target="_top" class="social social-email">
+                            <svg data-v-0c6a89c9="" class="icon icon-envelope"><use data-v-0c6a89c9="" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprites.svg#icon-envelope"></use></svg>
+                        </a>
+                    </div><!-- .share-buttons -->
+
+                </div><!-- .actions -->
+            </div><!-- .card-description -->
+        </div><!-- .donate-card-inner -->
+    </div><!-- .donate-card .donate-card--wide -->
 
 
                     <div class="donate-card donate-card--wide"><img src="/img/side-out-gradient-bg@2x.jpg" class="card-image-top" style="height: 185px;"> <div class="donate-card-inner"><div class="card-description"><div class="campaign-avatar">
