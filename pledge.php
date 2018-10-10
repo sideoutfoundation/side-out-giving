@@ -59,7 +59,7 @@
             </div>
 
             <div class="campaign-main">
-                <div class="campaign-raised">
+                <div class="campaign-raised campaign-raised--pledge">
                     <div class="progress-stats progress-stats--top">
                         <div class="row">
                             <div class="col d-flex align-items-center">
@@ -92,19 +92,6 @@
                     </div><!-- .progress-stats -->
                 </div><!-- .campaign-raised -->
 
-                <div class="campaign-buttons">
-                    <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
-                    <a href="" data-toggle="modal" data-target="#pledge" class="btn btn-blue-inverse"
-                    data-toggle="tooltip" data-placement="bottom"
-                    title="" data-original-title="Become a supporter. Increase your donation making your own fundraising page which will support this campaign. Then share it with family and friends.">
-                       Join our Pledge Drive
-                    </a>
-                </div><!-- .campaign-buttons -->
-
-                <p>
-
-                </p>
-
                 <div class="pledge-stats collapse" id="stats">
                     <div class="row">
                         <div class="pledge-stats__left">
@@ -129,6 +116,17 @@
                     </div>
                 </div><!-- .pledge-stats -->
 
+                <!-- br must be incluced for hide show to be smooth -->
+                <br class="clearfix" />
+
+                <div class="campaign-buttons">
+                    <a href="" data-toggle="modal" class="btn" data-target="#donate">Donate</a>
+                    <a href="" data-toggle="modal" data-target="#pledge" class="btn btn-blue-inverse"
+                    data-toggle="tooltip" data-placement="bottom"
+                    title="" data-original-title="Become a supporter. Increase your donation making your own fundraising page which will support this campaign. Then share it with family and friends.">
+                       Join our Pledge Drive
+                    </a>
+                </div><!-- .campaign-buttons -->
 
                 <hr>
 

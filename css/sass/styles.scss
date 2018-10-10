@@ -1677,6 +1677,10 @@ main {
   }
 }
 
+.campaign-raised--pledge {
+   margin-bottom: 15px;
+}
+
 .campaign-main {
   @include make-col-ready();
   @media only screen and (min-width: 992px) {
@@ -1823,12 +1827,14 @@ main {
 
 .pledge-stats {
   padding: 0 8px;
-  border: 1px solid $border-gray;
-  margin-top: 32px;
+  outline: 1px solid $border-gray;
+  //margin-top: 32px;
   overflow: hidden;
+  margin-left: 1px;
+  width: calc(100% - 3px);
   @media only screen and (min-width: 992px) {
-    margin-bottom: 32px;
-    margin-top: 32px;
+    //margin-bottom: 32px;
+    //margin-top: 32px;
     padding: 0 15px;
   }
 

@@ -190,8 +190,17 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="exceed">
                                 <label class="form-check-label" for="exceed">
-                                    Limit my donation to estimated goal ($36)
+                                    Not to exceed (total donation)
                                 </label>
+                            </div>
+                            <div class="">
+                                <label class="sr-only" for="exceed">Amount</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                    </div>
+                                    <input type="text" class="form-control" id="exceed" placeholder="">
+                                </div>
                             </div>
                         </div>
                     </div>

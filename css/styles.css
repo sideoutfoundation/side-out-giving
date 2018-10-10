@@ -8851,6 +8851,9 @@ input.email {
           letter-spacing: 0;
           line-height: 1; } }
 
+.campaign-raised--pledge {
+  margin-bottom: 15px; }
+
 .campaign-main {
   position: relative;
   width: 100%;
@@ -8983,13 +8986,12 @@ input.email {
 
 .pledge-stats {
   padding: 0 8px;
-  border: 1px solid #d7e2e8;
-  margin-top: 32px;
-  overflow: hidden; }
+  outline: 1px solid #d7e2e8;
+  overflow: hidden;
+  margin-left: 1px;
+  width: calc(100% - 3px); }
   @media only screen and (min-width: 992px) {
     .pledge-stats {
-      margin-bottom: 32px;
-      margin-top: 32px;
       padding: 0 15px; } }
 
 .pledge-stats__left {
