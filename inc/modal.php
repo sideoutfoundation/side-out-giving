@@ -169,18 +169,15 @@
                             <label for="pledge_4">$1</label>
                             <input type="radio" id="pledge_5" name="switch" value="no">
                             <label for="pledge_5">$2</label>
-                            <input type="radio" id="pledge_6" name="switch" value="no">
+                            <input type="radio" id="pledge_6" name="switch" value="Other">
                             <label for="pledge_6">Other</label>
                         </div>
-                        <div class="input-group other" style="display: none;">
+                        <div id="otherAmount" class="input-group other" style="display: none;">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text" id="inputGroupPrepend">$</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <div class="invalid-feedback">
-                                  Please choose a username.
-                                </div>
+                                <input id="otherAmountField" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                             </div>
                         </div>
                     </div>
@@ -193,15 +190,36 @@
                                     Not to exceed (total donation)
                                 </label>
                             </div>
-                            <div class="">
+                            <div id="exceedInput" style="display: none;">
                                 <label class="sr-only" for="exceed">Amount</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text">$</div>
                                     </div>
-                                    <input type="text" class="form-control" id="exceed" placeholder="">
+                                    <input type="text" class="form-control" id="exceedInputField" placeholder="" autofocus>
                                 </div>
                             </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $('.switch-field input[type="radio"]').click(function () {
+                                        if ($(this).attr('value') == 'Other') {
+                                            $('#otherAmount').show();
+                                            $('#otherAmountField').focus();
+                                        } else {
+                                            $('#otherAmount').hide();
+                                        }
+                                    });
+
+                                    $('#exceed').change(function () {
+                                        if (this.checked) {
+                                            $('#exceedInput').show();
+                                            $('#exceedInputField').focus();
+                                        } else {
+                                            $('#exceedInput').hide();
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
                     </div>
                     </div>
