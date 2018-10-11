@@ -8840,7 +8840,7 @@ input.email {
     @media only screen and (min-width: 768px) {
       .campaign-raised h2 {
         font-size: 44px;
-        line-height: 1.13; } }
+        line-height: 1; } }
     .campaign-raised h2 span {
       font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
       font-weight: normal;
@@ -8870,7 +8870,7 @@ input.email {
 .progress {
   background: #cddce3;
   border-radius: 0;
-  margin: 10px 0;
+  margin: 8px 0;
   height: auto;
   overflow: hidden; }
   @media only screen and (min-width: 992px) {
@@ -8932,16 +8932,21 @@ input.email {
 .progress-stats .btn.btn-link__no-padding {
   color: #4e5862; }
 
+.progress-stats--top {
+  padding-bottom: 0; }
+
 .campaign-buttons {
   margin-bottom: 10px; }
   .campaign-buttons .btn {
     display: block;
     margin-bottom: 10px; }
+  .campaign-buttons .btn:not(.btn-blue-inverse) {
+    display: block; }
   @media only screen and (min-width: 992px) {
     .campaign-buttons {
       margin-bottom: 0; }
       .campaign-buttons .btn {
-        display: inline-block;
+        display: inline-block !important;
         margin-right: 4px; } }
   @media only screen and (min-width: 1200) {
     .campaign-buttons .btn-donate {
@@ -8964,25 +8969,23 @@ input.email {
   font-family: 'Proxima Nova Semibold', helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.25; }
-  @media only screen and (min-width: 992px) {
-    .btn-stats {
-      font-size: 24px; } }
+  line-height: 1.25;
+  position: absolute;
+  font-size: 14px;
+  width: 86px;
+  right: 0;
+  -webkit-transform: translateX(calc(100% - 43px));
+  -ms-transform: translateX(calc(100% - 43px));
+  transform: translateX(calc(100% - 43px));
+  top: 24px; }
   .btn-stats:hover, .btn-stats:focus {
     color: #D90084;
     -webkit-box-shadow: 0 !important;
     box-shadow: 0 !important;
     outline: 0; }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (min-width: 992px) {
     .btn-stats {
-      position: absolute;
-      font-size: 14px;
-      width: 86px;
-      right: 0;
-      -webkit-transform: translateX(calc(100% - 43px));
-      -ms-transform: translateX(calc(100% - 43px));
-      transform: translateX(calc(100% - 43px));
-      top: 24px; } }
+      top: 8px; } }
 
 .pledge-stats {
   padding: 0 8px;

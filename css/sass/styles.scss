@@ -1662,7 +1662,7 @@ main {
     line-height: 1.333333;
     @media only screen and (min-width: 768px) {
       @include font-size(4.4);
-      line-height: 1.13;
+      line-height: 1;
     }
     margin: 0;
     span {
@@ -1691,7 +1691,7 @@ main {
 .progress {
   background: darken($border-gray, 3%);
   border-radius: 0;
-  margin: 10px 0;
+  margin: 8px 0;
   height: auto;
   overflow: hidden;
   @media only screen and (min-width: 992px) {
@@ -1768,6 +1768,7 @@ main {
 
 .progress-stats--top {
   //margin-top: 16px;
+  padding-bottom: 0;
 }
 
 .campaign-buttons {
@@ -1779,11 +1780,12 @@ main {
   }
   .btn:not(.btn-blue-inverse) {
     @extend .btn-primary;
+    display: block;
   }
   @media only screen and (min-width: 992px) {
     margin-bottom: 0;
     .btn {
-      display: inline-block;
+      display: inline-block !important;
       margin-right: 4px;
     }
   }
@@ -1806,22 +1808,24 @@ main {
   @include font_semi;
   @include font-size(1.6);
   line-height: 1.25;
-  @media only screen and (min-width: 992px) {
-    @include font-size(2.4);
-  }
+
   &:hover,
   &:focus {
     color: $pink;
     box-shadow: 0 !important;
     outline: 0;
   }
-  @media only screen and (max-width: 500px) {
+  //@media only screen and (max-width: 500px) {
     position: absolute;
     @include font-size(1.4);
     width: 86px;
     right: 0;
     transform: translateX(calc(100% - 43px));
     top: 24px;
+  //}
+  @media only screen and (min-width: 992px) {
+    //@include font-size(2.4);
+    top: 8px;
   }
 }
 
