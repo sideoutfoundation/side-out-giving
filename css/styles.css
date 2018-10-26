@@ -22,7 +22,7 @@
   --orange: #FFA500;
   --yellow: #ffc107;
   --green: #97D700;
-  --teal: #20c997;
+  --teal: #33C3A4;
   --cyan: #009FDB;
   --white: #fff;
   --gray: #6c757d;
@@ -9382,11 +9382,15 @@ input.email {
       background: #D90084; }
     .activity-block .activity-icon.pledge {
       background: #97D700; }
-    .activity-block .activity-icon.activity {
-      background: #F4B940; }
+    .activity-block .activity-icon.activity, .activity-block .activity-icon.activity-pulse {
+      background: #33C3A4; }
   .activity-block .icon {
     height: 22px;
     width: 22px; }
+
+.activity-pulse {
+  height: 32px;
+  width: 32px; }
 
 .activity-text {
   color: #0C2543;

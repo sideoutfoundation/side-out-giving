@@ -2252,8 +2252,9 @@ main {
       background: $green;
     }
 
-    &.activity {
-      background: $gold;
+    &.activity,
+    &.activity-pulse {
+      background: $teal;
     }
   }
 
@@ -2261,6 +2262,11 @@ main {
     height: 22px;
     width: 22px;
   }
+}
+
+.activity-pulse {
+  height: 32px;
+  width: 32px;
 }
 
 .activity-text {
