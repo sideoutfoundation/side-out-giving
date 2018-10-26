@@ -212,7 +212,7 @@
                         <div class="activity-icon pledge">
                             <svg class="icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xlink:href="./img/sprites.svg#hand-heart">
+                                    xlink:href="./img/sprites.svg#icon-hand-heart">
                                 </use>
                             </svg>
                         </div>
@@ -225,7 +225,7 @@
                         <div class="activity-icon pledge">
                             <svg class="icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xlink:href="./img/sprites.svg#hand-heart">
+                                    xlink:href="./img/sprites.svg#icon-hand-heart">
                                 </use>
                             </svg>
                         </div>

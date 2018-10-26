@@ -2265,8 +2265,10 @@ main {
 }
 
 .activity-pulse {
-  height: 32px;
-  width: 32px;
+  .icon {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .activity-text {
