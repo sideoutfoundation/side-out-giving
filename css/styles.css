@@ -8977,7 +8977,8 @@ input.email {
   -webkit-transform: translateX(calc(100% - 43px));
   -ms-transform: translateX(calc(100% - 43px));
   transform: translateX(calc(100% - 43px));
-  top: 24px; }
+  top: 24px;
+  z-index: 1; }
   .btn-stats:hover, .btn-stats:focus {
     color: #D90084;
     -webkit-box-shadow: 0 !important;
@@ -9379,6 +9380,10 @@ input.email {
       background: #642F6C; }
     .activity-block .activity-icon.created {
       background: #D90084; }
+    .activity-block .activity-icon.pledge {
+      background: #97D700; }
+    .activity-block .activity-icon.activity {
+      background: #F4B940; }
   .activity-block .icon {
     height: 22px;
     width: 22px; }
