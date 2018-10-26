@@ -235,19 +235,6 @@
                     </div>
 
                     <div class="activity-block">
-                        <div class="activity-icon activity-pulse">
-                            <svg class="icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xlink:href="./img/sprites.svg#icon-pulse">
-                                </use>
-                            </svg>
-                        </div>
-                        <div class="activity-text">
-                            <strong>St Marys</strong> scored 6 touchdowns
-                        </div>
-                    </div>
-
-                    <div class="activity-block">
                         <div class="activity-icon activity">
                             <svg class="icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
