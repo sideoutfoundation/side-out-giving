@@ -85,22 +85,28 @@
                 <h3 style="height: 2em;">Another Test Pledge Drive <span class="badge badge-pill badge-secondary d-none d-lg-inline-block">Pledge Drive</span></h3>
 
                 <div class="progress">
-                    <div role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" class="progress-bar" style="width: 7%;">
-                        <span class="sr-only">7% Complete</span>
+                    <div role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" class="progress-bar" style="width: 45%;">
+                        <span class="sr-only">45% Complete</span>
                     </div>
                 </div>
 
                 <div class="progress-stats">
                     <div class="row">
-                        <div class="col col-7"><span class="font-weight-bold">$8433.49 Raised (7%)</span></div>
-                        <div class="col col-5 text-right"><span class="font-weight-bold">$120000 Goal</span></div>
+                        <div class="col col-6 col-lg-7">
+                            <span class="font-weight-bold">225 Digs (45% achieved)</span><br />
+                            <small class="font-weight-bold">$550 Raised</small>
+                        </div>
+                        <div class="col col-6 col-lg-5 text-right">
+                            <span class="font-weight-bold">Goal: 500 Digs</span><br />
+                            <small class="font-weight-bold">Est. Raised $1,200</small>
+                        </div>
                     </div>
 
                     <div class="row small" style="margin-top: 5px;">
-                        <div class="col col-7">
+                        <div class="col col-6 col-lg-7">
                             Sub-campaigns: <a href="https://dev.sideoutgiving.org/sub-campaigns/13949">44</a>
                         </div>
-                        <div class="col col-5 text-right">
+                        <div class="col col-6 col-lg-5 text-right">
                             49 Donors | <span class="text-pink">45 Pledges</span>
                         </div>
                     </div>
