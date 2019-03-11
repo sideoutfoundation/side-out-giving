@@ -2,11 +2,8 @@
 
 
 
-
-
-
 <div class="row">
-    <div class="form-wrapper">
+    <div class="form-wrapper form-wrapper--no-bg">
         <h2 class="text-center regular">
             Thank you for supporting the
             <strong class="text-pink">Sydney's Dig Pink Campaign 15 Diamond</strong>
@@ -20,8 +17,6 @@
             <br/>
             Your pledge commitment is: <strong class="text-primary">$66.25</strong>
         </h3>
-
-        <br>
 
         <div class="pledge-form-wrapper">
             <ul class="tabs-nav">

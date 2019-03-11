@@ -315,8 +315,6 @@ a:focus {
   h1 {
     text-align: center;
   }
-
-
 }
 
 .form-actions {
@@ -2406,8 +2404,7 @@ main {
   .pledge-form-wrapper {
     background: transparent;
     border-top: 1px solid $border-gray;
-    margin-left: -30px;
-    margin-right: -30px;
+    margin: 20px -30px 0;
   }
 }
 

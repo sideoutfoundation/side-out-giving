@@ -9539,8 +9539,7 @@ input.email {
 .form-wrapper .pledge-form-wrapper {
   background: transparent;
   border-top: 1px solid #d7e2e8;
-  margin-left: -30px;
-  margin-right: -30px; }
+  margin: 20px -30px 0; }
 
 #spark-app .container:first-child {
   padding: 0 !important; }
