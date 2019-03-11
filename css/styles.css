@@ -7626,6 +7626,9 @@ a:focus {
     margin-top: 0; }
   .form-wrapper h1 {
     text-align: center; }
+  .form-wrapper--no-bg {
+    background: transparent;
+    border-color: transparent; }
 
 .form-actions .btn, .form-actions input[type=submit] {
   margin: 10px 0;
@@ -9533,13 +9536,13 @@ input.email {
 .donation-form-wrapper {
   background: white; }
 
-.pledge-form-wrapper {
-  background: transparent; }
+.form-wrapper--no-bg > h1, .form-wrapper--no-bg > h2, .form-wrapper--no-bg > h3 {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
 
-.form-wrapper .pledge-form-wrapper {
-  background: transparent;
-  border-top: 1px solid #d7e2e8;
-  margin: 20px -30px 0; }
+.form-wrapper--no-bg .donation-form-wrapper {
+  margin: 28px -30px 0; }
 
 #spark-app .container:first-child {
   padding: 0 !important; }

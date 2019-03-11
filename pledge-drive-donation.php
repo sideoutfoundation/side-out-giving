@@ -9,16 +9,13 @@
             <strong class="text-pink">Sydney's Dig Pink Campaign 15 Diamond</strong>
             Pledge Drive
         </h2>
-
-        <br>
-
         <h3 class="text-center regular">
             We did <strong class="text-primary">265 Digs!</strong>
             <br/>
             Your pledge commitment is: <strong class="text-primary">$66.25</strong>
         </h3>
 
-        <div class="pledge-form-wrapper">
+        <div class="donation-form-wrapper">
             <ul class="tabs-nav">
                 <li class="tab-link current" data-tab="tab-1">
                     <span>1</span>Donation

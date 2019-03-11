@@ -315,6 +315,12 @@ a:focus {
   h1 {
     text-align: center;
   }
+
+  &--no-bg {
+    background: transparent;
+    border-color: transparent;
+  }
+
 }
 
 .form-actions {
@@ -2396,15 +2402,14 @@ main {
   background: white;
 }
 
-.pledge-form-wrapper {
-  background: transparent;
-}
-
-.form-wrapper {
-  .pledge-form-wrapper {
-    background: transparent;
-    border-top: 1px solid $border-gray;
-    margin: 20px -30px 0;
+.form-wrapper--no-bg {
+  > h1, > h2, > h3 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .donation-form-wrapper {
+    margin: 28px -30px 0;
   }
 }
 
