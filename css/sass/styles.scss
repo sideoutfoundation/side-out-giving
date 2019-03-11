@@ -321,6 +321,11 @@ a:focus {
     border-color: transparent;
   }
 
+
+  &--pledge {
+
+  }
+
 }
 
 .form-actions {
@@ -2402,6 +2407,7 @@ main {
   background: white;
 }
 
+.form-wrapper--pledge,
 .form-wrapper--no-bg {
   > h1, > h2, > h3 {
     max-width: 80%;

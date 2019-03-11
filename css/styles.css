@@ -9536,11 +9536,15 @@ input.email {
 .donation-form-wrapper {
   background: white; }
 
-.form-wrapper--no-bg > h1, .form-wrapper--no-bg > h2, .form-wrapper--no-bg > h3 {
+.form-wrapper--pledge > h1, .form-wrapper--pledge > h2, .form-wrapper--pledge > h3,
+.form-wrapper--no-bg > h1,
+.form-wrapper--no-bg > h2,
+.form-wrapper--no-bg > h3 {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto; }
 
+.form-wrapper--pledge .donation-form-wrapper,
 .form-wrapper--no-bg .donation-form-wrapper {
   margin: 28px -30px 0; }
 
