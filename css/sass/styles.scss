@@ -2419,6 +2419,12 @@ main {
   }
 }
 
+.form-wrapper--pledge {
+  .donation-form-wrapper {
+    border-top: 1px solid $border-gray;
+  }
+}
+
 #spark-app .container:first-child {
   padding: 0 !important;
 }

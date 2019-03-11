@@ -9548,6 +9548,9 @@ input.email {
 .form-wrapper--no-bg .donation-form-wrapper {
   margin: 28px -30px 0; }
 
+.form-wrapper--pledge .donation-form-wrapper {
+  border-top: 1px solid #d7e2e8; }
+
 #spark-app .container:first-child {
   padding: 0 !important; }
 
