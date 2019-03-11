@@ -994,6 +994,7 @@ input[type="text"].form__error {
 .input-group-text {
   border-radius: 0;
   @include font_bold;
+  border-right: 0;
 }
 
 textarea {
@@ -2395,6 +2396,19 @@ main {
 
 .donation-form-wrapper {
   background: white;
+}
+
+.pledge-form-wrapper {
+  background: transparent;
+}
+
+.form-wrapper {
+  .pledge-form-wrapper {
+    background: transparent;
+    border-top: 1px solid $border-gray;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
 }
 
 #spark-app .container:first-child {
