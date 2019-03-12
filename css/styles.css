@@ -7629,13 +7629,19 @@ a:focus {
     text-align: center; }
 
 .form-header {
-  padding: 0 10px 15px; }
+  padding: 5px 0 15px; }
   @media only screen and (min-width: 768px) {
     .form-header {
-      padding: 0 20px 20px; } }
+      padding: 5px 20px 20px; } }
   .form-header h2 + h3 {
     line-height: 1.1;
     margin-top: 15px; }
+
+.form-wrapper .donation-form-wrapper {
+  margin: 0 -30px -25px; }
+  @media only screen and (min-width: 768px) {
+    .form-wrapper .donation-form-wrapper {
+      margin: 0 0 -15px; } }
 
 .form-actions .btn, .form-actions input[type=submit] {
   margin: 10px 0;

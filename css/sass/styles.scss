@@ -318,18 +318,24 @@ a:focus {
   }
 }
 
-
 .form-header {
-  padding: 0 10px 15px;
+  padding: 5px 0 15px;
   @media only screen and (min-width: 768px) {
-    padding: 0 20px 20px;
+    padding: 5px 20px 20px;
   }
-
   h2 + h3 {
     line-height: 1.1;
     margin-top: 15px;
   }
+}
 
+.form-wrapper {
+  .donation-form-wrapper {
+    margin: 0 -30px -25px;
+    @media only screen and (min-width: 768px) {
+      margin: 0 0 -15px;
+    }
+  }
 }
 
 .form-actions {
