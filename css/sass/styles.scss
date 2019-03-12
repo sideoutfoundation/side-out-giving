@@ -309,21 +309,25 @@ a:focus {
   &.sign-up {}
 
   h1, h2 {
+    line-height: 1.1;
     margin-top: 0;
   }
 
   h1 {
     text-align: center;
   }
+}
 
-  &--no-bg {
-    background: transparent;
-    border-color: transparent;
+
+.form-header {
+  padding: 0 10px 15px;
+  @media only screen and (min-width: 768px) {
+    padding: 0 20px 20px;
   }
 
-
-  &--pledge {
-
+  h2 + h3 {
+    line-height: 1.1;
+    margin-top: 15px;
   }
 
 }

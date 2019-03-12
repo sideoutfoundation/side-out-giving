@@ -3,18 +3,19 @@
 
 
 <div class="row">
-    <div class="form-wrapper form-wrapper--no-bg">
-        <h2 class="text-center regular">
-            Thank you for supporting the
-            <strong class="text-pink">Sydney's Dig Pink Campaign 15 Diamond</strong>
-            Pledge Drive
-        </h2>
-        <h3 class="text-center regular">
-            We did <strong class="text-primary">265 Digs!</strong>
-            <br/>
-            Your pledge commitment is: <strong class="text-primary">$66.25</strong>
-        </h3>
-
+    <div class="form-wrapper">
+        <div class="form-header">
+            <h2 class="text-center regular">
+                Thank you for supporting the
+                <strong class="text-pink">Sydney's Dig Pink Campaign 15 Diamond</strong>
+                Pledge Drive
+            </h2>
+            <h3 class="text-center regular">
+                We did <strong class="text-primary">265 Digs!</strong>
+                <br/>
+                Your pledge commitment is: <strong class="text-primary">$66.25</strong>
+            </h3>
+        </div><!-- .form-header -->
         <div class="donation-form-wrapper">
             <ul class="tabs-nav">
                 <li class="tab-link current" data-tab="tab-1">
