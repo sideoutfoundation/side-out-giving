@@ -2407,8 +2407,11 @@ main {
   background: white;
 }
 
-.form-wrapper--pledge,
 .form-wrapper--no-bg {
+  padding: 0 15px 30px;
+  @media only screen and (min-width: 768px) {
+    padding: 30px;
+  }
   > h1, > h2, > h3 {
     margin-left: auto;
     margin-right: auto;
@@ -2417,13 +2420,8 @@ main {
     }
   }
   .donation-form-wrapper {
-    margin: 28px -30px 0;
-  }
-}
-
-.form-wrapper--pledge {
-  .donation-form-wrapper {
-    border-top: 1px solid $border-gray;
+    margin: 28px 0 0;
+    border: 1px solid $border-gray;
   }
 }
 

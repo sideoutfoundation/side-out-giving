@@ -9536,25 +9536,20 @@ input.email {
 .donation-form-wrapper {
   background: white; }
 
-.form-wrapper--pledge > h1, .form-wrapper--pledge > h2, .form-wrapper--pledge > h3,
-.form-wrapper--no-bg > h1,
-.form-wrapper--no-bg > h2,
-.form-wrapper--no-bg > h3 {
-  margin-left: auto;
-  margin-right: auto; }
+.form-wrapper--no-bg {
+  padding: 0 15px 30px; }
   @media only screen and (min-width: 768px) {
-    .form-wrapper--pledge > h1, .form-wrapper--pledge > h2, .form-wrapper--pledge > h3,
-    .form-wrapper--no-bg > h1,
-    .form-wrapper--no-bg > h2,
-    .form-wrapper--no-bg > h3 {
-      max-width: 80%; } }
-
-.form-wrapper--pledge .donation-form-wrapper,
-.form-wrapper--no-bg .donation-form-wrapper {
-  margin: 28px -30px 0; }
-
-.form-wrapper--pledge .donation-form-wrapper {
-  border-top: 1px solid #d7e2e8; }
+    .form-wrapper--no-bg {
+      padding: 30px; } }
+  .form-wrapper--no-bg > h1, .form-wrapper--no-bg > h2, .form-wrapper--no-bg > h3 {
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 768px) {
+      .form-wrapper--no-bg > h1, .form-wrapper--no-bg > h2, .form-wrapper--no-bg > h3 {
+        max-width: 80%; } }
+  .form-wrapper--no-bg .donation-form-wrapper {
+    margin: 28px 0 0;
+    border: 1px solid #d7e2e8; }
 
 #spark-app .container:first-child {
   padding: 0 !important; }
