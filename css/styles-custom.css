@@ -1,0 +1,232 @@
+@media only screen and (min-width: 992px) {
+    .hero {
+        height: 320px;
+    }
+    .footer-donate .footer-right .cloudflare-badge {
+        margin: 0 10px;
+    }
+    .dataStartingPoint,
+    .anchorPoint {
+        padding-top: 75px;
+        margin-top: -75px;
+    }
+}
+
+.w-20 {
+    width: 20% !important;
+}
+.flex-auto {
+    flex: auto;
+}
+.text-decoration-none {
+    text-decoration: none !important;
+}
+.lh-1 {
+    line-height: 1;
+}
+a[href^="tel:"].primary {
+    color: #DE0088;
+}
+.fade {
+    -webkit-transition-duration: .3s; /* Safari */
+    transition-duration: .3s;
+}
+
+/* Mobile Follow Btn Changes */
+.mobile-follow .btn {
+    font-size: 1rem;
+    /* I realize you have .875rem set on .btn, but I didn't want to override the global class as I don't know where else you have it */
+}
+.mobile-follow {
+    z-index: 3;
+}
+
+/* Events */
+.campaign-events {
+    background: none;
+    padding: 0;
+}
+.event-date-day {
+    font-size: 40px;
+    line-height: 1;
+}
+.event-date-month {
+    font-size: 16px;
+}
+.event-title, .event-location {
+    line-height: 1 !important;
+}
+.event-icon {
+    font-size: 12px;
+}
+.event-time, .event-location {
+    font-size: 14px;
+}
+
+/* Impact Playbook */
+#impactPlaybook .nav-tabs > .nav-item:first-child a {
+    border-left: none;
+}
+#impactPlaybook .nav-tabs > .nav-item:last-child a {
+    border-right: none;
+}
+@media only screen and (max-width: 991px) {
+    #impactPlaybook .nav-tabs > .nav-item a.active {
+        border: none;
+    }
+    #impactPlaybook .card-header {
+        border-bottom: none;
+    }
+}
+#impactPlaybook a {
+    color: #87929c !important;
+    background: #fff;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#impactPlaybook a .playbook-tab-title {
+    border-bottom: 3px solid transparent !important;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#impactPlaybook .community-tab a:not(.active):hover .playbook-tab-title,
+#impactPlaybook .community-tab a.active .playbook-tab-title {
+    color: #D90084 !important;
+    border-bottom: 3px solid #D90084 !important;
+}
+#impactPlaybook .community-tab a.active svg path,
+#impactPlaybook .community-tab a:not(.active):hover svg path {
+    fill: #D90084;
+}
+#impactPlaybook .athlete-tab a:not(.active):hover .playbook-tab-title,
+#impactPlaybook .athlete-tab a.active .playbook-tab-title {
+    color: #642F6C !important;
+    border-bottom: 3px solid #642F6C !important;
+}
+#impactPlaybook .athlete-tab a.active svg path,
+#impactPlaybook .athlete-tab a:not(.active):hover svg path {
+    fill: #642F6C;
+}
+#impactPlaybook .education-tab a:not(.active):hover .playbook-tab-title,
+#impactPlaybook .education-tab a.active .playbook-tab-title {
+    color: #FFA500 !important;
+    border-bottom: 3px solid #FFA500 !important;
+}
+#impactPlaybook .education-tab a.active svg path,
+#impactPlaybook .education-tab a:not(.active):hover svg path {
+    fill: #FFA500;
+}
+#impactPlaybook .fundraising-tab a:not(.active):hover .playbook-tab-title,
+#impactPlaybook .fundraising-tab a.active .playbook-tab-title {
+    color: #97D700 !important;
+    border-bottom: 3px solid #97D700 !important;
+}
+#impactPlaybook .fundraising-tab a.active svg path,
+#impactPlaybook .fundraising-tab a:not(.active):hover svg path {
+    fill: #97D700;
+}
+#impactPlaybook .custom-svg {
+    width: 90px;
+    height: 94px;
+}
+#impactPlaybook .custom-svg path {
+    fill: #87929c;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+/* Activies Callout */
+#activitiesWrap .nav-item > a {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-size: .875rem;
+}
+@media only screen and (max-width: 991px) {
+    #activitiesWrap .nav-item > a {
+        font-size: .875rem;
+    }
+}
+#activitiesWrap .nav-item > a,
+#activitiesWrap .nav-item > a:not(.active):hover {
+    color: #D90084;
+}
+#activitiesWrap .nav-item > a:not(.active) {
+    border-bottom: 3px solid transparent !important;
+}
+#activitiesWrap .nav-item > a:not(.active) {
+    color: #87929c;
+}
+#activitiesWrap .nav-item > a.active,
+#activitiesWrap .nav-item > a:not(.active):hover {
+    border-bottom: 3px solid #D90084 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .progress .progress-bar {
+        height: 40px;
+    }
+    .progress .progress-bar:after {
+        border-width: 40px 20px 0 0;
+    }
+}
+
+/* Navigation / Header */
+.navigation {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: initial;
+    -webkit-box-flex: 0;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.login-menu {
+    height: 47px;
+}
+.login-menu, .brand {
+    flex: unset !important;
+    max-width: unset !important;
+    width: unset !important;
+    top: unset !important;
+}
+.header-nav a {
+    color: #0C2543 !important;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.header-nav a:hover {
+    color: #8B95A2 !important;
+}
+.header {
+    height: unset !important;
+}
+
+/* Campaign Sign Up Button (Static) */
+.follow-btn {
+    z-index: 4;
+    box-shadow: none !important;
+    margin: auto;
+    display: block;
+    width: calc(100% - 16px);
+}
+.follow-btn:focus {
+    background-color: #009CDE !important;
+    border-color: #009CDE !important;
+}
+.follow-btn.bottom {
+    position: sticky;
+    top: 100%;
+    left: 100%;
+    margin-bottom: 16px;
+    -webkit-transition: .3s top ease;
+    -o-transition: .3s top ease;
+    transition: .3s top ease;
+}
+.follow-btn.slide-up {
+    top: calc(100% - 60px);
+}
