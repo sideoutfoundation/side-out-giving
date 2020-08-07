@@ -19,7 +19,11 @@
             </div>
 
             <div class="footer-right">
-                <img src="./img/digicert.png" alt="Digicert">
+                <script data-cfbadgetype="g" data-cfbadgeskin="gray" type="text/javascript">
+                    //<![CDATA[
+                    try{window.CloudFlare||function(){var a=window.document,b=a.createElement("script"),a=a.getElementsByTagName("script")[0];window.CloudFlare=[];b.type="text/javascript";b.async=!0;b.src="//ajax.cloudflare.com/cdn-cgi/nexp/cloudflare.js";a.parentNode.insertBefore(b,a)}(),CloudFlare.push(function(a){a(["cloudflare/badge"])})}catch(e$$5){try{console.error("CloudFlare badge code could not be loaded. "+e$$5.message)}catch(e$$6){}};
+                    //]]>
+                </script>
                 <img src="./img/stripe.png" alt="Stripe">
             </div>
 
@@ -27,7 +31,7 @@
     </div>
 </footer><!-- .footer -->
 
-<script type="text/javascript" src="./js/script.js"></script>
+<script type="text/javascript" src="./js/script.js?v=9"></script>
 
 </body>
 </html>

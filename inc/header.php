@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles-custom.css">
 
+    <script src="https://kit.fontawesome.com/d3fdca2db1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
@@ -49,35 +51,46 @@
 
 </head>
 <body>
-    <?php
-        // Menu for HTML prototypes.
-        include('./inc/pages-menu.php');
-    ?>
     <div id="top"></div>
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="align-items-center flex-row d-none d-lg-flex">
                 <div class="brand">
                     <img class="logo" src="../img/logo.svg" alt="Side-Out Foundation">
                 </div>
-
-                <div class="search">
-                    <form id="demo-2">
-                        <input type="search" id="search-input" placeholder="Search for a supporting campaign"><img src="../img/search.svg" width="24" height="24"/>
-                    </form>
+                
+                <div class="navigation header-nav flex-grow-1 mr-5 d-none d-lg-flex">
+                    <nav class="navbar navbar-expand-lg navbar-light m-0 p-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase font-weight-bold px-3" href="#about-campaign">Our Campaign</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase font-weight-bold px-3" href="#impact-playbook">Impact Playbook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase font-weight-bold px-3" href="#campaign-activity">Campaign Activity</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
-
-
                 <div class="login-menu personal">
-                    <a data-toggle="modal" href="#modal-notifications" class="app-notifications-icon">
-                        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M912 1696q0-16-16-16-59 0-101.5-42.5t-42.5-101.5q0-16-16-16t-16 16q0 73 51.5 124.5t124.5 51.5q16 0 16-16zm816-288q0 52-38 90t-90 38h-448q0 106-75 181t-181 75-181-75-75-181h-448q-52 0-90-38t-38-90q50-42 91-88t85-119.5 74.5-158.5 50-206 19.5-260q0-152 117-282.5t307-158.5q-8-19-8-39 0-40 28-68t68-28 68 28 28 68q0 20-8 39 190 28 307 158.5t117 282.5q0 139 19.5 260t50 206 74.5 158.5 85 119.5 91 88z"/></svg>
-                    </a>
                     <div class="dropdown open">
-                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="true" class="dropdown-toggle">
-                            <img src="https://www.gravatar.com/avatar/f900ce725ee19829cd21cdbebbe11cd8.jpg?s=200&amp;d=mm" >
+                        <a href="#" data-toggle="dropdown" role="button" aria-expanded="true" class="dropdown-toggle text-decoration-none">
+                            <img src="https://www.gravatar.com/avatar/f900ce725ee19829cd21cdbebbe11cd8.jpg?s=200&amp;d=mm">
                         </a>
                         <ul role="menu" class="dropdown-menu">
+                            <li class="dropdown-header">Contact Your Rep</li>
+                            <div class="px-4 py-2">
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li class="font-weight-bold">Sydney Cannice</li>
+                                    <li>NE Impact Coach</li>
+                                    <li>Ph: <a class="primary" href="tel:703-555-5555">703-555-5555</a></li>
+                                    <li><a href="mailto:sydney.cannice@side-out.org">Email Me</a></li>
+                                    <li><a href="#">Schedule a Call</a></li>
+                                </ul>
+                            </div>
                             <li class="dropdown-header">Settings</li>
                             <li class="sublink">
                                 <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm512-109v222q0 12-8 23t-20 13l-185 28q-19 54-39 91 35 50 107 138 10 12 10 25t-9 23q-27 37-99 108t-94 71q-12 0-26-9l-138-108q-44 23-91 38-16 136-29 186-7 28-36 28h-222q-14 0-24.5-8.5t-11.5-21.5l-28-184q-49-16-90-37l-141 107q-10 9-25 9-14 0-25-11-126-114-165-168-7-10-7-23 0-12 8-23 15-21 51-66.5t54-70.5q-27-50-41-99l-183-27q-13-2-21-12.5t-8-23.5v-222q0-12 8-23t19-13l186-28q14-46 39-92-40-57-107-138-10-12-10-24 0-10 9-23 26-36 98.5-107.5t94.5-71.5q13 0 26 10l138 107q44-23 91-38 16-136 29-186 7-28 36-28h222q14 0 24.5 8.5t11.5 21.5l28 184q49 16 90 37l142-107q9-9 24-9 13 0 25 10 129 119 165 170 7 8 7 22 0 12-8 23-15 21-51 66.5t-54 70.5q26 50 41 98l183 28q13 2 21 12.5t8 23.5z"/></svg><a href="#" style="cursor: pointer;">Settings</a>
@@ -97,58 +110,30 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="search-results logged" id="search-results">
-                    <span class="caret"></span>
-                    <div class="results"><img src="../img/search-white.svg" width="22" height="22"/>Results for <span>"bow"</span></div>
-                    <div class="result-options">
-                        <div class="result-option">
-                            <a class="campaign-link" href= "/campaign.php">
-                                <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
-                                <div class="content">
-                                    <h3>Bowdoin College Voleyball Dig Pink</h3>
-                                    <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
-                                    <div class="pills bs-component">
-                                        <div>
-                                            <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
-                                        </div>
-                                        <div>
-                                            <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="button-area">
-                            <a href= "/campaign.php#donate">
-                                    <button type="button" class="btn btn-primary">Donate</button>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="result-option">
-                            <a class="campaign-link" href= "/campaign.php">
-                                <div class="image"><img src="./img/side-out-iconcircle.png" alt=""></div>
-                                <div class="content">
-                                    <h3>Bowdoin College Voleyball Dig Pink</h3>
-                                    <div class="details">Megan M. / Supporting 2018 Dig Pink Schools</div>
-                                    <div class="pills bs-component">
-                                        <div>
-                                            <b>Raised</b><span class="badge badge-pill badge-success">$10</span>
-                                        </div>
-                                        <div>
-                                            <b>Goal</b><span class="badge badge-pill badge-secondary">$1200</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="button-area">
-                            <a href= "/campaign.php#donate">
-                                    <button type="button" class="btn btn-primary">Donate</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-white d-lg-none header-nav">
+                <img class="logo" src="../img/logo.svg" alt="Side-Out Foundation">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse py-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#about-campaign">Our Campaign</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#impact-playbook">Impact Playbook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase font-weight-bold" href="#campaign-activity">Campaign Activity</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
         </div><!-- container -->
     </header><!-- header -->
 

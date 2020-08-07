@@ -93,6 +93,9 @@
                 <div class="campaign-text">
                     <h2>About Our Campaign</h2>
                     <p>
+                        <iframe frameborder="0" src="//www.youtube.com/embed/k6zCtrKEXNA" width="640" height="360" class="note-video-clip"></iframe>
+                    </p>
+                    <p>
                         Vivamus maximus, eros congue rhoncus tincidunt, felis
                         tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
                         blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
@@ -104,6 +107,38 @@
                         Sed a eros id odio scelerisque viverra. Fusce sit amet sapien et ante
                         porttitor viverra. Suspendisse sit amet nisl aliquet, malesuada odio
                         nec, molestie nisi.
+                    </p>
+                    <p>
+                        Vivamus maximus, eros congue rhoncus tincidunt, felis
+                        tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+                        blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+                        sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+                        risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
+                        malesuada mollis. Integer quis ornare dui.
+                    </p>
+                    <p>
+                        Vivamus maximus, eros congue rhoncus tincidunt, felis
+                        tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+                        blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+                        sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+                        risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
+                        malesuada mollis. Integer quis ornare dui.
+                    </p>
+                    <p>
+                        Vivamus maximus, eros congue rhoncus tincidunt, felis
+                        tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+                        blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+                        sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+                        risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
+                        malesuada mollis. Integer quis ornare dui.
+                    </p>
+                    <p>
+                        Vivamus maximus, eros congue rhoncus tincidunt, felis
+                        tortor tempus est, quis consectetur urna leo nec ligula. Donec elit justo,
+                        blandit in massa eu, vehicula interdum ligula. Integer facilisis tellus
+                        sed auctor ultrices. Morbi sit amet rhoncus ante. Mauris sodales dolor
+                        risus. Sed vitae feugiat tellus. Duis sollicitudin nibh consectetur nisl
+                        malesuada mollis. Integer quis ornare dui.
                     </p>
 
                     <hr>
@@ -164,9 +199,47 @@
                         <!-- </div> -->
                         </div>
                     </div>
+                </div><!-- .campaign-text -->
+            </div><!-- .campaign-left -->
 
-                    <h2>Campaign Activity</h2>
-
+            <aside class="campaign-learn-more">
+                <div class="aside aside-mission">
+                    <div class="img">
+                        <a href="#" class="aside-play-button">
+                            <svg class="icon icon-play">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="../img/sprites.svg#icon-play3"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Learn about Side-Out's Mission</h3>
+                    <p>
+                        In volleyball, “side-out” means regaining control of the
+                        ball. Similarly, The Side-Out Foundation helps people with
+                        breast cancer regain control of their lives.
+                    </p>
+                    <a href="#" class="click" data-toggle="modal" data-target="#video"></a>
+                </div>
+                <div class="aside aside-trial">
+                    <div class="img">
+                        <a href="#" class="aside-play-button">
+                            <svg class="icon icon-play">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="../img/sprites.svg#icon-play3"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3>Learn about our clinical trial</h3>
+                    <p>
+                        The Side-Out Foundation is sponsoring a first of its kind
+                        clinical trial to examine the effects of individualized
+                        treatment on patients with metastatic breast cancer.
+                    </p>
+                    <a href="#" class="click" data-toggle="modal" data-target="#research"></a>
+                </div>
+                <div class="aside aside-activity">
+                    <h3>Campaign Activity</h3>
+                    
                     <div class="activity-block">
                         <div class="activity-icon donation">
                             <svg class="icon">
@@ -206,43 +279,58 @@
                             <strong>Gary Soto</strong> created a <a href="#">campaign</a>
                         </div>
                     </div>
-                </div><!-- .campaign-text -->
-            </div><!-- .campaign-left -->
 
-            <aside class="campaign-learn-more">
-                <div class="aside aside-mission">
-                    <div class="img">
-                        <a href="#" class="aside-play-button">
-                            <svg class="icon icon-play">
+                    <div class="activity-block">
+                        <div class="activity-icon created">
+                            <svg class="icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xlink:href="../img/sprites.svg#icon-play3"></use>
+                                    xlink:href="./img/sprites.svg#icon-new-campaign">
+                                </use>
                             </svg>
-                        </a>
+                        </div>
+                        <div class="activity-text">
+                            <strong>Gary Soto</strong> created a <a href="#">campaign</a>
+                        </div>
                     </div>
-                    <h3>Learn about Side-Out's Mission</h3>
-                    <p>
-                        In volleyball, “side-out” means regaining control of the
-                        ball. Similarly, The Side-Out Foundation helps people with
-                        breast cancer regain control of their lives.
-                    </p>
-                    <a href="#" class="click" data-toggle="modal" data-target="#video"></a>
-                </div>
-                <div class="aside aside-trial">
-                    <div class="img">
-                        <a href="#" class="aside-play-button">
-                            <svg class="icon icon-play">
+
+                    <div class="activity-block">
+                        <div class="activity-icon created">
+                            <svg class="icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xlink:href="../img/sprites.svg#icon-play3"></use>
+                                    xlink:href="./img/sprites.svg#icon-new-campaign">
+                                </use>
                             </svg>
-                        </a>
+                        </div>
+                        <div class="activity-text">
+                            <strong>Gary Soto</strong> created a <a href="#">campaign</a>
+                        </div>
                     </div>
-                    <h3>Learn about our clinical trial</h3>
-                    <p>
-                        The Side-Out Foundation is sponsoring a first of its kind
-                        clinical trial to examine the effects of individualized
-                        treatment on patients with metastatic breast cancer.
-                    </p>
-                    <a href="#" class="click" data-toggle="modal" data-target="#research"></a>
+
+                    <div class="activity-block">
+                        <div class="activity-icon created">
+                            <svg class="icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="./img/sprites.svg#icon-new-campaign">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="activity-text">
+                            <strong>Gary Soto</strong> created a <a href="#">campaign</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-block">
+                        <div class="activity-icon created">
+                            <svg class="icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="./img/sprites.svg#icon-new-campaign">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="activity-text">
+                            <strong>Gary Soto</strong> created a <a href="#">campaign</a>
+                        </div>
+                    </div>
                 </div>
             </aside>
         </div>
