@@ -1,3 +1,43 @@
+<div class="modal fade" id="followUs" tabindex="-1" role="dialog" aria-labelledby="followUsModal" aria-hidden="false">
+    <div class="modal-dialog modal-social" role="document">
+        <div class="modal-content">
+            <div class="modal-cta flex-column">
+                <h2 class="text-center">Account Login</h2>
+                <div class="d-flex flex-row justify-content-between w-100">
+                    <a class="btn-facebook flex-grow-1 text-left text-white">
+                        <span class="fa fa-facebook fa-fw"></span> Sign in with Facebook
+                    </a>
+                    <div>&nbsp;</div>
+                    <a class="btn-google flex-grow-1 text-left bg-white">
+                        <span class="fa fa-google fa-fw"></span> Sign in with Google
+                    </a>
+                </div>
+                <div class="separator text-uppercase text-pink w-100 my-3">Or</div>
+                <form class="w-100">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control mw-100" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control mw-100" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember Me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2 w-100">Login</button>
+                </form>
+                <div class="text-align-left w-100 mt-3">
+                    <p class="font-weight-bold mb-lg-0 mb-2">Need an account? <a href="#">Sign Up</a></p>
+                    <p><a href="#">Forgot Password?</a></p>
+                </div>
+            </div>
+            <a href="#close-modal" class="close-modal" data-dismiss="modal" aria-label="Close">Close</a>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="false">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

@@ -212,7 +212,9 @@ a[href^="tel:"].primary {
     box-shadow: none !important;
     margin: auto;
     display: block;
+    /*
     width: calc(100% - 16px);
+    */
 }
 .follow-btn:focus {
     background-color: #009CDE !important;
@@ -229,4 +231,63 @@ a[href^="tel:"].primary {
 }
 .follow-btn.slide-up {
     top: calc(100% - 60px);
+}
+
+/* Seperator (Used in Modal) */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator:before, .separator:after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #cdcdcd;
+}
+.separator:before {
+    margin-right: .25em;
+}
+.separator:after {
+    margin-left: .25em;
+}
+
+/* Social Login Buttons */
+.btn-facebook {
+    background: #3a5997 !important;
+    border: 1px solid #3a5997 !important;
+    -webkit-transition-duration: .3s; /* Safari */
+    transition-duration: .3s;
+}
+.btn-facebook:hover {
+    background: #233c6d !important;
+    border: 1px solid #233c6d !important;
+}
+.btn-google {
+    border: 1px solid #d0d1d5;
+    -webkit-transition-duration: .3s; /* Safari */
+    transition-duration: .3s;
+}
+.btn-google:hover {
+    background: #f5f5f5 !important;
+    color: #fff;
+}
+
+/* Google Icon Multi-Color */
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Modal Social Size Adjustment */
+@media only screen and (min-width: 576px) {
+    .modal-social {
+        max-width: 500px;
+    }
+}
+
+.campaign-share .share-buttons > .btn {
+    white-space: normal;
 }
