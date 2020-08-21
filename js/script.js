@@ -144,12 +144,11 @@
   var tabChange = function(){
     var tabs = $('#impactPlaybook .nav-item > a');
     var active = tabs.filter('.active');
-    // var next = active.next('li').length ? active.next('li').find('a') : tabs.filter(':first-child').find('a');
     var next = active.closest('li').next('li').length ? active.closest('li').next('li').find('a') : $('#impactPlaybook .nav-item').filter(':first-child').find('a');
     next.tab('show');
   }
 
-  var tabCycle = setInterval(tabChange, 10000);
+  var tabCycle = setInterval(tabChange, 5000);
 
   $(function(){
     $('#impactPlaybook .nav-tabs a').click(function(e) {
