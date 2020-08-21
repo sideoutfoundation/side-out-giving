@@ -113,8 +113,6 @@
     // Developer Note: I have a dynamic results URL here because Rick wanted to simulate filtering
     // In your actual implementation, surely you have a better solution
 
-    console.log(parentID);
-
     if(parentID == 'all-activities') { 
       var requestURL = "./ajax/results.php";
     }
@@ -131,8 +129,6 @@
       var requestURL = "./ajax/results-followers.php";
     }
 
-    console.log(requestURL);
-
     $.ajax({ type: "GET",   
       url: requestURL,   
       success : function(text)
@@ -141,6 +137,25 @@
         button.before(text);
         $('body, html').animate({ scrollTop: startingPoint.offset().top }, 1000);
       }
+    });
+  });
+
+  /* Auto Rotate Tabs for Impact Playbook */
+  var tabChange = function(){
+    var tabs = $('#impactPlaybook .nav-item > a');
+    var active = tabs.filter('.active');
+    // var next = active.next('li').length ? active.next('li').find('a') : tabs.filter(':first-child').find('a');
+    var next = active.closest('li').next('li').length ? active.closest('li').next('li').find('a') : $('#impactPlaybook .nav-item').filter(':first-child').find('a');
+    next.tab('show');
+  }
+
+  var tabCycle = setInterval(tabChange, 10000);
+
+  $(function(){
+    $('#impactPlaybook .nav-tabs a').click(function(e) {
+        e.preventDefault();
+        clearInterval(tabCycle);
+        $(this).tab('show');
     });
   });
 })(jQuery);
