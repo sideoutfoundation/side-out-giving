@@ -187,7 +187,7 @@
                                 <div class="card-body px-0">                    
                                     <div class="tab-content mt-3">
                                         <div class="tab-pane fade active show" id="education-alt" role="tabpanel" aria-labelledby="education-tab-alt">
-                                            <div class="row mb-3">
+                                            <div class="mb-3">
                                                 <div class="d-flex align-items-center flex-column flex-lg-row">
                                                     <div class="col-12 mx-auto mb-4 m-lg-0 col-lg-4 text-center order-2 order-lg-1">
                                                         <img src="./img/impact-playbook/educate.png" alt="Our Education" class="mw-100">
@@ -203,7 +203,7 @@
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                         </div>
                                         <div class="tab-pane fade" id="messages-alt" role="tabpanel" aria-labelledby="messages-tab-alt">
-                                            <div class="row mb-3">
+                                            <div class="mb-3">
                                                 <div class="d-flex align-items-center flex-column flex-lg-row">
                                                     <div class="col-12 mx-auto mb-4 m-lg-0 col-lg-4 text-center order-2 order-lg-1">
                                                         <img src="./img/impact-playbook/athlete_engagement.png" alt="Our Athlete Involvement" class="mw-100">
@@ -219,7 +219,7 @@
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                         </div>
                                         <div class="tab-pane fade" id="profile-alt" role="tabpanel" aria-labelledby="profile-tab-alt">
-                                            <div class="row mb-3">
+                                            <div class="mb-3">
                                                 <div class="d-flex align-items-center flex-column flex-lg-row">
                                                     <div class="col-12 mx-auto mb-4 m-lg-0 col-lg-4 text-center order-2 order-lg-1">
                                                         <img src="./img/impact-playbook/community_connection.png" alt="Our Community" class="mw-100">
@@ -235,7 +235,7 @@
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                         </div>
                                         <div class="tab-pane fade" id="settings-alt" role="tabpanel" aria-labelledby="settings-tab-alt">
-                                            <div class="row mb-3">
+                                            <div class="mb-3">
                                                 <div class="d-flex align-items-center flex-column flex-lg-row">
                                                     <div class="col-12 mx-auto mb-4 m-lg-0 col-lg-4 text-center order-2 order-lg-1">
                                                         <img src="./img/impact-playbook/fundraising.png" alt="Our Fundraising" class="mw-100">
