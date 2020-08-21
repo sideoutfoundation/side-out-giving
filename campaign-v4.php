@@ -374,16 +374,18 @@
                                         Donors
                                     </a>
                                 </li>
-                                <li class="nav-item d-flex flex-column align-items-center text-center campaigns-tab" role="presentation">
-                                    <a class="nav-link tab-link d-flex mt-auto mb-auto py-1 px-0 align-items-center flex-column justify-content-center text-uppercase font-weight-bold rounded-0 border-0" id="campaigns-tab" data-toggle="tab" href="#campaigns" role="tab" aria-controls="messages" aria-selected="false">
-                                        Campaigns
+                                <li class="nav-item d-flex flex-column align-items-center text-center supporters-tab" role="presentation">
+                                    <a class="nav-link tab-link d-flex mt-auto mb-auto py-1 px-0 align-items-center flex-column justify-content-center text-uppercase font-weight-bold rounded-0 border-0" id="supporters-tab" data-toggle="tab" href="#supporters" role="tab" aria-controls="supporters" aria-selected="false">
+                                        Supporters
                                     </a>
                                 </li>
+                                <!--
                                 <li class="nav-item d-flex flex-column align-items-center text-center followers-tab" role="presentation">
                                     <a class="nav-link tab-link d-flex mt-auto mb-auto py-1 px-0 align-items-center flex-column justify-content-center text-uppercase font-weight-bold rounded-0 border-0" id="followers-tab" data-toggle="tab" href="#followers" role="tab" aria-controls="education" aria-selected="false">
                                         Followers
                                     </a>
                                 </li>
+                                -->
                             </ul>
 
                             <div class="tab-content mt-3">
@@ -530,7 +532,7 @@
                                         <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="campaigns" role="tabpanel" aria-labelledby="campaigns-tab">
+                                <div class="tab-pane fade" id="supporters" role="tabpanel" aria-labelledby="supporters-tab">
                                     <div class="activites-wrapper" id="campaign-activities">
                                         <div class="activity-block">
                                             <div class="activity-icon created">
@@ -600,6 +602,7 @@
                                         <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="tab-pane fade" id="followers" role="tabpanel" aria-labelledby="followers-tab">
                                     <div class="activites-wrapper" id="follower-activities">
                                         <div class="activity-block">
@@ -650,6 +653,7 @@
                                         <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
                                     </div>
                                 </div>
+                                -->
                             </div>
 
                         </div>
