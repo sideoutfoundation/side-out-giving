@@ -42,6 +42,7 @@ a[href^="tel:"].primary {
 }
 
 /* Events */
+.aside-events 
 .campaign-events {
     background: none;
     padding: 0;

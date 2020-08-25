@@ -274,7 +274,7 @@
                                         <div class="pl-3">
                                             <div>
                                                 <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                                <div class="d-flex flex-row mb-2">
+                                                <div class="d-flex flex-row mb-2 align-items-center">
                                                     <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                     <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                                 </div>
@@ -305,7 +305,7 @@
                                         <div class="pl-3">
                                             <div>
                                                 <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                                <div class="d-flex flex-row mb-2">
+                                                <div class="d-flex flex-row mb-2 align-items-center">
                                                     <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                     <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                                 </div>
@@ -336,7 +336,7 @@
                                         <div class="pl-3">
                                             <div>
                                                 <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                                <div class="d-flex flex-row mb-2">
+                                                <div class="d-flex flex-row mb-2 align-items-center">
                                                     <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                     <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                                 </div>
@@ -463,73 +463,11 @@
                                 </div>
                                 <div class="tab-pane fade" id="donors" role="tabpanel" aria-labelledby="donors-tab">
                                     <div class="activites-wrapper" id="donors-activities">
-                                        <div class="activity-block">
-                                            <div class="activity-icon donation">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                        xlink:href="./img/sprites.svg#icon-gift">
-                                                    </use>
-                                                </svg>
-                                            </div>
+                                        <div class="activity-block justify-content-center">
                                             <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> donated $<?php echo rand(1,500); ?>
+                                                Be the first to <a href="#" class="text-primary">donate</a> to this amazing cause
                                             </div>
                                         </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon in-honor">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                        xlink:href="./img/sprites.svg#icon-heart">
-                                                    </use>
-                                                </svg>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Gary Soto</strong> donated $<?php echo rand(1,500); ?>
-                                                <span>In honor of Kathy Milton</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon donation">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                        xlink:href="./img/sprites.svg#icon-gift">
-                                                    </use>
-                                                </svg>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> donated $<?php echo rand(1,500); ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon donation">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                        xlink:href="./img/sprites.svg#icon-gift">
-                                                    </use>
-                                                </svg>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> donated $<?php echo rand(1,500); ?>
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon donation">
-                                                <svg class="icon">
-                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                        xlink:href="./img/sprites.svg#icon-gift">
-                                                    </use>
-                                                </svg>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> donated $<?php echo rand(1,500); ?>
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="supporters" role="tabpanel" aria-labelledby="supporters-tab">
@@ -629,7 +567,7 @@
                                     <div class="pl-3">
                                         <div>
                                             <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                            <div class="d-flex flex-row mb-2">
+                                            <div class="d-flex flex-row mb-2 align-items-center">
                                                 <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                 <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                             </div>
@@ -660,7 +598,7 @@
                                     <div class="pl-3">
                                         <div>
                                             <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                            <div class="d-flex flex-row mb-2">
+                                            <div class="d-flex flex-row mb-2 align-items-center">
                                                 <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                 <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                             </div>
@@ -691,7 +629,7 @@
                                     <div class="pl-3">
                                         <div>
                                             <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                            <div class="d-flex flex-row mb-2">
+                                            <div class="d-flex flex-row mb-2 align-items-center">
                                                 <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
                                                 <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
                                             </div>
