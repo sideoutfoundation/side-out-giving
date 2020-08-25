@@ -148,7 +148,7 @@
     next.tab('show');
   }
 
-  var tabCycle = setInterval(tabChange, 5000);
+  var tabCycle = setInterval(tabChange, 4000);
 
   $(function(){
     $('#impactPlaybook .nav-tabs a').click(function(e) {
