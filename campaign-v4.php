@@ -263,10 +263,10 @@
                             <div class="card-body">
                                 <div class="border-bottom pb-3">
                                     <div class="d-flex align-items-center">
-                                        <div class="d-flex align-items-start justify-content-center">
+                                        <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                             <div class="border-right-lg border-right-md-0">
                                                 <div class="d-flex justify-content-center align-items-center flex-column">
-                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">1</div>
                                                     <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                                 </div>
                                             </div>
@@ -294,10 +294,10 @@
                                 </div>
                                 <div class="border-bottom py-3">
                                     <div class="d-flex align-items-center">
-                                        <div class="d-flex align-items-start justify-content-center">
+                                        <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                             <div class="border-right-lg border-right-md-0">
                                                 <div class="d-flex justify-content-center align-items-center flex-column">
-                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">12</div>
                                                     <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                                 </div>
                                             </div>
@@ -325,10 +325,10 @@
                                 </div>
                                 <div class="border-bottom py-3">
                                     <div class="d-flex align-items-center">
-                                        <div class="d-flex align-items-start justify-content-center">
+                                        <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                             <div class="border-right-lg border-right-md-0">
                                                 <div class="d-flex justify-content-center align-items-center flex-column">
-                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                    <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">30</div>
                                                     <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                                 </div>
                                             </div>
@@ -602,58 +602,6 @@
                                         <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
                                     </div>
                                 </div>
-                                <!--
-                                <div class="tab-pane fade" id="followers" role="tabpanel" aria-labelledby="followers-tab">
-                                    <div class="activites-wrapper" id="follower-activities">
-                                        <div class="activity-block">
-                                            <div class="activity-icon created">
-                                                <i class="fa fa-users text-white fa-fw fa-lg" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> followed SideOut Foundation
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon created">
-                                                <i class="fa fa-users text-white fa-fw fa-lg" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Maurice Rodriguez</strong> followed SideOut Foundation
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon created">
-                                                <i class="fa fa-users text-white fa-fw fa-lg" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Brian Schroeter</strong> followed SideOut Foundation
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon created">
-                                                <i class="fa fa-users text-white fa-fw fa-lg" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Maurice Rodriguez</strong> followed SideOut Foundation
-                                            </div>
-                                        </div>
-
-                                        <div class="activity-block">
-                                            <div class="activity-icon created">
-                                                <i class="fa fa-users text-white fa-fw fa-lg" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="activity-text">
-                                                <strong>Maurice Rodriguez</strong> followed SideOut Foundation
-                                            </div>
-                                        </div>
-
-                                        <button type="button" class="btn btn-blue-inverse btn-block mb-3 load-activities">Load More</button>
-                                    </div>
-                                </div>
-                                -->
                             </div>
 
                         </div>
@@ -670,10 +618,10 @@
                             <h2 class="text-center text-uppercase mb-3">Our Events</h2>
                             <div class="border-bottom pb-3">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex align-items-start justify-content-center">
+                                    <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                         <div class="border-right-lg border-right-md-0">
                                             <div class="d-flex justify-content-center align-items-center flex-column">
-                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">1</div>
                                                 <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                             </div>
                                         </div>
@@ -701,10 +649,10 @@
                             </div>
                             <div class="border-bottom py-3">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex align-items-start justify-content-center">
+                                    <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                         <div class="border-right-lg border-right-md-0">
                                             <div class="d-flex justify-content-center align-items-center flex-column">
-                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">12</div>
                                                 <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                             </div>
                                         </div>
@@ -732,10 +680,10 @@
                             </div>
                             <div class="border-bottom py-3">
                                 <div class="d-flex align-items-center">
-                                    <div class="d-flex align-items-start justify-content-center">
+                                    <div class="d-flex align-items-start justify-content-center col-2 px-0">
                                         <div class="border-right-lg border-right-md-0">
                                             <div class="d-flex justify-content-center align-items-center flex-column">
-                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
+                                                <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">30</div>
                                                 <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
                                             </div>
                                         </div>
@@ -761,66 +709,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--
-                            <div class="border-bottom pt-3 pb-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="border-right-lg border-right-md-0">
-                                        <div class="d-flex justify-content-center align-items-center flex-column">
-                                            <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
-                                            <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
-                                        </div>
-                                    </div>
-                                    <div class="pl-3">
-                                        <div>
-                                            <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                            <div class="d-flex flex-row mb-2">
-                                                <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
-                                                <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
-                                            </div>
-                                            <div class="d-flex flex-row">
-                                                <p class="mb-0 mr-1"><i class="fas fa-map-marker fa-fw"></i></p>
-                                                <p class="mb-0 event-location position-relative">
-                                                    <a href="#">
-                                                        <span class="d-block">555 Main Street</span>
-                                                        <span class="d-block">Fort Lauderdale, FL</span>
-                                                        <span class="d-block">33150</span>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pt-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="border-right-lg border-right-md-0">
-                                        <div class="d-flex justify-content-center align-items-center flex-column">
-                                            <div class="mb-0 mr-2 text-primary font-weight-bold d-block event-date-day">01</div>
-                                            <div class="mb-0 mr-2 text-primary font-weight-normal d-block text-uppercase event-date-month">Aug</div>
-                                        </div>
-                                    </div>
-                                    <div class="pl-3">
-                                        <div>
-                                            <p class="text-dark font-weight-bold mb-2 event-title">Lorem ipsum dolor sit amit dolor sit amit</p>
-                                            <div class="d-flex flex-row mb-2">
-                                                <p class="mb-0 mr-1"><i class="fas fa-clock fa-fw"></i></p>
-                                                <p class="mb-0 event-time position-relative">9.30 PM - 10:30 PM</p>
-                                            </div>
-                                            <div class="d-flex flex-row">
-                                                <p class="mb-0 mr-1"><i class="fas fa-map-marker fa-fw"></i></p>
-                                                <p class="mb-0 event-location position-relative">
-                                                    <a href="#">
-                                                        <span class="d-block">555 Main Street</span>
-                                                        <span class="d-block">Fort Lauderdale, FL</span>
-                                                        <span class="d-block">33150</span>
-                                                    </a>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            -->
                         </div>
                     </div>
                 </div>
