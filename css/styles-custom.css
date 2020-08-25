@@ -42,7 +42,10 @@ a[href^="tel:"].primary {
 }
 
 /* Events */
-.aside-events 
+.aside-events .py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
 .campaign-events {
     background: none;
     padding: 0;
