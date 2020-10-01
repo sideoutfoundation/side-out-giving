@@ -157,4 +157,66 @@
         $(this).tab('show');
     });
   });
+
+  $(".donation-checkbox").change(function() {
+    var oneTimeDonationAmounts = '<div class="donation-box">' +
+    '<input type="radio" id="amount_1" name="donation-amounts" value="50">' +
+    '<label class="text-center" for="amount_1">$50</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<span class="popular text-uppercase text-center text-secondary">Most Popular</span>' +
+    '<input type="radio" id="amount_2" name="donation-amounts" value="75" checked="checked">' +
+    '<label class="text-center" for="amount_2">$75</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_3" name="donation-amounts" value="125">' +
+    '<label class="text-center" for="amount_3">$125</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_4" name="donation-amounts" value="250">' +
+    '<label class="text-center" for="amount_4">$250</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_5" name="donation-amounts" value="500">' +
+    '<label class="text-center" for="amount_5">$500</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_6" name="donation-amounts" value="Other">' +
+    '<label class="text-center" for="amount_6">Other</label>' +
+    '</div>';
+
+    var monthlyDonationAmounts = '<div class="donation-box">' +
+    '<input type="radio" id="amount_1" name="donation-amounts" value="15">' +
+    '<label class="text-center" for="amount_1">$15</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<span class="popular text-uppercase text-center text-secondary">Most Popular</span>' +
+    '<input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked">' +
+    '<label class="text-center" for="amount_2">$25</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_3" name="donation-amounts" value="50">' +
+    '<label class="text-center" for="amount_3">$50</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_4" name="donation-amounts" value="100">' +
+    '<label class="text-center" for="amount_4">$100</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_5" name="donation-amounts" value="150">' +
+    '<label class="text-center" for="amount_5">$150</label>' +
+    '</div>' +
+    '<div class="donation-box">' +
+    '<input type="radio" id="amount_6" name="donation-amounts" value="Other">' +
+    '<label class="text-center" for="amount_6">Other</label>' +
+    '</div>';
+
+    if ( $(this).val() == 'one-time' ) {
+      $('.donation-amounts').html(oneTimeDonationAmounts);
+    }
+
+    if ( $(this).val() == 'monthly' ) {
+      $('.donation-amounts').html(monthlyDonationAmounts);
+    }
+  });
 })(jQuery);

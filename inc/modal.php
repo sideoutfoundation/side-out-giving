@@ -86,35 +86,48 @@
         <div class="donation-form">
             <div class="donation-form-inner-wrapper">
                 <div class="donation-form-inner">
-                    <div class="donation-amount form-group">
-                        <label for="">How much would you like to donate?</label>
-                        <div class="switch-field donation-buttons">
-                            <input type="radio" id="switch_1" name="switch" value="no">
-                            <label for="switch_1">$25</label>
-                            <input type="radio" id="switch_2" name="switch" value="no">
-                            <label for="switch_2">$50</label>
-                            <input type="radio" id="switch_3" name="switch" value="no" checked>
-                            <label for="switch_3">$75</label>
-                            <input type="radio" id="switch_4" name="switch" value="no">
-                            <label for="switch_4">$100</label>
-                            <input type="radio" id="switch_5" name="switch" value="no">
-                            <label for="switch_5">$500</label>
-                            <input type="radio" id="switch_6" name="switch" value="no">
-                            <label for="switch_6">Other</label>
+                    <div class="donation-type form-group">
+                        <label for="">How would you like to donate?</label>
+                        <div class="switch-field donation-buttons donation-frequency">
+                            <input type="radio" class="donation-checkbox" id="monthly" name="type" value="monthly" checked="checked">
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" class="donation-checkbox" id="one-time" name="type" value="one-time">
+                            <label for="one-time">One Time</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="mb-3">How much would you like to donate?</label>
+                        <div class="d-flex donation-amounts justify-content-between flex-wrap">
+                            <div class="donation-box">
+                                <input type="radio" id="amount_1" name="donation-amounts" value="15">
+                                <label class="text-center" for="amount_1">$15</label>
+                            </div>
+                            <div class="donation-box">
+                                <span class="popular text-uppercase text-center text-secondary">Most Popular</span>
+                                <input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked">
+                                <label class="text-center" for="amount_2">$25</label>
+                            </div>
+                            <div class="donation-box">
+                                <input type="radio" id="amount_3" name="donation-amounts" value="50">
+                                <label class="text-center" for="amount_3">$50</label>
+                            </div>
+                            <div class="donation-box">
+                                <input type="radio" id="amount_4" name="donation-amounts" value="100">
+                                <label class="text-center" for="amount_4">$100</label>
+                            </div>
+                            <div class="donation-box">
+                                <input type="radio" id="amount_5" name="donation-amounts" value="150">
+                                <label class="text-center" for="amount_5">$150</label>
+                            </div>
+                            <div class="donation-box">
+                                <input type="radio" id="amount_6" name="donation-amounts" value="Other">
+                                <label class="text-center" for="amount_6">Other</label>
+                            </div>
                         </div>
                         <div class="input-group other" style="display: none;">
                             <span class="input-group-addon">$</span>
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        </div>
-                    </div>
-
-                    <div class="donation-type form-group">
-                        <label for="">How would you like to donate?</label>
-                        <div class="switch-field donation-buttons donation-frequency">
-                            <input type="radio" id="one-time" name="type" value="no" checked>
-                            <label for="one-time">One Time</label>
-                            <input type="radio" id="monthly" name="type" value="no">
-                            <label for="monthly">Monthly</label>
                         </div>
                     </div>
 
@@ -271,12 +284,11 @@
                 <a href="#close-modal" data-dismiss="modal" rel="modal:close" class="close-modal ">Close</a>
             </div>
         </div>
-        </div>
     </div>
 </div>
 
 <script>
-$('#honoree-fields').hide()
+$('#honoree-fields').hide();
 $('#in-honor').click(function(){
     if (this.checked) {
         var innerHeight = $('.donation-form-inner').height()
@@ -341,26 +353,3 @@ $('#in-honor').click(function(){
         </div>
     </div>
 </div>
-
-<script>
-
-// Exit intent
-// function addEvent(obj, evt, fn) {
-//     if (obj.addEventListener) {
-//         obj.addEventListener(evt, fn, false);
-//     }
-//     else if (obj.attachEvent) {
-//         obj.attachEvent("on" + evt, fn);
-//     }
-// }
-
-// // Exit intent trigger
-// addEvent(document, 'mouseout', function(evt) {
-
-//     if (evt.toElement == null && evt.relatedTarget == null ) {
-//         $("#leaving").modal();
-//     };
-
-//});
-
-</script>

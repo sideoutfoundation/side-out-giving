@@ -35,15 +35,15 @@
                             <label for="">How much would you like to donate?</label>
                             <div class="switch-field donation-buttons">
                                 <input type="radio" id="switch_1" name="switch" value="no">
-                                <label for="switch_1">$25</label>
+                                <label for="switch_1">$15</label>
                                 <input type="radio" id="switch_2" name="switch" value="no">
-                                <label for="switch_2">$50</label>
+                                <label for="switch_2">$25</label>
                                 <input type="radio" id="switch_3" name="switch" value="no" checked>
-                                <label for="switch_3">$75</label>
+                                <label for="switch_3">$50</label>
                                 <input type="radio" id="switch_4" name="switch" value="no">
                                 <label for="switch_4">$100</label>
                                 <input type="radio" id="switch_5" name="switch" value="no">
-                                <label for="switch_5">$500</label>
+                                <label for="switch_5">$150</label>
                                 <input type="radio" id="switch_6" name="switch" value="no">
                                 <label for="switch_6">Other</label>
                             </div>

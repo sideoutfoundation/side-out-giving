@@ -296,3 +296,62 @@ a[href^="tel:"].primary {
 .campaign-share .share-buttons > .btn {
     white-space: normal;
 }
+
+.switch-field input:checked + label {
+    font-size: 18px;
+    background-color: #009CDE;
+    border: 1px solid #009CDE;
+    color: white;
+}
+
+.donation-amounts input[type="radio"] {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+.donation-amounts label:checked {
+    background-color: #009CDE;
+    border: 1px solid #009CDE;
+    color: white;
+}
+.donation-amounts .donation-box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31.66667%;
+    flex: 0 0 31.66667%;
+    max-width: 31.66667%;
+    -ms-flex: 0 0 30%;
+    position: relative;
+}
+.donation-amounts .donation-box label {
+    border: 1px solid #d7e2e8;
+    line-height: 20px;
+    padding: 14px 20px;
+    color: #828D9A;
+    font-family: 'Proxima Nova Bold', helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    transition: background .2s ease;
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+.donation-amounts .donation-box input:checked + label {
+    font-size: 18px;
+    background-color: #009CDE;
+    border: 1px solid #009CDE;
+    color: white;
+}
+.donation-amounts .donation-box .popular {
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -11px;
+    font-size: .7rem;
+    font-weight: 700;
+    border: 2px solid #009CDE;
+    border-radius: 6px 6px 0 0;
+    padding-top: 2px;
+}

@@ -31,7 +31,7 @@
     </div>
 </footer><!-- .footer -->
 
-<script type="text/javascript" src="./js/script.js?v=15"></script>
+<script type="text/javascript" src="./js/script.js?v=18"></script>
 
 </body>
 </html>
