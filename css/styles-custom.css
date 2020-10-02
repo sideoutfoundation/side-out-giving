@@ -351,7 +351,10 @@ a[href^="tel:"].primary {
     top: -11px;
     font-size: .7rem;
     font-weight: 700;
-    border: 2px solid #009CDE;
     border-radius: 6px 6px 0 0;
     padding-top: 2px;
+    border: 2px solid #d7e2e8;
+}
+.donation-amounts.featured-selected .donation-box .popular  {
+    border: 2px solid #009CDE;
 }

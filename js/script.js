@@ -158,14 +158,23 @@
     });
   });
 
+  $(document).on('change', 'input[name^="donation-amounts"]', function (e) {
+    if ( $(this).data("featured") == true ) {
+      $('.donation-amounts').addClass('featured-selected');
+    } else {
+      $('.donation-amounts').removeClass('featured-selected');
+    }
+  });
+
   $(".donation-checkbox").change(function() {
+    
     var oneTimeDonationAmounts = '<div class="donation-box">' +
     '<input type="radio" id="amount_1" name="donation-amounts" value="50">' +
     '<label class="text-center" for="amount_1">$50</label>' +
     '</div>' +
     '<div class="donation-box">' +
     '<span class="popular text-uppercase text-center text-secondary">Most Popular</span>' +
-    '<input type="radio" id="amount_2" name="donation-amounts" value="75" checked="checked">' +
+    '<input type="radio" id="amount_2" name="donation-amounts" value="75" checked="checked" data-featured="true">' +
     '<label class="text-center" for="amount_2">$75</label>' +
     '</div>' +
     '<div class="donation-box">' +
@@ -191,7 +200,7 @@
     '</div>' +
     '<div class="donation-box">' +
     '<span class="popular text-uppercase text-center text-secondary">Most Popular</span>' +
-    '<input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked">' +
+    '<input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked" data-featured="true">' +
     '<label class="text-center" for="amount_2">$25</label>' +
     '</div>' +
     '<div class="donation-box">' +
@@ -213,6 +222,7 @@
 
     if ( $(this).val() == 'one-time' ) {
       $('.donation-amounts').html(oneTimeDonationAmounts);
+      console.log()
     }
 
     if ( $(this).val() == 'monthly' ) {

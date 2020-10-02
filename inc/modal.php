@@ -98,14 +98,14 @@
 
                     <div class="form-group">
                         <label class="mb-3">How much would you like to donate?</label>
-                        <div class="d-flex donation-amounts justify-content-between flex-wrap">
+                        <div class="d-flex donation-amounts justify-content-between flex-wrap featured-selected">
                             <div class="donation-box">
                                 <input type="radio" id="amount_1" name="donation-amounts" value="15">
                                 <label class="text-center" for="amount_1">$15</label>
                             </div>
                             <div class="donation-box">
                                 <span class="popular text-uppercase text-center text-secondary">Most Popular</span>
-                                <input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked">
+                                <input type="radio" id="amount_2" name="donation-amounts" value="25" checked="checked" data-featured="true">
                                 <label class="text-center" for="amount_2">$25</label>
                             </div>
                             <div class="donation-box">
